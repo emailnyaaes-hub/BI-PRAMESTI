@@ -517,6 +517,12 @@
     );
   }
 
+  function cloneEconomiSeed() {
+    const seed = window.EKONOMI_SEED;
+    if (!Array.isArray(seed) || !seed.length) return [];
+    return JSON.parse(JSON.stringify(seed));
+  }
+
   async function loadRecords() {
     try {
       const backend = localStorage.getItem(STORAGE_BACKEND_KEY);
@@ -532,9 +538,9 @@
       const fromIdb = usableList(await idbGet(STORAGE_KEY));
       if (fromIdb) return fromIdb;
     } catch (_) {
-      /* start empty */
+      /* fall through to bundled seed */
     }
-    return [];
+    return cloneEconomiSeed();
   }
 
   async function saveRecords(list) {
@@ -2426,6 +2432,10 @@
   }
 
   function cloneCapaianSeed() {
+    const live = window.ICK_CAPAIAN_LIVE;
+    if (live && Array.isArray(live.offices) && live.offices.length) {
+      return recomputeCapaianTotals(JSON.parse(JSON.stringify(live)));
+    }
     const seed = window.ICK_CAPAIAN_2026;
     if (!seed) {
       return recomputeCapaianTotals({

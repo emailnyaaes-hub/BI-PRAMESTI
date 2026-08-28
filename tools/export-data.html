@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ekspor Data BI PRAMESTI</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 640px; margin: 48px auto; padding: 0 20px; line-height: 1.5; color: #0f172a; }
+    h1 { font-size: 1.35rem; }
+    .note { background: #eff6ff; border: 1px solid #bfdbfe; padding: 14px 16px; border-radius: 8px; margin: 16px 0; }
+    button { background: #001e4c; color: #fff; border: 0; padding: 12px 18px; border-radius: 8px; font-size: 1rem; cursor: pointer; }
+    button:disabled { opacity: 0.5; cursor: not-allowed; }
+    pre { background: #f8fafc; border: 1px solid #e2e8f0; padding: 12px; border-radius: 8px; overflow: auto; font-size: 0.85rem; }
+    .ok { color: #166534; }
+    .warn { color: #b45309; }
+  </style>
+</head>
+<body>
+  <h1>Ekspor data BI PRAMESTI</h1>
+  <p>Buka halaman ini di <strong>browser yang sama</strong> tempat Anda login dan mengunggah data (Chrome/Safari di laptop ini).</p>
+  <div class="note">
+    <strong>Langkah:</strong> klik tombol di bawah → simpan berkas <code>bi-pramesti-export.json</code> ke folder proyek → beri tahu asisten untuk embed &amp; deploy ulang.
+  </div>
+  <p><button type="button" id="btn-export">Unduh data untuk deploy</button></p>
+  <p id="status"></p>
+  <pre id="preview" hidden></pre>
+  <script>
+    const STORAGE_KEY = "ekonomi-lokal-records-v2";
+    const STORAGE_BACKEND_KEY = "ekonomi-lokal-backend-v1";
+    const ICK_CAPAIAN_KEY = "padel-ick-capaian-v1";
+    const IDB_NAME = "padel-ekonomi-lokal";
+    const IDB_STORE = "kv";
+
+    function withIdb() {
+      return new Promise((resolve, reject) => {
+        const req = indexedDB.open(IDB_NAME, 1);
+        req.onerror = () => reject(req.error);
+        req.onsuccess = () => resolve(req.result);
+      });
+    }
+
+    function idbGet(key) {
+      return withIdb().then((db) => new Promise((resolve, reject) => {
+        const tx = db.transaction(IDB_STORE, "readonly");
+        const req = tx.objectStore(IDB_STORE).get(key);
+        req.onsuccess = () => resolve(req.result);
+        req.onerror = () => reject(req.error);
+        tx.oncomplete = () => db.close();
+      }));
+    }
+
+    function usableList(value) {
+      return Array.isArray(value) && value.length ? value : null;
+    }
+
+    async function loadRecords() {
+      try {
+        if (localStorage.getItem(STORAGE_BACKEND_KEY) === "idb") {
+          const fromIdb = usableList(await idbGet(STORAGE_KEY));
+          if (fromIdb) return fromIdb;
+        }
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (raw) {
+          const fromLs = usableList(JSON.parse(raw));
+          if (fromLs) return fromLs;
+        }
+        const fromIdb = usableList(await idbGet(STORAGE_KEY));
+        if (fromIdb) return fromIdb;
+      } catch (_) {}
+      return [];
+    }
+
+    async function loadCapaian() {
+      try {
+        const raw = localStorage.getItem(ICK_CAPAIAN_KEY);
+        if (raw) {
+          const parsed = JSON.parse(raw);
+          if (parsed && Array.isArray(parsed.offices) && parsed.offices.length) return parsed;
+        }
+        const fromIdb = await idbGet(ICK_CAPAIAN_KEY);
+        if (fromIdb && Array.isArray(fromIdb.offices) && fromIdb.offices.length) return fromIdb;
+      } catch (_) {}
+      return null;
+    }
+
+    function downloadJson(payload) {
+      const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "bi-pramesti-export.json";
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+
+    document.getElementById("btn-export").addEventListener("click", async () => {
+      const btn = document.getElementById("btn-export");
+      const status = document.getElementById("status");
+      const preview = document.getElementById("preview");
+      btn.disabled = true;
+      status.textContent = "Membaca data dari browser…";
+      try {
+        const [records, capaian] = await Promise.all([loadRecords(), loadCapaian()]);
+        const payload = {
+          exportedAt: new Date().toISOString(),
+          records,
+          capaian,
+        };
+        downloadJson(payload);
+        status.innerHTML = records.length
+          ? `<span class="ok">Berhasil: ${records.length} baris UMKM/PUS` + (capaian ? `, capaian ICK ${capaian.offices.length} KPwDN` : "") + ".</span>"
+          : `<span class="warn">Tidak ada data di browser ini. Buka BI PRAMESTI di tab lain, pastikan data tampil, lalu coba lagi di browser yang sama.</span>`;
+        preview.hidden = false;
+        preview.textContent = JSON.stringify({ recordCount: records.length, capaianOffices: capaian?.offices?.length || 0 }, null, 2);
+      } catch (err) {
+        status.textContent = "Gagal: " + (err.message || err);
+      } finally {
+        btn.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>
