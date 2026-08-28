@@ -1,0 +1,8 @@
+.DS_Store
+*.log
+.tools/
+deploy-dist/
+BI-PRAMESTI*.zip
+Makalah-*
+International Monetary Fund*
+*.xlsx

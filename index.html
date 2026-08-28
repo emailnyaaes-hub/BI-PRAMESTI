@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BI PRAMESTI — Platform Regional MSME-Shariah Indonesia</title>
+  <link rel="icon" href="assets/img/logo-padel.svg?v=20260826b" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=20260827g">
+</head>
+<body>
+  <div id="login-gate" class="login-gate">
+    <div class="umkm-mosaic" aria-hidden="true">
+      <img src="assets/img/umkm-nelayan.png?v=20260827h" alt="">
+      <img src="assets/img/umkm-pertanian.png?v=20260827h" alt="">
+      <img src="assets/img/umkm-fashion.png?v=20260827h" alt="">
+      <img src="assets/img/umkm-warung.png?v=20260827h" alt="">
+      <img src="assets/img/umkm-olahan.png?v=20260827h" alt="">
+      <img src="assets/img/umkm-mebel.png?v=20260827h" alt="">
+    </div>
+    <section class="login-visual">
+      <div class="login-visual-inner">
+        <img class="bi-mark" src="assets/img/logo-bi-light.svg" alt="Bank Indonesia" width="220" height="40">
+        <p class="login-kicker">Departemen Regional</p>
+        <div class="login-prism-lockup">
+          <img class="prism-mark" src="assets/img/logo-padel.svg?v=20260826b" alt="Logo BI PRAMESTI" width="72" height="72">
+          <h2>BI PRAMESTI</h2>
+        </div>
+        <p class="login-tagline">Platform Regional MSME-Shariah Indonesia</p>
+      </div>
+    </section>
+    <form id="login-form" class="login-card" autocomplete="on">
+      <div class="brand login-brand">
+        <img class="brand-mark" src="assets/img/logo-padel.svg?v=20260826b" alt="Logo BI PRAMESTI" width="56" height="56">
+        <div>
+          <div class="brand-title">BI PRAMESTI</div>
+          <div class="brand-sub">Masuk ke dashboard resmi</div>
+        </div>
+      </div>
+      <h1>Selamat datang</h1>
+      <p class="login-lead">Masuk dengan akun User, Kantor Perwakilan, atau Administrator.</p>
+      <label>Nama pengguna
+        <input id="login-user" name="username" type="text" required autocomplete="username" autofocus>
+      </label>
+      <label>Kata sandi
+        <input id="login-pass" name="password" type="password" required autocomplete="current-password">
+      </label>
+      <p class="login-error" id="login-error" hidden></p>
+      <button class="btn btn-primary" type="submit">Masuk</button>
+      <p class="login-foot">Bank Indonesia · akses terbatas</p>
+    </form>
+  </div>
+
+  <div class="app-shell" id="app-shell" hidden>
+    <div class="umkm-mosaic app-mosaic" aria-hidden="true">
+      <img src="assets/img/umkm-nelayan.png?v=20260827h" alt="">
+      <img src="assets/img/umkm-pertanian.png?v=20260827h" alt="">
+      <img src="assets/img/umkm-fashion.png?v=20260827h" alt="">
+      <img src="assets/img/umkm-warung.png?v=20260827h" alt="">
+      <img src="assets/img/umkm-olahan.png?v=20260827h" alt="">
+      <img src="assets/img/umkm-mebel.png?v=20260827h" alt="">
+    </div>
+    <header class="main-header">
+      <div class="header-row">
+        <div class="header-cell header-left">
+          <a class="bi-lockup" href="https://www.bi.go.id/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/img/logo-bi.svg" alt="Bank Indonesia" width="168" height="30">
+          </a>
+        </div>
+        <div class="header-cell header-logo">
+          <a class="imf-lockup" href="#beranda" data-view="beranda">
+            <img class="head-seal" src="assets/img/logo-padel.svg?v=20260826b" alt="" width="40" height="40">
+            <span class="head-wordmark">
+              <strong>BI PRAMESTI</strong>
+              <small>Bank Indonesia</small>
+            </span>
+          </a>
+        </div>
+        <div class="header-cell header-right">
+          <div class="header-session">
+            <span id="user-label"></span>
+            <button type="button" id="btn-logout">Keluar</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="main-nav" aria-label="Menu dashboard">
+      <div class="main-nav-inner view-nav">
+        <button type="button" data-view="beranda">Beranda</button>
+        <button type="button" data-view="ringkasan">Ringkasan Eksekutif</button>
+        <button type="button" data-view="capaian">Capaian ICK</button>
+        <button type="button" data-view="database">Database UMKM/PUS</button>
+      </div>
+    </nav>
+
+    <div class="ticker" role="marquee" aria-label="Berita UMKM dan PUS">
+      <div class="ticker-label">Berita UMKM</div>
+      <div class="ticker-viewport">
+        <div class="ticker-track" id="ticker-track">
+          <div class="ticker-copy" id="ticker-copy-a"></div>
+          <div class="ticker-copy" id="ticker-copy-b" aria-hidden="true"></div>
+        </div>
+      </div>
+    </div>
+
+    <main class="page">
+      <nav class="crumb" aria-label="Jejak halaman">
+        <span>BI PRAMESTI</span>
+        <span class="sep">/</span>
+        <strong id="crumb-view">Beranda</strong>
+      </nav>
+
+      <section data-view-panel="beranda" id="view-beranda">
+        <section class="ekonomi-hero about-hero">
+          <div class="hero-brand">
+            <img class="hero-logo" src="assets/img/logo-padel.svg?v=20260826b" alt="Logo BI PRAMESTI" width="88" height="88">
+            <div>
+              <div class="kicker">Departemen Regional, Bank Indonesia</div>
+              <h1>BI PRAMESTI</h1>
+              <p class="ekonomi-expand">Platform Regional MSME-Shariah Indonesia</p>
+              <p class="ekonomi-org" id="home-date"></p>
+            </div>
+          </div>
+        </section>
+        <div class="stats" id="stats-home"></div>
+        <section class="home-board">
+          <article class="home-card home-map-card">
+            <h3>Cakupan Lima Wilayah</h3>
+            <p class="meta">Klik wilayah pada peta untuk melihat KPwDN tertinggi dan terendah.</p>
+            <div class="map-panel home-map">
+              <div class="indo-sea" id="home-map" role="group" aria-label="Peta sebaran wilayah Indonesia"></div>
+              <div class="home-wilayah-pop" id="home-wilayah-pop" hidden></div>
+              <div class="home-wilayah-pop home-kpw-layer" id="home-kpw-list-pop" hidden></div>
+              <div class="home-wilayah-pop home-unit-layer" id="home-unit-pop" hidden></div>
+              <div class="home-wilayah-pop home-actions-layer" id="home-actions-pop" hidden></div>
+              <p class="meta" id="home-map-caption"></p>
+            </div>
+          </article>
+        </section>
+      </section>
+
+      <section data-view-panel="ringkasan" id="view-ringkasan" hidden>
+        <div class="stats" id="stats"></div>
+        <div class="wilayah-focus" id="wilayah-focus" hidden>
+          <span id="wilayah-focus-label"></span>
+          <button class="btn btn-ghost btn-sm" type="button" id="btn-clear-wilayah">Lepas fokus</button>
+        </div>
+        <section class="pantau-wrap" id="pantau">
+          <div class="briefing-box">
+            <div class="kicker">Briefing</div>
+            <div id="briefing-text" class="briefing-body"></div>
+            <p class="briefing-note">Disusun dari data BI PRAMESTI yang sedang tampil, bukan penilaian resmi Bank Indonesia.</p>
+          </div>
+          <section class="charts-wrap" id="charts-export">
+            <div class="table-toolbar charts-toolbar">
+              <div>
+                <h2>Grafik sebaran</h2>
+                <div class="meta">Klik irisan atau legenda untuk melihat daftar UMKM. Pilih satu KPw pengampu agar keempat grafik hanya menampilkan kantor itu.</div>
+              </div>
+              <div class="charts-tools">
+                <label class="chart-kpw-filter">KPw pengampu
+                  <select id="chart-kpw-q">
+                    <option value="">Semua KPw pengampu</option>
+                  </select>
+                </label>
+                <button class="btn btn-ghost btn-sm" type="button" id="btn-chart-kpw-clear" hidden>Hapus filter</button>
+                <button class="btn btn-dark btn-sm" type="button" id="btn-pdf">Unduh PDF</button>
+              </div>
+            </div>
+            <p class="meta" id="chart-kpw-caption"></p>
+            <div class="chart-grid" id="charts"></div>
+          </section>
+          <div class="saran-panel">
+            <h3>Saran tindakan</h3>
+            <p class="meta" id="saran-meta">Tiga langkah paling material bagi kinerja regional, berdasarkan sebaran, konsentrasi, dan mutu data.</p>
+            <div class="saran-list saran-priority" id="saran-list"></div>
+            <h3 class="saran-sub">Jangka waktu</h3>
+            <p class="meta" id="saran-horizon-meta">Urutan implementasi: jangka pendek, menengah, dan panjang.</p>
+            <div class="saran-list saran-horizons" id="saran-horizon-list"></div>
+          </div>
+        </section>
+      </section>
+
+      <section data-view-panel="capaian" id="view-capaian" hidden>
+        <section class="capaian-wrap" id="capaian">
+          <div class="table-toolbar capaian-head">
+            <div>
+              <div class="kicker">Target 2026</div>
+              <h2>Capaian ICK per KPwDN pengampu</h2>
+            </div>
+            <div class="row-actions">
+              <button class="btn btn-ghost btn-sm" type="button" id="btn-template-capaian">Unduh template</button>
+              <button class="btn btn-ghost btn-sm" type="button" id="btn-template-capaian-upload">Unggah template</button>
+              <button class="btn btn-ghost btn-sm" type="button" id="btn-capaian-pdf">Unduh PDF</button>
+              <button class="btn btn-dark btn-sm" type="button" id="btn-capaian-upload">Unggah Excel</button>
+              <button class="btn btn-primary btn-sm" type="button" id="btn-capaian-add">Tambah data</button>
+            </div>
+          </div>
+          <div class="ick-explain" id="ick-explain"></div>
+          <div class="capaian-tools" id="capaian-tools">
+            <label>Wilayah
+              <select id="capaian-wilayah">
+                <option value="">Semua wilayah</option>
+              </select>
+            </label>
+            <label>Cari KPwDN
+              <input id="capaian-q" type="search" placeholder="Nama kantor pengampu">
+            </label>
+            <button class="btn btn-ghost btn-sm" type="button" id="capaian-reset" hidden>Tampilkan semua ICK</button>
+          </div>
+          <div class="board-scroll capaian-scroll" id="capaian-scroll">
+            <table class="data-table kpw-board capaian-table">
+              <thead id="capaian-head"></thead>
+              <tbody id="capaian-body"></tbody>
+            </table>
+          </div>
+        </section>
+      </section>
+
+      <section data-view-panel="database" id="view-database" hidden>
+        <form class="filter-card" id="filter-form">
+          <h2>Filter berdasarkan</h2>
+          <p class="filter-hint">Centang satu atau lebih opsi pada jenis, komoditas, fasilitas, tahun, dan KPwDN. Jika tidak ada yang dicentang, semua data ditampilkan.</p>
+          <div class="filter-grid">
+            <label>Nama UMKM / PUS
+              <div class="multi-filter name-filter">
+                <input id="filter-nama" type="search" placeholder="Cari nama usaha">
+              </div>
+            </label>
+            <label>Jenis
+              <div class="multi-filter jenis-filter" id="filter-jenis"></div>
+            </label>
+            <label>Komoditas
+              <div class="multi-filter">
+                <input class="filter-opt-q" type="search" placeholder="Cari komoditas" data-filter-list="filter-komoditas" autocomplete="off">
+                <div class="filter-opt-list" id="filter-komoditas"></div>
+              </div>
+            </label>
+            <label>Fasilitas
+              <div class="multi-filter">
+                <input class="filter-opt-q" type="search" placeholder="Cari fasilitas" data-filter-list="filter-fasilitas" autocomplete="off">
+                <div class="filter-opt-list" id="filter-fasilitas"></div>
+              </div>
+            </label>
+            <label>Tahun
+              <div class="multi-filter">
+                <input class="filter-opt-q" type="search" placeholder="Cari tahun" data-filter-list="filter-tahun" autocomplete="off">
+                <div class="filter-opt-list" id="filter-tahun"></div>
+              </div>
+            </label>
+            <label>KPwDN pengampu
+              <div class="multi-filter">
+                <input class="filter-opt-q" type="search" placeholder="Cari KPwDN" data-filter-list="filter-kpwdn" autocomplete="off">
+                <div class="filter-opt-list" id="filter-kpwdn"></div>
+              </div>
+            </label>
+          </div>
+          <div class="filter-actions">
+            <button class="btn btn-ghost" type="button" id="btn-reset">Reset</button>
+            <button class="btn btn-dark" type="submit">Cari</button>
+          </div>
+        </form>
+        <section class="table-wrap">
+          <div class="table-toolbar">
+            <div>
+              <h2>Hasil pencarian</h2>
+              <div class="meta" id="result-meta"></div>
+            </div>
+            <div class="row-actions">
+              <button class="btn btn-ghost btn-sm" type="button" id="btn-template-db">Unduh template</button>
+              <button class="btn btn-ghost btn-sm" type="button" id="btn-template-db-upload">Unggah template</button>
+              <button class="btn btn-dark btn-sm" type="button" id="btn-upload">Unggah Excel</button>
+              <button class="btn btn-primary btn-sm" type="button" id="btn-add">Tambah data</button>
+            </div>
+          </div>
+          <div style="overflow:auto">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th><button class="sort-btn" data-sort="nama" data-label="Nama UMKM / PUS">Nama UMKM / PUS</button></th>
+                  <th><button class="sort-btn" data-sort="komoditas" data-label="Komoditas">Komoditas</button></th>
+                  <th><button class="sort-btn" data-sort="fasilitas" data-label="Fasilitas">Fasilitas</button></th>
+                  <th><button class="sort-btn" data-sort="tahun" data-label="Tahun">Tahun</button></th>
+                  <th><button class="sort-btn" data-sort="kpwdn" data-label="KPwDN pengampu">KPwDN pengampu</button></th>
+                  <th>Keterangan</th>
+                  <th id="th-aksi">Aksi</th>
+                </tr>
+              </thead>
+              <tbody id="table-body"></tbody>
+            </table>
+          </div>
+          <div class="pager">
+            <p class="pager-info" id="pager-info"></p>
+            <div class="pager-nav">
+              <button type="button" id="prev-page" aria-label="Halaman sebelumnya">Sebelumnya</button>
+              <div class="pager-pages" id="pager-pages"></div>
+              <button type="button" id="next-page" aria-label="Halaman berikutnya">Berikutnya</button>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-foot">
+      <p>BI PRAMESTI · Platform Regional MSME-Shariah Indonesia</p>
+      <p><span class="copy-mark" aria-hidden="true">©</span> Departemen Regional, Bank Indonesia</p>
+    </footer>
+  </div>
+
+  <div id="flash" class="flash" hidden></div>
+  <input id="excel-input" class="hidden-input" type="file" accept=".xlsx,.xls,.csv,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel,text/csv">
+  <input id="excel-input-capaian" class="hidden-input" type="file" accept=".xlsx,.xls,.csv,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel,text/csv">
+  <input id="template-input-db" class="hidden-input" type="file" accept=".xlsx,.xls,.csv,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel,text/csv">
+  <input id="template-input-capaian" class="hidden-input" type="file" accept=".xlsx,.xls,.csv,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel,text/csv">
+  <div id="modal-root"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="assets/js/ick-capaian.js?v=20260824h"></script>
+  <script src="assets/js/app.js?v=20260827i"></script>
+</body>
+</html>

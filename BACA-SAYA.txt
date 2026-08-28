@@ -1,0 +1,32 @@
+BI PRAMESTI — cara membuka
+========================
+
+1. Unzip folder ini.
+2. Buka index.html di browser (Chrome atau Safari).
+   Kalau halaman kosong, jalankan server lokal:
+
+     cd BI-PRAMESTI
+     ruby -run -e httpd . -p 8767
+
+   Lalu buka http://127.0.0.1:8767/
+
+Login (tiga role)
+-----------------
+User
+  user / lihat2026
+  Hanya Beranda + Database UMKM/PUS (lihat saja, tanpa edit/unggah)
+
+Kantor Perwakilan
+  kpw / kpw2026
+  Beranda + Capaian ICK + Database UMKM/PUS
+  Bisa unduh template standar, edit capaian & database
+  Bisa unggah Excel data (capaian & database)
+  Tidak mengunggah template standar (khusus Administrator)
+
+Administrator
+  admin / padel2026
+  Seluruh fitur BI PRAMESTI
+  Bisa unggah template untuk KPw + unggah Excel data
+
+Data tersimpan di browser masing-masing (localStorage / IndexedDB).
+Unggah Excel untuk mengisi/memperbarui database (Administrator atau Kantor Perwakilan).
