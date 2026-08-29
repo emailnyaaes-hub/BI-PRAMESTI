@@ -1433,7 +1433,7 @@
       <div class="stat"><b>${fmtNum(list.length)}</b><span>UMKM / PUS terdata</span></div>
       <div class="stat"><b>${fmtNum(komoditas)}</b><span>Komoditas</span></div>
       <div class="stat"><b>${fmtNum(umkm)} <em class="stat-pct">(${umkmPct}%)</em></b><span>Jumlah UMKM</span></div>
-      <div class="stat"><b>${fmtNum(pus)} <em class="stat-pct">(${pusPct}%)</em></b><span>Pelaku usaha Shariah (PUS)</span></div>
+      <div class="stat"><b>${fmtNum(pus)} <em class="stat-pct">(${pusPct}%)</em></b><span>Pelaku Usaha Syariah (PUS)</span></div>
     `;
   }
 
@@ -1757,7 +1757,7 @@
           `Kantor pengampu: ${fmtNum(offices)} KPwDN`,
           `Rentang fasilitasi: ${years[0] || "—"}–${years[years.length - 1] || "—"}`,
           `Fasilitas paling sering: ${topFas ? topFas[0] : "belum terisi"}`,
-          `Pelaku usaha Shariah: ${fmtNum(pus)} unit`,
+          `Pelaku Usaha Syariah: ${fmtNum(pus)} unit`,
         ],
       });
     }
@@ -2235,7 +2235,7 @@
         score: 360 + Math.round((pus / total) * 100),
         tone: "sedang",
         title: "Ubah PUS dari label menjadi saluran pembiayaan",
-        text: `${fmtNum(pus)} PUS (${shareLabel(pus, total)}) di ${cakupan} adalah stok yang bisa dihubungkan ke keuangan Shariah, bukan sekadar komposisi identitas. Tanpa peta mana yang sudah dapat pembiayaan/halal, angka PUS tidak punya implikasi kebijakan. KPwDN memilah: (1) sudah linkage bank/BPRS/LKMS, (2) sertifikasi berjalan, (3) belum tersentuh. Celah (3) diisi pada ICK yang sudah ada — inclusion lewat instrumen lama, bukan skema baru.`,
+        text: `${fmtNum(pus)} PUS (${shareLabel(pus, total)}) di ${cakupan} adalah stok yang bisa dihubungkan ke keuangan syariah, bukan sekadar komposisi identitas. Tanpa peta mana yang sudah dapat pembiayaan/halal, angka PUS tidak punya implikasi kebijakan. KPwDN memilah: (1) sudah linkage bank/BPRS/LKMS, (2) sertifikasi berjalan, (3) belum tersentuh. Celah (3) diisi pada ICK yang sudah ada — inclusion lewat instrumen lama, bukan skema baru.`,
       });
     }
     if (noTahun || stale.length) {
@@ -3883,7 +3883,7 @@
             <label>Jenis
               <select name="jenis">
                 <option value="UMKM" ${row.jenis === "UMKM" ? "selected" : ""}>UMKM</option>
-                <option value="PUS" ${row.jenis === "PUS" ? "selected" : ""}>PUS — Pelaku Usaha Shariah</option>
+                <option value="PUS" ${row.jenis === "PUS" ? "selected" : ""}>PUS — Pelaku Usaha Syariah</option>
               </select>
             </label>
             <label>Tahun
