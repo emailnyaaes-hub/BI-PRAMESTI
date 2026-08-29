@@ -66341,7 +66341,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7372",
     "nama": "Darussalam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Beras",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66350,7 +66350,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7373",
     "nama": "Daruzzahidin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ikan Lele",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66359,7 +66359,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7374",
     "nama": "Al-Falah Abu Lam U",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Koperasi",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66368,7 +66368,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7375",
     "nama": "Darul Ihsan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66377,7 +66377,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7376",
     "nama": "Ruhul Islam Anak Bangsa",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Koperasi",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66386,7 +66386,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7377",
     "nama": "Dayah Terpadu Al-Kamal Inshafuddin Aceh",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66395,7 +66395,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7378",
     "nama": "LPI MAHYAL ULUM AL-AZIZIYAH",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "CABE MERAH KERITING",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66404,7 +66404,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7379",
     "nama": "Najatul Fata",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "CABE MERAH KERITING",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66413,7 +66413,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7380",
     "nama": "Darul Qur'an",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Koperasi",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66422,7 +66422,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7381",
     "nama": "Dayah Al-Athiyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66431,7 +66431,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7382",
     "nama": "Dayah Thalibul Huda",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Koperasi",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66440,7 +66440,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7383",
     "nama": "Assalam Islamic Solidarity School",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66449,7 +66449,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7384",
     "nama": "Dayah Thautiatul Abrar",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66458,7 +66458,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7385",
     "nama": "Babul Maghfirah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66467,7 +66467,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7386",
     "nama": "Safinatussalamah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Koperasi",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66476,7 +66476,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7387",
     "nama": "Jabal Nur Jadid",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66485,7 +66485,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7388",
     "nama": "Darun Nizham",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66494,7 +66494,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7389",
     "nama": "Bustanul Muallimin Al-Munawwarah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66503,7 +66503,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7390",
     "nama": "Dayah Mahasiswa Ummul Ayman III",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Beras",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66512,7 +66512,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7391",
     "nama": "Yayasan Dayah Moderan Ar-Rauhdatun Mustafawiyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Pertanian Nilam",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66521,7 +66521,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7392",
     "nama": "Madinatuddiniyah Aswal Hidayatussalam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Kopi",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66530,7 +66530,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7393",
     "nama": "Darul Amin Gontor 10",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66539,7 +66539,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7394",
     "nama": "Dayah Darussalam Lampoh Tuan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Bawang Merah",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66548,7 +66548,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7395",
     "nama": "Budi Lamno",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66557,7 +66557,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7396",
     "nama": "Darul Abrar Al-Musthafa",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Koperasi",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66566,7 +66566,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7397",
     "nama": "Darul Ulum",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66575,7 +66575,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7398",
     "nama": "Darussa'adah Aceh Putri",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Koperasi",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66584,7 +66584,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7399",
     "nama": "Raudhatul Jannah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66593,7 +66593,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7400",
     "nama": "Al Madinatul Munawwarah Al Waliyyah (Amal)",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66602,7 +66602,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7401",
     "nama": "Yayasan Pendidikan Islam Darul Ulum",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66611,7 +66611,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7402",
     "nama": "Raudhatul Ma'arif",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Udang Vaname",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66620,7 +66620,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7403",
     "nama": "Ashabul Yamin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66629,7 +66629,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7404",
     "nama": "Pondok Pesantren Terpadu Nurul Islam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66638,7 +66638,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7405",
     "nama": "Pondok Pesantren Terpadu Nurul Islam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Kopi, Cabai Merah",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66647,7 +66647,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7406",
     "nama": "Dayah Darul Ulum Al-Munawwarah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Pengolahan Sampah & Kompos",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66656,7 +66656,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7407",
     "nama": "Dayah Modern Ihyaaussunnah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Jasa Laundry",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66665,7 +66665,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7408",
     "nama": "LPI Dayah Futuhul Ma'arif al-Aziziyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66674,7 +66674,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7409",
     "nama": "Dayah Madinatuddiniyah Al-Mukarramah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66683,7 +66683,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7410",
     "nama": "Mi`Yarul Ulum Al-Aziziyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66692,7 +66692,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7411",
     "nama": "Ma'hadal Ulum Diniyah Islamiyah (MUDI) Mesjid Raya Samalanga",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Pakaian (Konveksi)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66701,7 +66701,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7412",
     "nama": "Ma'hadal Ulum Diniyah Islamiyah (MUDI) Mesjid Raya Samalanga",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Cabai Merah",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66710,7 +66710,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7413",
     "nama": "Pesantren Modern Muhammadiyah Kwala Madu Langkat",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66719,7 +66719,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7414",
     "nama": "Al-Uswah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66728,7 +66728,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7415",
     "nama": "Pondok Pesantren Modern Al Habib",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Pakaian",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66737,7 +66737,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7416",
     "nama": "Pondok Pesantren Modern Al Habib",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Jasa Laundry",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66746,7 +66746,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7417",
     "nama": "Pesantren Darussalam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Domba",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66755,7 +66755,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7418",
     "nama": "Hidayatullah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ikan Bandeng",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66764,7 +66764,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7419",
     "nama": "Mawaridussalam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ikan Lele",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66773,7 +66773,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7420",
     "nama": "Pesantren Taruna Al Qolam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Cabai Merah",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66782,7 +66782,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7421",
     "nama": "Pesantren Taruna Al Qolam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Sayuran Hidroponik",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66791,7 +66791,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7422",
     "nama": "AL HIDAYAH",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Sarabba",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66800,7 +66800,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7423",
     "nama": "AL HIDAYAH",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Singkong dan Lele",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66809,7 +66809,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7424",
     "nama": "Darularafah Raya",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Bawang Merah",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66818,7 +66818,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7425",
     "nama": "Darularafah Raya",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Cabai Merah",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66827,7 +66827,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7426",
     "nama": "Darul Ilmi Murni",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Anggur, Terong, Cabai Merah",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66836,7 +66836,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7427",
     "nama": "Darul Ilmi Murni",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Maggot, Ikan Nila",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66845,7 +66845,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7428",
     "nama": "Pesantren Dairi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Bawang Merah",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66854,7 +66854,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7429",
     "nama": "Pesantren Dairi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Cabai Merah, Tempe, Sayuran Hidroponik",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66863,7 +66863,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7430",
     "nama": "Pondok Pesantren Zakiyun Najah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66872,7 +66872,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7431",
     "nama": "Pesantren Ar-Raudlatul Hasanah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66881,7 +66881,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7432",
     "nama": "Pesantren Ar-Raudlatul Hasanah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Tempe",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66890,7 +66890,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7433",
     "nama": "Al Kautsar Al-Akbar",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Pakaian",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66899,7 +66899,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7434",
     "nama": "Pondok Pesantren Modern Al Hasyimiyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Jasa Laundry",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66908,7 +66908,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7435",
     "nama": "Al Barokah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Kangkung",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66917,7 +66917,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7436",
     "nama": "Al Barokah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ikan lele",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66926,7 +66926,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7437",
     "nama": "Pondok Pesantren Modern Al Kautsar",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Pakaian (Konveksi)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66935,7 +66935,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7438",
     "nama": "Bina Ulama",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Pertanian Tanaman Pakan Ternak",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66944,7 +66944,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7439",
     "nama": "Bina Ulama",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Sapi",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66953,7 +66953,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7440",
     "nama": "Darul Falah Aek Songsongan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Singkong",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66962,7 +66962,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7441",
     "nama": "Darul Falah Aek Songsongan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Daun Singkong, Kangkung Akar",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66971,7 +66971,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7442",
     "nama": "Daarul Muhsinin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66980,7 +66980,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7443",
     "nama": "Modern Darussalam Guntur",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Udang Vaname",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66989,7 +66989,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7444",
     "nama": "Modern Darussalam Guntur",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Sayuran Hidroponik",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -66998,7 +66998,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7445",
     "nama": "An-Ni'mah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Beras",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67007,7 +67007,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7446",
     "nama": "Raudlatul 'Uluum",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "CABE MERAH BESAR",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67016,7 +67016,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7447",
     "nama": "Pp. Darul Hikmah Asahan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Telur Ayam",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67025,7 +67025,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7448",
     "nama": "Pp. Darul Hikmah Asahan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ayam",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67034,7 +67034,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7449",
     "nama": "Pondok Pesantren Modern Al Washliyah Tanjungbalai",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67043,7 +67043,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7450",
     "nama": "Tahfiz Azhar Center",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Jasa Laundry",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67052,7 +67052,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7451",
     "nama": "Al Abraar",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67061,7 +67061,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7452",
     "nama": "Pp Darul Mursyid",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Kopi",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67070,7 +67070,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7453",
     "nama": "Ma'had Darul Ikhlash",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67079,7 +67079,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7454",
     "nama": "Al - Mukhlishin Sibuhuan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67088,7 +67088,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7455",
     "nama": "Pesantren Ar-Raudlatul Hasanah 2 Lumut",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67097,7 +67097,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7456",
     "nama": "Musthafawiyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67106,7 +67106,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7457",
     "nama": "Pondok Pesantren Al-Ansor",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Sambal Olahan Cabai",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67115,7 +67115,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7458",
     "nama": "Ponpes Darussalam Aur Duri Sumani",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Minimarket",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67124,7 +67124,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7459",
     "nama": "Ponpes Darussalam Aur Duri Sumani",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Sapi",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67133,7 +67133,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7460",
     "nama": "Sumatera Thawalib Parabek Buktitinggi Agam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Pakaian (Konveksi)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67142,7 +67142,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7461",
     "nama": "Sumatera Thawalib Parabek Buktitinggi Agam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67151,7 +67151,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7462",
     "nama": "Pondok Pesantren Al-Qur'an Al-Zamriyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Jasa Laundry",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67160,7 +67160,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7463",
     "nama": "Pondok Pesantren Al-Qur'an Al-Zamriyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Sapi",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67169,7 +67169,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7464",
     "nama": "Al Kautsar Muhammadiyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Minimarket",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67178,7 +67178,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7465",
     "nama": "Al Kautsar Muhammadiyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ikan Lele",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67187,7 +67187,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7466",
     "nama": "Ruhama Baina Annas",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Minimarket",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67196,7 +67196,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7467",
     "nama": "Ruhama Baina Annas",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ikan Nila",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67205,7 +67205,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7468",
     "nama": "Kanzul Ulum",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Koperasi",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67214,7 +67214,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7469",
     "nama": "Yayasan Waqaf Ar Risalah Padang",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Pakaian (Konveksi)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67223,7 +67223,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7470",
     "nama": "Yayasan Waqaf Ar Risalah Padang",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Batu Bata",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67232,7 +67232,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7471",
     "nama": "Jabal Rahmah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Bawang Merah",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67241,7 +67241,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7472",
     "nama": "Jabal Rahmah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Kentang",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67250,7 +67250,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7473",
     "nama": "Perkampungan Minangkabau",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Telur Bebek",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67259,7 +67259,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7474",
     "nama": "Perkampungan Minangkabau",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Itik Petelur",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67268,7 +67268,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7475",
     "nama": "Perguruan Diniyyah Puteri",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67277,7 +67277,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7476",
     "nama": "Ponpes Kauman Muhammadiyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67286,7 +67286,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7477",
     "nama": "Ponpes Kauman Muhammadiyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Depot Air Minum Isi Ulang",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67295,7 +67295,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7478",
     "nama": "Pondok Pesantren Darul Ulum",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Minimarket",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67304,7 +67304,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7479",
     "nama": "Pondok Pesantren Darul Ulum",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Sapi, Ikan Nila",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67313,7 +67313,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7480",
     "nama": "As Syakirin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67322,7 +67322,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7481",
     "nama": "Al Faruqi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67331,7 +67331,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7482",
     "nama": "Azam Insan Darussalam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67340,7 +67340,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7483",
     "nama": "ASSALAM NAGA BERALIH",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67349,7 +67349,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7484",
     "nama": "Darul Fatah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67358,7 +67358,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7485",
     "nama": "Darul Quran",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67367,7 +67367,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7486",
     "nama": "Tebu Ireng 3",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67376,7 +67376,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7487",
     "nama": "Darussalam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Pakaian (Konveksi)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67385,7 +67385,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7488",
     "nama": "Khalid Bin Walid",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67394,7 +67394,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7489",
     "nama": "Bahrul 'Ulum",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Mebel dan Furniture",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67403,7 +67403,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7490",
     "nama": "Pesantren Daarul Qur’an Darussalam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67412,7 +67412,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7491",
     "nama": "Al-Muhsinin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67421,7 +67421,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7492",
     "nama": "Pondok Al-Quran Al-Majidiyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ayam",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67430,7 +67430,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7493",
     "nama": "Jabal Nur",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67439,7 +67439,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7494",
     "nama": "Ibnu Sina",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67448,7 +67448,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7495",
     "nama": "Pesantren Teknologi Riau",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67457,7 +67457,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7496",
     "nama": "Al Kautsar",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67466,7 +67466,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7497",
     "nama": "Al Munawarrah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67475,7 +67475,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7498",
     "nama": "Al-Baaqiyatussa`Adiyyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Kelapa",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67484,7 +67484,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7499",
     "nama": "Hidayatul Ma'rifiyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Koperasi",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67493,7 +67493,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7500",
     "nama": "Darul Huda",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67502,7 +67502,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7501",
     "nama": "Bidayatul Hidayah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67511,7 +67511,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7502",
     "nama": "Darul Arofah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67520,7 +67520,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7503",
     "nama": "At Thohiriyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67529,7 +67529,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7504",
     "nama": "Fataha",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67538,7 +67538,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7505",
     "nama": "Al Amin Dumai",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67547,7 +67547,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7506",
     "nama": "Daarut Tauhid Batam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Sayuran Hidroponik",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67556,7 +67556,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7507",
     "nama": "Granada International Islamic Boarding School",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67565,7 +67565,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7508",
     "nama": "Idris",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67574,7 +67574,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7509",
     "nama": "Ar Raudah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67583,7 +67583,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7510",
     "nama": "Al Himmah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67592,7 +67592,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7511",
     "nama": "An Ni'mah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Depot Air Minum Isi Ulang",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67601,7 +67601,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7512",
     "nama": "Hidayatullah Batam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Pakaian (Konveksi)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67610,7 +67610,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7513",
     "nama": "HM Raden Syahid Batam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67619,7 +67619,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7514",
     "nama": "Darul Falah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Sapi",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67628,7 +67628,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7515",
     "nama": "Al Kautsar Batam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67637,7 +67637,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7516",
     "nama": "Ulul Ilmi Cendekia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67646,7 +67646,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7517",
     "nama": "Al Kautsar Tanjungpinang",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67655,7 +67655,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7518",
     "nama": "Darul Taufiq",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67664,7 +67664,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7519",
     "nama": "Darussalam Al Gontory Batam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Maggot",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67673,7 +67673,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7520",
     "nama": "Mifrathur Rabbani",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ikan Lele",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67682,7 +67682,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7521",
     "nama": "Madani Tebuireng XIV Bintan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67691,7 +67691,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7522",
     "nama": "Mambaus Sholihin 7 Bintan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Depot Air Minum Isi Ulang",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67700,7 +67700,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7523",
     "nama": "Haqqul Yaqin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67709,7 +67709,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7524",
     "nama": "Hasni",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67718,7 +67718,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7525",
     "nama": "Al Muttaqin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67727,7 +67727,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7526",
     "nama": "As'ad",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67736,7 +67736,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7527",
     "nama": "Jarinabi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67745,7 +67745,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7528",
     "nama": "Al Manar",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67754,7 +67754,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7529",
     "nama": "Ummul Masakin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67763,7 +67763,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7530",
     "nama": "Raudhatul Ulum",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67772,7 +67772,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7531",
     "nama": "Raudhatul Ulum",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Anggur",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67781,7 +67781,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7532",
     "nama": "Al Ashriyyah Nurul lslam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67790,7 +67790,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7533",
     "nama": "Abdurroham",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Minimarket",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67799,7 +67799,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7534",
     "nama": "Syifaul Janan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67808,7 +67808,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7535",
     "nama": "Islamic Center Nusantara",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ikan Nila",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67817,7 +67817,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7536",
     "nama": "Qodratullah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Sayuran Hidroponik",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67826,7 +67826,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7537",
     "nama": "Darul Quran At Tibyan Islamic Boarding School",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67835,7 +67835,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7538",
     "nama": "Nurul Huda",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Koperasi",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67844,7 +67844,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7539",
     "nama": "Darussalam OKUT",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67853,7 +67853,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7540",
     "nama": "Nurussalam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67862,7 +67862,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7541",
     "nama": "Darussalam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Pakaian (Konveksi)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67871,7 +67871,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7542",
     "nama": "Junjungan Sayyid Hamim",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67880,7 +67880,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7543",
     "nama": "Al Wustha",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Cabai Merah",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67889,7 +67889,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7544",
     "nama": "Al Wustha",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Beras",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67898,7 +67898,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7545",
     "nama": "Muqimus Sunnah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67907,7 +67907,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7546",
     "nama": "Modern Ar-Risalah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67916,7 +67916,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7547",
     "nama": "Mazroillah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67925,7 +67925,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7548",
     "nama": "Al-Furqon",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ikan Lele",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67934,7 +67934,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7549",
     "nama": "NURUL HAKIM",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67943,7 +67943,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7550",
     "nama": "Assalam al islamy",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ikan Lele",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67952,7 +67952,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7551",
     "nama": "Darussalam Lahat",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Pengolahan Sampah & Kompos",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67961,7 +67961,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7552",
     "nama": "Sabilul Hasanah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67970,7 +67970,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7553",
     "nama": "Al Fath",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Olahan Kopi",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67979,7 +67979,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7554",
     "nama": "Barokah Wali Songo",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67988,7 +67988,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7555",
     "nama": "Darulsalamah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -67997,7 +67997,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7556",
     "nama": "Al Barokah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "KANGKUNG AKAR",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68006,7 +68006,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7557",
     "nama": "Daarul Muhabbah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68015,7 +68015,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7558",
     "nama": "Madinatul ilmi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68024,7 +68024,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7559",
     "nama": "AT-Thoyybah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68033,7 +68033,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7560",
     "nama": "Daarul Abror",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68042,7 +68042,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7561",
     "nama": "Daarul Iman",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68051,7 +68051,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7562",
     "nama": "Ponpes Plus Bahrul Ulum",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68060,7 +68060,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7563",
     "nama": "Daarul Arofah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68069,7 +68069,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7564",
     "nama": "Nurul Falah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68078,7 +68078,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7565",
     "nama": "Hidayatullah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68087,7 +68087,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7566",
     "nama": "Madinatul Ilmi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68096,7 +68096,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7567",
     "nama": "Hidayatussalikin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Minimarket",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68105,7 +68105,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7568",
     "nama": "Al Islam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Koperasi",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68114,7 +68114,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7569",
     "nama": "Darussalam Tegal Rejo",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68123,7 +68123,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7570",
     "nama": "Entrepreneur Hafidz Qur'an",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Pepaya",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68132,7 +68132,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7571",
     "nama": "Entrepreneur Hafidz Qur'an",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Cabai Merah Keriting",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68141,7 +68141,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7572",
     "nama": "Mambaul Ulum",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Lebah (Madu)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68150,7 +68150,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7573",
     "nama": "Mambaul Ulum",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Jamur",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68159,7 +68159,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7574",
     "nama": "Abdurrahman Alfatih",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68168,7 +68168,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7575",
     "nama": "Al Karim",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Telur Ayam",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68177,7 +68177,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7576",
     "nama": "Al Karim",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ayam",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68186,7 +68186,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7577",
     "nama": "Hidayatullah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68195,7 +68195,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7578",
     "nama": "Al Fatah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68204,7 +68204,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7579",
     "nama": "Darul Amal",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68213,7 +68213,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7580",
     "nama": "Nurul Qur`an",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Lebah (Madu)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68222,7 +68222,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7581",
     "nama": "Nurul Qur`an",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Peternakan Lebah",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68231,7 +68231,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7582",
     "nama": "BAHRUL ULUM YARJULLAH",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68240,7 +68240,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7583",
     "nama": "PP Ahmad Dahlan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "CABE MERAH BESAR",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68249,7 +68249,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7584",
     "nama": "Terpadu Ushuluddin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ikan Lele",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68258,7 +68258,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7585",
     "nama": "Al Mujaddid",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68267,7 +68267,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7586",
     "nama": "Al Huda",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68276,7 +68276,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7587",
     "nama": "RAUDHATUL AULIA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "CABE MERAH BESAR",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68285,7 +68285,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7588",
     "nama": "Roudlotussholihin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "MELON INTHANON",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68294,7 +68294,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7589",
     "nama": "Roudlotussholihin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ikan Lele",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68303,7 +68303,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7590",
     "nama": "Wali Songo",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Kambing",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68312,7 +68312,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7591",
     "nama": "Darul Ishlah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ayam",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68321,7 +68321,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7592",
     "nama": "Nurul Ikhlas",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "MELON INTHANON",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68330,7 +68330,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7593",
     "nama": "Nurul Fattah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Minimarket",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68339,7 +68339,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7594",
     "nama": "Nurul Fattah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ikan Lele, Ikan Nila",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68348,7 +68348,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7595",
     "nama": "A.P.I. Darul Ulum Tanggamus",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ayam",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68357,7 +68357,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7596",
     "nama": "Darussalamah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68366,7 +68366,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7597",
     "nama": "Hidayatul Mubtadin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "MELON INTHANON",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68375,7 +68375,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7598",
     "nama": "Al Hikmah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68384,7 +68384,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7599",
     "nama": "An Noor",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68393,7 +68393,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7600",
     "nama": "Darul A'mal",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "MELON INTHANON",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68402,7 +68402,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7601",
     "nama": "PPS AL ISMAILIYUN",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "MELON INTHANON",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68411,7 +68411,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7602",
     "nama": "Darul Ulum",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68420,7 +68420,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7603",
     "nama": "Darul Ulum",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "MELON INTHANON",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68429,7 +68429,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7604",
     "nama": "Miftahul Huda 606",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68438,7 +68438,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7605",
     "nama": "Istiqomah Al-Amin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "MELON INTHANON",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68447,7 +68447,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7606",
     "nama": "Pesantren Mathla’ul Anwar Cintamulya",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "MELON INTHANON",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68456,7 +68456,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7607",
     "nama": "Roudlatus Sholihin Gunung Terang",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68465,7 +68465,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7608",
     "nama": "Al Hidayat Gerning",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "MELON INTHANON",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68474,7 +68474,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7609",
     "nama": "Al Hidayat Gerning",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Cabai Merah Keriting, Sayuran Hidroponik",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68483,7 +68483,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7610",
     "nama": "Minhadul Ulum",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "MELON INTHANON",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68492,7 +68492,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7611",
     "nama": "Ar Rofii",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68501,7 +68501,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7612",
     "nama": "Daarul Rahman",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68510,7 +68510,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7613",
     "nama": "Luhur Al Tsaqafah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68519,7 +68519,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7614",
     "nama": "Pondok Pesantren Al Wathoniyah Pusat Putra",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68528,7 +68528,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7615",
     "nama": "Al Ishlah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68537,7 +68537,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7616",
     "nama": "Ulul Ilmi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Sayuran Hidroponik",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68546,7 +68546,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7617",
     "nama": "Ulul Ilmi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Cabai Hijau Besar",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68555,7 +68555,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7618",
     "nama": "Madinatunnajah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68564,7 +68564,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7619",
     "nama": "Darunnajah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68573,7 +68573,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7620",
     "nama": "Darul Falah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Sapi",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68582,7 +68582,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7621",
     "nama": "Raudhotul Muta'alimin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Telur Ayam",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68591,7 +68591,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7622",
     "nama": "Raudhotul Muta'alimin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Maggot",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68600,7 +68600,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7623",
     "nama": "PP Roudhotul Ihsan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68609,7 +68609,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7624",
     "nama": "Assa'adah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68618,7 +68618,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7625",
     "nama": "Ponpes Al-Iman",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Sambal Olahan Cabai",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68627,7 +68627,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7626",
     "nama": "Taqurma (Kimawar)",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Cabe Besar Merah",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68636,7 +68636,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7627",
     "nama": "Al Kirom",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Jagung, Cabai",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68645,7 +68645,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7628",
     "nama": "Al Kirom",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Kacang Panjang, Pare",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68654,7 +68654,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7629",
     "nama": "Pondok Pesantren Modern Al-Mizan 2 Putri",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Bakery (Roti)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68663,7 +68663,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7630",
     "nama": "Daarun na'im",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68672,7 +68672,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7631",
     "nama": "Al Furqoon",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Kerajinan Bambu",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68681,7 +68681,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7632",
     "nama": "Manahijussaadat",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68690,7 +68690,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7633",
     "nama": "Al Washliyah Leuwidamar",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Bakery (Roti)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68699,7 +68699,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7634",
     "nama": "Roudhotul Ihsan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68708,7 +68708,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7635",
     "nama": "Al Ash'ariyyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68717,7 +68717,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7636",
     "nama": "Nur El Falah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Bakery (Roti)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68726,7 +68726,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7637",
     "nama": "Riyadhul Awamil",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68735,7 +68735,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7638",
     "nama": "Pesantren An Nawawi Tanara",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68744,7 +68744,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7639",
     "nama": "Al Markaz",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Anggur",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68753,7 +68753,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7640",
     "nama": "Al Markaz",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "MELON INTHANON",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68762,7 +68762,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7641",
     "nama": "Al Quraniyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Peci (Kopiah)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68771,7 +68771,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7642",
     "nama": "Al Quraniyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Tas",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68780,7 +68780,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7643",
     "nama": "AINURROHMAH",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68789,7 +68789,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7644",
     "nama": "RAUDHATUL IKHWAN",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "CABE MERAH BESAR",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68798,7 +68798,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7645",
     "nama": "Tahfidz Preneur Pagipon",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Keripik Buah, Pizza",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68807,7 +68807,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7646",
     "nama": "Tahfidz Preneur Pagipon",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Roti, Abon Lele, Bakso Lele",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68816,7 +68816,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7647",
     "nama": "Al Ikhlas Assalam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68825,7 +68825,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7648",
     "nama": "Daarul Fikri",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68834,7 +68834,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7649",
     "nama": "Nurul Hasanah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68843,7 +68843,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7650",
     "nama": "Roudlotul Huda",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Peci (Kopiah)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68852,7 +68852,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7651",
     "nama": "Roudlotul Huda",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Tas",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68861,7 +68861,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7652",
     "nama": "Darut Tholibin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68870,7 +68870,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7653",
     "nama": "Darul Rohman II",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68879,7 +68879,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7654",
     "nama": "Darul Ihsan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68888,7 +68888,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7655",
     "nama": "Al-Muhtadiin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Jeruk dan Sayuran Hidroponik",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68897,7 +68897,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7656",
     "nama": "Al-Muhtadiin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Beras",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68906,7 +68906,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7657",
     "nama": "Sirojul Huda",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68915,7 +68915,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7658",
     "nama": "Darul Mutmainnah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68924,7 +68924,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7659",
     "nama": "Pesantren Rumah Al Qur’an",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68933,7 +68933,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7660",
     "nama": "Baitunnajah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68942,7 +68942,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7661",
     "nama": "ALGEBRA INTERNATIONALISLAMIC BOARDING SCHOOL",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68951,7 +68951,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7662",
     "nama": "Ar-Rahman",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68960,7 +68960,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7663",
     "nama": "Persis 259 Firdaus Pangalengan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68969,7 +68969,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7664",
     "nama": "Pondok Pesantren Hidayatullah Depok",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68978,7 +68978,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7665",
     "nama": "Al Ashriyyah Nurul Iman",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Beras",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68987,7 +68987,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7666",
     "nama": "Darul Fallah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Jasa Laundry",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -68996,7 +68996,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7667",
     "nama": "Pesantren Modern Sahid",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69005,7 +69005,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7668",
     "nama": "Jamiyah Al-Wafa",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69014,7 +69014,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7669",
     "nama": "PONDOK PENDAWA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69023,7 +69023,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7670",
     "nama": "Pesantren Modern Ummul Quro Al Islami",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69032,7 +69032,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7671",
     "nama": "Daarul Ulum",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69041,7 +69041,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7672",
     "nama": "Nurul Ihya",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69050,7 +69050,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7673",
     "nama": "PPTQ Al Kaukab",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69059,7 +69059,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7674",
     "nama": "Madinatul Qur’an",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69068,7 +69068,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7675",
     "nama": "Pesantren Pemberdayaan Ummat An Nahl",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Pengolahan Sampah & Kompos",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69077,7 +69077,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7676",
     "nama": "Nurul Hidayah Yanuhi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69086,7 +69086,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7677",
     "nama": "Minhaj Shahabah (Khalafiyah)",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69095,7 +69095,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7678",
     "nama": "Assalam Putri 2",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Beras",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69104,7 +69104,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7679",
     "nama": "Al - Isytirok",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69113,7 +69113,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7680",
     "nama": "Al-Umanaa",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Makanan Beku Siap Saji (Nuget)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69122,7 +69122,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7681",
     "nama": "Al-Masthuriyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69131,7 +69131,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7682",
     "nama": "Nurul Husna",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69140,7 +69140,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7683",
     "nama": "Atsaqofah Al-Islamiyah Annahdiyyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69149,7 +69149,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7684",
     "nama": "Darussyifa Alfitroh Yaspida",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69158,7 +69158,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7685",
     "nama": "Mabdaul Islam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69167,7 +69167,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7686",
     "nama": "Al Huda",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69176,7 +69176,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7687",
     "nama": "Tarbiyatul Falah Al Apandiyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69185,7 +69185,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7688",
     "nama": "Darul Haqmal",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69194,7 +69194,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7689",
     "nama": "PP Al-Hikmah Al-Mahfudziyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "CABE MERAH KERITING",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69203,7 +69203,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7690",
     "nama": "PP Al-Anwar",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "CABE MERAH KERITING",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69212,7 +69212,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7691",
     "nama": "Pesantren Modern Bukit Shafa",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69221,7 +69221,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7692",
     "nama": "Najaatain",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69230,7 +69230,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7693",
     "nama": "Al-Qodiriyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Koperasi",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69239,7 +69239,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7694",
     "nama": "Roudlotul Mutaallimin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69248,7 +69248,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7695",
     "nama": "Pondok Pesantren Al-Mughniyyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Beras",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69257,7 +69257,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7696",
     "nama": "Pondok Pesantren Ar-Risalah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Beras",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69266,7 +69266,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7697",
     "nama": "Al-Huda",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69275,7 +69275,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7698",
     "nama": "Pondok Pesantren Daar Adnan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Beras",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69284,7 +69284,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7699",
     "nama": "Pondok Pesantren Al-Kautsar",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Beras",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69293,7 +69293,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7700",
     "nama": "Pondok Pesantren Al-Itishom",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Beras",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69302,7 +69302,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7701",
     "nama": "Miftahul Huda Al-Musri Banu Mansur",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Beras",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69311,7 +69311,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7702",
     "nama": "Babussalam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Depot Air Minum Isi Ulang",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69320,7 +69320,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7703",
     "nama": "Al-Quran Al-Falah Cicalengka",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Peci (Kopiah)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69329,7 +69329,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7704",
     "nama": "Al-Quran Al-Falah Cicalengka",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Tas",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69338,7 +69338,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7705",
     "nama": "Al Musthafa Mandalasari",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69347,7 +69347,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7706",
     "nama": "Pesantren Al Jihad",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69356,7 +69356,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7707",
     "nama": "Al-Qur'an Al-Falah 2 Nagreg",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69365,7 +69365,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7708",
     "nama": "Pondok Pesantren Sa'adatuddaroin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69374,7 +69374,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7709",
     "nama": "Nur Tauhid",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69383,7 +69383,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7710",
     "nama": "Al Ittihad",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69392,7 +69392,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7711",
     "nama": "Al Muhajirin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69401,7 +69401,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7712",
     "nama": "Nurul Hidayah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69410,7 +69410,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7713",
     "nama": "Salafiah Sururon",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69419,7 +69419,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7714",
     "nama": "Al Muhajirin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69428,7 +69428,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7715",
     "nama": "Darul Arqom",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Kelapa",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69437,7 +69437,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7716",
     "nama": "Nurul Huda",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Peci (Kopiah)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69446,7 +69446,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7717",
     "nama": "Persis 109 Cikoneng",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Pengolahan Sampah & Kompos",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69455,7 +69455,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7718",
     "nama": "Saung Balong",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69464,7 +69464,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7719",
     "nama": "Minhajul Karomah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Peci (Kopiah)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69473,7 +69473,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7720",
     "nama": "Al Masum",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69482,7 +69482,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7721",
     "nama": "Assyari'atul Uluum",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69491,7 +69491,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7722",
     "nama": "Miftahul Ridwan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ikan Nila",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69500,7 +69500,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7723",
     "nama": "Pondok Pesantren Al Munawwar",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69509,7 +69509,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7724",
     "nama": "Al Hikamussalafiyah Cipulus",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69518,7 +69518,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7725",
     "nama": "Minnatul Huda",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69527,7 +69527,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7726",
     "nama": "Nurul Fata II",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69536,7 +69536,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7727",
     "nama": "Nihayatul Amal",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69545,7 +69545,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7728",
     "nama": "Nurussalam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69554,7 +69554,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7729",
     "nama": "Daarul Huffazh",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69563,7 +69563,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7730",
     "nama": "Nurul Huda",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Peci (Kopiah)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69572,7 +69572,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7731",
     "nama": "Ma`Had Arafah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69581,7 +69581,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7732",
     "nama": "At Taqwa",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69590,7 +69590,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7733",
     "nama": "Pondok Pesantren Al Fath",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69599,7 +69599,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7734",
     "nama": "Pondok Pesantren Al Fath",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Olahan Kopi, Bebek",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69608,7 +69608,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7735",
     "nama": "PP Al-Hidayah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69617,7 +69617,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7736",
     "nama": "Pondok Pesantren At-Taqwa",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69626,7 +69626,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7737",
     "nama": "Al Munawariyyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69635,7 +69635,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7738",
     "nama": "PP Al-Muslim",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ikan Nila",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69644,7 +69644,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7739",
     "nama": "PP Ulul Albab",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "CABE MERAH BESAR",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69653,7 +69653,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7740",
     "nama": "Manbaul Huda",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69662,7 +69662,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7741",
     "nama": "Al Nadhlah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69671,7 +69671,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7742",
     "nama": "Al-Ittifaq",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69680,7 +69680,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7743",
     "nama": "Daarus Sa'adah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Sayuran Hidroponik",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69689,7 +69689,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7744",
     "nama": "Pesantren Tahfidz Anwar Syarif",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69698,7 +69698,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7745",
     "nama": "Ar-Rohmah Insan Kamil",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69707,7 +69707,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7746",
     "nama": "Nurul Huda",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Peci (Kopiah)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69716,7 +69716,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7747",
     "nama": "RTQ Cimanggu",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ikan Lele",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69725,7 +69725,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7748",
     "nama": "RTQ Cimanggu",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ikan Nila",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69734,7 +69734,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7749",
     "nama": "Miftahul Huda Al Musri",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69743,7 +69743,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7750",
     "nama": "Al Amin Hajar Sani",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69752,7 +69752,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7751",
     "nama": "PP Al Ma'shum",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69761,7 +69761,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7752",
     "nama": "Miftahul Falah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69770,7 +69770,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7753",
     "nama": "Al-Ghazaly Sunni Asy'ary Syafi'i",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69779,7 +69779,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7754",
     "nama": "Assyafei'yah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69788,7 +69788,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7755",
     "nama": "Hidayatul Mubtadi-Ien",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69797,7 +69797,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7756",
     "nama": "Cendikia Amanah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69806,7 +69806,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7757",
     "nama": "Al Maaruf",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69815,7 +69815,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7758",
     "nama": "Pondok Pesantren Modern IIBS El-Azam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Anggur",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69824,7 +69824,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7759",
     "nama": "PP. Al Multazam kuningan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Sayuran Hidroponik",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69833,7 +69833,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7760",
     "nama": "Madinnatun Najah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69842,7 +69842,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7761",
     "nama": "Sains Salman Assalam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ikan Lele",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69851,7 +69851,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7762",
     "nama": "Kebon Cinta",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69860,7 +69860,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7763",
     "nama": "Khas Kempek",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69869,7 +69869,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7764",
     "nama": "Al Kahfi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69878,7 +69878,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7765",
     "nama": "Al Mizan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69887,7 +69887,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7766",
     "nama": "Nurul Barokah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69896,7 +69896,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7767",
     "nama": "Sabilul Mardiyyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69905,7 +69905,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7768",
     "nama": "Pondok Mufidah Santi Asromo",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Sayuran Hidroponik",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69914,7 +69914,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7769",
     "nama": "Asasul Huda",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69923,7 +69923,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7770",
     "nama": "Nurul Hidayah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69932,7 +69932,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7771",
     "nama": "PONDOK PESANTREN NURUL FAJRI",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "MELON INTHANON",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69941,7 +69941,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7772",
     "nama": "Nurul Huda",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Peci (Kopiah)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69950,7 +69950,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7773",
     "nama": "Cadangpinggan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Anggur",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69959,7 +69959,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7774",
     "nama": "Cadangpinggan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Tomat, Jeruk Nipis",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69968,7 +69968,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7775",
     "nama": "Miftahul Huda",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "MELON INTHANON",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69977,7 +69977,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7776",
     "nama": "Al Ishlah Tajug Indramayu",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69986,7 +69986,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7777",
     "nama": "Al - Mu`Minien",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "SAWI BABY",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -69995,7 +69995,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7778",
     "nama": "Al - Mu`Minien",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Pakcoy Baby, Sayuran Hidroponik",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70004,7 +70004,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7779",
     "nama": "Pondok Pesantren Darul Ma'arif",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70013,7 +70013,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7780",
     "nama": "Ylpi Buntet",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Pengolahan Sampah & Kompos",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70022,7 +70022,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7781",
     "nama": "Nurul Hidayah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70031,7 +70031,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7782",
     "nama": "Kebon Jambu Al Islamy",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70040,7 +70040,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7783",
     "nama": "An-Nur Dukuhdalem Kuningan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70049,7 +70049,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7784",
     "nama": "Al Ishlah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70058,7 +70058,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7785",
     "nama": "PESANTREN BINA INSAN QURANI",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70067,7 +70067,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7786",
     "nama": "Darul Ulum",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70076,7 +70076,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7787",
     "nama": "Miftahul Ulum",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ayam",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70085,7 +70085,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7788",
     "nama": "Nadwatul Banin Banat",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70094,7 +70094,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7789",
     "nama": "Riyadlussharfi Wal Mantiq Babakan Jamanis Pangandaran",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "MELON INTHANON",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70103,7 +70103,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7790",
     "nama": "Nurul Falaah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70112,7 +70112,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7791",
     "nama": "Ihya As Sunnah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Minimarket",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70121,7 +70121,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7792",
     "nama": "Madarijul Ulum",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70130,7 +70130,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7793",
     "nama": "Cipasung",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "CABE MERAH BESAR",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70139,7 +70139,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7794",
     "nama": "Darussalam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70148,7 +70148,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7795",
     "nama": "At-Taqwa",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70157,7 +70157,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7796",
     "nama": "Baitul Hikmah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70166,7 +70166,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7797",
     "nama": "Dadali Dinilah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ikan Nila",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70175,7 +70175,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7798",
     "nama": "Hidayatul Mubtadiin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Cabai Rawit Hijau",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70184,7 +70184,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7799",
     "nama": "Hidayatul Mubtadiin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Cabai Merah besar",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70193,7 +70193,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7800",
     "nama": "Darusshoba Al-Muwaddah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ikan Nila",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70202,7 +70202,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7801",
     "nama": "Darussalam Rajapolah Tasikmalaya",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70211,7 +70211,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7802",
     "nama": "Al-Kautsar 561",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "MELON INTHANON",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70220,7 +70220,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7803",
     "nama": "Al-Kautsar 562",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70229,7 +70229,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7804",
     "nama": "Idrisiyyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Udang Vaname",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70238,7 +70238,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7805",
     "nama": "Idrisiyyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan), Roti",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70247,7 +70247,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7806",
     "nama": "Manbaul Uluum",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Koperasi",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70256,7 +70256,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7807",
     "nama": "Suryalaya",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70265,7 +70265,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7808",
     "nama": "Ponpes Alam Tahfidz Hamalatul Qur’an",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "MELON INTHANON",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70274,7 +70274,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7809",
     "nama": "Ponpes Alam Tahfidz Hamalatul Qur’an",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Cabai Gendot, Ikan Nila",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70283,7 +70283,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7810",
     "nama": "Pondok Pesantren Al Mukaromah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70292,7 +70292,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7811",
     "nama": "Banyulana",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "MELON INTHANON",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70301,7 +70301,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7812",
     "nama": "Banyulana",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Sayuran Hidroponik",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70310,7 +70310,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7813",
     "nama": "Ar Risalah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70319,7 +70319,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7814",
     "nama": "Darusalam Ciamis",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70328,7 +70328,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7815",
     "nama": "Nurul Amal Ciamis",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70337,7 +70337,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7816",
     "nama": "Nurul Falah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70346,7 +70346,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7817",
     "nama": "Bahrul Ulum",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Pengolahan Sampah & Kompos",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70355,7 +70355,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7818",
     "nama": "Riyadlul Hidayah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "CABE MERAH BESAR",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70364,7 +70364,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7819",
     "nama": "Miftahul Ridwan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ikan Nila",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70373,7 +70373,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7820",
     "nama": "Darussalam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70382,7 +70382,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7821",
     "nama": "Al Mushlihuun",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70391,7 +70391,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7822",
     "nama": "Nurul Hidayah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70400,7 +70400,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7823",
     "nama": "Raudhatul Irfan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Pengalengan Jamur",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70409,7 +70409,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7824",
     "nama": "Raudhatul Irfan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ikan Nila, Ikan Lele",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70418,7 +70418,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7825",
     "nama": "Al Amin Puloerang",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70427,7 +70427,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7826",
     "nama": "Al-Urwatul Wutsqo",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70436,7 +70436,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7827",
     "nama": "Al Furqon",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Depot Air Minum Isi Ulang",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70445,7 +70445,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7828",
     "nama": "Al Irsyadiah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70454,7 +70454,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7829",
     "nama": "Riyadlul Ulum Wadda'wah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ikan Nila",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70463,7 +70463,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7830",
     "nama": "Riyadlul Ulum Wadda'wah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ikan Lele",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70472,7 +70472,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7831",
     "nama": "Miftahul Ulum",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Cabai Rawit Besar",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70481,7 +70481,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7832",
     "nama": "Miftahul Ulum",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Cabai Merah besar",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70490,7 +70490,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7833",
     "nama": "Fajrul Islam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70499,7 +70499,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7834",
     "nama": "Amanah Muhammadiyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ikan Nila",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70508,7 +70508,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7835",
     "nama": "Bustanul Ulum",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "MELON INTHANON",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70517,7 +70517,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7836",
     "nama": "Fathurromah Assyefeiyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ikan Nila",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70526,7 +70526,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7837",
     "nama": "International School for Tahfidh Qur'an (ISTAQ) (Islamic Leader School)",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70535,7 +70535,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7838",
     "nama": "Hidayatul Ulum",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70544,7 +70544,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7839",
     "nama": "Pondok Pesantren Manahijul Huda",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70553,7 +70553,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7840",
     "nama": "An Nur Jarnauziyyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70562,7 +70562,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7841",
     "nama": "Al Hidayah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Depot Air Minum Isi Ulang",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70571,7 +70571,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7842",
     "nama": "Miftahul Huda",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "MELON INTHANON",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70580,7 +70580,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7843",
     "nama": "Sunan Pandanaran",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70589,7 +70589,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7844",
     "nama": "Sunan Pandanaran",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Sayuran Hidroponik",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70598,7 +70598,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7845",
     "nama": "Khadijah Al Qubro",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70607,7 +70607,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7846",
     "nama": "Minhajurrosyidin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Pengolahan Sampah & Kompos",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70616,7 +70616,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7847",
     "nama": "Al Hamid",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70625,7 +70625,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7848",
     "nama": "Al Miftah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70634,7 +70634,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7849",
     "nama": "Pesawat",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70643,7 +70643,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7850",
     "nama": "Nurul Haromain Kulon Progo",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Minimarket",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70652,7 +70652,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7851",
     "nama": "Khoiro Ummah Al-Islami",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70661,7 +70661,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7852",
     "nama": "Al Munawwir Bantul",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Koperasi",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70670,7 +70670,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7853",
     "nama": "Nurussalam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70679,7 +70679,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7854",
     "nama": "YAYASAN ALI MAKSUM",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "CABE MERAH KERITING",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70688,7 +70688,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7855",
     "nama": "Al Furqon Sanden",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "CABE RAWIT MERAH",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70697,7 +70697,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7856",
     "nama": "Al Furqon Sanden",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Cabai Rawit Hijau, Cabai Merah Besar",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70706,7 +70706,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7857",
     "nama": "Yatim Dhuafa Madania",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Tomat, Terong",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70715,7 +70715,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7858",
     "nama": "Yatim Dhuafa Madania",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Beras",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70724,7 +70724,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7859",
     "nama": "Arrisalah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Koperasi",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70733,7 +70733,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7860",
     "nama": "Arrisalah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Cabai Merah Keriting dan Besar",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70742,7 +70742,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7861",
     "nama": "Muhammadiyah Boarding School Pleret",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Minimarket",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70751,7 +70751,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7862",
     "nama": "Muhammadiyah Boarding School Pleret",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Cabai Rawit Merah, Cabai Merah Keriting",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70760,7 +70760,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7863",
     "nama": "Al Imdad II",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "MELON INTHANON",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70769,7 +70769,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7864",
     "nama": "Al Imdad II",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Cabai Merah Keriting dan Besar",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70778,7 +70778,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7865",
     "nama": "Pondok Pesantren Putra Anak Al Munawwir Yayasan Al Fatimiyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70787,7 +70787,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7866",
     "nama": "Al Hikmah Karangmojo Gunungkidul",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "CABE MERAH KERITING",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70796,7 +70796,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7867",
     "nama": "Nur Toha",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70805,7 +70805,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7868",
     "nama": "Darul Qur`An Wal Irsyad",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Minimarket",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70814,7 +70814,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7869",
     "nama": "Darul Qur`An Wal Irsyad",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Koperasi",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70823,7 +70823,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7870",
     "nama": "Pondok Pesantren Terpadu Al Mumtaz",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Koperasi",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70832,7 +70832,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7871",
     "nama": "Ponpes Muhamadiyah Mujahidin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70841,7 +70841,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7872",
     "nama": "Diponegoro",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Minimarket",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70850,7 +70850,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7873",
     "nama": "WAHID HASYIM",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Jambu Kristal",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70859,7 +70859,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7874",
     "nama": "WAHID HASYIM",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Cabai merah, jeruk nipis, temulawak",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70868,7 +70868,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7875",
     "nama": "Muhammadiyah Boarding School Mbs Prambanan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70877,7 +70877,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7876",
     "nama": "Nurul Ummah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Anggur",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70886,7 +70886,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7877",
     "nama": "Mu`Allimaat Muhammadiyah Yogyakarta",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70895,7 +70895,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7878",
     "nama": "Mu`Allimin Muhammadiyah Yogyakarta",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70904,7 +70904,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7879",
     "nama": "Al Qodiriy",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70913,7 +70913,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7880",
     "nama": "Afkaruna",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70922,7 +70922,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7881",
     "nama": "Assalafiyyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70931,7 +70931,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7882",
     "nama": "Hidayatul Mubtadi'in",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Cabai Rawit Merah",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70940,7 +70940,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7883",
     "nama": "Hidayatul Mubtadi'in",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Cabai Merah Besar",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70949,7 +70949,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7884",
     "nama": "Anwar Futuhiyyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70958,7 +70958,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7885",
     "nama": "Al Bayan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70967,7 +70967,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7886",
     "nama": "KWT Melati",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70976,7 +70976,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7887",
     "nama": "Al Huda",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70985,7 +70985,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7888",
     "nama": "Al Iman Bulus",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Kambing",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -70994,7 +70994,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7889",
     "nama": "AN-NAWAWI",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71003,7 +71003,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7890",
     "nama": "Pabelan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Domba",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71012,7 +71012,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7891",
     "nama": "PonPes API ASRI Syubbanul Wathon Tegalrejo",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Pakaian (Konveksi)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71021,7 +71021,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7892",
     "nama": "Sirojuth Tholibin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71030,7 +71030,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7893",
     "nama": "At Taufiiqiyyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71039,7 +71039,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7894",
     "nama": "Khozinatul Ulum Blora",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Minimarket",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71048,7 +71048,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7895",
     "nama": "Khozinatul Ulum Blora",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Sayuran Hidroponik",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71057,7 +71057,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7896",
     "nama": "Al Hamdulillah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71066,7 +71066,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7897",
     "nama": "Al Hamdulillah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Depot Air Minum Isi Ulang",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71075,7 +71075,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7898",
     "nama": "PP. Al-Anwar 3",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Peci (Kopiah)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71084,7 +71084,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7899",
     "nama": "PP. Al-Anwar 4",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71093,7 +71093,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7900",
     "nama": "Maslakul Huda",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71102,7 +71102,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7901",
     "nama": "Darul Falah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Koperasi",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71111,7 +71111,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7902",
     "nama": "Tahfidzul Qur’an Abu Bakar Ash Shidiq",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71120,7 +71120,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7903",
     "nama": "Yanaabii'ul Ulum Warrohmah (Bannat)",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71129,7 +71129,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7904",
     "nama": "PP Roudhotul Mubtadiin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Peci (Kopiah)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71138,7 +71138,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7905",
     "nama": "PP Roudhotul Mubtadiin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ayam, Sayuran Hidroponik",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71147,7 +71147,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7906",
     "nama": "Al Falah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Peci (Kopiah)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71156,7 +71156,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7907",
     "nama": "Pondok Lansia dan Yatim Maa'uun",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71165,7 +71165,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7908",
     "nama": "Al Husna",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71174,7 +71174,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7909",
     "nama": "Al Furqon Mranggen",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71183,7 +71183,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7910",
     "nama": "Futuhiyyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71192,7 +71192,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7911",
     "nama": "Fathul Huda",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71201,7 +71201,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7912",
     "nama": "Nurul Burhany",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Bakery (Roti)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71210,7 +71210,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7913",
     "nama": "Tahfidz Anak Darul Musthofa",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71219,7 +71219,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7914",
     "nama": "Al Ikhlas",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Kopi",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71228,7 +71228,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7915",
     "nama": "PP. Edi Mancoro",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71237,7 +71237,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7916",
     "nama": "Al Masudiyah Blater",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Sayuran Hidroponik",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71246,7 +71246,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7917",
     "nama": "Assalafiyah Annahdliyyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Kopi",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71255,7 +71255,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7918",
     "nama": "Al Fadlu 3",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71264,7 +71264,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7919",
     "nama": "Al Fadlu 2",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71273,7 +71273,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7920",
     "nama": "AL MUSYAFFA'",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ayam",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71282,7 +71282,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7921",
     "nama": "Sunan Gunung jati Baalawy",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "CABE MERAH KERITING",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71291,7 +71291,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7922",
     "nama": "Sunan Gunung jati Baalawy",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "CABE MERAH BESAR",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71300,7 +71300,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7923",
     "nama": "Fadhlul Fadlan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "MELON INTHANON",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71309,7 +71309,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7924",
     "nama": "Askhabul Kahfi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ikan Lele",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71318,7 +71318,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7925",
     "nama": "Askhabul Kahfi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ikan Nila",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71327,7 +71327,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7926",
     "nama": "Al Ikhlas",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Kopi",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71336,7 +71336,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7927",
     "nama": "Nasrul Huda",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "CABE RAWIT MERAH",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71345,7 +71345,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7928",
     "nama": "Assasul Huda 3",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71354,7 +71354,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7929",
     "nama": "Tazakka",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71363,7 +71363,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7930",
     "nama": "Al Hidayah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Depot Air Minum Isi Ulang",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71372,7 +71372,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7931",
     "nama": "Al Fusha",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ikan Lele",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71381,7 +71381,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7932",
     "nama": "Tahfidzul Qur`An Salsabila",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Olahan Kopi",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71390,7 +71390,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7933",
     "nama": "Muhammadiyah Ahmad Dahlan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71399,7 +71399,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7934",
     "nama": "Assalafiyah Al Quraniyah Nusantara",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Sewa Alat Alsintan",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71408,7 +71408,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7935",
     "nama": "Al Salam Muhammadiyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Sabun Cair",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71417,7 +71417,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7936",
     "nama": "Pondok Pesantren Roudlotul Muhtadin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71426,7 +71426,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7937",
     "nama": "Nurul Huda",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Peci (Kopiah)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71435,7 +71435,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7938",
     "nama": "Attauhidiyyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71444,7 +71444,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7939",
     "nama": "Asma Chusna",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71453,7 +71453,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7940",
     "nama": "Al Hikmah 2",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71462,7 +71462,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7941",
     "nama": "Kyai Ageng Selo",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71471,7 +71471,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7942",
     "nama": "Al -Muayyad Windan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "CABE MERAH KERITING",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71480,7 +71480,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7943",
     "nama": "Dawar",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71489,7 +71489,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7944",
     "nama": "Darul Abror",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "CABE RAWIT MERAH",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71498,7 +71498,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7945",
     "nama": "Darul Abror",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Cabai Merah Keriting dan Besar",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71507,7 +71507,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7946",
     "nama": "PONDOK PESANTREN AL BAABA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "CABE MERAH BESAR",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71516,7 +71516,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7947",
     "nama": "Darussalam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "CABE RAWIT MERAH",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71525,7 +71525,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7948",
     "nama": "Darussalam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "CABE MERAH KERITING dan Besar",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71534,7 +71534,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7949",
     "nama": "Darul Qur'an Salafiyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ikan Nila",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71543,7 +71543,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7950",
     "nama": "Darul Qur'an Salafiyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "CABE MERAH KERITING",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71552,7 +71552,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7951",
     "nama": "Tahfidzul Quran Ibnu Abas",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Depot Air Minum Isi Ulang",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71561,7 +71561,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7952",
     "nama": "Barokah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Kopi",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71570,7 +71570,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7953",
     "nama": "Barokah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "CABE MERAH BESAR",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71579,7 +71579,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7954",
     "nama": "Al Hikmah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71588,7 +71588,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7955",
     "nama": "Assalaam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Pengolahan Sampah & Kompos",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71597,7 +71597,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7956",
     "nama": "PP DARUL HASAN",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "MELON INTHANON",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71606,7 +71606,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7957",
     "nama": "Al Ruqoyyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "MELON INTHANON",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71615,7 +71615,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7958",
     "nama": "KULIYATUL MUALIMIN BAITUL QURAN",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Kedelai",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71624,7 +71624,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7959",
     "nama": "Sunan Gunung Jati",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Olahan Jahe Merah",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71633,7 +71633,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7960",
     "nama": "Sunan Gunung Jati",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "MELON INTHANON",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71642,7 +71642,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7961",
     "nama": "Darul Amal",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "CABE MERAH KERITING",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71651,7 +71651,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7962",
     "nama": "Darul Amal",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "CABE MERAH BESAR",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71660,7 +71660,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7963",
     "nama": "Pondok Pesantren Baitul Quran Sragen",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ikan Lele",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71669,7 +71669,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7964",
     "nama": "Tahfidz Daarul Qur’an",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "MELON INTHANON",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71678,7 +71678,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7965",
     "nama": "Al Islam Darul Falah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Pakaian (Konveksi)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71687,7 +71687,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7966",
     "nama": "Al Kahfi Hidayatullah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ikan Lele",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71696,7 +71696,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7967",
     "nama": "Al Muayyad Mangkuyudan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Sapi",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71705,7 +71705,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7968",
     "nama": "Al Qur’aniy Azzayadiy",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71714,7 +71714,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7969",
     "nama": "Nurul Qur’an",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Bakery (Roti)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71723,7 +71723,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7970",
     "nama": "Pondok Pesantren Al Ukhuwah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "CABE RAWIT MERAH, Roti",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71732,7 +71732,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7971",
     "nama": "Pondok Pesantren Al Ukhuwah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "CABE MERAH KERITING, Ikan Lele",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71741,7 +71741,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7972",
     "nama": "Salafiyah Syafi`Iyah Gani Tirtoasri",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "CABE MERAH BESAR",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71750,7 +71750,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7973",
     "nama": "Al Fatah Wonogiri",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "CABE MERAH BESAR",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71759,7 +71759,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7974",
     "nama": "Al Fatah Wonogiri",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ikan Patin",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71768,7 +71768,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7975",
     "nama": "Ta’mirul Islam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "MELON INTHANON",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71777,7 +71777,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7976",
     "nama": "Ta’mirul Islam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Sayuran Hidroponik",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71786,7 +71786,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7977",
     "nama": "Ta'limul Qur'an",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71795,7 +71795,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7978",
     "nama": "Daarul Fath",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71804,7 +71804,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7979",
     "nama": "Pondok Pesantren Madinatul 'Ulum Al Ishlah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71813,7 +71813,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7980",
     "nama": "Al Ihya `Ulumaddin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Pengolahan Sampah & Kompos",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71822,7 +71822,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7981",
     "nama": "Ponpes APIK (Asrama Pelajar Islam Kesugihan)",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71831,7 +71831,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7982",
     "nama": "Rubat Mbalong Ell Firdaus",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Jamur, Sapi",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71840,7 +71840,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7983",
     "nama": "Rubat Mbalong Ell Firdaus",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Mocaf (Tepung Singkong), Batu Bata",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71849,7 +71849,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7984",
     "nama": "Tarbiyatul Islamiyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Marning Jagung",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71858,7 +71858,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7985",
     "nama": "Pondok Pesantren Assaidiyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71867,7 +71867,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7986",
     "nama": "PP Darul Ulum",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ikan Lele",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71876,7 +71876,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7987",
     "nama": "Pondok Pesantren Modern Zam-Zam Muhammadiyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71885,7 +71885,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7988",
     "nama": "At Taujieh Al-Islamy",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Beras",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71894,7 +71894,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7989",
     "nama": "Pesantren Mahasiswa An Najah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ikan Lele",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71903,7 +71903,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7990",
     "nama": "Pondok Pesantren Zam-Zam Integrated Scholl (ZIIS)",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71912,7 +71912,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7991",
     "nama": "PP Anwaarul Hidayah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71921,7 +71921,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7992",
     "nama": "PP Anwaarul Hidayah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Depot Air Minum Isi Ulang",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71930,7 +71930,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7993",
     "nama": "Roudlotus Sholichin Sholichat",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Kambing",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71939,7 +71939,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7994",
     "nama": "Syahri Al Hasyimi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71948,7 +71948,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7995",
     "nama": "MBS Wanayasa",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "SELADA KERITING, Sayuran Hidroponik",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71957,7 +71957,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7996",
     "nama": "MBS Wanayasa",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Kambing , AMDK",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71966,7 +71966,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7997",
     "nama": "Muhammadiyah Istana Qur'an",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71975,7 +71975,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7998",
     "nama": "Baitul Quran Asy-Syuyuthi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71984,7 +71984,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u7999",
     "nama": "PP Tahfidzul Qur'an Putri Al Husna",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -71993,7 +71993,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8000",
     "nama": "PP Al Falah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72002,7 +72002,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8001",
     "nama": "Miftahul Huda",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "MELON INTHANON",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72011,7 +72011,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8002",
     "nama": "Darul Aitam Nurul Iman",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72020,7 +72020,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8003",
     "nama": "Roudlotul 'Ilmi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72029,7 +72029,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8004",
     "nama": "Nurul Huda",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Sayuran Hidroponik",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72038,7 +72038,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8005",
     "nama": "Pondok Pesantren Roudlotul Hidayatul Mubtadiin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72047,7 +72047,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8006",
     "nama": "Darussalam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "CABE RAWIT MERAH",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72056,7 +72056,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8007",
     "nama": "Minhajut Tholabah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72065,7 +72065,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8008",
     "nama": "Yayasan Pondok Pesantren Darul Abror",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72074,7 +72074,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8009",
     "nama": "Fathul Ulum",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "CABE MERAH KERITING",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72083,7 +72083,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8010",
     "nama": "Fathul Ulum",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "CABE MERAH BESAR, Beras",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72092,7 +72092,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8011",
     "nama": "PP Terpadu Hasbullah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72101,7 +72101,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8012",
     "nama": "Tebu Ireng",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72110,7 +72110,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8013",
     "nama": "Al Rosyid",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72119,7 +72119,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8014",
     "nama": "Sunan Drajat 7",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Pengolahan Sampah & Kompos",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72128,7 +72128,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8015",
     "nama": "Sunan Drajat 8",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Minimarket , Garam",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72137,7 +72137,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8016",
     "nama": "Modern Muhammadiyah Mbs Lamongan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72146,7 +72146,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8017",
     "nama": "Sunan Drajat",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72155,7 +72155,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8018",
     "nama": "Mamba’ul Ma’arif",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72164,7 +72164,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8019",
     "nama": "Baitul Quran",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72173,7 +72173,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8020",
     "nama": "Idhotun Nasyi'in",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72182,7 +72182,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8021",
     "nama": "Qamaruddin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72191,7 +72191,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8022",
     "nama": "Nurul Amanah Bangkalan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72200,7 +72200,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8023",
     "nama": "Miftahul Ulum Al Islamiy",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72209,7 +72209,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8024",
     "nama": "Annuqayah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72218,7 +72218,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8025",
     "nama": "Tmi Al-Amien Prenduan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Telur Ayam",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72227,7 +72227,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8026",
     "nama": "Tmi Al-Amien Prenduan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Itik Petelur, ayam",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72236,7 +72236,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8027",
     "nama": "Miftachussunah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72245,7 +72245,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8028",
     "nama": "Pondok Pesantren Assalafi Al Fithrah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72254,7 +72254,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8029",
     "nama": "Ponpes Al Falah Jombang",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "CABE MERAH BESAR",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72263,7 +72263,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8030",
     "nama": "Ponpes Al Falah Jombang",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ikan Lele, Beras",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72272,7 +72272,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8031",
     "nama": "Ponpes Amanatul Ummah Mojokerto",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72281,7 +72281,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8032",
     "nama": "Darul Ulum",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72290,7 +72290,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8033",
     "nama": "Darun Najah Lumajang",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72299,7 +72299,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8034",
     "nama": "Nurul Chotib",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72308,7 +72308,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8035",
     "nama": "Madinatul Ulum",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72317,7 +72317,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8036",
     "nama": "Baitul Hikmah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Depot Air Minum Isi Ulang",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72326,7 +72326,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8037",
     "nama": "Ibnu Katsir",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72335,7 +72335,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8038",
     "nama": "Baiturrohman",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72344,7 +72344,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8039",
     "nama": "Al Islah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72353,7 +72353,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8040",
     "nama": "Nurul Inaroh",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72362,7 +72362,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8041",
     "nama": "As Salam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72371,7 +72371,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8042",
     "nama": "Darussalam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "CABE RAWIT MERAH",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72380,7 +72380,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8043",
     "nama": "Mambaul Ulum Banyuwangi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72389,7 +72389,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8044",
     "nama": "Tsamaroturroudloh",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72398,7 +72398,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8045",
     "nama": "Pondok Pesantren Bahrul Ulum",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72407,7 +72407,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8046",
     "nama": "Pondok Pesantren Nurud Dhalam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72416,7 +72416,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8047",
     "nama": "Pondok Pesantren Raudatul Falah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Cabai rawit hijau, Cabai Merah Keriting",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72425,7 +72425,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8048",
     "nama": "Pondok Pesantren Raudatul Falah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Jagung, Kunyit, Kambing, Domba, Ayam",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72434,7 +72434,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8049",
     "nama": "Ihya'us Sunnah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Sayuran Hidroponik",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72443,7 +72443,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8050",
     "nama": "Al Futuhiyyah Banyuwangi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72452,7 +72452,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8051",
     "nama": "Salafiyah Syafi`Iyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72461,7 +72461,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8052",
     "nama": "ROYATUL ISLAM",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72470,7 +72470,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8053",
     "nama": "Manajer Tholabie",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72479,7 +72479,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8054",
     "nama": "Nurul Huda",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Peci (Kopiah)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72488,7 +72488,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8055",
     "nama": "Nurul Huda",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Tas",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72497,7 +72497,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8056",
     "nama": "Bustanul Hasan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72506,7 +72506,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8057",
     "nama": "Miftahul Ulum Al Oemar - Zainul Yasin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72515,7 +72515,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8058",
     "nama": "Islamiyah Syafiyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72524,7 +72524,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8059",
     "nama": "PP. Pesantren Al Yasini",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72533,7 +72533,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8060",
     "nama": "Yudharta-Ngalah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72542,7 +72542,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8061",
     "nama": "Hayatul Islamiyyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72551,7 +72551,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8062",
     "nama": "Al Hikam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72560,7 +72560,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8063",
     "nama": "Bahrul Maghfiroh",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72569,7 +72569,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8064",
     "nama": "Sabilurrosyad",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72578,7 +72578,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8065",
     "nama": "Anwarul Huda",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72587,7 +72587,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8066",
     "nama": "Daarul Ukhuwwah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72596,7 +72596,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8067",
     "nama": "Raudlatul Muta'alimien",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72605,7 +72605,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8068",
     "nama": "Ta'limil Quran",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72614,7 +72614,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8069",
     "nama": "Kanzun Naja",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72623,7 +72623,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8070",
     "nama": "Raudhatul Madinah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72632,7 +72632,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8071",
     "nama": "An Nur II",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Sapi",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72641,7 +72641,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8072",
     "nama": "An Nur II",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Kambing",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72650,7 +72650,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8073",
     "nama": "An-Nur Ii Al-Murtadlo",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72659,7 +72659,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8074",
     "nama": "An Nur 1",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72668,7 +72668,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8075",
     "nama": "Nurul Huda",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Sayuran Hidroponik",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72677,7 +72677,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8076",
     "nama": "Zainul Hasan Genggong",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72686,7 +72686,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8077",
     "nama": "Nurul Jadid",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72695,7 +72695,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8078",
     "nama": "Nurul Qur'an",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72704,7 +72704,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8079",
     "nama": "Qomarul Hidayah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72713,7 +72713,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8080",
     "nama": "Hidayatul Mubtadiin Ngunut",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72722,7 +72722,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8081",
     "nama": "Al Kamal",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72731,7 +72731,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8082",
     "nama": "Mojosari",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72740,7 +72740,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8083",
     "nama": "Pondok Modern Sumber Daya At Taqwa (POMOSDA)",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Bawang Merah, Cabai Rawit Merah",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72749,7 +72749,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8084",
     "nama": "Pondok Modern Sumber Daya At Taqwa (POMOSDA)",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "MELON INTHANON, Sayuran Hidroponik",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72758,7 +72758,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8085",
     "nama": "Al Islam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72767,7 +72767,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8086",
     "nama": "Babussalam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72776,7 +72776,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8087",
     "nama": "Al Hidayah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72785,7 +72785,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8088",
     "nama": "Al Amien",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72794,7 +72794,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8089",
     "nama": "Al Mardiyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72803,7 +72803,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8090",
     "nama": "Al Fatah Temboro",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72812,7 +72812,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8091",
     "nama": "Kanzul Ulum",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Koperasi",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72821,7 +72821,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8092",
     "nama": "Pondok Pesantren Al Barokah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72830,7 +72830,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8093",
     "nama": "Lirboyo",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72839,7 +72839,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8094",
     "nama": "Al Falah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ikan Lele",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72848,7 +72848,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8095",
     "nama": "Al Falah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ikan Nila",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72857,7 +72857,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8096",
     "nama": "Gontor 3 Darul Ma'rifat",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72866,7 +72866,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8097",
     "nama": "PP Sunan Kalijaga Nganjuk",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72875,7 +72875,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8098",
     "nama": "Darussalam Sengkubang",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72884,7 +72884,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8099",
     "nama": "Ponpes Al Muhajirin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Jambu Kristal, Jagung",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72893,7 +72893,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8100",
     "nama": "Ponpes Al Muhajirin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "CABE RAWIT MERAH",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72902,7 +72902,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8101",
     "nama": "Pondok Pesantren Darul Fikri",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72911,7 +72911,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8102",
     "nama": "Darul Falah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "CABE RAWIT MERAH",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72920,7 +72920,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8103",
     "nama": "Darul Falah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "CABE MERAH KERITING, Timun Acar",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72929,7 +72929,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8104",
     "nama": "Mu'inul Islam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Lebah (Madu)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72938,7 +72938,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8105",
     "nama": "Mu'inul Islam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Anggur, Melon Inthanon",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72947,7 +72947,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8106",
     "nama": "Abdussalam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Garam",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72956,7 +72956,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8107",
     "nama": "Abdussalam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Lada (Merica)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72965,7 +72965,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8108",
     "nama": "Nurul Jadid",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72974,7 +72974,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8109",
     "nama": "Ponpes Al Murabbi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "CABE RAWIT MERAH, Timun Besar",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72983,7 +72983,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8110",
     "nama": "Ponpes Al Murabbi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "OYONG GAMBAS, Timun Acar",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -72992,7 +72992,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8111",
     "nama": "Fajar Islam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73001,7 +73001,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8112",
     "nama": "Al-Muhajirin Antang",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73010,7 +73010,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8113",
     "nama": "Raudhatul Jannah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73019,7 +73019,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8114",
     "nama": "Hidayatul Insan Fii Ta`Limiddin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73028,7 +73028,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8115",
     "nama": "Darul Amin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73037,7 +73037,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8116",
     "nama": "Enterpreneur Dar Ar Raudhah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73046,7 +73046,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8117",
     "nama": "Mambaul Hasan Lidda`wah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73055,7 +73055,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8118",
     "nama": "Darul Ulum Panglima Kobar",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73064,7 +73064,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8119",
     "nama": "Al Amin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73073,7 +73073,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8120",
     "nama": "Darul Ulum",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73082,7 +73082,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8121",
     "nama": "Al Fajar Parenggean",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73091,7 +73091,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8122",
     "nama": "Daarul Ihsan Islamic Boarding School",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Pengolahan Sampah & Kompos",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73100,7 +73100,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8123",
     "nama": "Miftahul Ulum",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73109,7 +73109,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8124",
     "nama": "Darul Hijrah Cindai Alus",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73118,7 +73118,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8125",
     "nama": "Pondok Modern An-Najah Cindai Alus Putri",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73127,7 +73127,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8126",
     "nama": "Minhajul Abidin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73136,7 +73136,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8127",
     "nama": "Al Baladul Amin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73145,7 +73145,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8128",
     "nama": "Raudhatul Amin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73154,7 +73154,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8129",
     "nama": "Al Mubarok",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73163,7 +73163,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8130",
     "nama": "Ushuluddin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73172,7 +73172,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8131",
     "nama": "Ishlahul Aulad",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73181,7 +73181,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8132",
     "nama": "Nurul Hidayah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73190,7 +73190,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8133",
     "nama": "Rashidiyah Khalidiyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73199,7 +73199,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8134",
     "nama": "Teknologi Pertanian Al - Islam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73208,7 +73208,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8135",
     "nama": "Al Madaniyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73217,7 +73217,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8136",
     "nama": "Darul Ilmi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73226,7 +73226,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8137",
     "nama": "Mishabul Munir",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73235,7 +73235,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8138",
     "nama": "Walisongo Fiddarissalam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73244,7 +73244,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8139",
     "nama": "Ibnu Atha'illah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ikan Haruan, Patin",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73253,7 +73253,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8140",
     "nama": "Ibnu Atha'illah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ikan Nila",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73262,7 +73262,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8141",
     "nama": "Assalam Arya Kemuning",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Sapi",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73271,7 +73271,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8142",
     "nama": "Assalam Arya Kemuning",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ayam, Ikan Lele",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73280,7 +73280,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8143",
     "nama": "Al Masyhuriyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73289,7 +73289,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8144",
     "nama": "Modern Ibadurrahman",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73298,7 +73298,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8145",
     "nama": "Daarul Hijrah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Singkong",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73307,7 +73307,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8146",
     "nama": "Daarul Hijrah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Pepaya, Kacang Panjang",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73316,7 +73316,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8147",
     "nama": "Tahfidz Al Qur`An Kh. Harun Nafsi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73325,7 +73325,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8148",
     "nama": "Hidayatullah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Pakaian (Konveksi)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73334,7 +73334,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8149",
     "nama": "Daarussa'adah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73343,7 +73343,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8150",
     "nama": "Nabil Husein",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "KACANG PANJANG, Terong Ungu",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73352,7 +73352,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8151",
     "nama": "Nabil Husein",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "KANGKUNG AKAR, Jagung",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73361,7 +73361,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8152",
     "nama": "Pondok Pesantren Darun Najah Balikpapan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73370,7 +73370,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8153",
     "nama": "Al Mujahidin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73379,7 +73379,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8154",
     "nama": "Ponpes Modern Asy-Syifa Balikpapan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Sayuran Hidroponik",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73388,7 +73388,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8155",
     "nama": "Ponpes Modern Asy-Syifa Balikpapan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "KANGKUNG AKAR",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73397,7 +73397,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8156",
     "nama": "Al Muttaqien",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73406,7 +73406,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8157",
     "nama": "Ponpes Al-Izzah Balikpapan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73415,7 +73415,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8158",
     "nama": "Syekh M. Arsyad Al-Banjari",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73424,7 +73424,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8159",
     "nama": "Trubus Iman",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73433,7 +73433,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8160",
     "nama": "PP. Al Khairaat Tanjung Selor",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73442,7 +73442,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8161",
     "nama": "Hidayatullah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Pakaian (Konveksi)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73451,7 +73451,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8162",
     "nama": "Hidayatullah Nunukan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73460,7 +73460,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8163",
     "nama": "Daarul Ilmi Muhammadiyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73469,7 +73469,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8164",
     "nama": "Miftahul Ulum",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73478,7 +73478,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8165",
     "nama": "Hidayatullah Tanjung Selor",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73487,7 +73487,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8166",
     "nama": "Mutiara Bangsa",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73496,7 +73496,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8167",
     "nama": "NURUL QUR AN",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73505,7 +73505,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8168",
     "nama": "Thariqul Mahfudz",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73514,7 +73514,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8169",
     "nama": "Manbaul Ulum",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73523,7 +73523,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8170",
     "nama": "Firdaus Jembrana",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ikan Patin",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73532,7 +73532,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8171",
     "nama": "Firdaus Jembrana",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ikan Lele",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73541,7 +73541,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8172",
     "nama": "Pondok Pesantren 17 Agustus",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73550,7 +73550,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8173",
     "nama": "RK Abdul Jalil",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73559,7 +73559,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8174",
     "nama": "At Taqwim",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Lebah (Madu)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73568,7 +73568,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8175",
     "nama": "At Taqwim",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ayam",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73577,7 +73577,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8176",
     "nama": "Pondok Pesantren Tahfidz Al-Qur'an Darul Ukhuwah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73586,7 +73586,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8177",
     "nama": "Pondok Pesantren Al Iman",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73595,7 +73595,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8178",
     "nama": "Ulil Albaab",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Jasa Laundry",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73604,7 +73604,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8179",
     "nama": "Nurul Haramain Nw Putra",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73613,7 +73613,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8180",
     "nama": "Yayasan Pondok Pesantren Al-Ma'arif \"Uswatun Hasanah\"",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Peci (Kopiah)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73622,7 +73622,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8181",
     "nama": "Yayasan Pondok Pesantren Al-Ma'arif \"Uswatun Hasanah\"",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Tas",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73631,7 +73631,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8182",
     "nama": "Yatofa (PONDOK PESANTREN ATTOHIRIYAH ALFADILIYAH)",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73640,7 +73640,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8183",
     "nama": "Darul Khair",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73649,7 +73649,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8184",
     "nama": "Darun Nahdlatain Nw",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Mocaf (Tepung Singkong), Kopi, Olahan Kedelai",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73658,7 +73658,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8185",
     "nama": "Darun Nahdlatain Nw",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Marning Jagung, Olahan Cabai, Olahan Lele",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73667,7 +73667,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8186",
     "nama": "Thohir Yasin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73676,7 +73676,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8187",
     "nama": "Raudhatul Azhar",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73685,7 +73685,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8188",
     "nama": "Tajul Karomah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73694,7 +73694,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8189",
     "nama": "Cendikia Darul Lutviyah Murni",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73703,7 +73703,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8190",
     "nama": "Modern Al-Kahfi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73712,7 +73712,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8191",
     "nama": "Al-Ikhlas Taliwang",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73721,7 +73721,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8192",
     "nama": "Nurul Yaqin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73730,7 +73730,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8193",
     "nama": "Nurul Bayan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73739,7 +73739,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8194",
     "nama": "Bayyinul Ulum",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73748,7 +73748,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8195",
     "nama": "Darul Falah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73757,7 +73757,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8196",
     "nama": "Pondok Pesantren Nurul Islam Sekarbela",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73766,7 +73766,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8197",
     "nama": "Qomarul Huda",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73775,7 +73775,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8198",
     "nama": "Al Kautsar Al Gontori",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73784,7 +73784,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8199",
     "nama": "Darul Yatama Wal M",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73793,7 +73793,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8200",
     "nama": "Pondok Pesantren Hidayatullah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73802,7 +73802,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8201",
     "nama": "Pondok Pesantren Manahil Al-Irfan Atuwalupang",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73811,7 +73811,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8202",
     "nama": "Ikhwatul Mukminin, Adonara",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73820,7 +73820,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8203",
     "nama": "Pondok Pesantren Madinatunnajah Kesultanan Menanga",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73829,7 +73829,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8204",
     "nama": "Pondok Pesantren Walisanga",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73838,7 +73838,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8205",
     "nama": "Pancasila",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Peci (Kopiah)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73847,7 +73847,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8206",
     "nama": "Pancasila",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Tas",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73856,7 +73856,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8207",
     "nama": "VILLA TAHFIZH HIMMATUL QURAN MALINO",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "CABE RAWIT MERAH",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73865,7 +73865,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8208",
     "nama": "Darul Aman Lengkese",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Minimarket , Bebek",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73874,7 +73874,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8209",
     "nama": "Darul Aman Lengkese",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "CABE RAWIT MERAH",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73883,7 +73883,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8210",
     "nama": "Sultan Hasanuddin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73892,7 +73892,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8211",
     "nama": "Pondok Pesantren Markaz Tarbiyah Amal Jamaatul Muslimin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "KENTANG BESAR LOKAL, Ikan Lele",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73901,7 +73901,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8212",
     "nama": "Pondok Pesantren Markaz Tarbiyah Amal Jamaatul Muslimin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ayam, bebek, sayuran hidroponik",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73910,7 +73910,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8213",
     "nama": "Al-Ikhlas Ujung Bone",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Bakery (Roti)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73919,7 +73919,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8214",
     "nama": "Al-Ikhlas Ujung Bone",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Kopi, Jasa Laundry",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73928,7 +73928,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8215",
     "nama": "Nahdatul Ulum",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Minimarket",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73937,7 +73937,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8216",
     "nama": "Nahdatul Ulum",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Jasa Laundry",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73946,7 +73946,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8217",
     "nama": "Darul Istiqamah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73955,7 +73955,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8218",
     "nama": "Darul Istiqamah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Cabai Rawit",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73964,7 +73964,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8219",
     "nama": "Pondok Pesantren Modern Islam Shohwatul Is'ad",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73973,7 +73973,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8220",
     "nama": "Pondok Pesantren Modern Islam Shohwatul Is'ad",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Bakery (Roti)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73982,7 +73982,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8221",
     "nama": "Darud Da'wah Wal Irsyad (DDI) Mangkoso",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Minimarket , Buah Naga",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -73991,7 +73991,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8222",
     "nama": "Darud Da'wah Wal Irsyad (DDI) Mangkoso",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Bakery (Roti), Jasa Laundry",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74000,7 +74000,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8223",
     "nama": "Pesantren Modern Pendidikan Al Qur'an Immim Putra Makassar",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74009,7 +74009,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8224",
     "nama": "Albayan Hidayatullah Makassar",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74018,7 +74018,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8225",
     "nama": "Darul Aman Gombara",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Pengolahan Sampah & Kompos, Roti, Mocaf",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74027,7 +74027,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8226",
     "nama": "Darul Aman Gombara",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Minimarket , Olahan Kedelai, Jasa laundry, Nuget",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74036,7 +74036,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8227",
     "nama": "AN-NURIYAH BONTOCINI",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Minimarket",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74045,7 +74045,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8228",
     "nama": "AN-NURIYAH BONTOCINI",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Bakery (Roti)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74054,7 +74054,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8229",
     "nama": "HIDAYATULLAH GOWA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74063,7 +74063,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8230",
     "nama": "As Adiyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan), Minimarket",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74072,7 +74072,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8231",
     "nama": "As Adiyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Pengolahan Sampah & Kompos, jasa laundry",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74081,7 +74081,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8232",
     "nama": "Pesantren Alam Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Lebah (Madu)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74090,7 +74090,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8233",
     "nama": "Pesantren Alam Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Jasa Laundry",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74099,7 +74099,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8234",
     "nama": "Pondok Pesantren Darul Khair",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74108,7 +74108,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8235",
     "nama": "Daarul Hikmah Banggai",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74117,7 +74117,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8236",
     "nama": "Daarul Hikmah Banggai",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Bakery (Roti)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74126,7 +74126,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8237",
     "nama": "Madinatul Ilmi DDI Siapo",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74135,7 +74135,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8238",
     "nama": "Alkhairaat Siniu",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74144,7 +74144,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8239",
     "nama": "Daarul Khairaat",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74153,7 +74153,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8240",
     "nama": "Ponpes Alkhairaat Madinatul Ilmi Dolo",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74162,7 +74162,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8241",
     "nama": "Al-Istiqamah Ngatabaru",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Bakery (Roti)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74171,7 +74171,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8242",
     "nama": "Al-Istiqamah Ngatabaru",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Koperasi",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74180,7 +74180,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8243",
     "nama": "Hidayatullah Palu",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74189,7 +74189,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8244",
     "nama": "Al Khairaat Luwuk",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74198,7 +74198,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8245",
     "nama": "Nurul Iman Alkhairaat Wosu Morowali",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan), Depot Air Minum Isi Ulang",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74207,7 +74207,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8246",
     "nama": "Nurul Iman Alkhairaat Wosu Morowali",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Bakery (Roti)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74216,7 +74216,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8247",
     "nama": "Al Hikmah Lambunu",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Bawang Merah, Daun Bawang",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74225,7 +74225,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8248",
     "nama": "Al Hikmah Lambunu",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Kakao",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74234,7 +74234,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8249",
     "nama": "Raudhatul Musthafa Lil Khairaat",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74243,7 +74243,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8250",
     "nama": "Hidayatullah Palaes",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74252,7 +74252,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8251",
     "nama": "Pondok Pesantren Miftahul Khoir Tebuireng VII Buyat",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74261,7 +74261,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8252",
     "nama": "Darul Istiqamah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74270,7 +74270,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8253",
     "nama": "Pondok Pesantren Hidayatullah Bitung",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74279,7 +74279,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8254",
     "nama": "Al Lutfi Lolanan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74288,7 +74288,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8255",
     "nama": "Nurul Jadid",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74297,7 +74297,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8256",
     "nama": "Al Falah Baras",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74306,7 +74306,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8257",
     "nama": "Al Hikmah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "AMDK (Air Minum Dalam Kemasan)",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74315,7 +74315,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8258",
     "nama": "Al-Bana Asing Nw",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74324,7 +74324,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8259",
     "nama": "Miftahul Ulum Toabo",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74333,7 +74333,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8260",
     "nama": "Attahiriyah Annahdhiyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74342,7 +74342,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8261",
     "nama": "Rezki Anugerah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74351,7 +74351,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8262",
     "nama": "Darul Falah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74360,7 +74360,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8263",
     "nama": "Yayasan Miftahul Jihad",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Bawang Merah",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74369,7 +74369,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8264",
     "nama": "Yayasan Miftahul Jihad",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "CABE MERAH KERITING",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74378,7 +74378,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8265",
     "nama": "Thoriqul 'Ulum",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ikan Bandeng",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74387,7 +74387,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8266",
     "nama": "Thoriqul 'Ulum",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Udang Vaname",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74396,7 +74396,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8267",
     "nama": "Pondok Pesantren Syekh Hasan Yamani",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74405,7 +74405,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8268",
     "nama": "Al-Ihsan Kenje",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74414,7 +74414,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8269",
     "nama": "Salafiyah Parappe",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74423,7 +74423,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8270",
     "nama": "Pondok Pesantren Ibnu Mas'ud",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74432,7 +74432,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8271",
     "nama": "Al Irsyad",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "CABE MERAH BESAR",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74441,7 +74441,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8272",
     "nama": "Darul Arqam Muhammadiyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74450,7 +74450,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8273",
     "nama": "Pps Al Amin Mawasangka",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74459,7 +74459,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8274",
     "nama": "Hidayatullah Kendari",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74468,7 +74468,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8275",
     "nama": "Atarbiyah Kolaka",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74477,7 +74477,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8276",
     "nama": "Al Ikhlas",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74486,7 +74486,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8277",
     "nama": "Al Bukhari Wesalo",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74495,7 +74495,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8278",
     "nama": "Pondok Pesantren Modern Darul Madinah Wonosari",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "MELON INTHANON",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74504,7 +74504,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8279",
     "nama": "Pondok Modern Matlaul Huda Ii Gorontalo.",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Ayam",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74513,7 +74513,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8280",
     "nama": "Hubulo",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "CABE RAWIT MERAH",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74522,7 +74522,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8281",
     "nama": "Hubulo",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "KANGKUNG AKAR",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74531,7 +74531,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8282",
     "nama": "Wahdah Islamiyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74540,7 +74540,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8283",
     "nama": "Salafiyah Syafi'iyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Bawang Merah, Jagung",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74549,7 +74549,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8284",
     "nama": "Salafiyah Syafi'iyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "CABE RAWIT MERAH, Beras",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74558,7 +74558,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8285",
     "nama": "Al Khaeraat",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74567,7 +74567,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8286",
     "nama": "Al Huda",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "CABE RAWIT MERAH",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74576,7 +74576,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8287",
     "nama": "An-Nur",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74585,7 +74585,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8288",
     "nama": "Moosalamati II",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74594,7 +74594,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8289",
     "nama": "Al Barokah Darul Mukhlasin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74603,7 +74603,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8290",
     "nama": "Al Mulk Persis",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Sayuran Hidroponik",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74612,7 +74612,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8291",
     "nama": "Pesantren Binaul Wathan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Sayuran Hidroponik",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74621,7 +74621,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8292",
     "nama": "Hidayatullah Liang",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74630,7 +74630,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8293",
     "nama": "Darul Ihsan Laimu",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74639,7 +74639,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8294",
     "nama": "Islam Al-Anshor",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74648,7 +74648,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8295",
     "nama": "Pesantren Darussalam Kamal",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74657,7 +74657,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8296",
     "nama": "Pesantren Ishaka",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74666,7 +74666,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8297",
     "nama": "IBADURRAHMAN",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74675,7 +74675,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8298",
     "nama": "Tahfiz Qur'an Hidayatullah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74684,7 +74684,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8299",
     "nama": "Al-Khoiriyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74693,7 +74693,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8300",
     "nama": "Al Kautsar YPKP Sentani",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74702,7 +74702,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8301",
     "nama": "ULUMUL QUR'AN HASYIM MUZADI",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74711,7 +74711,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8302",
     "nama": "Pesantren Latfah Mubarokah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74720,7 +74720,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8303",
     "nama": "DARUL QUR'AN WADDA'WAH",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74729,7 +74729,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8304",
     "nama": "Al Hidayah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74738,7 +74738,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8305",
     "nama": "Ddi Ad",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74747,7 +74747,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8306",
     "nama": "Hidayatullah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74756,7 +74756,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8307",
     "nama": "Darul Ma`Arif Numbay",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74765,7 +74765,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8308",
     "nama": "Yaa Bunayya",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74774,7 +74774,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8309",
     "nama": "Nurul Yaqin Sorong",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74783,7 +74783,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8310",
     "nama": "Hidayatullah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74792,7 +74792,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8311",
     "nama": "Roudlotul Khuffadz Sorong",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74801,7 +74801,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8312",
     "nama": "Darussalam Manokwari",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "",
     "fasilitas": "Ponpes",
     "tahun": "",
@@ -74810,7 +74810,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8313",
     "nama": "Gallery Aela Handmade",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -74819,7 +74819,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8314",
     "nama": "Bawadi Food",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -74828,7 +74828,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8315",
     "nama": "PT. Bitata Food Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -74837,7 +74837,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8316",
     "nama": "PT Rayeuk Aceh Utama",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -74846,7 +74846,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8317",
     "nama": "PT",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -74855,7 +74855,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8318",
     "nama": "CV. Donya Kupie",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -74864,7 +74864,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8319",
     "nama": "CV Agro Aceh",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -74873,7 +74873,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8320",
     "nama": "CV Agro Aceh",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -74882,7 +74882,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8321",
     "nama": "Ija Kroeng",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -74891,7 +74891,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8322",
     "nama": "Makjar Keumamah Ulee Kareng",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -74900,7 +74900,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8323",
     "nama": "Natural Food",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -74909,7 +74909,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8324",
     "nama": "Ninano Label",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -74918,7 +74918,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8325",
     "nama": "CV. aeesha projects",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -74927,7 +74927,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8326",
     "nama": "Salsabilaoca",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -74936,7 +74936,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8327",
     "nama": "cv. putroe geumilang",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -74945,7 +74945,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8328",
     "nama": "SENALEEN",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -74954,7 +74954,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8329",
     "nama": "CV Aceh Socolatte",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -74963,7 +74963,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8330",
     "nama": "Surita Bordir",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -74972,7 +74972,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8331",
     "nama": "TAYA MANDIRI INDONESIA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -74981,7 +74981,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8332",
     "nama": "Pt Aromabica Gayo Internasional",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -74990,7 +74990,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8333",
     "nama": "Pt Aromabica Gayo Internasional",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -74999,7 +74999,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8334",
     "nama": "Ija Lhee Sagoe",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -75008,7 +75008,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8335",
     "nama": "Ija Lhee Sagoe",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -75017,7 +75017,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8336",
     "nama": "Ija Lhee Sagoe",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -75026,7 +75026,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8337",
     "nama": "ASA Coffee",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -75035,7 +75035,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8338",
     "nama": "CV. Atlantic",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -75044,7 +75044,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8339",
     "nama": "BYLILU",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -75053,7 +75053,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8340",
     "nama": "BYLILU",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -75062,7 +75062,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8341",
     "nama": "BYLILU",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -75071,7 +75071,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8342",
     "nama": "BYLILU",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -75080,7 +75080,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8343",
     "nama": "BYLILU",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -75089,7 +75089,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8344",
     "nama": "Pasee 66",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -75098,7 +75098,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8345",
     "nama": "DJ Cake and Cookies",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -75107,7 +75107,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8346",
     "nama": "DJ Cake and Cookies",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -75116,7 +75116,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8347",
     "nama": "DJ Cake and Cookies",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -75125,7 +75125,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8348",
     "nama": "Kerupuk Kiky",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -75134,7 +75134,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8349",
     "nama": "King Koffie Aceh",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -75143,7 +75143,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8350",
     "nama": "Outlet King Leuser",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -75152,7 +75152,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8351",
     "nama": "kinko kopi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -75161,7 +75161,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8352",
     "nama": "kinko kopi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -75170,7 +75170,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8353",
     "nama": "PT Gayo Alam Berkah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -75179,7 +75179,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8354",
     "nama": "PT. Citra Meulawi Puncak gayo",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -75188,7 +75188,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8355",
     "nama": "UD. MH Coffee Beans",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -75197,7 +75197,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8356",
     "nama": "Mr. Phep Food & Culinary",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -75206,7 +75206,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8357",
     "nama": "Peutik Geulima",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -75215,7 +75215,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8358",
     "nama": "KOPERASI PEDAGANG KOPI (KOPEPI) KETIARA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -75224,7 +75224,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8359",
     "nama": "Syukriah Fashion Studio",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -75233,7 +75233,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8360",
     "nama": "Syukriah Fashion Studio",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -75242,7 +75242,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8361",
     "nama": "Sara Tangke",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -75251,7 +75251,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8362",
     "nama": "Nunucolla Moda Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -75260,7 +75260,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8363",
     "nama": "Adah Mode",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -75269,7 +75269,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8364",
     "nama": "Keripik Tempe Alkhalif",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -75278,7 +75278,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8365",
     "nama": "Borna",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -75287,7 +75287,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8366",
     "nama": "Borna",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -75296,7 +75296,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8367",
     "nama": "Borna",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -75305,7 +75305,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8368",
     "nama": "Haze Be Wear",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -75314,7 +75314,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8369",
     "nama": "CV IR KRIYA MELAYU",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -75323,7 +75323,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8370",
     "nama": "KELORIA MORINGA JAYA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -75332,7 +75332,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8371",
     "nama": "Langgam Setia Raya",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -75341,7 +75341,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8372",
     "nama": "CV MANDIRI KOPI",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -75350,7 +75350,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8373",
     "nama": "MENDAY GALLERY AND SOUVENIR",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -75359,7 +75359,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8374",
     "nama": "PT Waspada Dinasti Eriasafa",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -75368,7 +75368,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8375",
     "nama": "PT. Pesona Alam Selaras",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -75377,7 +75377,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8376",
     "nama": "Pempek Nabil",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -75386,7 +75386,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8377",
     "nama": "Puri food and healthy",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -75395,7 +75395,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8378",
     "nama": "PT Selera Pedas Nusantara",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -75404,7 +75404,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8379",
     "nama": "Riki Damanik Fashion Studio",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -75413,7 +75413,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8380",
     "nama": "Sabina Collection",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -75422,7 +75422,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8381",
     "nama": "DODOL SEJAHTERA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -75431,7 +75431,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8382",
     "nama": "CV. Berkah Maju Jaya",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -75440,7 +75440,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8383",
     "nama": "RUMAH TEMPE PESANTREN TAHFIDZ TARUNA AL-QOLAM",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -75449,7 +75449,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8384",
     "nama": "VIRA DRESS MAKING",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -75458,7 +75458,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8385",
     "nama": "yapmode",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -75467,7 +75467,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8386",
     "nama": "Dapur hanum sidimpuan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -75476,7 +75476,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8387",
     "nama": "TERMINAL ATSIRI DAN TAMAN LEBAH MADU ADIAN NASONANG",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -75485,7 +75485,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8388",
     "nama": "Keripik Sambal Padangsidimpuan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -75494,7 +75494,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8389",
     "nama": "KUB Batik Tapsel",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -75503,7 +75503,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8390",
     "nama": "BR JR Coffee",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -75512,7 +75512,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8391",
     "nama": "CV LOPO COFFEE",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -75521,7 +75521,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8392",
     "nama": "Kelompok Tani Maju Jaya",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -75530,7 +75530,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8393",
     "nama": "Koperasi Berkah Bersama Darul Mursyid",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -75539,7 +75539,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8394",
     "nama": "Rumah Tenun Nadira",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -75548,7 +75548,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8395",
     "nama": "UD. SALACCA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -75557,7 +75557,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8396",
     "nama": "UD B&B",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -75566,7 +75566,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8397",
     "nama": "Warung Kopi Synergy",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -75575,7 +75575,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8398",
     "nama": "UD. Tabo",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -75584,7 +75584,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8399",
     "nama": "TOBATOS",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -75593,7 +75593,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8400",
     "nama": "Usaha Tenun Annie Tupang",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -75602,7 +75602,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8401",
     "nama": "Abiyyu Snack",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -75611,7 +75611,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8402",
     "nama": "Aisyah cookies",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -75620,7 +75620,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8403",
     "nama": "Nib",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -75629,7 +75629,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8404",
     "nama": "Berkah Cabai Bubuk Asli",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -75638,7 +75638,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8405",
     "nama": "C.V. Bah Pison",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -75647,7 +75647,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8406",
     "nama": "C.V. Bah Pison",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -75656,7 +75656,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8407",
     "nama": "Chankir Labura",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -75665,7 +75665,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8408",
     "nama": "DIVA AL BAROKAH",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -75674,7 +75674,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8409",
     "nama": "HILWA SEJAHTERA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -75683,7 +75683,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8410",
     "nama": "LPKANUGRAH",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -75692,7 +75692,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8411",
     "nama": "Jussi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -75701,7 +75701,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8412",
     "nama": "Kopi Sabaas Simalungun",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -75710,7 +75710,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8413",
     "nama": "Kyan Ulos",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -75719,7 +75719,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8414",
     "nama": "Madu Takoma",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -75728,7 +75728,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8415",
     "nama": "PT. TENIS TEH NUSANTARA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -75737,7 +75737,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8416",
     "nama": "TENUN ANNUR",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -75746,7 +75746,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8417",
     "nama": "CV. Amani Sukses Berkarya",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -75755,7 +75755,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8418",
     "nama": "CV Toteles Global Jaya",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -75764,7 +75764,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8419",
     "nama": "CV. ALWAFA HIJAB INDONESIA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -75773,7 +75773,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8420",
     "nama": "PT ANDINIYU RIAU JAYA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -75782,7 +75782,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8421",
     "nama": "ANFIHA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -75791,7 +75791,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8422",
     "nama": "Batik Yus Pelalawan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -75800,7 +75800,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8423",
     "nama": "EDELWEISS MODE",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -75809,7 +75809,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8424",
     "nama": "Emak CW",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -75818,7 +75818,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8425",
     "nama": "Laili Imra",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -75827,7 +75827,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8426",
     "nama": "Leni Snacks",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -75836,7 +75836,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8427",
     "nama": "PT. Makacha Boga Utama",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -75845,7 +75845,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8428",
     "nama": "CV. Tiga Kurma Berjaya",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -75854,7 +75854,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8429",
     "nama": "Graha Pratama Fish",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -75863,7 +75863,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8430",
     "nama": "PT.Perseorangan Pisang Kipas Kuantan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -75872,7 +75872,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8431",
     "nama": "PT RIAU BERKAH GEMILANG JAYA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -75881,7 +75881,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8432",
     "nama": "CV. Thiffa Qaisty Salsabila",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -75890,7 +75890,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8433",
     "nama": "PT Blado Snack Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -75899,7 +75899,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8434",
     "nama": "CV Satu Wahana Jaya Sentosa",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -75908,7 +75908,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8435",
     "nama": "CV Satu Wahana Jaya Sentosa",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -75917,7 +75917,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8436",
     "nama": "Tenun Wan Fitri",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -75926,7 +75926,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8437",
     "nama": "CV. Friny",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -75935,7 +75935,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8438",
     "nama": "CV. Wilbi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -75944,7 +75944,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8439",
     "nama": "ZAHARA BUSANA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -75953,7 +75953,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8440",
     "nama": "CV. AMANI SUKSES BERKARYA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -75962,7 +75962,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8441",
     "nama": "CV Toteles Global Jaya",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -75971,7 +75971,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8442",
     "nama": "CV. ALena Karya Maju",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -75980,7 +75980,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8443",
     "nama": "Aloela",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -75989,7 +75989,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8444",
     "nama": "ALRAFI",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -75998,7 +75998,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8445",
     "nama": "PT. ALTHAFUNISSA FAWWAZ INDONESIA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -76007,7 +76007,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8446",
     "nama": "Azzuri Snack",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -76016,7 +76016,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8447",
     "nama": "Siti Fatimah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -76025,7 +76025,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8448",
     "nama": "CV. KARYA CIPTA SUKSES",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -76034,7 +76034,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8449",
     "nama": "Kenara",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -76043,7 +76043,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8450",
     "nama": "Arie Puspita Sari",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -76052,7 +76052,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8451",
     "nama": "CV Narata Wira Utama",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -76061,7 +76061,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8452",
     "nama": "Nila Hibali",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -76070,7 +76070,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8453",
     "nama": "CV NVSKJ CREATION HUB",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -76079,7 +76079,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8454",
     "nama": "PT INGGITA ARYANTA INASTU",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -76088,7 +76088,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8455",
     "nama": "PT RINTIS VISI SUKSES",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -76097,7 +76097,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8456",
     "nama": "CV. Loreta Intan Pesona",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -76106,7 +76106,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8457",
     "nama": "SAMBAL SIJAGO",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -76115,7 +76115,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8458",
     "nama": "AnDine F.House",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -76124,7 +76124,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8459",
     "nama": "Boemboe Mandhe",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -76133,7 +76133,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8460",
     "nama": "Chacha Sulaman Koto Gadang",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -76142,7 +76142,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8461",
     "nama": "NIB",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -76151,7 +76151,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8462",
     "nama": "DapurnyaAmi ,Bumbu Instan Buziwa ,Uda Bunayy",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -76160,7 +76160,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8463",
     "nama": "DapurnyaAmi ,Bumbu Instan Buziwa ,Uda Bunayy",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -76169,7 +76169,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8464",
     "nama": "Dolas Songket",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -76178,7 +76178,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8465",
     "nama": "Flora Sulam Embroidery",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -76187,7 +76187,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8466",
     "nama": "frisma exclusive",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -76196,7 +76196,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8467",
     "nama": "Hilman Samudera",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -76205,7 +76205,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8468",
     "nama": "Sulaman & Bordir Indri Tulistiwa",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -76214,7 +76214,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8469",
     "nama": "Kokoci",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -76223,7 +76223,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8470",
     "nama": "CV Serboek Sari",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -76232,7 +76232,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8471",
     "nama": "Lalainda Boutique",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -76241,7 +76241,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8472",
     "nama": "CV KHAWLA ATELIER",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -76250,7 +76250,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8473",
     "nama": "KPTO-SJS",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -76259,7 +76259,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8474",
     "nama": "CV. AYA SOFYA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -76268,7 +76268,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8475",
     "nama": "Muthis Collection",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -76277,7 +76277,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8476",
     "nama": "Muthis Collection",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -76286,7 +76286,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8477",
     "nama": "Nasyarinda",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -76295,7 +76295,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8478",
     "nama": "Osha Surakhman",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -76304,7 +76304,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8479",
     "nama": "palantay songket",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -76313,7 +76313,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8480",
     "nama": "Pusako Bundo",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -76322,7 +76322,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8481",
     "nama": "Rangkayo lisa kebaya",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -76331,7 +76331,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8482",
     "nama": "Rendang Gadih",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -76340,7 +76340,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8483",
     "nama": "Rendang Katuju",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -76349,7 +76349,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8484",
     "nama": "Nak Taraso",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -76358,7 +76358,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8485",
     "nama": "Lokana",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -76367,7 +76367,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8486",
     "nama": "Rendang Mak Yus",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -76376,7 +76376,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8487",
     "nama": "Mizaki",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -76385,7 +76385,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8488",
     "nama": "Rumah Rajut Fayari",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -76394,7 +76394,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8489",
     "nama": "Samara",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -76403,7 +76403,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8490",
     "nama": "Sam's Coffe",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -76412,7 +76412,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8491",
     "nama": "Koperasi Produksi Serba Usaha Solok Radjo",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -76421,7 +76421,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8492",
     "nama": "SONGKET TENUN MINANG",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -76430,7 +76430,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8493",
     "nama": "Sulaman dan Karancang Eky Kreasi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -76439,7 +76439,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8494",
     "nama": "Sulaman Gusfitri",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -76448,7 +76448,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8495",
     "nama": "Pendi tenun, Tenun Balai panjang desigh &craft",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -76457,7 +76457,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8496",
     "nama": "Tenun Kubang H.Ridwan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -76466,7 +76466,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8497",
     "nama": "CV TENUN UNGGAN LANSEK MANIIH",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -76475,7 +76475,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8498",
     "nama": "PT Tom Burger Group",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -76484,7 +76484,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8499",
     "nama": "Uniadek",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -76493,7 +76493,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8500",
     "nama": "Unikayo",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -76502,7 +76502,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8501",
     "nama": "YO RANDANG",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -76511,7 +76511,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8502",
     "nama": "Zahra Sulaman",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -76520,7 +76520,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8503",
     "nama": "PT. Andayani Berkah Sejahtera",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -76529,7 +76529,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8504",
     "nama": "CV. Adila Snack",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -76538,7 +76538,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8505",
     "nama": "Batik Duo Serangkai",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -76547,7 +76547,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8506",
     "nama": "Batik Jambi Al Fath",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -76556,7 +76556,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8507",
     "nama": "Batik Jambi Ariny \"Sentuhan Warna Alam\"",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -76565,7 +76565,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8508",
     "nama": "PT. Bina Kreativ Berkah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -76574,7 +76574,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8509",
     "nama": "Batik jambi maryana",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -76583,7 +76583,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8510",
     "nama": "House Of Bella burhan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -76592,7 +76592,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8511",
     "nama": "Bumbu Praktis Siap Pakai \"DIVA\"",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -76601,7 +76601,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8512",
     "nama": "USI Modist",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -76610,7 +76610,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8513",
     "nama": "Hanniyah Collection",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -76619,7 +76619,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8514",
     "nama": "CV. ILHAMUMTAZA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -76628,7 +76628,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8515",
     "nama": "Koperasi Koerintji Barokah Bersama",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -76637,7 +76637,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8516",
     "nama": "CV GUDANG MADU SUMATERA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -76646,7 +76646,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8517",
     "nama": "PT Makmur Lestari Olis",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -76655,7 +76655,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8518",
     "nama": "PT Sinergi Balap Sejahtera",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -76664,7 +76664,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8519",
     "nama": "Qolbi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -76673,7 +76673,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8520",
     "nama": "PT. Cahaya Minang Nusantara",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -76682,7 +76682,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8521",
     "nama": "Roemah Brownies Jambi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -76691,7 +76691,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8522",
     "nama": "Susi Songket",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -76700,7 +76700,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8523",
     "nama": "Warung Abdel",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -76709,7 +76709,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8524",
     "nama": "Warung Abdel",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -76718,7 +76718,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8525",
     "nama": "Beskabean Coffee Roastery",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -76727,7 +76727,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8526",
     "nama": "Pesona Palembang",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -76736,7 +76736,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8527",
     "nama": "GALERI WONG KITO",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -76745,7 +76745,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8528",
     "nama": "Ilham Bahari",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -76754,7 +76754,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8529",
     "nama": "Tujuh Saudara",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -76763,7 +76763,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8530",
     "nama": "PT Kulaku indonesia Sejahtera",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -76772,7 +76772,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8531",
     "nama": "PT. SRIWIJAYA ALAM MANDIRI",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -76781,7 +76781,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8532",
     "nama": "Nirmala Songket",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -76790,7 +76790,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8533",
     "nama": "PT Cek Molek Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -76799,7 +76799,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8534",
     "nama": "Pempek Cek Putri",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -76808,7 +76808,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8535",
     "nama": "PEMPEK GENDING",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -76817,7 +76817,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8536",
     "nama": "CV Honey Group",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -76826,7 +76826,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8537",
     "nama": "pempek syamil",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -76835,7 +76835,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8538",
     "nama": "PT. Hana Food Sejahtera",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -76844,7 +76844,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8539",
     "nama": "Pempek Umiabi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -76853,7 +76853,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8540",
     "nama": "Pesona bari songket",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -76862,7 +76862,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8541",
     "nama": "PUTROHRAMADHAN",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -76871,7 +76871,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8542",
     "nama": "PORTAL WARKOP",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -76880,7 +76880,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8543",
     "nama": "PT Pyo Jewelry Berkah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -76889,7 +76889,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8544",
     "nama": "Rumah Songket Adis",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -76898,7 +76898,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8545",
     "nama": "PT Karya Anak Palembang",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -76907,7 +76907,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8546",
     "nama": "CV. Wira Pratista Aswangga",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -76916,7 +76916,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8547",
     "nama": "PT Adena Berkah Mandiri",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -76925,7 +76925,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8548",
     "nama": "B.eco",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -76934,7 +76934,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8549",
     "nama": "Batik Kampung Katak",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -76943,7 +76943,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8550",
     "nama": "CV BEPULIN BELITONG",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -76952,7 +76952,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8551",
     "nama": "BILLITON REMPAH INDONESIA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -76961,7 +76961,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8552",
     "nama": "Durio",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -76970,7 +76970,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8553",
     "nama": "CV Destiani Abadi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -76979,7 +76979,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8554",
     "nama": "CV Ndalem Rasukan Miliartho",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -76988,7 +76988,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8555",
     "nama": "CV. Media 46",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -76997,7 +76997,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8556",
     "nama": "Kelekak",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -77006,7 +77006,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8557",
     "nama": "PT Selera Nusantara Nina",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -77015,7 +77015,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8558",
     "nama": "CV. SUMBER REZEKI",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -77024,7 +77024,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8559",
     "nama": "Rumah Kupiewan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -77033,7 +77033,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8560",
     "nama": "cv. Mirrando",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -77042,7 +77042,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8561",
     "nama": "PT Juragan Madu Bangka",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -77051,7 +77051,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8562",
     "nama": "PT Langit Bumi Lestari",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -77060,7 +77060,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8563",
     "nama": "Cv. Sepiak Belitong",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -77069,7 +77069,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8564",
     "nama": "WIJAYA CRAB",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -77078,7 +77078,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8565",
     "nama": "Gusti Kalamansi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -77087,7 +77087,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8566",
     "nama": "Atik Batik",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -77096,7 +77096,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8567",
     "nama": "Atik Batik",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -77105,7 +77105,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8568",
     "nama": "Bermani Coffee",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -77114,7 +77114,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8569",
     "nama": "Fajar Wonk",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -77123,7 +77123,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8570",
     "nama": "PT Swarna Bumei Trijaya",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -77132,7 +77132,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8571",
     "nama": "Giwigewi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -77141,7 +77141,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8572",
     "nama": "Kito Premium Scarf",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -77150,7 +77150,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8573",
     "nama": "Jaya Rasa Bengkulu",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -77159,7 +77159,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8574",
     "nama": "La Terre",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -77168,7 +77168,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8575",
     "nama": "Tenun Bumpak Leni Kampai",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -77177,7 +77177,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8576",
     "nama": "Oase Gallery",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -77186,7 +77186,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8577",
     "nama": "Peuy Batik",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -77195,7 +77195,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8578",
     "nama": "Putri Bengkulu (CV Alma Buana Kalamansi)",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -77204,7 +77204,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8579",
     "nama": "PT. Sari Aren Group",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -77213,7 +77213,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8580",
     "nama": "Syarah Bakery",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -77222,7 +77222,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8581",
     "nama": "KWT Kemuning",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -77231,7 +77231,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8582",
     "nama": "CV Andanan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -77240,7 +77240,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8583",
     "nama": "Aneka",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -77249,7 +77249,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8584",
     "nama": "CV Restu Bunda",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -77258,7 +77258,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8585",
     "nama": "CV Dr.Koffie Jaya Raya",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -77267,7 +77267,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8586",
     "nama": "Najiya Food",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -77276,7 +77276,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8587",
     "nama": "Jan Ayu",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -77285,7 +77285,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8588",
     "nama": "Pt oleh shinta lampung",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -77294,7 +77294,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8589",
     "nama": "Koperasi Agro Panca Bhakti",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -77303,7 +77303,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8590",
     "nama": "Latifah by Rita Anomsari",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -77312,7 +77312,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8591",
     "nama": "Nabilla Sulam Usus",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -77321,7 +77321,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8592",
     "nama": "PT. Singgah Pay Ninda Berjaya",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -77330,7 +77330,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8593",
     "nama": "CV. Panda Alami",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -77339,7 +77339,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8594",
     "nama": "CV. SHAMIYA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -77348,7 +77348,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8595",
     "nama": "PT RAFINS SNACK INDONESIA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -77357,7 +77357,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8596",
     "nama": "PT RAFINS SNACK INDONESIA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -77366,7 +77366,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8597",
     "nama": "Sabento",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -77375,7 +77375,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8598",
     "nama": "PT. SHEENAZ ANGGIE GALLERY",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -77384,7 +77384,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8599",
     "nama": "PT. Suhita Lebah Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -77393,7 +77393,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8600",
     "nama": "PT. Suhita Lebah Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -77402,7 +77402,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8601",
     "nama": "PT Adinata Herba Asia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -77411,7 +77411,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8602",
     "nama": "CV Akmal Maju Jaya Mandiri",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -77420,7 +77420,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8603",
     "nama": "PT. AGEMAN KREASI INDONESIA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -77429,7 +77429,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8604",
     "nama": "Apikmen Tandang Gawe Sempurno",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -77438,7 +77438,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8605",
     "nama": "ARAMARA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -77447,7 +77447,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8606",
     "nama": "Sanrahfood",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -77456,7 +77456,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8607",
     "nama": "CV. Naufan Putra",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -77465,7 +77465,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8608",
     "nama": "PT. Anugerah Cokelat Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -77474,7 +77474,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8609",
     "nama": "PT ALLANA MAJU BERDAYA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -77483,7 +77483,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8610",
     "nama": "PT Orisa Utama Sejahtera",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -77492,7 +77492,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8611",
     "nama": "PT.DEWI BAHARI INDONESIA / DEWI HOME CRAB",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -77501,7 +77501,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8612",
     "nama": "Dewi Sambi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -77510,7 +77510,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8613",
     "nama": "PT. Pesona Ratu Nusantara",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -77519,7 +77519,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8614",
     "nama": "MITRA MANDALA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -77528,7 +77528,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8615",
     "nama": "PT Prima Rasa Izzani",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -77537,7 +77537,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8616",
     "nama": "CV. JUKAJO SUKSES MULIA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -77546,7 +77546,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8617",
     "nama": "CV. Kayelwoodwork",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -77555,7 +77555,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8618",
     "nama": "CV. SARIPATI LAER",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -77564,7 +77564,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8619",
     "nama": "PT Fatahillah Anugerah Nibras",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -77573,7 +77573,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8620",
     "nama": "Nikhol Gallery by PT Wastu Kriya Nusantara",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -77582,7 +77582,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8621",
     "nama": "PT. ARTLYN KREASI MANDIRI",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -77591,7 +77591,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8622",
     "nama": "CV.Sahabat Alam Handycraft",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -77600,7 +77600,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8623",
     "nama": "PT Rhamala Vazha Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -77609,7 +77609,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8624",
     "nama": "Salimah prakarsa cemerlang",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -77618,7 +77618,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8625",
     "nama": "CV. Sanfood Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -77627,7 +77627,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8626",
     "nama": "GM Food and Beverage",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -77636,7 +77636,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8627",
     "nama": "PT Trikelga Jayashree Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -77645,7 +77645,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8628",
     "nama": "Bakso Yum",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -77654,7 +77654,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8629",
     "nama": "PT PLATINUM WAHAB NUSANTARA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -77663,7 +77663,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8630",
     "nama": "PT. Menara Wangi Profindo",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -77672,7 +77672,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8631",
     "nama": "PT Acaraki Nusantara Persada",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -77681,7 +77681,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8632",
     "nama": "PT Acaraki Nusantara Persada",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -77690,7 +77690,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8633",
     "nama": "PT. Wastra Cantik Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -77699,7 +77699,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8634",
     "nama": "Batikeun",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -77708,7 +77708,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8635",
     "nama": "Bina Apiari Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -77717,7 +77717,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8636",
     "nama": "PT Dunia Lumbung Sejahtera",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -77726,7 +77726,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8637",
     "nama": "PT. BUMI NUSANTARA GRUP",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -77735,7 +77735,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8638",
     "nama": "PT.Boga Putra Maju",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -77744,7 +77744,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8639",
     "nama": "PT.Boga Putra Maju",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -77753,7 +77753,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8640",
     "nama": "PT. Ummu Darabirra Corp",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -77762,7 +77762,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8641",
     "nama": "CV. Kreasi Cantik Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -77771,7 +77771,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8642",
     "nama": "CV. Kreasi Cantik Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -77780,7 +77780,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8643",
     "nama": "PT Royal Kanagara Nayanika",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -77789,7 +77789,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8644",
     "nama": "ELEMWE",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -77798,7 +77798,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8645",
     "nama": "PT Emazing Kuliner Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -77807,7 +77807,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8646",
     "nama": "PT Emazing Kuliner Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -77816,7 +77816,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8647",
     "nama": "PT Kreasi Citra Berkah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -77825,7 +77825,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8648",
     "nama": "Anemone By Hannie Hananto",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -77834,7 +77834,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8649",
     "nama": "Hellyeah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -77843,7 +77843,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8650",
     "nama": "INDHE",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -77852,7 +77852,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8651",
     "nama": "PT Ingpawon Sukses Selaras",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -77861,7 +77861,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8652",
     "nama": "PT. Alfazza Kayo Hanania",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -77870,7 +77870,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8653",
     "nama": "PT. Alfazza Kayo Hanania",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -77879,7 +77879,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8654",
     "nama": "PT. Aneka Coklat Kakoa",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -77888,7 +77888,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8655",
     "nama": "Machili",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -77897,7 +77897,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8656",
     "nama": "Machili",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -77906,7 +77906,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8657",
     "nama": "Mbrebes Mili Food",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -77915,7 +77915,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8658",
     "nama": "meLOOKmeL",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -77924,7 +77924,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8659",
     "nama": "meLOOKmeL",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -77933,7 +77933,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8660",
     "nama": "Minang Kakao",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -77942,7 +77942,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8661",
     "nama": "PT. Mozass Sukses Internasional",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -77951,7 +77951,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8662",
     "nama": "PT. Mozass Sukses Internasional",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -77960,7 +77960,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8663",
     "nama": "Njonjah Poenja",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -77969,7 +77969,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8664",
     "nama": "Project sekar",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -77978,7 +77978,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8665",
     "nama": "PT. Berjaya Amanah Muslimah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -77987,7 +77987,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8666",
     "nama": "CV Roemah Kebaya Vielga",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -77996,7 +77996,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8667",
     "nama": "Rose.ma.lina",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -78005,7 +78005,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8668",
     "nama": "Rose.ma.lina",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -78014,7 +78014,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8669",
     "nama": "Rose.ma.lina",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -78023,7 +78023,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8670",
     "nama": "PT Sporte Indonesia Sejahtera",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -78032,7 +78032,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8671",
     "nama": "PT SOJA SEJAHTERA JAYA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -78041,7 +78041,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8672",
     "nama": "Tioria by Caramia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -78050,7 +78050,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8673",
     "nama": "pt kemfarm indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -78059,7 +78059,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8674",
     "nama": "Kultiva Co.",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -78068,7 +78068,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8675",
     "nama": "Kultiva Co.",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -78077,7 +78077,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8676",
     "nama": "Aidasyamara",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -78086,7 +78086,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8677",
     "nama": "Aidasyamara",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -78095,7 +78095,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8678",
     "nama": "CV Aqso Honey Bee",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -78104,7 +78104,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8679",
     "nama": "PT DIALESHA INDONESIA GLOBAL",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -78113,7 +78113,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8680",
     "nama": "PT ANNAJAH AGROBIOTECH INNOVATION",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -78122,7 +78122,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8681",
     "nama": "Sahabatarae.id/ Sahabat Arae",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -78131,7 +78131,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8682",
     "nama": "CV.Bellahasura Jaya Abadi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -78140,7 +78140,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8683",
     "nama": "Munjul rice organik",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -78149,7 +78149,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8684",
     "nama": "Munjul rice organik",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -78158,7 +78158,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8685",
     "nama": "Munjul rice organik",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -78167,7 +78167,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8686",
     "nama": "BOOLAO",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -78176,7 +78176,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8687",
     "nama": "CV. BERKAH AL AMIN PRASETYA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -78185,7 +78185,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8688",
     "nama": "CV. BERKAH AL AMIN PRASETYA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -78194,7 +78194,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8689",
     "nama": "CV. BERKAH AL AMIN PRASETYA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -78203,7 +78203,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8690",
     "nama": "CV Dama Karya Nusantara",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -78212,7 +78212,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8691",
     "nama": "PT. Dmamam Sehatin Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -78221,7 +78221,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8692",
     "nama": "CV Catur Daya Prima",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -78230,7 +78230,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8693",
     "nama": "PT Ijo Kreasi Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -78239,7 +78239,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8694",
     "nama": "dots indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -78248,7 +78248,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8695",
     "nama": "dots indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -78257,7 +78257,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8696",
     "nama": "dots indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -78266,7 +78266,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8697",
     "nama": "Giok Scarf",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -78275,7 +78275,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8698",
     "nama": "Gorgeous Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -78284,7 +78284,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8699",
     "nama": "Gorgeous Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -78293,7 +78293,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8700",
     "nama": "Himeca Daily",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -78302,7 +78302,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8701",
     "nama": "PT. Imago Randau Harmoni",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -78311,7 +78311,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8702",
     "nama": "Albis Group",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -78320,7 +78320,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8703",
     "nama": "Albis Group",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -78329,7 +78329,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8704",
     "nama": "Jaunic food",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -78338,7 +78338,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8705",
     "nama": "CV. Reiza dan Rizky Sarana Persada",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -78347,7 +78347,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8706",
     "nama": "JOFANDESIGN",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -78356,7 +78356,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8707",
     "nama": "Kaski Atelier",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -78365,7 +78365,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8708",
     "nama": "Kelompok Tani Tricipta",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -78374,7 +78374,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8709",
     "nama": "Kirapassa Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -78383,7 +78383,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8710",
     "nama": "KLAMBIKOE",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -78392,7 +78392,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8711",
     "nama": "CV Malabar",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -78401,7 +78401,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8712",
     "nama": "PT.Dahlia Makmur Rejeki",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -78410,7 +78410,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8713",
     "nama": "Gerai Maheswari",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -78419,7 +78419,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8714",
     "nama": "Mom Aiko Store",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -78428,7 +78428,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8715",
     "nama": "Mom Aiko Store",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -78437,7 +78437,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8716",
     "nama": "PT. Mouza Sinergi Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -78446,7 +78446,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8717",
     "nama": "pt.duapilar sejahtera indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -78455,7 +78455,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8718",
     "nama": "NEU MEN",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -78464,7 +78464,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8719",
     "nama": "o",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -78473,7 +78473,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8720",
     "nama": "Numiaa Fashion",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -78482,7 +78482,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8721",
     "nama": "Koperasi Nurul Iman Sejahtera",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -78491,7 +78491,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8722",
     "nama": "PT Gemerlap Wastra Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -78500,7 +78500,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8723",
     "nama": "PT Kreasi PALA Nusantara",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -78509,7 +78509,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8724",
     "nama": "PT. Rabana Sejahtera Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -78518,7 +78518,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8725",
     "nama": "Pawon Putri Pegagan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -78527,7 +78527,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8726",
     "nama": "PETEKRES",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -78536,7 +78536,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8727",
     "nama": "Mitra Tani Farm",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -78545,7 +78545,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8728",
     "nama": "PT Aekta Mandiri Kreasi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -78554,7 +78554,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8729",
     "nama": "PT Bhinneka Rahsa Nusantara",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -78563,7 +78563,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8730",
     "nama": "Afgandi.id (Afgandi Food)",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -78572,7 +78572,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8731",
     "nama": "Ryani",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -78581,7 +78581,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8732",
     "nama": "Sabhira",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -78590,7 +78590,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8733",
     "nama": "PT Awan Kurniawan CORP",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -78599,7 +78599,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8734",
     "nama": "sesasesa",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -78608,7 +78608,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8735",
     "nama": "PT Sila Agri Inovasi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -78617,7 +78617,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8736",
     "nama": "PT Sila Agri Inovasi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -78626,7 +78626,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8737",
     "nama": "PT ANTABOGA PANGAN NUSANTARA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -78635,7 +78635,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8738",
     "nama": "PT Kreasi Krispi Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -78644,7 +78644,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8739",
     "nama": "Susu Kurma Mama Rayya",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -78653,7 +78653,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8740",
     "nama": "Trz",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -78662,7 +78662,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8741",
     "nama": "PT Afriwinsyah Cipta Sedaya",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -78671,7 +78671,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8742",
     "nama": "PT Tekstur Karyatama Semesta",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -78680,7 +78680,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8743",
     "nama": "CV. Uniqueindo Busana Lestari",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -78689,7 +78689,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8744",
     "nama": "CV Gemilang Inovasi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -78698,7 +78698,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8745",
     "nama": "PT YASA ADI KARYA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -78707,7 +78707,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8746",
     "nama": "CV Kurnia Nur Abadi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -78716,7 +78716,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8747",
     "nama": "Bawang Goreng Rajagaluh",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -78725,7 +78725,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8748",
     "nama": "barkah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -78734,7 +78734,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8749",
     "nama": "BATIK MIRANTI",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -78743,7 +78743,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8750",
     "nama": "Batik_atthaya",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -78752,7 +78752,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8751",
     "nama": "CV MONITA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -78761,7 +78761,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8752",
     "nama": "CV MONITA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -78770,7 +78770,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8753",
     "nama": "CV EB",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -78779,7 +78779,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8754",
     "nama": "CV SAZADA PRATAMA MANDIRI",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -78788,7 +78788,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8755",
     "nama": "CV Multi Dimensi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -78797,7 +78797,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8756",
     "nama": "CV.Putri Intan Kencana",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -78806,7 +78806,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8757",
     "nama": "CV.Putri Intan Kencana",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -78815,7 +78815,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8758",
     "nama": "CV.Putri Intan Kencana",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -78824,7 +78824,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8759",
     "nama": "CV Yumaju",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -78833,7 +78833,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8760",
     "nama": "Neng Alena",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -78842,7 +78842,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8761",
     "nama": "CV RAHAYU FOOD",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -78851,7 +78851,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8762",
     "nama": "PT. Rempah Embassy Corp (Perorangan)",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -78860,7 +78860,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8763",
     "nama": "PT Ratu Indonesia Utama",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -78869,7 +78869,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8764",
     "nama": "PT Ratu Indonesia Utama",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -78878,7 +78878,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8765",
     "nama": "PT Ratu Indonesia Utama",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -78887,7 +78887,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8766",
     "nama": "Yuli Hastuti",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -78896,7 +78896,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8767",
     "nama": "Tekav Kriya Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -78905,7 +78905,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8768",
     "nama": "Aroma Sukses",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -78914,7 +78914,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8769",
     "nama": "Alumazra",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -78923,7 +78923,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8770",
     "nama": "PT Amily Hijab Corp",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -78932,7 +78932,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8771",
     "nama": "Butik Kinandara",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -78941,7 +78941,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8772",
     "nama": "Cemilan Kang Bayan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -78950,7 +78950,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8773",
     "nama": "Cigor Sosoy",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -78959,7 +78959,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8774",
     "nama": "Perseorangan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -78968,7 +78968,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8775",
     "nama": "Dawalul Bordir",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -78977,7 +78977,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8776",
     "nama": "PT Fadsan Indonesia Group",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -78986,7 +78986,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8777",
     "nama": "FINCLO",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -78995,7 +78995,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8778",
     "nama": "Hande Modestwear For Girls",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -79004,7 +79004,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8779",
     "nama": "Hirakiya",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -79013,7 +79013,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8780",
     "nama": "Kelompok Tani Puspa Rahayu",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -79022,7 +79022,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8781",
     "nama": "MUEZZA ROASTERY",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -79031,7 +79031,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8782",
     "nama": "Mia Bordir",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -79040,7 +79040,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8783",
     "nama": "Andreyansah Corporation",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -79049,7 +79049,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8784",
     "nama": "Naza de Coco",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -79058,7 +79058,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8785",
     "nama": "Naza de Coco",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -79067,7 +79067,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8786",
     "nama": "N-A Butik",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -79076,7 +79076,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8787",
     "nama": "Abon Rajawali Hj Iloh 1968",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -79085,7 +79085,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8788",
     "nama": "Raksa Tani (Mimi Tea)",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -79094,7 +79094,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8789",
     "nama": "Raksa Tani (Mimi Tea)",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -79103,7 +79103,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8790",
     "nama": "Sentra Ranginang Purwaharja",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -79112,7 +79112,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8791",
     "nama": "Rizqi Batik Tasikmalaya",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -79121,7 +79121,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8792",
     "nama": "Royalvin Batik",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -79130,7 +79130,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8793",
     "nama": "Rumah Kayu Bordir",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -79139,7 +79139,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8794",
     "nama": "SEVATU",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -79148,7 +79148,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8795",
     "nama": "Tara Bags",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -79157,7 +79157,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8796",
     "nama": "Tenjo Bumi Kopi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -79166,7 +79166,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8797",
     "nama": "Tiasafara Boutique",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -79175,7 +79175,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8798",
     "nama": "CV. Bersama Teman Hidup",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -79184,7 +79184,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8799",
     "nama": "Paguyuban Petani Al Barokah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -79193,7 +79193,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8800",
     "nama": "CV ALlisha Foods",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -79202,7 +79202,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8801",
     "nama": "CV Andjani Lines",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -79211,7 +79211,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8802",
     "nama": "Batik Natra",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -79220,7 +79220,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8803",
     "nama": "CV SIPUTRI",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -79229,7 +79229,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8804",
     "nama": "Koperasi Produsen Sekar Langit",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -79238,7 +79238,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8805",
     "nama": "PT Muria Pangan Jaya Makmur",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -79247,7 +79247,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8806",
     "nama": "CV. Yuasafood Berkah Makmur",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -79256,7 +79256,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8807",
     "nama": "Deeja herba",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -79265,7 +79265,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8808",
     "nama": "PT Ecovivo Daya Lestari",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -79274,7 +79274,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8809",
     "nama": "Koperasi Nira Lestari Makmur",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -79283,7 +79283,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8810",
     "nama": "PT. Parama Sari Sejahtera",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -79292,7 +79292,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8811",
     "nama": "INA PRIYONO",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -79301,7 +79301,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8812",
     "nama": "CV. Mubarokfood Cipta Delicia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -79310,7 +79310,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8813",
     "nama": "PT Moringa Organik Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -79319,7 +79319,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8814",
     "nama": "CV GLOBAL NET",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -79328,7 +79328,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8815",
     "nama": "Muria Batik",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -79337,7 +79337,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8816",
     "nama": "CV My Daily Hijab Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -79346,7 +79346,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8817",
     "nama": "PT Pradja Agro Indoland",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -79355,7 +79355,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8818",
     "nama": "Risa Maharani Basic",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -79364,7 +79364,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8819",
     "nama": "PT. ARISTOKRAT INDONESIA GLOBAL",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -79373,7 +79373,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8820",
     "nama": "CV. Janitra Abadi Berkah (Rorokenes Indonesia)",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -79382,7 +79382,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8821",
     "nama": "Batik Sekar Magelang",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -79391,7 +79391,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8822",
     "nama": "ZOE ZOE by Sudarna Suwarsa",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -79400,7 +79400,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8823",
     "nama": "PT Perkebunan Tambi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -79409,7 +79409,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8824",
     "nama": "CV Tinctori Karya Sejahtera",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -79418,7 +79418,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8825",
     "nama": "Tya Chandra",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -79427,7 +79427,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8826",
     "nama": "Wastra Batik",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -79436,7 +79436,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8827",
     "nama": "CV. Zie Batik",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -79445,7 +79445,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8828",
     "nama": "Koperasi Griya Cempaka Mulya",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -79454,7 +79454,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8829",
     "nama": "Batik Hasta Karsa",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -79463,7 +79463,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8830",
     "nama": "CV. ZAVIAR KREASI MANDIRI",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -79472,7 +79472,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8831",
     "nama": "DJINTOEL",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -79481,7 +79481,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8832",
     "nama": "UD Famoli",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -79490,7 +79490,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8833",
     "nama": "Ikan Asin FATIMAH13",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -79499,7 +79499,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8834",
     "nama": "PT IQLEEM INDONESIA MAJU",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -79508,7 +79508,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8835",
     "nama": "CV Metaflora Indies",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -79517,7 +79517,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8836",
     "nama": "PT OZZY Batik Pekalongan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -79526,7 +79526,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8837",
     "nama": "Fahaltex, CV",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -79535,7 +79535,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8838",
     "nama": "Ridaka",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -79544,7 +79544,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8839",
     "nama": "Sambel K'diyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -79553,7 +79553,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8840",
     "nama": "Cv.Hasil Karya Utama",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -79562,7 +79562,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8841",
     "nama": "CV. Simbok Berkah Mandiri",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -79571,7 +79571,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8842",
     "nama": "PT Sinergi Brebes Inovatif",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -79580,7 +79580,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8843",
     "nama": "Ummu ayya",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -79589,7 +79589,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8844",
     "nama": "Wihar kitchen",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -79598,7 +79598,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8845",
     "nama": "Woba Craft",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -79607,7 +79607,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8846",
     "nama": "CV Abon Cap Koki",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -79616,7 +79616,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8847",
     "nama": "CV Abon Cap Koki",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -79625,7 +79625,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8848",
     "nama": "Batik Martadireja",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -79634,7 +79634,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8849",
     "nama": "KUB PRINGMAS",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -79643,7 +79643,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8850",
     "nama": "CV.Bunga Palm",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -79652,7 +79652,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8851",
     "nama": "Sistema Organis Agrinaya",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -79661,7 +79661,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8852",
     "nama": "Sistema Organis Agrinaya",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -79670,7 +79670,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8853",
     "nama": "UD. ELFATH",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -79679,7 +79679,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8854",
     "nama": "Rahma Boutique dan Hanannia Craft",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -79688,7 +79688,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8855",
     "nama": "Koperasi Produsen Kopi Sikopel Mitreka Satata",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -79697,7 +79697,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8856",
     "nama": "Marisa food/ Poklahsar Prima Melati",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -79706,7 +79706,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8857",
     "nama": "Rumah Mocaf Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -79715,7 +79715,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8858",
     "nama": "CV Rajasa Mas Jaya",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -79724,7 +79724,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8859",
     "nama": "Griya Abbiyu",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -79733,7 +79733,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8860",
     "nama": "Bangkit Daya Kreasindo",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -79742,7 +79742,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8861",
     "nama": "PT Wins Indonesia Sukses",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -79751,7 +79751,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8862",
     "nama": "PT. ZEE NANDA INTERNATIONAL",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -79760,7 +79760,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8863",
     "nama": "Zulvaa Modest",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -79769,7 +79769,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8864",
     "nama": "PT Anhan Mekarsari",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -79778,7 +79778,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8865",
     "nama": "TM Food",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -79787,7 +79787,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8866",
     "nama": "WISATA EDUKASI AMPYANG JAWA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -79796,7 +79796,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8867",
     "nama": "Harsono HS. H",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -79805,7 +79805,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8868",
     "nama": "Harsono HS. H",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -79814,7 +79814,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8869",
     "nama": "Batik Sadewa",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -79823,7 +79823,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8870",
     "nama": "CV Batik Widayati",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -79832,7 +79832,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8871",
     "nama": "PT. BILQIS BANGUN CITRA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -79841,7 +79841,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8872",
     "nama": "Pangudi Bogo",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -79850,7 +79850,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8873",
     "nama": "Pangudi Bogo",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -79859,7 +79859,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8874",
     "nama": "PT.Indotropikal Group",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -79868,7 +79868,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8875",
     "nama": "CV. Indigo Biru Baru",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -79877,7 +79877,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8876",
     "nama": "LaRissso Rasa Nusantara",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -79886,7 +79886,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8877",
     "nama": "UD Mutiara Batik Solo",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -79895,7 +79895,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8878",
     "nama": "Newcoral Ecofriendly",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -79904,7 +79904,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8879",
     "nama": "Nikisae - Lurik Handwoven Batik",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -79913,7 +79913,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8880",
     "nama": "Roti Gaplek \"Inagiri\"",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -79922,7 +79922,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8881",
     "nama": "Visa Cottonbatik",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -79931,7 +79931,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8882",
     "nama": "Sofie",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -79940,7 +79940,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8883",
     "nama": "ABON DAUN EMAS",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -79949,7 +79949,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8884",
     "nama": "PT YASMIN BUTIK BATIK",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -79958,7 +79958,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8885",
     "nama": "APIP'S Batik",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -79967,7 +79967,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8886",
     "nama": "CV ARVA Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -79976,7 +79976,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8887",
     "nama": "CV ARVA Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -79985,7 +79985,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8888",
     "nama": "BATIK BOCAH",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -79994,7 +79994,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8889",
     "nama": "BATIK BOCAH",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -80003,7 +80003,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8890",
     "nama": "Batik Narendra",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -80012,7 +80012,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8891",
     "nama": "Batik Narendra",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -80021,7 +80021,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8892",
     "nama": "Batik Narendra",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -80030,7 +80030,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8893",
     "nama": "CV Cariza Khansa Pratama",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -80039,7 +80039,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8894",
     "nama": "KUB Tiwi Manunggal",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -80048,7 +80048,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8895",
     "nama": "Cokelat Makaryo",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -80057,7 +80057,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8896",
     "nama": "Creative Batik",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -80066,7 +80066,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8897",
     "nama": "Cv Sogan Jaya Abadi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -80075,7 +80075,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8898",
     "nama": "Cv Sogan Jaya Abadi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -80084,7 +80084,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8899",
     "nama": "Cv Sogan Jaya Abadi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -80093,7 +80093,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8900",
     "nama": "Cv Sogan Jaya Abadi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -80102,7 +80102,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8901",
     "nama": "CV. Centerindo Kurnia Tritama",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -80111,7 +80111,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8902",
     "nama": "CV. Centerindo Kurnia Tritama",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -80120,7 +80120,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8903",
     "nama": "CV. Centerindo Kurnia Tritama",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -80129,7 +80129,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8904",
     "nama": "Griya Cokelat Nglanggeran",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -80138,7 +80138,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8905",
     "nama": "Griya Cokelat Nglanggeran",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -80147,7 +80147,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8906",
     "nama": "CV. D'Hapsari Jaya",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -80156,7 +80156,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8907",
     "nama": "CV. D'Hapsari Jaya",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -80165,7 +80165,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8908",
     "nama": "CV. D'Hapsari Jaya",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -80174,7 +80174,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8909",
     "nama": "HOD",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -80183,7 +80183,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8910",
     "nama": "Progress Jogja",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -80192,7 +80192,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8911",
     "nama": "Progress Jogja",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -80201,7 +80201,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8912",
     "nama": "Progress Jogja",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -80210,7 +80210,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8913",
     "nama": "Progress Jogja",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -80219,7 +80219,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8914",
     "nama": "KaLu",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -80228,7 +80228,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8915",
     "nama": "Kay Nusa Bihaka",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -80237,7 +80237,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8916",
     "nama": "Kulita Windraya Ankara",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -80246,7 +80246,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8917",
     "nama": "Kencana",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -80255,7 +80255,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8918",
     "nama": "Kirey Natural Taruno Abadi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -80264,7 +80264,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8919",
     "nama": "Kirey Natural Taruno Abadi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -80273,7 +80273,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8920",
     "nama": "CV tujuh Bintang jaya",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -80282,7 +80282,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8921",
     "nama": "CV tujuh Bintang jaya",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -80291,7 +80291,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8922",
     "nama": "LA BOUTIQUE",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -80300,7 +80300,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8923",
     "nama": "PT. Lawe Adi Warna Etnika",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -80309,7 +80309,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8924",
     "nama": "LUVNIC",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -80318,7 +80318,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8925",
     "nama": "Manunggal Langgeng Madani",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -80327,7 +80327,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8926",
     "nama": "PT. Mazaraat Lokanatura Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -80336,7 +80336,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8927",
     "nama": "PT. NDALEM VALUE CREATION INDONESIA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -80345,7 +80345,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8928",
     "nama": "Ngudi Sari",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -80354,7 +80354,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8929",
     "nama": "PT. Serelia Prima Nutrisia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -80363,7 +80363,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8930",
     "nama": "CV Panda Food",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -80372,7 +80372,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8931",
     "nama": "CV Paradise Batik",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -80381,7 +80381,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8932",
     "nama": "CV PUTHIC CIPTA KARYA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -80390,7 +80390,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8933",
     "nama": "CV PUTHIC CIPTA KARYA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -80399,7 +80399,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8934",
     "nama": "CV PUTHIC CIPTA KARYA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -80408,7 +80408,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8935",
     "nama": "PT. Rawenesia Saka Abadi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -80417,7 +80417,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8936",
     "nama": "PT. Rawenesia Saka Abadi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -80426,7 +80426,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8937",
     "nama": "PT. Rawenesia Saka Abadi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -80435,7 +80435,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8938",
     "nama": "Sarisa Merapi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -80444,7 +80444,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8939",
     "nama": "PT Shiroshima Mahakarya Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -80453,7 +80453,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8940",
     "nama": "PT Shiroshima Mahakarya Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -80462,7 +80462,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8941",
     "nama": "PT Shiroshima Mahakarya Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -80471,7 +80471,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8942",
     "nama": "PT Shiroshima Mahakarya Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -80480,7 +80480,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8943",
     "nama": "CV YUMEDA PANGAN SEJAHTERA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -80489,7 +80489,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8944",
     "nama": "TARASARI",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -80498,7 +80498,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8945",
     "nama": "TARASARI",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -80507,7 +80507,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8946",
     "nama": "Tenun Sutera Alam dan Lurik \"Tugu Mas\"",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -80516,7 +80516,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8947",
     "nama": "Weeka Sejahtera Group",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -80525,7 +80525,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8948",
     "nama": "Batik Wening",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -80534,7 +80534,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8949",
     "nama": "PT. Almara Cita Dahayu",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -80543,7 +80543,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8950",
     "nama": "PT. SINAR UTAMA MADURA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -80552,7 +80552,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8951",
     "nama": "Ama Opi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -80561,7 +80561,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8952",
     "nama": "Amyrose de Craft",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -80570,7 +80570,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8953",
     "nama": "PT. SARI BHUWANA NUSAJAYA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -80579,7 +80579,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8954",
     "nama": "Basaraya",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -80588,7 +80588,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8955",
     "nama": "UD Batik Dewi Saraswati",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -80597,7 +80597,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8956",
     "nama": "Batik Podhek",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -80606,7 +80606,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8957",
     "nama": "Batik Gedog Zaenal Tuban",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -80615,7 +80615,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8958",
     "nama": "Beadstown Craft",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -80624,7 +80624,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8959",
     "nama": "UD. Bunda Foods",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -80633,7 +80633,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8960",
     "nama": "UD. Bunda Foods",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -80642,7 +80642,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8961",
     "nama": "UD. canting",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -80651,7 +80651,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8962",
     "nama": "CV. Daun Agel",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -80660,7 +80660,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8963",
     "nama": "PT. Truly Natural Organic",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -80669,7 +80669,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8964",
     "nama": "Miss Kribro",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -80678,7 +80678,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8965",
     "nama": "CV CANTIK MODA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -80687,7 +80687,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8966",
     "nama": "VIER CLOTHING & BOUTIQUE",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -80696,7 +80696,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8967",
     "nama": "GITA ORLIN",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -80705,7 +80705,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8968",
     "nama": "GITA ORLIN",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -80714,7 +80714,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8969",
     "nama": "House Batik Pamekasan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -80723,7 +80723,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8970",
     "nama": "House Batik Pamekasan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -80732,7 +80732,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8971",
     "nama": "Kebon Alam Ecoprint",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -80741,7 +80741,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8972",
     "nama": "Kebon Alam Ecoprint",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -80750,7 +80750,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8973",
     "nama": "LEGEND TREN INTERNASIONAL",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -80759,7 +80759,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8974",
     "nama": "Sambal Pecel Lek Oliek",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -80768,7 +80768,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8975",
     "nama": "CV Lita Berlianti Moda",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -80777,7 +80777,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8976",
     "nama": "PT. Pareto Estu Guna",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -80786,7 +80786,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8977",
     "nama": "PT. Pareto Estu Guna",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -80795,7 +80795,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8978",
     "nama": "Ning Ita",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -80804,7 +80804,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8979",
     "nama": "PT. NING NIMIEK SURABAYA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -80813,7 +80813,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8980",
     "nama": "UD Java Trading",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -80822,7 +80822,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8981",
     "nama": "Rubath Kopi Jombang",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -80831,7 +80831,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8982",
     "nama": "UD Sabda Batik",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -80840,7 +80840,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8983",
     "nama": "UD, SABIQ BEJO",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -80849,7 +80849,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8984",
     "nama": "okantara",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -80858,7 +80858,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8985",
     "nama": "okantara",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -80867,7 +80867,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8986",
     "nama": "okantara",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -80876,7 +80876,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8987",
     "nama": "okantara",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2019,
@@ -80885,7 +80885,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8988",
     "nama": "YUMA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -80894,7 +80894,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8989",
     "nama": "PT Zorey Indonesia Berdaya",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -80903,7 +80903,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8990",
     "nama": "CV. INDIGO SEJAHTERA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -80912,7 +80912,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8991",
     "nama": "CV Putra Wijaya",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -80921,7 +80921,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8992",
     "nama": "CV ALSAFOOD",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -80930,7 +80930,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8993",
     "nama": "Alya Batik",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -80939,7 +80939,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8994",
     "nama": "Asta Dadapan Indah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -80948,7 +80948,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8995",
     "nama": "CV LAKSITA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -80957,7 +80957,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8996",
     "nama": "Batik Murni",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -80966,7 +80966,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8997",
     "nama": "UD. Batik Satrio Manah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -80975,7 +80975,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8998",
     "nama": "UD. RAHAYU",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -80984,7 +80984,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u8999",
     "nama": "UD. RAHAYU",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -80993,7 +80993,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9000",
     "nama": "UD. RAHAYU",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -81002,7 +81002,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9001",
     "nama": "CV.ZULVA SIGNATURE",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -81011,7 +81011,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9002",
     "nama": "Cv. Elva sejahtera",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -81020,7 +81020,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9003",
     "nama": "CV. TEMON AGRO LESTARI",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -81029,7 +81029,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9004",
     "nama": "Gula Semut Organik Gunung Limo",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -81038,7 +81038,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9005",
     "nama": "Kiyoshi Ecoprint",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -81047,7 +81047,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9006",
     "nama": "CV Ningrat Prasojo",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -81056,7 +81056,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9007",
     "nama": "CV. Nawasena Pangan Kreatif",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -81065,7 +81065,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9008",
     "nama": "UD IBU SAM",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -81074,7 +81074,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9009",
     "nama": "UD IBU SAM",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -81083,7 +81083,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9010",
     "nama": "NUMAND CV",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -81092,7 +81092,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9011",
     "nama": "FRIDA JELITA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -81101,7 +81101,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9012",
     "nama": "UD RISQI AGUNG",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -81110,7 +81110,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9013",
     "nama": "Cap Sayang Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -81119,7 +81119,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9014",
     "nama": "CV Adikarya",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -81128,7 +81128,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9015",
     "nama": "CV Adikarya",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -81137,7 +81137,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9016",
     "nama": "CV Adikarya",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2018,
@@ -81146,7 +81146,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9017",
     "nama": "CV SUMBER ARTA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -81155,7 +81155,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9018",
     "nama": "PT. YUKSRI PRIMA INDONESIA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -81164,7 +81164,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9019",
     "nama": "PT Airafood Sejahtera Bersama",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -81173,7 +81173,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9020",
     "nama": "ANDIS BATIK DRUJU",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -81182,7 +81182,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9021",
     "nama": "AntiQue Batik Malang",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -81191,7 +81191,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9022",
     "nama": "Gapoktan Mitra Arjuna",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -81200,7 +81200,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9023",
     "nama": "CV. Sahabat Pangan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -81209,7 +81209,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9024",
     "nama": "Batik Blimbing Malang",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -81218,7 +81218,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9025",
     "nama": "CV Prabulinggih",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -81227,7 +81227,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9026",
     "nama": "Anjani Batik Galeri",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -81236,7 +81236,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9027",
     "nama": "Elviza Berkah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -81245,7 +81245,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9028",
     "nama": "Eva Unique Accessories",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -81254,7 +81254,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9029",
     "nama": "CV. Navara Dawai Semesta",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -81263,7 +81263,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9030",
     "nama": "PT. Mama Ni Jaya Berkah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -81272,7 +81272,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9031",
     "nama": "Memossa Sustainable Fashion",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -81281,7 +81281,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9032",
     "nama": "Nora Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -81290,7 +81290,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9033",
     "nama": "PT Pelangi Indonesia Singhasari",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -81299,7 +81299,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9034",
     "nama": "CV Poty Teknologi Pertanian",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -81308,7 +81308,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9035",
     "nama": "RASYA SHAKIRA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -81317,7 +81317,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9036",
     "nama": "Rehana Melodi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -81326,7 +81326,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9037",
     "nama": "SAMSUGA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -81335,7 +81335,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9038",
     "nama": "CV Sepatu Shoeka",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -81344,7 +81344,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9039",
     "nama": "Silla Moda",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -81353,7 +81353,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9040",
     "nama": "CV Kajeye Food",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -81362,7 +81362,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9041",
     "nama": "PT BATIK TULIS SIDOMULYO",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -81371,7 +81371,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9042",
     "nama": "Yece by yetitopiah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -81380,7 +81380,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9043",
     "nama": "ZAMA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -81389,7 +81389,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9044",
     "nama": "Afa choco n snack",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -81398,7 +81398,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9045",
     "nama": "Argopuro Walida Sejahtera",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -81407,7 +81407,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9046",
     "nama": "Batik Rolla",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -81416,7 +81416,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9047",
     "nama": "PT SIRTANIO ORGANIK INDONESIA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -81425,7 +81425,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9048",
     "nama": "Koperasi Ihyaus Sunnah Al-Hasany",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -81434,7 +81434,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9049",
     "nama": "SANET",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -81443,7 +81443,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9050",
     "nama": "Doa Coffee",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -81452,7 +81452,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9051",
     "nama": "GODHO BATIK",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -81461,7 +81461,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9052",
     "nama": "ISYAM SYAMSI",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -81470,7 +81470,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9053",
     "nama": "Waroeng Kopi Kayumas",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -81479,7 +81479,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9054",
     "nama": "Waroeng Kopi Kayumas",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -81488,7 +81488,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9055",
     "nama": "KSU BUAH KETAKASI",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -81497,7 +81497,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9056",
     "nama": "Kue Kacang Sultan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -81506,7 +81506,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9057",
     "nama": "CV Macarindo Berkah Group",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -81515,7 +81515,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9058",
     "nama": "CV SUNRESIST INDONESIA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -81524,7 +81524,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9059",
     "nama": "PT. Daur Bumi Abadi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -81533,7 +81533,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9060",
     "nama": "CV Sisikmelik Idea",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -81542,7 +81542,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9061",
     "nama": "/lif",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -81551,7 +81551,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9062",
     "nama": "101 Coffee House",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -81560,7 +81560,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9063",
     "nama": "Arcia Oil",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -81569,7 +81569,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9064",
     "nama": "Arcia Oil",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -81578,7 +81578,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9065",
     "nama": "CV. DAFIZA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -81587,7 +81587,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9066",
     "nama": "CV Jepin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -81596,7 +81596,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9067",
     "nama": "CV. DEDEQ FINGER",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -81605,7 +81605,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9068",
     "nama": "NINAAKA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -81614,7 +81614,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9069",
     "nama": "Jahe Sinkari",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -81623,7 +81623,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9070",
     "nama": "Galeri Kain Pantang Sintang",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -81632,7 +81632,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9071",
     "nama": "PT. Kojal Coffee Plantation",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -81641,7 +81641,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9072",
     "nama": "If : @pabrikkopisurya Web : www.kopisurya.com",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -81650,7 +81650,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9073",
     "nama": "FB & IG @kripik_makros",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -81659,7 +81659,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9074",
     "nama": "Pesantren Abdussalam",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -81668,7 +81668,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9075",
     "nama": "NITIK",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -81677,7 +81677,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9076",
     "nama": "Rind tenun",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -81686,7 +81686,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9077",
     "nama": "Serundeng Tradisional 3 Dare",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -81695,7 +81695,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9078",
     "nama": "Syabila Snack",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -81704,7 +81704,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9079",
     "nama": "PMEFS",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -81713,7 +81713,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9080",
     "nama": "BAHALAP",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -81722,7 +81722,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9081",
     "nama": "Must Yoan Farm - Borneo Mellifera",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -81731,7 +81731,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9082",
     "nama": "Kaltfood",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -81740,7 +81740,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9083",
     "nama": "PT INDANG APANG SINERGY",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -81749,7 +81749,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9084",
     "nama": "Laa_Craft",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -81758,7 +81758,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9085",
     "nama": "PT. AGRO BORNEO BORNEO",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -81767,7 +81767,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9086",
     "nama": "Mentaya Sweet",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -81776,7 +81776,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9087",
     "nama": "Berkat Uhat Kayu",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -81785,7 +81785,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9088",
     "nama": "BEN'S GROUP",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -81794,7 +81794,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9089",
     "nama": "Athlas Sintesa",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -81803,7 +81803,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9090",
     "nama": "Athlas Sintesa",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -81812,7 +81812,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9091",
     "nama": "Athlas Sintesa",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -81821,7 +81821,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9092",
     "nama": "Aman Sasirangan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -81830,7 +81830,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9093",
     "nama": "CV KAPAL LAYAR BERKEMBANG",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -81839,7 +81839,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9094",
     "nama": "Deyana Ethnic By Caheilla",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -81848,7 +81848,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9095",
     "nama": "PT. DDAUNAN SASIRANGAN BANJARMASIN",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -81857,7 +81857,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9096",
     "nama": "Cv.Diyang kinjut Sasirangan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -81866,7 +81866,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9097",
     "nama": "Ecomel Sasirangan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -81875,7 +81875,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9098",
     "nama": "Fahmi Sasirangan / Refa Gallery",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -81884,7 +81884,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9099",
     "nama": "PT. Galyna Heiwa Jaya Abadi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -81893,7 +81893,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9100",
     "nama": "Hanino",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -81902,7 +81902,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9101",
     "nama": "Kacang Jaruk Hj. Ati",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -81911,7 +81911,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9102",
     "nama": "Hani Cempaka Sasirangan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -81920,7 +81920,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9103",
     "nama": "Kantan Sasirangan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -81929,7 +81929,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9104",
     "nama": "KAWANASI",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -81938,7 +81938,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9105",
     "nama": "Mak Yem BJB Berkah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -81947,7 +81947,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9106",
     "nama": "PJM CASHEILA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -81956,7 +81956,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9107",
     "nama": "Ruth Oedi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -81965,7 +81965,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9108",
     "nama": "Sasirangan Duan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -81974,7 +81974,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9109",
     "nama": "Sasirangan Premium Najwa",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -81983,7 +81983,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9110",
     "nama": "Sujing Basasirangan Limited",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -81992,7 +81992,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9111",
     "nama": "Talitha Food",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -82001,7 +82001,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9112",
     "nama": "PT. Banua Tani Makmur Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -82010,7 +82010,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9113",
     "nama": "CV. Berkah Bumi Lestari",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -82019,7 +82019,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9114",
     "nama": "Ceu Popy Manik",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -82028,7 +82028,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9115",
     "nama": "PT. Abon Jaya Mandiri",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -82037,7 +82037,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9116",
     "nama": "Batik Beras Basah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -82046,7 +82046,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9117",
     "nama": "CV. Sakinah Gallery",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -82055,7 +82055,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9118",
     "nama": "PT Borneo Batik Sukses Abadi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -82064,7 +82064,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9119",
     "nama": "HESANDRA INDONESIA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -82073,7 +82073,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9120",
     "nama": "PT Oriencia Loa Nesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -82082,7 +82082,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9121",
     "nama": "Perkumpulan Kerajinan Manika Kaltim",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -82091,7 +82091,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9122",
     "nama": "PT Osadha Nusantara Group",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -82100,7 +82100,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9123",
     "nama": "Perkumpulan Pengrajin Tenun Ulap Doyo Pokant Takaq",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -82109,7 +82109,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9124",
     "nama": "PT (perorangan) Daikana Nusantara Food",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -82118,7 +82118,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9125",
     "nama": "CV. Maluang Jaya",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -82127,7 +82127,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9126",
     "nama": "PT Qisbelian Snack Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -82136,7 +82136,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9127",
     "nama": "Ratie",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -82145,7 +82145,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9128",
     "nama": "Sambal Gami Mamah Alif",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -82154,7 +82154,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9129",
     "nama": "PT. Sekatup Sari Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -82163,7 +82163,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9130",
     "nama": "Sherlita Wahjono",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -82172,7 +82172,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9131",
     "nama": "UKM SOLAINDO",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -82181,7 +82181,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9132",
     "nama": "CV. ULIN SARI LESTARI",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -82190,7 +82190,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9133",
     "nama": "CV. Makmur \"A\"Tiga Jaya",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -82199,7 +82199,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9134",
     "nama": "Abon Ikan Asin Layur",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -82208,7 +82208,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9135",
     "nama": "Citra Purnama Abadi, CV",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -82217,7 +82217,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9136",
     "nama": "CV. BAHALAP GRUP INDONESIA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -82226,7 +82226,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9137",
     "nama": "Buen Were",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -82235,7 +82235,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9138",
     "nama": "CV Batik Shaho",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -82244,7 +82244,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9139",
     "nama": "Bontings",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -82253,7 +82253,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9140",
     "nama": "PT Bungas Food Nusantara",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -82262,7 +82262,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9141",
     "nama": "CV. Cerita Bahagia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -82271,7 +82271,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9142",
     "nama": "PT. Deli Koffie Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -82280,7 +82280,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9143",
     "nama": "PT. Deli Koffie Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -82289,7 +82289,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9144",
     "nama": "CV KurniaWP Batik",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -82298,7 +82298,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9145",
     "nama": "PT. Aluhai Ganang Food",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -82307,7 +82307,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9146",
     "nama": "CAKE SALAKILO",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -82316,7 +82316,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9147",
     "nama": "Suraa Arts",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -82325,7 +82325,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9148",
     "nama": "Kopontren Trubus Iman",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -82334,7 +82334,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9149",
     "nama": "Balamok",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -82343,7 +82343,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9150",
     "nama": "Barma Food",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -82352,7 +82352,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9151",
     "nama": "Barma Food",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -82361,7 +82361,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9152",
     "nama": "Barma Food",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -82370,7 +82370,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9153",
     "nama": "BUJEY / PT GARMANDA CREATIVE KALTARA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -82379,7 +82379,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9154",
     "nama": "BUJEY / PT GARMANDA CREATIVE KALTARA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -82388,7 +82388,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9155",
     "nama": "Gwen Lee Boutique",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -82397,7 +82397,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9156",
     "nama": "Nelayan Berkah Setara",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -82406,7 +82406,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9157",
     "nama": "KERIPIK PISANG KENKO KP",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -82415,7 +82415,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9158",
     "nama": "PT MACK ATOEN CORP",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -82424,7 +82424,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9159",
     "nama": "Maju Bersama",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -82433,7 +82433,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9160",
     "nama": "Maju Bersama",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -82442,7 +82442,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9161",
     "nama": "TARABAN",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -82451,7 +82451,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9162",
     "nama": "Dbaloy Food Industries",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -82460,7 +82460,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9163",
     "nama": "TIGA DARA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -82469,7 +82469,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9164",
     "nama": "PT Tenun Agung Bali",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -82478,7 +82478,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9165",
     "nama": "Akasa Specialty Coffee",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -82487,7 +82487,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9166",
     "nama": "Akasa Specialty Coffee",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -82496,7 +82496,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9167",
     "nama": "CV Prabata Lavanaa",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -82505,7 +82505,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9168",
     "nama": "Bali Arabica",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -82514,7 +82514,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9169",
     "nama": "BALI HONEY",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -82523,7 +82523,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9170",
     "nama": "BALI HONEY",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -82532,7 +82532,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9171",
     "nama": "Rumah bawang Songan",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -82541,7 +82541,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9172",
     "nama": "BASUDEWA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -82550,7 +82550,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9173",
     "nama": "Cap Bali",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -82559,7 +82559,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9174",
     "nama": "KWT Kusuma Sari",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -82568,7 +82568,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9175",
     "nama": "cv mekar indah barokah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -82577,7 +82577,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9176",
     "nama": "PT. Rumah Imajinasi Kirana",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -82586,7 +82586,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9177",
     "nama": "PT. Rumah Imajinasi Kirana",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -82595,7 +82595,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9178",
     "nama": "Krilazz Lah Jaen",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -82604,7 +82604,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9179",
     "nama": "CV Pesona",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -82613,7 +82613,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9180",
     "nama": "THE LIVING BARN INDONESIA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -82622,7 +82622,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9181",
     "nama": "LUSI DAMAI COLLECTION",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -82631,7 +82631,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9182",
     "nama": "Karsa Abadi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -82640,7 +82640,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9183",
     "nama": "CV Natural Bali Kulkul",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -82649,7 +82649,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9184",
     "nama": "CV Ibu Jari Sejahtera",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -82658,7 +82658,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9185",
     "nama": "CV. Padma Medikal Husada",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -82667,7 +82667,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9186",
     "nama": "CV. Padma Medikal Husada",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -82676,7 +82676,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9187",
     "nama": "PutriMas",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -82685,7 +82685,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9188",
     "nama": "CV MANTU SEDANA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -82694,7 +82694,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9189",
     "nama": "UD ARYA PARAMITA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -82703,7 +82703,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9190",
     "nama": "JJ by Suka Pandawa",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -82712,7 +82712,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9191",
     "nama": "Allea Etnik Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -82721,7 +82721,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9192",
     "nama": "We Ana Pearls",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -82730,7 +82730,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9193",
     "nama": "UD. Depot Taliwang",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -82739,7 +82739,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9194",
     "nama": "Cahyahouse",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -82748,7 +82748,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9195",
     "nama": "CV Pandora Mutiara",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -82757,7 +82757,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9196",
     "nama": "Erina Galleri",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -82766,7 +82766,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9197",
     "nama": "PT. Alami Sehat Selalu",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -82775,7 +82775,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9198",
     "nama": "Haramain Bakery",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -82784,7 +82784,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9199",
     "nama": "Indah Mutiara Lombok",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -82793,7 +82793,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9200",
     "nama": "UD Karya Mandiri",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -82802,7 +82802,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9201",
     "nama": "Kelompok Tani Rokam Bangkit",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -82811,7 +82811,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9202",
     "nama": "Lamops",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -82820,7 +82820,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9203",
     "nama": "Lamops",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -82829,7 +82829,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9204",
     "nama": "Moonlight Hijab",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -82838,7 +82838,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9205",
     "nama": "Mutiara Lombok Waidah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -82847,7 +82847,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9206",
     "nama": "CV. Safir Indo Raya",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -82856,7 +82856,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9207",
     "nama": "IKM Sate Rembiga Goyang Lidah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -82865,7 +82865,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9208",
     "nama": "PT. Sentra Pangan Songgajah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -82874,7 +82874,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9209",
     "nama": "CV Tri Utami Jaya",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -82883,7 +82883,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9210",
     "nama": "Totimori",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -82892,7 +82892,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9211",
     "nama": "PT. Yant Sorghum Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -82901,7 +82901,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9212",
     "nama": "CV. Aldia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -82910,7 +82910,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9213",
     "nama": "Antiq'Ikat",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -82919,7 +82919,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9214",
     "nama": "Lembah Hijau",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -82928,7 +82928,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9215",
     "nama": "Baju Tenunku by Aldi Wibowo",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -82937,7 +82937,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9216",
     "nama": "Baju Tenunku by Aldi Wibowo",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -82946,7 +82946,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9217",
     "nama": "PT. Ghaura Cokelat Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -82955,7 +82955,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9218",
     "nama": "GS Organik",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -82964,7 +82964,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9219",
     "nama": "Gaby's Collection",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -82973,7 +82973,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9220",
     "nama": "CV Ina Ndao",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -82982,7 +82982,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9221",
     "nama": "Kampoeng Tenun Alor",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -82991,7 +82991,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9222",
     "nama": "KOPI SAa",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -83000,7 +83000,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9223",
     "nama": "PT Beta Moringa Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -83009,7 +83009,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9224",
     "nama": "PT. Profil Mitra Abadi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -83018,7 +83018,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9225",
     "nama": "CV Beumopu Elba Jaya",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -83027,7 +83027,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9226",
     "nama": "PT MoriGe Nusantara",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -83036,7 +83036,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9227",
     "nama": "Padu Padan Tenun",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -83045,7 +83045,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9228",
     "nama": "PT Tuang Bumi Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -83054,7 +83054,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9229",
     "nama": "adhy alie",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -83063,7 +83063,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9230",
     "nama": "ARIE RICH CV. Bunga Intan Berkah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -83072,7 +83072,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9231",
     "nama": "Arni Kurnia Silk",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -83081,7 +83081,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9232",
     "nama": "Butik Luthfiah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -83090,7 +83090,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9233",
     "nama": "Cantika Sabbena",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -83099,7 +83099,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9234",
     "nama": "Industri Makkuraga Sibali reso",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -83108,7 +83108,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9235",
     "nama": "CV MRAI UTAMA INDONESIA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -83117,7 +83117,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9236",
     "nama": "CV.MORISAMA SEJAHTERA INDONESIA 12",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -83126,7 +83126,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9237",
     "nama": "CV. Dainichi Sugar Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -83135,7 +83135,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9238",
     "nama": "CV. EIWA CORPORATION",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -83144,7 +83144,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9239",
     "nama": "Rumah anyamandiri",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -83153,7 +83153,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9240",
     "nama": "Faizah Nawawi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -83162,7 +83162,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9241",
     "nama": "Fenisa05",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -83171,7 +83171,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9242",
     "nama": "Gombara Food",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -83180,7 +83180,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9243",
     "nama": "Husna collection",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -83189,7 +83189,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9244",
     "nama": "Ida Jashari Fashion",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -83198,7 +83198,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9245",
     "nama": "PT. Jenk Ranaa Berjaya",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -83207,7 +83207,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9246",
     "nama": "CV. AL RAZAK CORP",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -83216,7 +83216,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9247",
     "nama": "CV. LUHUR ABADI",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -83225,7 +83225,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9248",
     "nama": "CV. LUHUR ABADI",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -83234,7 +83234,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9249",
     "nama": "Neknic",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -83243,7 +83243,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9250",
     "nama": "LARS",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -83252,7 +83252,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9251",
     "nama": "Monity Jaya Bersama",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -83261,7 +83261,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9252",
     "nama": "TORAJA ORIGIN COFFEE (TORI COFFEE)",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -83270,7 +83270,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9253",
     "nama": "CV ZAHRAZHAFIRA ABADI BERKAH",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -83279,7 +83279,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9254",
     "nama": "CV. SOFIE TUNGGADEWI INDUSTRI",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -83288,7 +83288,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9255",
     "nama": "CV.BANUA SIDAT",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -83297,7 +83297,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9256",
     "nama": "Cv. batik banava 01",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -83306,7 +83306,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9257",
     "nama": "UD Bintang Surayyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -83315,7 +83315,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9258",
     "nama": "FFF By Ferry",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -83324,7 +83324,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9259",
     "nama": "Hj. Mbok Sri",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -83333,7 +83333,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9260",
     "nama": "Jagad Sutera",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -83342,7 +83342,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9261",
     "nama": "KOPI KALEMAGO",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -83351,7 +83351,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9262",
     "nama": "LECKER JAYA WALUYO",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -83360,7 +83360,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9263",
     "nama": "PT lecker jaya waluyo",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -83369,7 +83369,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9264",
     "nama": "Raja Bawang",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -83378,7 +83378,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9265",
     "nama": "RAPOVIAKA SIMPLE",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -83387,7 +83387,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9266",
     "nama": "RAPOVIAKA SIMPLE",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -83396,7 +83396,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9267",
     "nama": "UD Sri Rejeki",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -83405,7 +83405,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9268",
     "nama": "Sumber Urip",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -83414,7 +83414,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9269",
     "nama": "Syahira Butik",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -83423,7 +83423,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9270",
     "nama": "DAPUR AISYAH",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -83432,7 +83432,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9271",
     "nama": "PT Raelley Indonesian Food",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -83441,7 +83441,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9272",
     "nama": "CV. Global Mitra Jaya",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -83450,7 +83450,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9273",
     "nama": "PT. DTJAN PELITA KAWANUA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -83459,7 +83459,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9274",
     "nama": "Laysa Tonsea CAKES and Cookies",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -83468,7 +83468,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9275",
     "nama": "Mami Ani",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -83477,7 +83477,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9276",
     "nama": "INDRY",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -83486,7 +83486,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9277",
     "nama": "CV. BERKAT ANUGERAH TERANG",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -83495,7 +83495,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9278",
     "nama": "Ramantha Kitchen",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -83504,7 +83504,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9279",
     "nama": "Ani Berkah Kawanua",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -83513,7 +83513,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9280",
     "nama": "Ani Berkah Kawanua",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -83522,7 +83522,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9281",
     "nama": "Sangkakala Flower",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -83531,7 +83531,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9282",
     "nama": "De'Harvest",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -83540,7 +83540,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9283",
     "nama": "Lyvia Nusa Boga",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -83549,7 +83549,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9284",
     "nama": "Yannie Handycraft",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -83558,7 +83558,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9285",
     "nama": "PT Sang Bayu Collection",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -83567,7 +83567,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9286",
     "nama": "AndeeQu",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -83576,7 +83576,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9287",
     "nama": "PT Buramapia Fashion Industry",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -83585,7 +83585,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9288",
     "nama": "PT Buramapia Fashion Industry",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -83594,7 +83594,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9289",
     "nama": "PT. Rumah Madu Aisyah",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -83603,7 +83603,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9290",
     "nama": "Cv. uwai limbong",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -83612,7 +83612,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9291",
     "nama": "Koperasi Kopi Petani Kampoeng",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -83621,7 +83621,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9292",
     "nama": "PT Universal Agro Nusantara",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -83630,7 +83630,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9293",
     "nama": "CV Putra Mataram",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -83639,7 +83639,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9294",
     "nama": "PT. Wastrama Tenun Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -83648,7 +83648,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9295",
     "nama": "P4S Cahaya Duta Palili",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -83657,7 +83657,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9296",
     "nama": "CV. Poki Cahaya Abadi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -83666,7 +83666,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9297",
     "nama": "PT Untuk Indonesia Hijau",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -83675,7 +83675,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9298",
     "nama": "PT Untuk Indonesia Hijau",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -83684,7 +83684,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9299",
     "nama": "PT. Rumah Kreatif Sekomandi",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -83693,7 +83693,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9300",
     "nama": "Pondok Pesantren Al Amin",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -83702,7 +83702,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9301",
     "nama": "Annisa Tenun",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -83711,7 +83711,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9302",
     "nama": "PT Natural Aren Koltim",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -83720,7 +83720,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9303",
     "nama": "Rumah Industri Kreatif ARIESTHA colection",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -83729,7 +83729,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9304",
     "nama": "Kopsa Chicken",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -83738,7 +83738,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9305",
     "nama": "CV. Ayyash Mandiri",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -83747,7 +83747,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9306",
     "nama": "UD. Sinar Buton",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -83756,7 +83756,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9307",
     "nama": "GreatCelebesCO",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -83765,7 +83765,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9308",
     "nama": "Kelorku",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -83774,7 +83774,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9309",
     "nama": "Haji Ali Coffee Roastery",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -83783,7 +83783,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9310",
     "nama": "CV Kopindo Sukses Bersama",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -83792,7 +83792,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9311",
     "nama": "UD. Mete Mubaraq Lombe",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -83801,7 +83801,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9312",
     "nama": "Mowilaku Jaya",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -83810,7 +83810,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9313",
     "nama": "NINDI FOOD",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -83819,7 +83819,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9314",
     "nama": "Nira Lakoo",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -83828,7 +83828,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9315",
     "nama": "SAGUKU",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -83837,7 +83837,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9316",
     "nama": "TO' LUCKY DEELA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -83846,7 +83846,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9317",
     "nama": "TO' LUCKY DEELA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -83855,7 +83855,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9318",
     "nama": "Adilah Cake & Kukis",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -83864,7 +83864,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9319",
     "nama": "Dafvan Putra Mandiri",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -83873,7 +83873,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9320",
     "nama": "Bilal Mekar Snack",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -83882,7 +83882,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9321",
     "nama": "IKM LapaKlapa",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -83891,7 +83891,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9322",
     "nama": "Dahlia'Go",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -83900,7 +83900,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9323",
     "nama": "D'Korsase",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -83909,7 +83909,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9324",
     "nama": "PT. Ghidza Sasuke Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -83918,7 +83918,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9325",
     "nama": "PT. HSS Gkarawo Gorontalo",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -83927,7 +83927,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9326",
     "nama": "House of Abhiee",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -83936,7 +83936,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9327",
     "nama": "Cahaya Bintang Cakrawala",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -83945,7 +83945,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9328",
     "nama": "UMKM KarawoQ",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -83954,7 +83954,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9329",
     "nama": "KARAWO LETHUNA BY TETHUNA",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -83963,7 +83963,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9330",
     "nama": "OLAMI",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -83972,7 +83972,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9331",
     "nama": "Putri",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -83981,7 +83981,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9332",
     "nama": "Rahida Cookies",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -83990,7 +83990,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9333",
     "nama": "UmmuAzzam Bakery dan Cookies",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -83999,7 +83999,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9334",
     "nama": "Mafahim Gorontalo Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -84008,7 +84008,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9335",
     "nama": "Serasi Karawo",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -84017,7 +84017,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9336",
     "nama": "TIAR",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -84026,7 +84026,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9337",
     "nama": "B'gaya by efie",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -84035,7 +84035,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9338",
     "nama": "Sagu Tumbu Bintang Morella",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -84044,7 +84044,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9339",
     "nama": "Az-Zahra Lombe",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -84053,7 +84053,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9340",
     "nama": "Az-Zahra Lombe",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -84062,7 +84062,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9341",
     "nama": "G&R Masohi Shop",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -84071,7 +84071,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9342",
     "nama": "Galina Snack",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -84080,7 +84080,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9343",
     "nama": "CV. Fraya Gemilang",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -84089,7 +84089,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9344",
     "nama": "Enbal Fayri",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -84098,7 +84098,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9345",
     "nama": "Latanusa Indonesia Creative",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -84107,7 +84107,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9346",
     "nama": "Mie Sehat Cempaka",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -84116,7 +84116,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9347",
     "nama": "Nacha",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -84125,7 +84125,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9348",
     "nama": "CV. Breaven",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -84134,7 +84134,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9349",
     "nama": "Pempek Kulo",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -84143,7 +84143,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9350",
     "nama": "ROMADU",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -84152,7 +84152,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9351",
     "nama": "Tenun Ikat Mawar",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -84161,7 +84161,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9352",
     "nama": "PT Alam Bumi Enterprises",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -84170,7 +84170,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9353",
     "nama": "CV. Kenzie Pratama",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -84179,7 +84179,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9354",
     "nama": "Mafula Home Industry",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -84188,7 +84188,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9355",
     "nama": "Mafula Home Industry",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -84197,7 +84197,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9356",
     "nama": "Serba Usaha",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -84206,7 +84206,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9357",
     "nama": "PT. Pakesang Timor Mandiri",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -84215,7 +84215,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9358",
     "nama": "PT. Pakesang Timor Mandiri",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -84224,7 +84224,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9359",
     "nama": "Yayasan Ngofa Tidore",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -84233,7 +84233,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9360",
     "nama": "Rhoa Z",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -84242,7 +84242,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9361",
     "nama": "Fala Tanawan Home Industry",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -84251,7 +84251,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9362",
     "nama": "PT. Ummi Habibie Ternate",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -84260,7 +84260,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9363",
     "nama": "MANOKWARI BAKERY",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -84269,7 +84269,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9364",
     "nama": "MANOKWARI BAKERY",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -84278,7 +84278,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9365",
     "nama": "Basyira Kukis",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -84287,7 +84287,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9366",
     "nama": "Rumah Coklat",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -84296,7 +84296,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9367",
     "nama": "Highland Roastery",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -84305,7 +84305,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9368",
     "nama": "PT Ririens Food Indonesia",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -84314,7 +84314,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9369",
     "nama": "PT. Kakao Kita Papua",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -84323,7 +84323,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9370",
     "nama": "Nien's Rendang",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -84332,7 +84332,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9371",
     "nama": "CV Gemilang Pratama",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -84341,7 +84341,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9372",
     "nama": "CV Warline Katahati Papua (Sambal BaBa)",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -84350,7 +84350,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9373",
     "nama": "Sambal Mace Papua",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -84359,7 +84359,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9374",
     "nama": "Star Mount Coffee",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -84368,7 +84368,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9375",
     "nama": "Nahi Ndah Wari",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -84377,7 +84377,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9376",
     "nama": "Ty'p Jamoe",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -84386,7 +84386,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9377",
     "nama": "Abon Ikan Laut Miareto",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -84395,7 +84395,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9378",
     "nama": "Koperasi ebir shut cokran",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -84404,7 +84404,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9379",
     "nama": "DEO Art",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -84413,7 +84413,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9380",
     "nama": "Ferdi's Bakery",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,
@@ -84422,7 +84422,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9381",
     "nama": "PaceBLCK Company",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2024,
@@ -84431,7 +84431,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9382",
     "nama": "KASUARI BATIK",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Fashion",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -84440,7 +84440,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9383",
     "nama": "Pokja Viva",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2020,
@@ -84449,7 +84449,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9384",
     "nama": "Tunas Muda Harapan Udohotma",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -84458,7 +84458,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9385",
     "nama": "KOPI MANNA, KOPI PAPUA BARAT",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2022,
@@ -84467,7 +84467,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9386",
     "nama": "CV. ABON GULUNG HAWAI MANOKWARI",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2023,
@@ -84476,7 +84476,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9387",
     "nama": "Sinagi Papua",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2025,
@@ -84485,7 +84485,7 @@ window.EKONOMI_SEED = [
   {
     "id": "u9388",
     "nama": "Wilchof Roastery",
-    "jenis": "UMKM",
+    "jenis": "PUS",
     "komoditas": "Food",
     "fasilitas": "IKRA",
     "tahun": 2021,

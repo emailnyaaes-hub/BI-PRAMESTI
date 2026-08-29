@@ -520,7 +520,7 @@
   function cloneEconomiSeed() {
     const seed = window.EKONOMI_SEED;
     if (!Array.isArray(seed) || !seed.length) return [];
-    return JSON.parse(JSON.stringify(seed));
+    return seed.map((row, i) => inflateRecord(row, i));
   }
 
   async function loadRecords() {
