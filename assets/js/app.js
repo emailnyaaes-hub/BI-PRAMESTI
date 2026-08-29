@@ -40,6 +40,8 @@
   const IDB_NAME = "padel-ekonomi-lokal";
   const IDB_STORE = "kv";
   const UPDATED_KEY = "ekonomi-lokal-updated-v1";
+  const SEED_VERSION = "20260829b";
+  const SEED_VERSION_KEY = "padel-seed-version-v1";
   const WATCH_KEY = "padel-watchlist-v1";
   const SARAN_KEY = "padel-saran-overrides-v1";
   const PAGE_SIZE = 10;
@@ -517,6 +519,39 @@
     );
   }
 
+  function idbDelete(key) {
+    return withIdb().then(
+      (db) =>
+        new Promise((resolve, reject) => {
+          const tx = db.transaction(IDB_STORE, "readwrite");
+          tx.objectStore(IDB_STORE).delete(key);
+          tx.oncomplete = () => {
+            db.close();
+            resolve();
+          };
+          tx.onerror = () => reject(tx.error);
+        })
+    );
+  }
+
+  async function ensureSeedVersion() {
+    try {
+      const stored = localStorage.getItem(SEED_VERSION_KEY);
+      if (stored === SEED_VERSION) return;
+      localStorage.removeItem(STORAGE_KEY);
+      localStorage.removeItem(STORAGE_BACKEND_KEY);
+      localStorage.removeItem(UPDATED_KEY);
+      try {
+        await idbDelete(STORAGE_KEY);
+      } catch (_) {
+        /* ignore */
+      }
+      localStorage.setItem(SEED_VERSION_KEY, SEED_VERSION);
+    } catch (_) {
+      /* ignore */
+    }
+  }
+
   function cloneEconomiSeed() {
     const seed = window.EKONOMI_SEED;
     if (!Array.isArray(seed) || !seed.length) return [];
@@ -524,6 +559,7 @@
   }
 
   async function loadRecords() {
+    await ensureSeedVersion();
     try {
       const backend = localStorage.getItem(STORAGE_BACKEND_KEY);
       if (backend === "idb") {
