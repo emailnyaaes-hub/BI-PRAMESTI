@@ -336,6 +336,12 @@
     return capaianOfficeKey(office) === key;
   }
 
+  function recordIsKpwSelf(row) {
+    if (!isKpwScoped()) return true;
+    if (!state.kpwSelfKey || !row) return false;
+    return rowMatchesKpwPick(row, state.kpwSelfKey);
+  }
+
   function requireKpwSelf(focusId) {
     if (!isKpwScoped()) return true;
     if (state.kpwSelfKey) return true;
@@ -400,6 +406,12 @@
       addBtn.textContent = kpwSelfOffice() ? "Perbarui data saya" : "Tambah data saya";
     } else if (addBtn) {
       addBtn.textContent = "Tambah data";
+    }
+    const dbAddBtn = document.getElementById("btn-add");
+    if (dbAddBtn && currentRole() === "kpw") {
+      dbAddBtn.textContent = state.kpwSelfKey ? "Tambah data saya" : "Tambah data saya";
+    } else if (dbAddBtn) {
+      dbAddBtn.textContent = "Tambah data";
     }
     if (!canView(state.view)) {
       state.view = access.views[0] || "beranda";
@@ -1072,17 +1084,88 @@
   }
 
   function decorateImport(parsed) {
+    let rows = parsed.rows || [];
+    let ignoredOtherRows = 0;
+    if (isKpwScoped()) {
+      const selfKey = String(state.kpwSelfKey || "").trim();
+      if (!selfKey) {
+        return { ...parsed, rows: [], fresh: [], duplicates: [], matched: [], ignoredOtherRows: rows.length };
+      }
+      const all = rows;
+      rows = all
+        .filter((row) => rowMatchesKpwPick(row, selfKey))
+        .map((row) => ({ ...row, kpwdn: selfKey, jenis: classifyJenis({ ...row, kpwdn: selfKey }) }));
+      ignoredOtherRows = Math.max(0, all.length - rows.length);
+    }
     const have = existingKeys();
     const fresh = [];
     const duplicates = [];
-    parsed.rows.forEach((row) => {
-      if (have.has(recordKey(row))) duplicates.push(row);
-      else fresh.push(row);
+    const matched = [];
+    rows.forEach((row) => {
+      if (have.has(recordKey(row))) {
+        duplicates.push(row);
+        matched.push(row);
+      } else {
+        fresh.push(row);
+      }
     });
-    return { ...parsed, fresh, duplicates };
+    return { ...parsed, rows, fresh, duplicates, matched, ignoredOtherRows };
+  }
+
+  function mergeDatabaseRows(incoming) {
+    const selfKey = isKpwScoped() ? String(state.kpwSelfKey || "").trim() : "";
+    let added = 0;
+    let updated = 0;
+    const next = records.map((row) => ({ ...row }));
+    const indexByKey = new Map(next.map((row, i) => [recordKey(row), i]));
+    (incoming || []).forEach((row, i) => {
+      if (selfKey && !rowMatchesKpwPick(row, selfKey)) return;
+      const normalized = {
+        ...row,
+        kpwdn: selfKey || row.kpwdn,
+        jenis: classifyJenis({ ...row, kpwdn: selfKey || row.kpwdn }),
+        status: row.status || "Aktif",
+      };
+      const key = recordKey(normalized);
+      if (indexByKey.has(key)) {
+        const idx = indexByKey.get(key);
+        const prev = next[idx];
+        if (selfKey && !rowMatchesKpwPick(prev, selfKey)) return;
+        next[idx] = {
+          ...prev,
+          ...normalized,
+          id: prev.id,
+          lokasi: normalized.lokasi || prev.lokasi || "",
+          keterangan: normalized.keterangan ?? prev.keterangan ?? "",
+        };
+        updated += 1;
+      } else {
+        if (selfKey && !rowMatchesKpwPick(normalized, selfKey)) return;
+        next.push({
+          ...normalized,
+          id: `u${Date.now()}-${i}`,
+          lokasi: normalized.lokasi || "",
+        });
+        indexByKey.set(key, next.length - 1);
+        added += 1;
+      }
+    });
+    return { rows: next, added, updated };
   }
 
   async function applyImportedRows(rows, replace) {
+    if (isKpwScoped()) {
+      const { rows: next, added, updated } = mergeDatabaseRows(rows);
+      if (!(await persistRecords(next))) return;
+      state.page = 1;
+      state.importDraft = null;
+      closeModal();
+      render();
+      flash(
+        `Data ${state.kpwSelfKey} diperbarui: ${fmtNum(added)} baru, ${fmtNum(updated)} diperbarui. Data KPwDN lain tidak berubah.`
+      );
+      return;
+    }
     const stamped = rows.map((row, i) => ({
       id: `u${i + 1}`,
       ...row,
@@ -3262,10 +3345,12 @@
           <td class="ket-cell">${escapeHtml(row.keterangan || "—")}</td>
           ${
             showAksi
-              ? `<td class="aksi-cell">
+              ? recordIsKpwSelf(row)
+                ? `<td class="aksi-cell">
             <button type="button" class="btn btn-ghost btn-sm" data-edit="${escapeHtml(row.id)}">Ubah</button>
             <button type="button" class="btn btn-danger btn-sm" data-delete="${escapeHtml(row.id)}">Hapus</button>
           </td>`
+                : `<td class="aksi-cell muted">—</td>`
               : ""
           }
         </tr>`
@@ -3363,14 +3448,23 @@
   }
 
   function importDropHtml() {
+    const scoped = isKpwScoped();
+    const self = scoped ? state.kpwSelfKey : "";
     const replaceHint = can("canReplaceAllData")
       ? "Setelah data di kertas kerja diubah, unduh berkasnya lalu unggah di sini (Ganti seluruh data)."
-      : "Setelah data di kertas kerja diubah, unduh berkasnya lalu unggah di sini untuk menambahkan unit yang belum ada.";
+      : "Pilih KPwDN pengampu Anda, lalu unggah Excel. Hanya baris kantor itu yang diperbarui; data KPwDN lain tidak berubah.";
+    const picker = scoped
+      ? `<label class="capaian-import-self">KPwDN pengampu saya
+            <select id="db-import-self" required>${kpwOfficeOptionsHtml(self)}</select>
+          </label>`
+      : "";
+    const dropDisabled = scoped && !self;
     return `
       <div class="modal-back" data-close="1">
         <div class="modal" role="dialog" aria-modal="true">
           <div class="kicker">Tambah dari berkas</div>
           <h2>Unggah Excel</h2>
+          ${picker}
           <p class="import-note">
             Sumber resmi: kertas kerja SharePoint <i>Database Rekap All UMKM 11.811</i>.
             BI PRAMESTI tidak dapat menarik file itu otomatis karena tautannya privat dan meminta login Bank Indonesia.
@@ -3378,9 +3472,9 @@
             Kolom yang dikenali: No, Nama UMKM, Komoditas, ICK (fasilitas), Tahun Fasilitasi, dan Asal KPw.
             Jumlah per ICK dihitung dari kolom ICK pada kertas kerja, termasuk sel yang tergabung (merge).
           </p>
-          <div class="dropzone-box" id="excel-drop" tabindex="0">
-            <b>Letakkan berkas Excel di sini</b>
-            <p>atau klik untuk memilih dari komputer</p>
+          <div class="dropzone-box${dropDisabled ? " is-disabled" : ""}" id="excel-drop" tabindex="0"${dropDisabled ? ' aria-disabled="true"' : ""}>
+            <b>${dropDisabled ? "Pilih KPwDN pengampu terlebih dahulu" : "Letakkan berkas Excel di sini"}</b>
+            <p>${dropDisabled ? "Setelah dipilih, unggah Excel kantor Anda." : "atau klik untuk memilih dari komputer"}</p>
           </div>
           <div class="modal-actions">
             ${
@@ -3397,9 +3491,14 @@
   function importPreviewHtml(draft) {
     const preview = draft.rows.slice(0, 8);
     const canReplace = can("canReplaceAllData");
+    const scoped = isKpwScoped();
+    const ignored = Number(draft.ignoredOtherRows || 0);
     const note = canReplace
       ? "Satu nomor di kolom No kertas kerja = satu unit di BI PRAMESTI (bukan nama unik). Nama kosong atau \"-\" diisi dari baris atas jika sel Excel tergabung. Untuk Rekap All, pilih <b>Ganti seluruh data</b> agar jumlahnya sama dengan Excel."
-      : "Satu nomor di kolom No kertas kerja = satu unit di BI PRAMESTI (bukan nama unik). Nama kosong atau \"-\" diisi dari baris atas jika sel Excel tergabung. Kantor Perwakilan hanya dapat menambahkan unit yang belum ada.";
+      : `${draft.rows.length} baris untuk <b>${escapeHtml(state.kpwSelfKey || "KPwDN Anda")}</b> siap diterapkan.${ignored ? ` ${fmtNum(ignored)} baris KPwDN lain di berkas diabaikan.` : ""} Data KPwDN lain di BI PRAMESTI tidak berubah.`;
+    const mergeLabel = scoped
+      ? `Perbarui data saya (${fmtNum(draft.rows.length)})`
+      : `Tambahkan ${fmtNum(draft.fresh.length)} yang belum ada`;
     return `
       <div class="modal-back" data-close="1">
         <div class="modal wide" role="dialog" aria-modal="true">
@@ -3407,9 +3506,9 @@
           <h2>${escapeHtml(draft.filename || "Berkas Excel")}</h2>
           <p class="import-note">${note}</p>
           <div class="import-stats">
-            <span>${fmtNum(draft.rows.length)} unit sesuai kertas kerja</span>
+            <span>${fmtNum(draft.rows.length)} unit sesuai kertas kerja${scoped ? " (kantor Anda)" : ""}</span>
             <span>${fmtNum(draft.fresh.length)} belum ada di BI PRAMESTI</span>
-            <span>${fmtNum(draft.duplicates.length)} kunci nama+tahun+KPw sudah ada</span>
+            <span>${fmtNum((draft.matched || draft.duplicates || []).length)} sudah ada (akan diperbarui)</span>
             <span>${fmtNum(draft.skipped)} dilewati</span>
           </div>
           <div style="overflow:auto">
@@ -3441,7 +3540,11 @@
           </div>
           <div class="modal-actions">
             <button type="button" class="btn btn-ghost" data-close="1">Batal</button>
-            <button type="button" class="btn ${canReplace ? "btn-ghost" : "btn-primary"}" id="btn-import-append" ${draft.fresh.length ? "" : "disabled"}>Tambahkan ${fmtNum(draft.fresh.length)} yang belum ada</button>
+            ${
+              scoped
+                ? `<button type="button" class="btn btn-primary" id="btn-import-merge" ${draft.rows.length ? "" : "disabled"}>${mergeLabel}</button>`
+                : `<button type="button" class="btn ${canReplace ? "btn-ghost" : "btn-primary"}" id="btn-import-append" ${draft.fresh.length ? "" : "disabled"}>${mergeLabel}</button>`
+            }
             ${
               canReplace
                 ? `<button type="button" class="btn btn-primary" id="btn-import-replace" ${draft.rows.length ? "" : "disabled"}>Ganti seluruh data (${fmtNum(draft.rows.length)})</button>`
@@ -3837,7 +3940,7 @@
                   : ""
               }
               ${
-                can("canEdit")
+                can("canEdit") && recordIsKpwSelf(row)
                   ? `<button class="btn btn-ghost btn-sm" data-edit="${escapeHtml(row.id)}">Ubah</button>
               <button class="btn btn-danger btn-sm" data-delete="${escapeHtml(row.id)}">Hapus</button>`
                   : ""
@@ -3849,6 +3952,16 @@
       return;
     }
 
+    if (state.modal.type === "edit") {
+      const existing = records.find((r) => r.id === state.modal.id);
+      if (existing && isKpwScoped() && !recordIsKpwSelf(existing)) {
+        flash("Anda hanya dapat mengubah data UMKM/PUS KPwDN pengampu Anda.", true);
+        state.modal = null;
+        root.innerHTML = "";
+        return;
+      }
+    }
+
     const row =
       state.modal.type === "edit"
         ? records.find((r) => r.id === state.modal.id)
@@ -3858,7 +3971,7 @@
             komoditas: "",
             fasilitas: "",
             tahun: new Date().getFullYear(),
-            kpwdn: "",
+            kpwdn: isKpwScoped() ? state.kpwSelfKey : "",
             lokasi: "",
             status: "Aktif",
             keterangan: "",
@@ -3870,6 +3983,9 @@
 
     const datalist = (id, values) =>
       `<datalist id="${id}">${values.map((v) => `<option value="${escapeHtml(v)}"></option>`).join("")}</datalist>`;
+
+    const scopedDb = isKpwScoped();
+    const selfKey = String(state.kpwSelfKey || row.kpwdn || "").trim();
 
     root.innerHTML = `
       <div class="modal-back" data-close="1">
@@ -3896,7 +4012,11 @@
               <input name="fasilitas" list="list-fasilitas" required value="${escapeHtml(row.fasilitas)}">
             </label>
             <label class="full">KPwDN pengampu
-              <input name="kpwdn" list="list-kpwdn" required value="${escapeHtml(row.kpwdn)}">
+              ${
+                scopedDb
+                  ? `<select name="kpwdn" id="db-form-self" required>${kpwOfficeOptionsHtml(row.kpwdn || selfKey)}</select>`
+                  : `<input name="kpwdn" list="list-kpwdn" required value="${escapeHtml(row.kpwdn)}">`
+              }
             </label>
             <label class="full">Keterangan
               <textarea name="keterangan" rows="3">${escapeHtml(row.keterangan || "")}</textarea>
@@ -4530,6 +4650,9 @@
       flash("Akun ini hanya dapat melihat data.", true);
       return;
     }
+    if (isKpwScoped() && !state.kpwSelfKey) {
+      flash("Pilih KPwDN pengampu Anda terlebih dahulu.", true);
+    }
     state.modal = { type: "create" };
     renderModal();
   });
@@ -4593,6 +4716,7 @@
       flash("Akun ini tidak dapat mengunggah data.", true);
       return;
     }
+    if (isKpwScoped() && !requireKpwSelf("db-import-self")) return;
     if (!file) return;
     const name = file.name.toLowerCase();
     if (!/\.(xlsx|xls|csv)$/.test(name)) {
@@ -4668,6 +4792,11 @@
         flash("Akun ini hanya dapat melihat data.", true);
         return;
       }
+      const row = records.find((r) => r.id === edit.getAttribute("data-edit"));
+      if (row && isKpwScoped() && !recordIsKpwSelf(row)) {
+        flash("Anda hanya dapat mengubah data UMKM/PUS KPwDN pengampu Anda.", true);
+        return;
+      }
       state.modal = { type: "edit", id: edit.getAttribute("data-edit") };
       renderModal();
       return;
@@ -4680,6 +4809,10 @@
       }
       const id = del.getAttribute("data-delete");
       const row = records.find((r) => r.id === id);
+      if (row && isKpwScoped() && !recordIsKpwSelf(row)) {
+        flash("Anda hanya dapat menghapus data UMKM/PUS KPwDN pengampu Anda.", true);
+        return;
+      }
       if (!row || !confirm(`Hapus ${row.nama}?`)) return;
       persistRecords(records.filter((r) => r.id !== id)).then((ok) => {
         if (!ok) return;
@@ -4831,6 +4964,17 @@
   });
 
   document.getElementById("modal-root").addEventListener("change", (e) => {
+    if (e.target.id === "db-import-self") {
+      saveKpwSelfKey(e.target.value);
+      applyRoleChrome();
+      if (state.modal?.type === "import" && !state.importDraft) renderModal();
+      return;
+    }
+    if (e.target.id === "db-form-self") {
+      saveKpwSelfKey(e.target.value);
+      applyRoleChrome();
+      return;
+    }
     if (e.target.id === "capaian-import-self") {
       saveKpwSelfKey(e.target.value);
       applyRoleChrome();
@@ -4901,6 +5045,7 @@
     }
     if (e.target.closest("#excel-drop")) {
       if (!can("canUploadData")) return;
+      if (isKpwScoped() && !requireKpwSelf("db-import-self")) return;
       openExcelPicker();
       return;
     }
@@ -4989,6 +5134,13 @@
       });
       return;
     }
+    if (e.target.closest("#btn-import-merge")) {
+      if (!can("canUploadData")) return;
+      if (!requireKpwSelf("db-import-self")) return;
+      if (!state.importDraft?.rows.length) return;
+      applyImportedRows(state.importDraft.rows, false);
+      return;
+    }
     if (e.target.closest("#btn-import-append")) {
       if (!can("canUploadData")) return;
       if (!state.importDraft?.fresh.length) return;
@@ -5055,6 +5207,11 @@
         flash("Akun ini hanya dapat melihat data.", true);
         return;
       }
+      const row = records.find((r) => r.id === edit.getAttribute("data-edit"));
+      if (row && isKpwScoped() && !recordIsKpwSelf(row)) {
+        flash("Anda hanya dapat mengubah data UMKM/PUS KPwDN pengampu Anda.", true);
+        return;
+      }
       state.modal = { type: "edit", id: edit.getAttribute("data-edit") };
       renderModal();
       return;
@@ -5067,6 +5224,10 @@
       }
       const id = del.getAttribute("data-delete");
       const row = records.find((r) => r.id === id);
+      if (row && isKpwScoped() && !recordIsKpwSelf(row)) {
+        flash("Anda hanya dapat menghapus data UMKM/PUS KPwDN pengampu Anda.", true);
+        return;
+      }
       if (!row || !confirm(`Hapus ${row.nama}?`)) return;
       persistRecords(records.filter((r) => r.id !== id)).then((ok) => {
         if (!ok) return;
@@ -5101,6 +5262,7 @@
     if (!zone) return;
     e.preventDefault();
     zone.classList.remove("drag");
+    if (isKpwScoped() && !requireKpwSelf("db-import-self")) return;
     ingestExcelFile(e.dataTransfer.files && e.dataTransfer.files[0]);
   });
 
@@ -5231,9 +5393,20 @@
     }
     const data = Object.fromEntries(new FormData(e.target).entries());
     data.tahun = Number(data.tahun);
+    if (isKpwScoped()) {
+      const picked = String(data.kpwdn || "").trim();
+      if (picked) saveKpwSelfKey(picked);
+      if (!requireKpwSelf("db-form-self")) return;
+      data.kpwdn = state.kpwSelfKey;
+    }
     data.jenis = classifyJenis(data);
     let next;
     if (state.modal?.type === "edit") {
+      const prev = records.find((row) => row.id === state.modal.id);
+      if (prev && isKpwScoped() && !recordIsKpwSelf(prev)) {
+        flash("Anda hanya dapat mengubah data UMKM/PUS KPwDN pengampu Anda.", true);
+        return;
+      }
       next = records.map((row) =>
         row.id === state.modal.id
           ? {
