@@ -936,48 +936,81 @@
     });
   }
 
+  const TEMPLATE_XLSX_PATH = "contoh/Template Database UMKM PUS dan ICK.xlsx";
+  const TEMPLATE_XLSX_NAME = "Template Database UMKM PUS dan ICK.xlsx";
+  const SHEET_DATABASE_UMKM = "Database UMKM PUS";
+  const SHEET_CAPAIAN_ICK = "Capaian ICK";
+
+  function normalizeSheetName(name) {
+    return String(name || "")
+      .replace(/\s+/g, " ")
+      .trim()
+      .toLowerCase();
+  }
+
+  function pickSheetName(sheetNames, target) {
+    const want = normalizeSheetName(target);
+    return (sheetNames || []).find((name) => normalizeSheetName(name) === want) || null;
+  }
+
+  function parseSpreadsheetSheet(workbook, sheetName, file) {
+    const sheet = workbook.Sheets[sheetName];
+    const grid = XLSX.utils.sheet_to_json(sheet, {
+      header: 1,
+      defval: "",
+      raw: true,
+      blankrows: true,
+    });
+    let mapping = null;
+    let bestScore = 0;
+    for (let i = 0; i < Math.min(grid.length, 25); i += 1) {
+      const candidate = mappingFromHeaderRow(grid[i] || []);
+      const score = mappingScore(candidate);
+      if (score > bestScore) {
+        bestScore = score;
+        mapping = candidate;
+      }
+      if (score >= 6) break;
+    }
+    if (mapping) {
+      applyColumnMerges(sheet, grid, mapping.nama);
+      applyColumnMerges(sheet, grid, mapping.fasilitas);
+      applyColumnMerges(sheet, grid, mapping.kpwdn);
+    }
+    const parsed = parseGrid(grid);
+    parsed.filename = file.name;
+    parsed.sheet = sheetName;
+    parsed.score = bestScore;
+    return parsed;
+  }
+
   function parseSpreadsheet(file, buffer) {
     if (!window.XLSX) {
       throw new Error("Pustaka Excel belum termuat. Periksa koneksi internet, lalu muat ulang halaman.");
     }
     const workbook = XLSX.read(buffer, { type: "array", cellDates: true });
     if (!workbook.SheetNames.length) throw new Error("Berkas tidak berisi lembar kerja.");
+    const named = pickSheetName(workbook.SheetNames, SHEET_DATABASE_UMKM);
+    if (named) {
+      const chosen = parseSpreadsheetSheet(workbook, named, file);
+      if (!chosen.rows.length) {
+        throw new Error(`Lembar "${SHEET_DATABASE_UMKM}" kosong atau kolom tidak dikenali.`);
+      }
+      return chosen;
+    }
     let best = null;
     workbook.SheetNames.forEach((sheetName) => {
-      const sheet = workbook.Sheets[sheetName];
-      const grid = XLSX.utils.sheet_to_json(sheet, {
-        header: 1,
-        defval: "",
-        raw: true,
-        blankrows: true,
-      });
-      let mapping = null;
-      let bestScore = 0;
-      for (let i = 0; i < Math.min(grid.length, 25); i += 1) {
-        const candidate = mappingFromHeaderRow(grid[i] || []);
-        const score = mappingScore(candidate);
-        if (score > bestScore) {
-          bestScore = score;
-          mapping = candidate;
-        }
-        if (score >= 6) break;
-      }
-      if (mapping) {
-        applyColumnMerges(sheet, grid, mapping.nama);
-        applyColumnMerges(sheet, grid, mapping.fasilitas);
-        applyColumnMerges(sheet, grid, mapping.kpwdn);
-      }
-      const parsed = parseGrid(grid);
-      const bonus = /rekap all/i.test(sheetName) ? 500000000 : /onboarding|digital farming/i.test(sheetName) ? -200000000 : 0;
+      const parsed = parseSpreadsheetSheet(workbook, sheetName, file);
+      const bonus = /rekap all|database umkm/i.test(sheetName) ? 500000000 : /onboarding|digital farming|capaian ick/i.test(sheetName) ? -200000000 : 0;
       const score = bonus + (parsed.score || 0) * 10000 + parsed.rows.length;
       if (!best || score > best.rank) {
-        best = { parsed, sheetName, rank: score };
+        best = { parsed, rank: score };
       }
     });
-    const chosen = best.parsed;
-    chosen.filename = file.name;
-    chosen.sheet = best.sheetName;
-    return chosen;
+    if (!best?.parsed?.rows?.length) {
+      throw new Error(`Tidak menemukan lembar "${SHEET_DATABASE_UMKM}". Unggah ${TEMPLATE_XLSX_NAME}.`);
+    }
+    return best.parsed;
   }
 
   function foldCapaianHeader(value) {
@@ -1008,6 +1041,20 @@
     }
     const workbook = XLSX.read(buffer, { type: "array", cellDates: false });
     if (!workbook.SheetNames.length) throw new Error("Berkas tidak berisi lembar kerja.");
+    const named = pickSheetName(workbook.SheetNames, SHEET_CAPAIAN_ICK);
+    if (named) {
+      const grid = XLSX.utils.sheet_to_json(workbook.Sheets[named], {
+        header: 1,
+        defval: "",
+        raw: true,
+        blankrows: false,
+      });
+      const built = buildCapaianFromGrid(grid, file.name, named);
+      if (!built.offices.length) {
+        throw new Error(`Lembar "${SHEET_CAPAIAN_ICK}" tidak berisi baris KPwDN yang valid.`);
+      }
+      return built;
+    }
     let best = null;
     workbook.SheetNames.forEach((sheetName) => {
       const grid = XLSX.utils.sheet_to_json(workbook.Sheets[sheetName], {
@@ -1020,7 +1067,7 @@
       if (score && (!best || score > best.score)) best = { grid, sheetName, score };
     });
     if (!best || best.score < 10) {
-      throw new Error("Tidak menemukan Tabel 2026 (Acc) atau Target 2026 (Ind). Unggah Rekap Capaian ICK DR KPwDN.");
+      throw new Error(`Tidak menemukan lembar "${SHEET_CAPAIAN_ICK}". Unggah ${TEMPLATE_XLSX_NAME}.`);
     }
     return buildCapaianFromGrid(best.grid, file.name, best.sheetName);
   }
@@ -1262,48 +1309,37 @@
       return;
     }
     const example = [
-      "Kopi Contoh Lestari",
-      "UMKM",
-      "Kopi",
+      1,
+      "Prov. Jawa Barat",
       "Pendampingan klaster",
+      "Kopi Contoh Lestari",
+      "Kopi",
       new Date().getFullYear(),
-      "KPwDN Provinsi Jawa Barat",
-      "Bandung, Jawa Barat",
-      "Aktif",
-      "Contoh baris — hapus lalu isi data Anda",
+      "1234",
     ];
-    const sheet = XLSX.utils.aoa_to_sheet([IMPORT_HEADERS, example]);
-    sheet["!cols"] = IMPORT_HEADERS.map((h) => ({ wch: Math.max(16, h.length + 4) }));
+    const headers = ["No", "Asal KPw", "ICK", "Nama UMKM", "Komoditas", "Tahun Fasilitasi", "ID Ref"];
+    const sheet = XLSX.utils.aoa_to_sheet([headers, example]);
+    sheet["!cols"] = headers.map((h) => ({ wch: Math.max(16, h.length + 4) }));
     const book = XLSX.utils.book_new();
-    XLSX.utils.book_append_sheet(book, sheet, "BI PRAMESTI");
-    XLSX.writeFile(book, "template-bi-pramesti.xlsx");
+    XLSX.utils.book_append_sheet(book, sheet, SHEET_DATABASE_UMKM);
+    XLSX.writeFile(book, TEMPLATE_XLSX_NAME);
   }
 
   function downloadBuiltCapaianTemplate() {
-    if (!window.XLSX) {
-      flash("Pustaka Excel belum termuat. Muat ulang halaman, lalu coba lagi.", true);
-      return;
+    downloadBuiltDbTemplate();
+  }
+
+  async function downloadBundledTemplate() {
+    try {
+      const res = await fetch(`${TEMPLATE_XLSX_PATH}?v=20260829e`);
+      if (!res.ok) return false;
+      const blob = await res.blob();
+      triggerBlobDownload(blob, TEMPLATE_XLSX_NAME);
+      flash(`Template standar diunduh: ${TEMPLATE_XLSX_NAME}`);
+      return true;
+    } catch (_) {
+      return false;
     }
-    const programs = (ickCapaian().programs || []).map((item) => item.name || item.id);
-    const headers = [
-      "No",
-      "Tier",
-      "Wilayah",
-      "KPwDN pengampu",
-      ...programs.flatMap((name) => [`Acc ${name}`, `Ind ${name}`, `Realisasi ${name}`]),
-    ];
-    const example = [
-      1,
-      "Tier C",
-      "Jawa",
-      "Provinsi Jawa Barat",
-      ...programs.flatMap(() => [0, 0, 0]),
-    ];
-    const sheet = XLSX.utils.aoa_to_sheet([headers, example]);
-    sheet["!cols"] = headers.map((h) => ({ wch: Math.max(12, String(h).length + 2) }));
-    const book = XLSX.utils.book_new();
-    XLSX.utils.book_append_sheet(book, sheet, "Capaian ICK");
-    XLSX.writeFile(book, "template-capaian-ick.xlsx");
   }
 
   async function downloadStoredOrBuilt(key, builtFn, fallbackName) {
@@ -1324,15 +1360,16 @@
         flash("Template tersimpan rusak. Mengunduh template bawaan.", true);
       }
     }
+    if (await downloadBundledTemplate()) return;
     builtFn();
   }
 
   function downloadDbTemplate() {
-    downloadStoredOrBuilt(TEMPLATE_DB_KEY, downloadBuiltDbTemplate, "template-bi-pramesti.xlsx");
+    downloadStoredOrBuilt(TEMPLATE_DB_KEY, downloadBuiltDbTemplate, TEMPLATE_XLSX_NAME);
   }
 
   function downloadCapaianTemplate() {
-    downloadStoredOrBuilt(TEMPLATE_CAPAIAN_KEY, downloadBuiltCapaianTemplate, "template-capaian-ick.xlsx");
+    downloadStoredOrBuilt(TEMPLATE_CAPAIAN_KEY, downloadBuiltCapaianTemplate, TEMPLATE_XLSX_NAME);
   }
 
   async function ingestTemplateFile(file, key, label) {
@@ -3466,10 +3503,9 @@
           <h2>Unggah Excel</h2>
           ${picker}
           <p class="import-note">
-            Sumber resmi: kertas kerja SharePoint <i>Database Rekap All UMKM 11.811</i>.
-            BI PRAMESTI tidak dapat menarik file itu otomatis karena tautannya privat dan meminta login Bank Indonesia.
+            Gunakan berkas <b>${TEMPLATE_XLSX_NAME}</b>, lembar <b>${SHEET_DATABASE_UMKM}</b>.
             ${replaceHint}
-            Kolom yang dikenali: No, Nama UMKM, Komoditas, ICK (fasilitas), Tahun Fasilitasi, dan Asal KPw.
+            Kolom yang dikenali: No, Asal KPw, ICK (fasilitas), Nama UMKM, Komoditas, Tahun Fasilitasi, dan ID Ref.
             Jumlah per ICK dihitung dari kolom ICK pada kertas kerja, termasuk sel yang tergabung (merge).
           </p>
           <div class="dropzone-box${dropDisabled ? " is-disabled" : ""}" id="excel-drop" tabindex="0"${dropDisabled ? ' aria-disabled="true"' : ""}>
@@ -3559,8 +3595,8 @@
     const scoped = isKpwScoped();
     const self = scoped ? state.kpwSelfKey : "";
     const note = can("canReplaceAllData")
-      ? "Unggah kertas kerja <b>Rekap Capaian ICK DR KPwDN</b> yang memuat Tabel 2026 (Acc) dan Tabel 2026 (Ind). Sel Target 2026 (Ind) yang kosong dihitung 0. Target memakai Acc Revised bila kolom itu terisi; selain itu Acc."
-      : "Pilih KPwDN pengampu Anda, lalu unggah Excel template. Hanya baris kantor itu yang diperbarui; data KPwDN lain tidak berubah.";
+      ? `Gunakan berkas <b>${TEMPLATE_XLSX_NAME}</b>, lembar <b>${SHEET_CAPAIAN_ICK}</b>. Sel Target 2026 (Ind) yang kosong dihitung 0. Pilih <b>Ganti seluruh capaian ICK</b> agar isi sama dengan Excel, atau gabungkan tanpa menghapus kantor yang tidak ada di berkas.`
+      : `Gunakan berkas <b>${TEMPLATE_XLSX_NAME}</b>, lembar <b>${SHEET_CAPAIAN_ICK}</b>. Pilih KPwDN pengampu Anda, lalu unggah Excel. Hanya baris kantor itu yang diperbarui; data KPwDN lain tidak berubah.`;
     const picker = scoped
       ? `<label class="capaian-import-self">KPwDN pengampu saya
             <select id="capaian-import-self" required>${kpwOfficeOptionsHtml(self)}</select>
