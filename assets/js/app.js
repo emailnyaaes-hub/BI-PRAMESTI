@@ -17,8 +17,8 @@
     },
     kpw: {
       views: ["beranda", "capaian", "database"],
-      canEdit: true,
-      canUploadData: true,
+      canEdit: false,
+      canUploadData: false,
       canReplaceAllData: false,
       canUploadTemplate: false,
       canDownloadTemplate: true,
@@ -314,6 +314,8 @@
 
   function saveKpwSelfKey(key) {
     const next = String(key || "").trim();
+    const locked = String(state.kpwSelfKey || "").trim();
+    if (isKpwScoped() && locked && next !== locked) return false;
     state.kpwSelfKey = next;
     try {
       if (next) sessionStorage.setItem(KPW_SELF_KEY, next);
@@ -321,6 +323,26 @@
     } catch (_) {
       /* ignore */
     }
+    return true;
+  }
+
+  function handleKpwSelfPick(el, afterChange) {
+    const locked = String(state.kpwSelfKey || "").trim();
+    const picked = String(el.value || "").trim();
+    if (locked && picked && picked !== locked) {
+      el.value = locked;
+      flash("KPwDN pengampu sudah dikunci. Anda hanya dapat mengubah data kantor ini.", true);
+      return false;
+    }
+    if (!saveKpwSelfKey(picked)) {
+      el.value = locked;
+      flash("KPwDN pengampu sudah dikunci. Anda hanya dapat mengubah data kantor ini.", true);
+      return false;
+    }
+    applyRoleChrome();
+    renderKpwSelfBar();
+    if (afterChange) afterChange();
+    return true;
   }
 
   function kpwSelfOffice() {
@@ -353,6 +375,10 @@
 
   function kpwOfficeOptionsHtml(selected) {
     const current = String(selected || state.kpwSelfKey || "").trim();
+    if (isKpwScoped() && state.kpwSelfKey) {
+      const locked = state.kpwSelfKey;
+      return `<option value="${escapeHtml(locked)}" selected>${escapeHtml(locked)}</option>`;
+    }
     const labels = [...(ickCapaian().offices || [])]
       .map((office) => accOfficeLabel(office))
       .filter(Boolean)
@@ -365,6 +391,11 @@
         )
       )
       .join("");
+  }
+
+  function renderKpwSelfBar() {
+    const bar = document.getElementById("kpw-self-bar");
+    if (bar) bar.hidden = true;
   }
 
   function canView(view) {
@@ -402,20 +433,13 @@
     setHidden("btn-template-capaian", !access.canDownloadTemplate);
     setHidden("btn-template-capaian-upload", !access.canUploadTemplate);
     const addBtn = document.getElementById("btn-capaian-add");
-    if (addBtn && currentRole() === "kpw") {
-      addBtn.textContent = kpwSelfOffice() ? "Perbarui data saya" : "Tambah data saya";
-    } else if (addBtn) {
-      addBtn.textContent = "Tambah data";
-    }
+    if (addBtn) addBtn.textContent = "Tambah data";
     const dbAddBtn = document.getElementById("btn-add");
-    if (dbAddBtn && currentRole() === "kpw") {
-      dbAddBtn.textContent = state.kpwSelfKey ? "Tambah data saya" : "Tambah data saya";
-    } else if (dbAddBtn) {
-      dbAddBtn.textContent = "Tambah data";
-    }
+    if (dbAddBtn) dbAddBtn.textContent = "Tambah data";
     if (!canView(state.view)) {
       state.view = access.views[0] || "beranda";
     }
+    renderKpwSelfBar();
   }
 
   function showApp() {
@@ -622,9 +646,46 @@
   }
 
   async function persistRecords(next) {
+    let toSave = next;
+    if (isKpwScoped()) {
+      const selfKey = String(state.kpwSelfKey || "").trim();
+      if (!selfKey) {
+        flash("Pilih KPwDN pengampu Anda terlebih dahulu.", true);
+        return false;
+      }
+      const prevById = new Map(records.map((row) => [row.id, row]));
+      const nextById = new Map(toSave.map((row) => [row.id, row]));
+      for (const prev of records) {
+        if (!nextById.has(prev.id) && !recordIsKpwSelf(prev)) {
+          flash("Anda hanya dapat menghapus data UMKM/PUS KPwDN pengampu Anda.", true);
+          return false;
+        }
+      }
+      for (const row of toSave) {
+        if (!prevById.has(row.id) && !rowMatchesKpwPick(row, selfKey)) {
+          flash("Anda hanya dapat menambah data untuk KPwDN pengampu Anda.", true);
+          return false;
+        }
+      }
+      for (const row of toSave) {
+        const prev = prevById.get(row.id);
+        if (!prev || recordIsKpwSelf(prev)) continue;
+        if (JSON.stringify(prev) !== JSON.stringify(row)) {
+          flash("Anda hanya dapat mengubah data UMKM/PUS KPwDN pengampu Anda.", true);
+          return false;
+        }
+      }
+      const merged = records
+        .filter((prev) => (recordIsKpwSelf(prev) ? nextById.has(prev.id) : true))
+        .map((prev) => (recordIsKpwSelf(prev) ? nextById.get(prev.id) : prev));
+      toSave.forEach((row) => {
+        if (!prevById.has(row.id) && rowMatchesKpwPick(row, selfKey)) merged.push(row);
+      });
+      toSave = merged;
+    }
     try {
-      await saveRecords(next);
-      records = next;
+      await saveRecords(toSave);
+      records = toSave;
       return true;
     } catch (err) {
       flash(err.message || "Gagal menyimpan data.", true);
@@ -1325,51 +1386,56 @@
     XLSX.writeFile(book, TEMPLATE_XLSX_NAME);
   }
 
-  function downloadBuiltCapaianTemplate() {
-    downloadBuiltDbTemplate();
+  function bundledTemplateUrl() {
+    const slash = TEMPLATE_XLSX_PATH.lastIndexOf("/");
+    const dir = slash >= 0 ? TEMPLATE_XLSX_PATH.slice(0, slash + 1) : "";
+    const file = slash >= 0 ? TEMPLATE_XLSX_PATH.slice(slash + 1) : TEMPLATE_XLSX_PATH;
+    return `${dir}${encodeURIComponent(file)}?v=20260829h`;
   }
 
   async function downloadBundledTemplate() {
     try {
-      const res = await fetch(`${TEMPLATE_XLSX_PATH}?v=20260829e`);
+      const res = await fetch(bundledTemplateUrl());
       if (!res.ok) return false;
       const blob = await res.blob();
       triggerBlobDownload(blob, TEMPLATE_XLSX_NAME);
-      flash(`Template standar diunduh: ${TEMPLATE_XLSX_NAME}`);
+      flash(`Template diunduh: ${TEMPLATE_XLSX_NAME} (Database UMKM/PUS & Capaian ICK).`);
       return true;
     } catch (_) {
       return false;
     }
   }
 
-  async function downloadStoredOrBuilt(key, builtFn, fallbackName) {
+  async function downloadOfficialTemplate() {
     if (!can("canDownloadTemplate")) {
       flash("Akun ini tidak dapat mengunduh template.", true);
       return;
     }
-    const meta = await loadTemplateMeta(key);
-    if (meta) {
+    if (await downloadBundledTemplate()) return;
+    for (const key of [TEMPLATE_DB_KEY, TEMPLATE_CAPAIAN_KEY]) {
+      const meta = await loadTemplateMeta(key);
+      if (!meta) continue;
       try {
         const blob = new Blob([base64ToArrayBuffer(meta.base64)], {
           type: meta.mime || "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
         });
-        triggerBlobDownload(blob, meta.name || fallbackName);
-        flash(`Template standar diunduh: ${meta.name || fallbackName}.`);
+        triggerBlobDownload(blob, meta.name || TEMPLATE_XLSX_NAME);
+        flash(`Template diunduh: ${meta.name || TEMPLATE_XLSX_NAME}.`);
         return;
       } catch (_) {
-        flash("Template tersimpan rusak. Mengunduh template bawaan.", true);
+        /* coba sumber berikutnya */
       }
     }
-    if (await downloadBundledTemplate()) return;
-    builtFn();
+    flash("Berkas template bawaan tidak ditemukan. Mengunduh versi ringkas.", true);
+    downloadBuiltDbTemplate();
   }
 
   function downloadDbTemplate() {
-    downloadStoredOrBuilt(TEMPLATE_DB_KEY, downloadBuiltDbTemplate, TEMPLATE_XLSX_NAME);
+    return downloadOfficialTemplate();
   }
 
   function downloadCapaianTemplate() {
-    downloadStoredOrBuilt(TEMPLATE_CAPAIAN_KEY, downloadBuiltCapaianTemplate, TEMPLATE_XLSX_NAME);
+    return downloadOfficialTemplate();
   }
 
   async function ingestTemplateFile(file, key, label) {
@@ -2681,7 +2747,47 @@
   }
 
   async function persistCapaian(data) {
-    const next = recomputeCapaianTotals(JSON.parse(JSON.stringify(data)));
+    let next = recomputeCapaianTotals(JSON.parse(JSON.stringify(data)));
+    if (isKpwScoped()) {
+      const selfKey = String(state.kpwSelfKey || "").trim().toLowerCase();
+      if (!selfKey) {
+        flash("Pilih KPwDN pengampu Anda terlebih dahulu.", true);
+        return false;
+      }
+      const prev = JSON.parse(JSON.stringify(ickCapaian()));
+      const prevOffices = prev.offices || [];
+      const nextOffices = next.offices || [];
+      const nextSelf = nextOffices.find((office) => capaianOfficeKey(office) === selfKey);
+      for (const office of nextOffices) {
+        const key = capaianOfficeKey(office);
+        if (!key || key === selfKey) continue;
+        const prevOffice = prevOffices.find((row) => capaianOfficeKey(row) === key);
+        if (!prevOffice) {
+          flash("Anda hanya dapat menambah atau mengubah data ICK KPwDN pengampu Anda.", true);
+          return false;
+        }
+        if (JSON.stringify(prevOffice) !== JSON.stringify(office)) {
+          flash("Anda hanya dapat mengubah data ICK KPwDN pengampu Anda.", true);
+          return false;
+        }
+      }
+      const prevKeys = new Set(prevOffices.map(capaianOfficeKey));
+      const nextKeys = new Set(nextOffices.map(capaianOfficeKey));
+      for (const key of prevKeys) {
+        if (key !== selfKey && !nextKeys.has(key)) {
+          flash("Anda hanya dapat mengubah data ICK KPwDN pengampu Anda.", true);
+          return false;
+        }
+      }
+      const mergedOffices = prevOffices.map((office) =>
+        capaianOfficeKey(office) === selfKey && nextSelf ? nextSelf : office
+      );
+      if (nextSelf && !prevKeys.has(selfKey)) mergedOffices.push(nextSelf);
+      next = recomputeCapaianTotals({
+        ...prev,
+        offices: mergedOffices.sort((a, b) => Number(a.no) - Number(b.no)),
+      });
+    }
     try {
       await idbSet(ICK_CAPAIAN_KEY, next);
     } catch (_) {
@@ -3468,6 +3574,7 @@
   function render() {
     const list = filtered();
     renderView();
+    renderKpwSelfBar();
     renderFilters();
     renderStats(list);
     renderPantau(list);
@@ -3491,7 +3598,9 @@
       ? "Setelah data di kertas kerja diubah, unduh berkasnya lalu unggah di sini (Ganti seluruh data)."
       : "Pilih KPwDN pengampu Anda, lalu unggah Excel. Hanya baris kantor itu yang diperbarui; data KPwDN lain tidak berubah.";
     const picker = scoped
-      ? `<label class="capaian-import-self">KPwDN pengampu saya
+      ? state.kpwSelfKey
+        ? `<p class="capaian-import-self"><strong>KPwDN pengampu:</strong> ${escapeHtml(state.kpwSelfKey)}</p>`
+        : `<label class="capaian-import-self">KPwDN pengampu saya
             <select id="db-import-self" required>${kpwOfficeOptionsHtml(self)}</select>
           </label>`
       : "";
@@ -3598,7 +3707,9 @@
       ? `Gunakan berkas <b>${TEMPLATE_XLSX_NAME}</b>, lembar <b>${SHEET_CAPAIAN_ICK}</b>. Sel Target 2026 (Ind) yang kosong dihitung 0. Pilih <b>Ganti seluruh capaian ICK</b> agar isi sama dengan Excel, atau gabungkan tanpa menghapus kantor yang tidak ada di berkas.`
       : `Gunakan berkas <b>${TEMPLATE_XLSX_NAME}</b>, lembar <b>${SHEET_CAPAIAN_ICK}</b>. Pilih KPwDN pengampu Anda, lalu unggah Excel. Hanya baris kantor itu yang diperbarui; data KPwDN lain tidak berubah.`;
     const picker = scoped
-      ? `<label class="capaian-import-self">KPwDN pengampu saya
+      ? state.kpwSelfKey
+        ? `<p class="capaian-import-self"><strong>KPwDN pengampu:</strong> ${escapeHtml(state.kpwSelfKey)}</p>`
+        : `<label class="capaian-import-self">KPwDN pengampu saya
             <select id="capaian-import-self" required>${kpwOfficeOptionsHtml(self)}</select>
           </label>`
       : "";
@@ -3757,9 +3868,9 @@
             </label>
             <label class="full">KPwDN pengampu${scoped && !isEdit ? " saya" : ""}
               ${
-                scoped && !isEdit
-                  ? `<select name="kpwdn" id="capaian-form-self" required>${kpwOfficeOptionsHtml(row.kpwdn || selfKey)}</select>`
-                  : `<input name="kpwdn" required value="${escapeHtml(row.kpwdn || "")}" placeholder="Prov. Aceh"${scoped ? " readonly" : ""}>`
+                scoped
+                  ? `<input name="kpwdn" id="capaian-form-self" required value="${escapeHtml(row.kpwdn || selfKey)}" readonly>`
+                  : `<input name="kpwdn" required value="${escapeHtml(row.kpwdn || "")}" placeholder="Prov. Aceh">`
               }
             </label>
           </div>
@@ -3829,6 +3940,21 @@
     }
 
     if (state.modal.type === "capaian-create" || state.modal.type === "capaian-edit") {
+      if (state.modal.type === "capaian-edit") {
+        const target = capaianOfficeByNo(state.modal.no);
+        if (target && isKpwScoped() && !officeIsKpwSelf(target)) {
+          flash("Anda hanya dapat mengubah data ICK KPwDN pengampu Anda.", true);
+          state.modal = null;
+          root.innerHTML = "";
+          return;
+        }
+      }
+      if (state.modal.type === "capaian-create" && isKpwScoped() && !state.kpwSelfKey) {
+        flash("Pilih KPwDN pengampu Anda terlebih dahulu.", true);
+        state.modal = null;
+        root.innerHTML = "";
+        return;
+      }
       const office =
         state.modal.type === "capaian-edit" ? capaianOfficeByNo(state.modal.no) : null;
       root.innerHTML = capaianOfficeFormHtml(office);
@@ -4050,7 +4176,9 @@
             <label class="full">KPwDN pengampu
               ${
                 scopedDb
-                  ? `<select name="kpwdn" id="db-form-self" required>${kpwOfficeOptionsHtml(row.kpwdn || selfKey)}</select>`
+                  ? state.kpwSelfKey
+                    ? `<input name="kpwdn" value="${escapeHtml(state.kpwSelfKey)}" readonly>`
+                    : `<select name="kpwdn" id="db-form-self" required>${kpwOfficeOptionsHtml(row.kpwdn || selfKey)}</select>`
                   : `<input name="kpwdn" list="list-kpwdn" required value="${escapeHtml(row.kpwdn)}">`
               }
             </label>
@@ -4686,9 +4814,7 @@
       flash("Akun ini hanya dapat melihat data.", true);
       return;
     }
-    if (isKpwScoped() && !state.kpwSelfKey) {
-      flash("Pilih KPwDN pengampu Anda terlebih dahulu.", true);
-    }
+    if (isKpwScoped() && !requireKpwSelf("kpw-self-pick")) return;
     state.modal = { type: "create" };
     renderModal();
   });
@@ -4719,6 +4845,7 @@
       return;
     }
     if (isKpwScoped()) {
+      if (!requireKpwSelf("kpw-self-pick")) return;
       const mine = kpwSelfOffice();
       if (mine) {
         state.modal = { type: "capaian-edit", no: mine.no };
@@ -5000,30 +5127,19 @@
   });
 
   document.getElementById("modal-root").addEventListener("change", (e) => {
-    if (e.target.id === "db-import-self") {
-      saveKpwSelfKey(e.target.value);
-      applyRoleChrome();
-      if (state.modal?.type === "import" && !state.importDraft) renderModal();
-      return;
-    }
-    if (e.target.id === "db-form-self") {
-      saveKpwSelfKey(e.target.value);
-      applyRoleChrome();
-      return;
-    }
-    if (e.target.id === "capaian-import-self") {
-      saveKpwSelfKey(e.target.value);
-      applyRoleChrome();
-      if (state.modal?.type === "capaian-import" && !state.capaianDraft) renderModal();
-      return;
-    }
-    if (e.target.id === "capaian-form-self") {
-      saveKpwSelfKey(e.target.value);
-      const mine = kpwSelfOffice();
-      if (mine) {
-        state.modal = { type: "capaian-edit", no: mine.no };
-        renderModal();
-      }
+    if (
+      e.target.id === "db-import-self" ||
+      e.target.id === "db-form-self" ||
+      e.target.id === "capaian-import-self"
+    ) {
+      handleKpwSelfPick(e.target, () => {
+        if (e.target.id === "db-import-self" && state.modal?.type === "import" && !state.importDraft) {
+          renderModal();
+        }
+        if (e.target.id === "capaian-import-self" && state.modal?.type === "capaian-import" && !state.capaianDraft) {
+          renderModal();
+        }
+      });
       return;
     }
     const pick = e.target.closest("[data-chart-list-filter]");
@@ -5313,7 +5429,7 @@
       if (isKpwScoped()) {
         const picked = String(form.kpwdn || "").trim();
         if (picked) saveKpwSelfKey(picked);
-        if (!requireKpwSelf("capaian-form-self")) return;
+        if (!requireKpwSelf("kpw-self-pick")) return;
       }
       const data = ickCapaian();
       const programs = data.programs || [];
@@ -5331,6 +5447,14 @@
         kpwdn = state.kpwSelfKey;
         kpw = kpw || state.kpwSelfKey;
       }
+      if (isKpwScoped() && state.modal?.type === "capaian-edit") {
+        const target = capaianOfficeByNo(state.modal.no);
+        if (!officeIsKpwSelf(target)) {
+          flash("Anda hanya dapat mengubah data ICK KPwDN pengampu Anda.", true);
+          return;
+        }
+      }
+      if (isKpwScoped() && state.modal?.type === "capaian-create" && !requireKpwSelf()) return;
       const existingSelf = isKpwScoped() ? kpwSelfOffice() : null;
       const office = {
         no:
@@ -5373,13 +5497,6 @@
           renderModal();
         });
         return;
-      }
-      if (isKpwScoped() && state.modal?.type === "capaian-edit") {
-        const target = capaianOfficeByNo(state.modal.no);
-        if (!officeIsKpwSelf(target)) {
-          flash("Anda hanya dapat mengubah data ICK KPwDN pengampu Anda.", true);
-          return;
-        }
       }
       const list = [...(data.offices || [])];
       if (state.modal?.type === "capaian-edit") {
@@ -5481,6 +5598,10 @@
     );
     state.view = ROLE_ACCESS[match.role]?.views?.[0] || "beranda";
     showApp();
+  });
+  document.getElementById("app-shell").addEventListener("change", (e) => {
+    if (e.target.id !== "kpw-self-pick") return;
+    handleKpwSelfPick(e.target);
   });
   document.getElementById("app-shell").addEventListener("click", (e) => {
     const go = e.target.closest("[data-view]");
