@@ -3,7 +3,13 @@
   const KPW_SELF_KEY = "padel-kpw-self-v1";
   const AUTH_USERS = [
     { user: "user", pass: "lihat2026", name: "User", role: "user" },
-    { user: "kpw", pass: "kpw2026", name: "Kantor Perwakilan", role: "kpw" },
+    {
+      user: "kpw_sumut",
+      pass: "kpwsumut2026",
+      name: "Kantor Perwakilan Sumatera Utara",
+      role: "kpw",
+      kpwdn: "Prov. Sumatera Utara",
+    },
     { user: "admin", pass: "padel2026", name: "Administrator", role: "admin" },
   ];
   const ROLE_ACCESS = {
@@ -17,7 +23,7 @@
     },
     kpw: {
       views: ["beranda", "capaian", "database"],
-      canEdit: false,
+      canEdit: true,
       canUploadData: true,
       canReplaceAllData: false,
       canUploadTemplate: false,
@@ -304,6 +310,40 @@
     return currentRole() === "kpw";
   }
 
+  function fixedKpwDn() {
+    const session = currentSession();
+    if (session?.kpwdn) return String(session.kpwdn).trim();
+    const byUser = AUTH_USERS.find((row) => row.user === session?.user);
+    return String(byUser?.kpwdn || "").trim();
+  }
+
+  function hasFixedKpwScope() {
+    return isKpwScoped() && Boolean(fixedKpwDn());
+  }
+
+  function kpwScopeMatchKey(pick) {
+    const raw = String(pick || "").trim();
+    if (!raw) return "";
+    return accOfficeLabel({ kpwdn: raw, kpw: raw }).toLowerCase();
+  }
+
+  function kpwScopeLabel() {
+    return String(state.kpwSelfKey || fixedKpwDn() || "KPwDN Anda").trim();
+  }
+
+  function initKpwScope() {
+    if (!isKpwScoped()) {
+      state.kpwSelfKey = "";
+      return;
+    }
+    const fixed = fixedKpwDn();
+    if (fixed) {
+      state.kpwSelfKey = accOfficeLabel({ kpwdn: fixed, kpw: fixed });
+      return;
+    }
+    state.kpwSelfKey = loadKpwSelfKey();
+  }
+
   function loadKpwSelfKey() {
     try {
       return String(sessionStorage.getItem(KPW_SELF_KEY) || "").trim();
@@ -314,6 +354,11 @@
 
   function saveKpwSelfKey(key) {
     const next = String(key || "").trim();
+    const fixed = fixedKpwDn();
+    if (hasFixedKpwScope()) {
+      state.kpwSelfKey = accOfficeLabel({ kpwdn: fixed, kpw: fixed });
+      return next === state.kpwSelfKey || kpwScopeMatchKey(next) === kpwScopeMatchKey(state.kpwSelfKey);
+    }
     const locked = String(state.kpwSelfKey || "").trim();
     if (isKpwScoped() && locked && next !== locked) return false;
     state.kpwSelfKey = next;
@@ -346,14 +391,14 @@
   }
 
   function kpwSelfOffice() {
-    const key = String(state.kpwSelfKey || "").trim().toLowerCase();
+    const key = kpwScopeMatchKey(state.kpwSelfKey);
     if (!key) return null;
     return (ickCapaian().offices || []).find((office) => capaianOfficeKey(office) === key) || null;
   }
 
   function officeIsKpwSelf(office) {
     if (!isKpwScoped()) return true;
-    const key = String(state.kpwSelfKey || "").trim().toLowerCase();
+    const key = kpwScopeMatchKey(state.kpwSelfKey);
     if (!key || !office) return false;
     return capaianOfficeKey(office) === key;
   }
@@ -366,8 +411,9 @@
 
   function requireKpwSelf(focusId) {
     if (!isKpwScoped()) return true;
+    initKpwScope();
     if (state.kpwSelfKey) return true;
-    flash("Pilih KPwDN pengampu Anda terlebih dahulu.", true);
+    flash("KPwDN pengampu belum tersedia untuk akun ini.", true);
     const sel = document.getElementById(focusId || "capaian-import-self");
     if (sel) sel.focus();
     return false;
@@ -395,9 +441,13 @@
 
   function renderKpwSelfBar() {
     const bar = document.getElementById("kpw-self-bar");
+    if (!bar || hasFixedKpwScope()) {
+      if (bar) bar.hidden = true;
+      return;
+    }
     const pick = document.getElementById("kpw-self-pick");
     const note = document.getElementById("kpw-self-note");
-    if (!bar || !pick) return;
+    if (!pick) return;
     if (!isKpwScoped() || !can("canUploadData")) {
       bar.hidden = true;
       return;
@@ -457,23 +507,12 @@
     const session = currentSession();
     document.getElementById("login-gate").hidden = true;
     document.getElementById("app-shell").hidden = false;
-    state.kpwSelfKey = isKpwScoped() ? loadKpwSelfKey() : "";
+    state.kpwSelfKey = "";
+    initKpwScope();
     startNewsTicker();
     const label = document.getElementById("user-label");
     if (label) {
-      const roleName =
-        session?.role === "admin"
-          ? "Administrator"
-          : session?.role === "kpw"
-            ? "Kantor Perwakilan"
-            : session?.role === "user"
-              ? "User"
-              : "";
-      label.textContent = session
-        ? roleName && session.name !== roleName
-          ? `${session.name} · ${roleName}`
-          : session.name || session.user
-        : "";
+      label.textContent = session ? session.name || session.user : "";
     }
     applyRoleChrome();
     render();
@@ -2754,7 +2793,7 @@
   async function persistCapaian(data) {
     let next = recomputeCapaianTotals(JSON.parse(JSON.stringify(data)));
     if (isKpwScoped()) {
-      const selfKey = String(state.kpwSelfKey || "").trim().toLowerCase();
+      const selfKey = kpwScopeMatchKey(state.kpwSelfKey);
       if (!selfKey) {
         flash("Pilih KPwDN pengampu Anda terlebih dahulu.", true);
         return false;
@@ -2815,7 +2854,7 @@
   function decorateCapaianImport(parsed) {
     let offices = parsed.offices || [];
     if (isKpwScoped()) {
-      const selfKey = String(state.kpwSelfKey || "").trim().toLowerCase();
+      const selfKey = kpwScopeMatchKey(state.kpwSelfKey);
       offices = offices.filter((office) => capaianOfficeKey(office) === selfKey);
     }
     const existing = ickCapaian().offices || [];
@@ -2839,7 +2878,7 @@
     let maxNo = Math.max(0, ...((current.offices || []).map((o) => Number(o.no) || 0)));
     let added = 0;
     let updated = 0;
-    const selfKey = isKpwScoped() ? String(state.kpwSelfKey || "").trim().toLowerCase() : "";
+    const selfKey = isKpwScoped() ? kpwScopeMatchKey(state.kpwSelfKey) : "";
     (incoming || []).forEach((row) => {
       const key = capaianOfficeKey(row);
       if (!key || key === "tanpa kpwdn") return;
@@ -3063,11 +3102,7 @@
     const resetBtn = document.getElementById("capaian-reset");
     if (resetBtn) resetBtn.hidden = !state.capaianProgram;
     const addBtn = document.getElementById("btn-capaian-add");
-    if (addBtn && isKpwScoped()) {
-      addBtn.textContent = kpwSelfOffice() ? "Perbarui data saya" : "Tambah data saya";
-    } else if (addBtn) {
-      addBtn.textContent = "Tambah data";
-    }
+    if (addBtn) addBtn.textContent = "Tambah data";
 
     const qFold = state.capaianQ.trim().toLowerCase();
     const offices = (data.offices || []).filter((office) => {
@@ -3599,17 +3634,21 @@
   function importDropHtml() {
     const scoped = isKpwScoped();
     const self = scoped ? state.kpwSelfKey : "";
+    const scopeName = escapeHtml(kpwScopeLabel());
     const replaceHint = can("canReplaceAllData")
       ? "Setelah data di kertas kerja diubah, unduh berkasnya lalu unggah di sini (Ganti seluruh data)."
-      : "Pilih KPwDN pengampu Anda, lalu unggah Excel. Hanya baris kantor itu yang diperbarui; data KPwDN lain tidak berubah.";
-    const picker = scoped
-      ? state.kpwSelfKey
-        ? `<p class="capaian-import-self"><strong>KPwDN pengampu:</strong> ${escapeHtml(state.kpwSelfKey)}</p>`
-        : `<label class="capaian-import-self">KPwDN pengampu saya
+      : hasFixedKpwScope()
+        ? `Unggah Excel. Hanya data <b>${scopeName}</b> yang diperbarui; data KPwDN lain tidak berubah.`
+        : "Pilih KPwDN pengampu Anda, lalu unggah Excel. Hanya baris kantor itu yang diperbarui; data KPwDN lain tidak berubah.";
+    const picker =
+      scoped && !hasFixedKpwScope()
+        ? state.kpwSelfKey
+          ? `<p class="capaian-import-self"><strong>KPwDN pengampu:</strong> ${scopeName}</p>`
+          : `<label class="capaian-import-self">KPwDN pengampu saya
             <select id="db-import-self" required>${kpwOfficeOptionsHtml(self)}</select>
           </label>`
-      : "";
-    const dropDisabled = scoped && !self;
+        : "";
+    const dropDisabled = scoped && !hasFixedKpwScope() && !self;
     return `
       <div class="modal-back" data-close="1">
         <div class="modal" role="dialog" aria-modal="true">
@@ -3708,17 +3747,21 @@
   function capaianImportDropHtml() {
     const scoped = isKpwScoped();
     const self = scoped ? state.kpwSelfKey : "";
+    const scopeName = escapeHtml(kpwScopeLabel());
     const note = can("canReplaceAllData")
       ? `Gunakan berkas <b>${TEMPLATE_XLSX_NAME}</b>, lembar <b>${SHEET_CAPAIAN_ICK}</b>. Sel Target 2026 (Ind) yang kosong dihitung 0. Pilih <b>Ganti seluruh capaian ICK</b> agar isi sama dengan Excel, atau gabungkan tanpa menghapus kantor yang tidak ada di berkas.`
-      : `Gunakan berkas <b>${TEMPLATE_XLSX_NAME}</b>, lembar <b>${SHEET_CAPAIAN_ICK}</b>. Pilih KPwDN pengampu Anda, lalu unggah Excel. Hanya baris kantor itu yang diperbarui; data KPwDN lain tidak berubah.`;
-    const picker = scoped
-      ? state.kpwSelfKey
-        ? `<p class="capaian-import-self"><strong>KPwDN pengampu:</strong> ${escapeHtml(state.kpwSelfKey)}</p>`
-        : `<label class="capaian-import-self">KPwDN pengampu saya
+      : hasFixedKpwScope()
+        ? `Gunakan berkas <b>${TEMPLATE_XLSX_NAME}</b>, lembar <b>${SHEET_CAPAIAN_ICK}</b>. Unggah Excel untuk memperbarui capaian <b>${scopeName}</b> saja; data KPwDN lain tidak berubah.`
+        : `Gunakan berkas <b>${TEMPLATE_XLSX_NAME}</b>, lembar <b>${SHEET_CAPAIAN_ICK}</b>. Pilih KPwDN pengampu Anda, lalu unggah Excel. Hanya baris kantor itu yang diperbarui; data KPwDN lain tidak berubah.`;
+    const picker =
+      scoped && !hasFixedKpwScope()
+        ? state.kpwSelfKey
+          ? `<p class="capaian-import-self"><strong>KPwDN pengampu:</strong> ${scopeName}</p>`
+          : `<label class="capaian-import-self">KPwDN pengampu saya
             <select id="capaian-import-self" required>${kpwOfficeOptionsHtml(self)}</select>
           </label>`
-      : "";
-    const dropDisabled = scoped && !self;
+        : "";
+    const dropDisabled = scoped && !hasFixedKpwScope() && !self;
     return `
       <div class="modal-back" data-close="1">
         <div class="modal" role="dialog" aria-modal="true">
@@ -5599,7 +5642,13 @@
     error.hidden = true;
     sessionStorage.setItem(
       AUTH_KEY,
-      JSON.stringify({ user: match.user, name: match.name, role: match.role, at: Date.now() })
+      JSON.stringify({
+        user: match.user,
+        name: match.name,
+        role: match.role,
+        kpwdn: match.kpwdn || "",
+        at: Date.now(),
+      })
     );
     state.view = ROLE_ACCESS[match.role]?.views?.[0] || "beranda";
     showApp();
