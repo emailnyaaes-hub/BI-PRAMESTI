@@ -529,12 +529,13 @@
     renderKpwSelfBar();
   }
 
-  function showApp() {
+  async function showApp() {
     const session = currentSession();
     document.getElementById("login-gate").hidden = true;
     document.getElementById("app-shell").hidden = false;
     state.kpwSelfKey = "";
     initKpwScope();
+    await loadHistory();
     startNewsTicker();
     const label = document.getElementById("user-label");
     if (label) {
@@ -722,35 +723,57 @@
   }
 
   async function loadHistory() {
-    try {
-      const fromIdb = await idbGet(HISTORY_KEY);
-      if (Array.isArray(fromIdb)) {
-        auditLog = fromIdb;
-        return;
+    const readLocal = () => {
+      try {
+        const raw = localStorage.getItem(HISTORY_KEY);
+        const parsed = raw ? JSON.parse(raw) : [];
+        return Array.isArray(parsed) ? parsed : [];
+      } catch (_) {
+        return [];
       }
+    };
+    let fromIdb = [];
+    try {
+      const raw = await idbGet(HISTORY_KEY);
+      if (Array.isArray(raw)) fromIdb = raw;
     } catch (_) {
       /* ignore */
     }
-    try {
-      const raw = localStorage.getItem(HISTORY_KEY);
-      const parsed = raw ? JSON.parse(raw) : [];
-      auditLog = Array.isArray(parsed) ? parsed : [];
-    } catch (_) {
-      auditLog = [];
+    const fromLocal = readLocal();
+    auditLog = fromIdb.length >= fromLocal.length ? fromIdb : fromLocal;
+    if (fromIdb.length && fromLocal.length && fromLocal.length > fromIdb.length) {
+      auditLog = fromLocal;
+      try {
+        await idbSet(HISTORY_KEY, auditLog);
+      } catch (_) {
+        /* ignore */
+      }
     }
   }
 
   async function saveHistory() {
     auditLog = auditLog.slice(0, HISTORY_MAX);
     try {
+      localStorage.setItem(HISTORY_KEY, JSON.stringify(auditLog));
+    } catch (_) {
+      /* ignore quota */
+    }
+    try {
       await idbSet(HISTORY_KEY, auditLog);
     } catch (_) {
       /* ignore */
     }
+  }
+
+  function syncHistoryFromStorage() {
     try {
-      localStorage.setItem(HISTORY_KEY, JSON.stringify(auditLog));
+      const raw = localStorage.getItem(HISTORY_KEY);
+      const parsed = raw ? JSON.parse(raw) : [];
+      if (!Array.isArray(parsed) || parsed.length <= auditLog.length) return;
+      auditLog = parsed;
+      if (state.view === "history" && canView("history")) renderHistory();
     } catch (_) {
-      /* ignore quota */
+      /* ignore */
     }
   }
 
@@ -3899,8 +3922,8 @@
     if (meta) {
       meta.textContent =
         list.length === 0
-          ? "Belum ada perubahan data yang tercatat."
-          : `Menampilkan ${fmtNum(list.length)} dari ${fmtNum(auditLog.length)} catatan perubahan.`;
+          ? "Belum ada perubahan data yang tercatat. History disimpan per browser/perangkat — pastikan KPw dan Admin memakai browser yang sama, atau buka ulang History setelah KPw selesai mengubah data."
+          : `Menampilkan ${fmtNum(list.length)} dari ${fmtNum(auditLog.length)} catatan perubahan. History disimpan per browser/perangkat yang dipakai.`;
     }
     body.innerHTML = list.length
       ? list
@@ -4047,6 +4070,14 @@
     }
     state.view = view;
     if (view !== "ringkasan") state.rapat = false;
+    if (view === "history") {
+      loadHistory().then(() => {
+        renderView();
+        renderHistory();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+      return;
+    }
     render();
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
@@ -6436,6 +6467,10 @@
     if (tickerRefreshTimer) clearInterval(tickerRefreshTimer);
     tickerRefreshTimer = setInterval(refreshNewsTicker, 30 * 60 * 1000);
   }
+
+  window.addEventListener("storage", (e) => {
+    if (e.key === HISTORY_KEY) syncHistoryFromStorage();
+  });
 
   Promise.all([loadRecords().catch(() => []), loadCapaian().catch(() => null), loadHistory().catch(() => null)])
     .then(([list]) => {
