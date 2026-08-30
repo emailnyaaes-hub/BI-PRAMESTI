@@ -3968,13 +3968,15 @@
       const gold = [199, 163, 90];
       const muted = [90, 107, 122];
       const line = [197, 207, 219];
-      const dated = new Date().toLocaleString("id-ID", {
-        day: "numeric",
-        month: "long",
-        year: "numeric",
-        hour: "2-digit",
-        minute: "2-digit",
-      });
+      const dated = pdfSafeText(
+        new Date().toLocaleString("id-ID", {
+          day: "numeric",
+          month: "long",
+          year: "numeric",
+          hour: "2-digit",
+          minute: "2-digit",
+        })
+      );
 
       const paintHeader = (title, kicker) => {
         pdf.setFillColor(...navy);
@@ -3991,20 +3993,31 @@
         pdf.text("Departemen Regional, Bank Indonesia", m + 26, 8);
         pdf.setFont("helvetica", "bold");
         pdf.setFontSize(13);
-        pdf.text(title, m, 16.5);
+        pdf.text(pdfSafeText(title), m, 16.5);
         pdf.setFont("helvetica", "normal");
         pdf.setFontSize(8);
         pdf.setTextColor(158, 196, 234);
-        pdf.text(kicker, m, 21.5);
+        pdf.text(pdfSafeText(kicker), m, 21.5);
         pdf.text(dated, pageW - m, 8, { align: "right" });
       };
 
-      paintHeader("History Perubahan Data", `${fmtNum(list.length)} catatan · khusus Administrator`);
+      paintHeader("History Perubahan Data", pdfSafeText(`${fmtNum(list.length)} catatan | khusus Administrator`));
       let y = 32;
       const contentW = pageW - m * 2;
+      const lineH = 4.1;
 
       list.forEach((entry, index) => {
-        const blockH = 18 + Math.min(4, (entry.details || []).length) * 4.2;
+        const detailLines = (entry.details || [])
+          .slice(0, 4)
+          .flatMap((detail) => pdf.splitTextToSize(pdfSafeText(`- ${detail}`), contentW - 8));
+        const extraLines =
+          (entry.details || []).length > 4
+            ? pdf.splitTextToSize(
+                pdfSafeText(`+${entry.details.length - 4} detail lainnya`),
+                contentW - 8
+              )
+            : [];
+        const blockH = 15.5 + detailLines.length * lineH + extraLines.length * lineH;
         if (y + blockH > pageH - 14) {
           pdf.addPage();
           paintHeader("History Perubahan Data", "Lanjutan");
@@ -4020,25 +4033,28 @@
         pdf.setFont("helvetica", "normal");
         pdf.setFontSize(7.5);
         pdf.setTextColor(...muted);
-        pdf.text(pdfFit(pdf, formatHistoryWhen(entry.at), contentW - 4), m + 2, y + 9.5);
+        pdf.text(pdfFit(pdf, formatHistoryWhen(entry.at), contentW - 4), m + 2, y + 9.2);
         pdf.text(
           pdfFit(
             pdf,
-            `Pelaku: ${entry.actor} · Modul: ${AUDIT_MODULE_LABELS[entry.module] || entry.module} · Aksi: ${AUDIT_ACTION_LABELS[entry.action] || entry.action}`,
+            `Pelaku: ${entry.actor} | Modul: ${AUDIT_MODULE_LABELS[entry.module] || entry.module} | Aksi: ${AUDIT_ACTION_LABELS[entry.action] || entry.action}`,
             contentW - 4
           ),
           m + 2,
-          y + 13.5
+          y + 13.2
         );
         pdf.setTextColor(40, 52, 64);
-        let dy = 17;
-        (entry.details || []).slice(0, 4).forEach((detail) => {
-          pdf.text(pdfFit(pdf, `• ${detail}`, contentW - 6), m + 3, y + dy);
-          dy += 4.2;
+        let dy = 16.8;
+        detailLines.forEach((line) => {
+          pdf.text(line, m + 3, y + dy);
+          dy += lineH;
         });
-        if ((entry.details || []).length > 4) {
+        if (extraLines.length) {
           pdf.setTextColor(...muted);
-          pdf.text(`• +${entry.details.length - 4} detail lainnya`, m + 3, y + dy);
+          extraLines.forEach((line) => {
+            pdf.text(line, m + 3, y + dy);
+            dy += lineH;
+          });
         }
         y += blockH + 3;
       });
@@ -4922,8 +4938,22 @@
     return [parseInt(h.slice(0, 2), 16) || 0, parseInt(h.slice(2, 4), 16) || 0, parseInt(h.slice(4, 6), 16) || 0];
   }
 
+  function pdfSafeText(value) {
+    return String(value ?? "")
+      .replace(/\u2192/g, " -> ")
+      .replace(/[\u2013\u2014]/g, "-")
+      .replace(/\u2022/g, "-")
+      .replace(/\u00b7/g, " | ")
+      .replace(/[\u201c\u201d\u2018\u2019]/g, "'")
+      .replace(/\u00a0/g, " ")
+      .replace(/[\u2000-\u200b]/g, " ")
+      .replace(/[^\x20-\x7e]/g, "")
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+
   function pdfFit(pdf, text, maxW) {
-    let t = String(text || "");
+    let t = pdfSafeText(text);
     if (pdf.getTextWidth(t) <= maxW) return t;
     while (t.length > 2 && pdf.getTextWidth(`${t}...`) > maxW) t = t.slice(0, -1);
     return `${t}...`;
