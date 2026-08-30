@@ -18,7 +18,7 @@
     kpw: {
       views: ["beranda", "capaian", "database"],
       canEdit: false,
-      canUploadData: false,
+      canUploadData: true,
       canReplaceAllData: false,
       canUploadTemplate: false,
       canDownloadTemplate: true,
@@ -395,7 +395,18 @@
 
   function renderKpwSelfBar() {
     const bar = document.getElementById("kpw-self-bar");
-    if (bar) bar.hidden = true;
+    const pick = document.getElementById("kpw-self-pick");
+    const note = document.getElementById("kpw-self-note");
+    if (!bar || !pick) return;
+    if (!isKpwScoped() || !can("canUploadData")) {
+      bar.hidden = true;
+      return;
+    }
+    bar.hidden = false;
+    const locked = Boolean(state.kpwSelfKey);
+    pick.innerHTML = kpwOfficeOptionsHtml(state.kpwSelfKey);
+    pick.disabled = locked;
+    if (note) note.hidden = !locked;
   }
 
   function canView(view) {
@@ -999,8 +1010,21 @@
 
   const TEMPLATE_XLSX_PATH = "contoh/Template Database UMKM PUS dan ICK.xlsx";
   const TEMPLATE_XLSX_NAME = "Template Database UMKM PUS dan ICK.xlsx";
+  const TEMPLATE_BUNDLE_VERSION = "20260829i";
   const SHEET_DATABASE_UMKM = "Database UMKM PUS";
   const SHEET_CAPAIAN_ICK = "Capaian ICK";
+
+  function bundledTemplateUrl() {
+    const url = new URL(TEMPLATE_XLSX_PATH, document.baseURI);
+    url.searchParams.set("v", TEMPLATE_BUNDLE_VERSION);
+    return url.href;
+  }
+
+  function isZipBuffer(buffer) {
+    if (!buffer || buffer.byteLength < 4) return false;
+    const bytes = new Uint8Array(buffer);
+    return bytes[0] === 0x50 && bytes[1] === 0x4b;
+  }
 
   function normalizeSheetName(name) {
     return String(name || "")
@@ -1364,41 +1388,33 @@
     setTimeout(() => URL.revokeObjectURL(url), 1500);
   }
 
-  function downloadBuiltDbTemplate() {
-    if (!window.XLSX) {
-      flash("Pustaka Excel belum termuat. Muat ulang halaman, lalu coba lagi.", true);
-      return;
-    }
-    const example = [
-      1,
-      "Prov. Jawa Barat",
-      "Pendampingan klaster",
-      "Kopi Contoh Lestari",
-      "Kopi",
-      new Date().getFullYear(),
-      "1234",
-    ];
-    const headers = ["No", "Asal KPw", "ICK", "Nama UMKM", "Komoditas", "Tahun Fasilitasi", "ID Ref"];
-    const sheet = XLSX.utils.aoa_to_sheet([headers, example]);
-    sheet["!cols"] = headers.map((h) => ({ wch: Math.max(16, h.length + 4) }));
-    const book = XLSX.utils.book_new();
-    XLSX.utils.book_append_sheet(book, sheet, SHEET_DATABASE_UMKM);
-    XLSX.writeFile(book, TEMPLATE_XLSX_NAME);
-  }
-
-  function bundledTemplateUrl() {
-    const slash = TEMPLATE_XLSX_PATH.lastIndexOf("/");
-    const dir = slash >= 0 ? TEMPLATE_XLSX_PATH.slice(0, slash + 1) : "";
-    const file = slash >= 0 ? TEMPLATE_XLSX_PATH.slice(slash + 1) : TEMPLATE_XLSX_PATH;
-    return `${dir}${encodeURIComponent(file)}?v=20260829h`;
-  }
-
   async function downloadBundledTemplate() {
+    const url = bundledTemplateUrl();
     try {
-      const res = await fetch(bundledTemplateUrl());
+      const res = await fetch(url, { cache: "no-store" });
       if (!res.ok) return false;
-      const blob = await res.blob();
+      const buffer = await res.arrayBuffer();
+      if (!isZipBuffer(buffer) || buffer.byteLength < 100000) return false;
+      const blob = new Blob([buffer], {
+        type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      });
       triggerBlobDownload(blob, TEMPLATE_XLSX_NAME);
+      flash(`Template diunduh: ${TEMPLATE_XLSX_NAME} (Database UMKM/PUS & Capaian ICK).`);
+      return true;
+    } catch (_) {
+      return false;
+    }
+  }
+
+  function downloadBundledTemplateDirect() {
+    try {
+      const a = document.createElement("a");
+      a.href = bundledTemplateUrl();
+      a.download = TEMPLATE_XLSX_NAME;
+      a.rel = "noopener";
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
       flash(`Template diunduh: ${TEMPLATE_XLSX_NAME} (Database UMKM/PUS & Capaian ICK).`);
       return true;
     } catch (_) {
@@ -1412,22 +1428,11 @@
       return;
     }
     if (await downloadBundledTemplate()) return;
-    for (const key of [TEMPLATE_DB_KEY, TEMPLATE_CAPAIAN_KEY]) {
-      const meta = await loadTemplateMeta(key);
-      if (!meta) continue;
-      try {
-        const blob = new Blob([base64ToArrayBuffer(meta.base64)], {
-          type: meta.mime || "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-        });
-        triggerBlobDownload(blob, meta.name || TEMPLATE_XLSX_NAME);
-        flash(`Template diunduh: ${meta.name || TEMPLATE_XLSX_NAME}.`);
-        return;
-      } catch (_) {
-        /* coba sumber berikutnya */
-      }
-    }
-    flash("Berkas template bawaan tidak ditemukan. Mengunduh versi ringkas.", true);
-    downloadBuiltDbTemplate();
+    if (downloadBundledTemplateDirect()) return;
+    flash(
+      `Gagal mengunduh ${TEMPLATE_XLSX_NAME}. Periksa koneksi internet lalu muat ulang halaman (Cmd+Shift+R).`,
+      true
+    );
   }
 
   function downloadDbTemplate() {
