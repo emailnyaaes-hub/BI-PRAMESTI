@@ -30,7 +30,7 @@
       canDownloadTemplate: true,
     },
     admin: {
-      views: ["beranda", "ringkasan", "capaian", "database"],
+      views: ["beranda", "ringkasan", "capaian", "database", "history"],
       canEdit: true,
       canUploadData: true,
       canReplaceAllData: true,
@@ -50,6 +50,29 @@
   const SEED_VERSION_KEY = "padel-seed-version-v1";
   const WATCH_KEY = "padel-watchlist-v1";
   const SARAN_KEY = "padel-saran-overrides-v1";
+  const HISTORY_KEY = "padel-audit-history-v1";
+  const HISTORY_MAX = 800;
+  const AUDIT_DB_FIELDS = ["nama", "jenis", "komoditas", "fasilitas", "tahun", "kpwdn", "keterangan"];
+  const AUDIT_FIELD_LABELS = {
+    nama: "Nama UMKM/PUS",
+    jenis: "Jenis",
+    komoditas: "Komoditas",
+    fasilitas: "ICK/Fasilitas",
+    tahun: "Tahun",
+    kpwdn: "KPwDN pengampu",
+    keterangan: "Keterangan",
+  };
+  const AUDIT_ACTION_LABELS = {
+    create: "Tambah",
+    update: "Ubah",
+    delete: "Hapus",
+    import: "Unggah Excel",
+    replace: "Ganti seluruh data",
+  };
+  const AUDIT_MODULE_LABELS = {
+    database: "Database UMKM/PUS",
+    capaian: "Capaian ICK",
+  };
   const PAGE_SIZE = 10;
   const REGIONS = [
     {
@@ -162,10 +185,13 @@
     homeActions: false,
     homeKpw: "",
     homeUnitId: "",
+    historyModule: "",
+    historyQ: "",
   };
 
   let watchIds = loadWatch();
   let saranOverrides = loadSaranOverrides();
+  let auditLog = [];
 
   function loadWatch() {
     try {
@@ -695,7 +721,260 @@
     }
   }
 
-  async function persistRecords(next) {
+  async function loadHistory() {
+    try {
+      const fromIdb = await idbGet(HISTORY_KEY);
+      if (Array.isArray(fromIdb)) {
+        auditLog = fromIdb;
+        return;
+      }
+    } catch (_) {
+      /* ignore */
+    }
+    try {
+      const raw = localStorage.getItem(HISTORY_KEY);
+      const parsed = raw ? JSON.parse(raw) : [];
+      auditLog = Array.isArray(parsed) ? parsed : [];
+    } catch (_) {
+      auditLog = [];
+    }
+  }
+
+  async function saveHistory() {
+    auditLog = auditLog.slice(0, HISTORY_MAX);
+    try {
+      await idbSet(HISTORY_KEY, auditLog);
+    } catch (_) {
+      /* ignore */
+    }
+    try {
+      localStorage.setItem(HISTORY_KEY, JSON.stringify(auditLog));
+    } catch (_) {
+      /* ignore quota */
+    }
+  }
+
+  function currentActor() {
+    const session = currentSession();
+    return {
+      name: String(session?.name || session?.user || "Tidak dikenal").trim(),
+      role: currentRole(),
+      user: String(session?.user || "").trim(),
+    };
+  }
+
+  function formatHistoryWhen(ms) {
+    return new Date(ms).toLocaleString("id-ID", {
+      weekday: "long",
+      day: "numeric",
+      month: "long",
+      year: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
+    });
+  }
+
+  function makeAuditEntry(partial) {
+    const actor = currentActor();
+    return {
+      id: `h${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
+      at: Date.now(),
+      actor: actor.name,
+      actorRole: actor.role,
+      actorUser: actor.user,
+      module: partial.module || "database",
+      action: partial.action || "update",
+      summary: partial.summary || "",
+      target: partial.target || "",
+      details: Array.isArray(partial.details) ? partial.details.filter(Boolean) : [],
+    };
+  }
+
+  function diffRecordFields(prev, next) {
+    const details = [];
+    AUDIT_DB_FIELDS.forEach((key) => {
+      const a = String(prev?.[key] ?? "").trim();
+      const b = String(next?.[key] ?? "").trim();
+      if (a !== b) {
+        const label = AUDIT_FIELD_LABELS[key] || key;
+        details.push(`${label}: "${a || "—"}" → "${b || "—"}"`);
+      }
+    });
+    return details;
+  }
+
+  function buildDatabaseAuditEntries(prev, next, audit = {}) {
+    if (audit.skip) return [];
+    if (audit.action === "replace") {
+      return [
+        makeAuditEntry({
+          module: "database",
+          action: "replace",
+          summary: `Mengganti seluruh Database UMKM/PUS (${fmtNum(next.length)} baris)`,
+          target: audit.target || "Seluruh database",
+          details: audit.details || [`Total baris setelah penggantian: ${fmtNum(next.length)}`],
+        }),
+      ];
+    }
+    if (audit.action === "import") {
+      return [
+        makeAuditEntry({
+          module: "database",
+          action: "import",
+          summary:
+            audit.summary ||
+            `Unggah Excel Database UMKM/PUS — ${fmtNum(audit.added || 0)} baru, ${fmtNum(audit.updated || 0)} diperbarui`,
+          target: audit.target || kpwScopeLabel(),
+          details: audit.details || [],
+        }),
+      ];
+    }
+    const prevById = new Map(prev.map((row) => [row.id, row]));
+    const nextById = new Map(next.map((row) => [row.id, row]));
+    const entries = [];
+    next.forEach((row) => {
+      if (prevById.has(row.id)) return;
+      entries.push(
+        makeAuditEntry({
+          module: "database",
+          action: "create",
+          summary: `Menambah data UMKM/PUS: ${row.nama}`,
+          target: row.nama,
+          details: [
+            `KPwDN: ${asalKpwLabel(row.kpwdn)}`,
+            `ICK: ${row.fasilitas || "—"}`,
+            `Komoditas: ${row.komoditas || "—"}`,
+          ],
+        })
+      );
+    });
+    prev.forEach((row) => {
+      if (nextById.has(row.id)) return;
+      entries.push(
+        makeAuditEntry({
+          module: "database",
+          action: "delete",
+          summary: `Menghapus data UMKM/PUS: ${row.nama}`,
+          target: row.nama,
+          details: [`KPwDN: ${asalKpwLabel(row.kpwdn)}`],
+        })
+      );
+    });
+    next.forEach((row) => {
+      const before = prevById.get(row.id);
+      if (!before) return;
+      const details = diffRecordFields(before, row);
+      if (!details.length) return;
+      entries.push(
+        makeAuditEntry({
+          module: "database",
+          action: "update",
+          summary: `Memperbarui data UMKM/PUS: ${row.nama}`,
+          target: row.nama,
+          details,
+        })
+      );
+    });
+    return entries;
+  }
+
+  function buildCapaianAuditEntries(prev, next, audit = {}) {
+    if (audit.skip) return [];
+    if (audit.action === "replace") {
+      return [
+        makeAuditEntry({
+          module: "capaian",
+          action: "replace",
+          summary: `Mengganti seluruh Capaian ICK (${fmtNum((next.offices || []).length)} kantor)`,
+          target: audit.target || "Seluruh capaian ICK",
+          details: audit.details || [],
+        }),
+      ];
+    }
+    if (audit.action === "import") {
+      return [
+        makeAuditEntry({
+          module: "capaian",
+          action: "import",
+          summary:
+            audit.summary ||
+            `Unggah Excel Capaian ICK — ${fmtNum(audit.count || 0)} kantor diperbarui`,
+          target: audit.target || kpwScopeLabel(),
+          details: audit.details || [],
+        }),
+      ];
+    }
+    const prevOffices = prev.offices || [];
+    const nextOffices = next.offices || [];
+    const prevByKey = new Map(prevOffices.map((office) => [capaianOfficeKey(office), office]));
+    const nextByKey = new Map(nextOffices.map((office) => [capaianOfficeKey(office), office]));
+    const programs = next.programs || prev.programs || [];
+    const entries = [];
+    nextOffices.forEach((office) => {
+      const key = capaianOfficeKey(office);
+      if (prevByKey.has(key)) return;
+      entries.push(
+        makeAuditEntry({
+          module: "capaian",
+          action: "create",
+          summary: `Menambah Capaian ICK: ${accOfficeLabel(office)}`,
+          target: accOfficeLabel(office),
+          details: [`Target 2026: ${fmtAcc(office.totalAcc)}`],
+        })
+      );
+    });
+    prevOffices.forEach((office) => {
+      const key = capaianOfficeKey(office);
+      if (nextByKey.has(key)) return;
+      entries.push(
+        makeAuditEntry({
+          module: "capaian",
+          action: "delete",
+          summary: `Menghapus Capaian ICK: ${accOfficeLabel(office)}`,
+          target: accOfficeLabel(office),
+          details: [],
+        })
+      );
+    });
+    nextOffices.forEach((office) => {
+      const key = capaianOfficeKey(office);
+      const before = prevByKey.get(key);
+      if (!before || JSON.stringify(before) === JSON.stringify(office)) return;
+      const details = [];
+      if (Number(before.totalAcc) !== Number(office.totalAcc)) {
+        details.push(`Target 2026: ${fmtAcc(before.totalAcc)} → ${fmtAcc(office.totalAcc)}`);
+      }
+      if (Number(before.totalRealisasi) !== Number(office.totalRealisasi)) {
+        details.push(`Realisasi: ${fmtAcc(before.totalRealisasi)} → ${fmtAcc(office.totalRealisasi)}`);
+      }
+      programs.forEach((prog) => {
+        const pid = prog.id;
+        const a = Number(before.acc?.[pid] ?? before.accBase?.[pid] ?? 0);
+        const b = Number(office.acc?.[pid] ?? office.accBase?.[pid] ?? 0);
+        if (a !== b) details.push(`${prog.name}: ${fmtAcc(a)} → ${fmtAcc(b)}`);
+      });
+      entries.push(
+        makeAuditEntry({
+          module: "capaian",
+          action: "update",
+          summary: `Memperbarui Capaian ICK: ${accOfficeLabel(office)}`,
+          target: accOfficeLabel(office),
+          details: details.slice(0, 14),
+        })
+      );
+    });
+    return entries;
+  }
+
+  async function appendAuditLog(entries) {
+    if (!entries?.length) return;
+    auditLog = [...entries, ...auditLog].slice(0, HISTORY_MAX);
+    await saveHistory();
+    if (state.view === "history" && canView("history")) renderHistory();
+  }
+
+  async function persistRecords(next, audit = {}) {
+    const prevSnapshot = records.map((row) => ({ ...row }));
     let toSave = next;
     if (isKpwScoped()) {
       const selfKey = String(state.kpwSelfKey || "").trim();
@@ -736,6 +1015,8 @@
     try {
       await saveRecords(toSave);
       records = toSave;
+      const entries = buildDatabaseAuditEntries(prevSnapshot, toSave, audit);
+      if (entries.length) await appendAuditLog(entries);
       return true;
     } catch (err) {
       flash(err.message || "Gagal menyimpan data.", true);
@@ -1324,10 +1605,11 @@
     return { rows: next, added, updated };
   }
 
-  async function applyImportedRows(rows, replace) {
+  async function applyImportedRows(rows, replace, auditExtra = {}) {
     if (isKpwScoped()) {
       const { rows: next, added, updated } = mergeDatabaseRows(rows);
-      if (!(await persistRecords(next))) return;
+      if (!(await persistRecords(next, { action: "import", added, updated, target: kpwScopeLabel(), ...auditExtra })))
+        return;
       state.page = 1;
       state.importDraft = null;
       closeModal();
@@ -1343,7 +1625,16 @@
       status: row.status || "Aktif",
     }));
     const next = replace ? stamped : records.concat(stamped.map((row, i) => ({ ...row, id: `u${records.length + i + 1}` })));
-    if (!(await persistRecords(next))) return;
+    const audit = replace
+      ? { action: "replace", target: "Seluruh database", ...auditExtra }
+      : {
+          action: "import",
+          added: auditExtra.added ?? stamped.length,
+          updated: auditExtra.updated ?? 0,
+          target: auditExtra.target || "Database UMKM/PUS",
+          ...auditExtra,
+        };
+    if (!(await persistRecords(next, audit))) return;
     state.page = 1;
     state.importDraft = null;
     closeModal();
@@ -2790,7 +3081,8 @@
     ickCapaianLive = cloneCapaianSeed();
   }
 
-  async function persistCapaian(data) {
+  async function persistCapaian(data, audit = {}) {
+    const prevSnapshot = JSON.parse(JSON.stringify(ickCapaian()));
     let next = recomputeCapaianTotals(JSON.parse(JSON.stringify(data)));
     if (isKpwScoped()) {
       const selfKey = kpwScopeMatchKey(state.kpwSelfKey);
@@ -2844,6 +3136,8 @@
       return false;
     }
     ickCapaianLive = next;
+    const entries = buildCapaianAuditEntries(prevSnapshot, next, audit);
+    if (entries.length) await appendAuditLog(entries);
     return true;
   }
 
@@ -3577,8 +3871,176 @@
     return items;
   }
 
+  function filteredHistory() {
+    const q = state.historyQ.trim().toLowerCase();
+    return auditLog.filter((entry) => {
+      if (state.historyModule && entry.module !== state.historyModule) return false;
+      if (!q) return true;
+      const hay = [
+        entry.actor,
+        entry.summary,
+        entry.target,
+        AUDIT_MODULE_LABELS[entry.module],
+        AUDIT_ACTION_LABELS[entry.action],
+        ...(entry.details || []),
+      ]
+        .join(" ")
+        .toLowerCase();
+      return hay.includes(q);
+    });
+  }
+
+  function renderHistory() {
+    if (!canView("history")) return;
+    const body = document.getElementById("history-body");
+    const meta = document.getElementById("history-meta");
+    if (!body) return;
+    const list = filteredHistory();
+    if (meta) {
+      meta.textContent =
+        list.length === 0
+          ? "Belum ada perubahan data yang tercatat."
+          : `Menampilkan ${fmtNum(list.length)} dari ${fmtNum(auditLog.length)} catatan perubahan.`;
+    }
+    body.innerHTML = list.length
+      ? list
+          .map((entry) => {
+            const details = (entry.details || []).slice(0, 3);
+            const more = (entry.details || []).length > 3 ? ` (+${entry.details.length - 3} lainnya)` : "";
+            return `<tr>
+          <td class="history-when">${escapeHtml(formatHistoryWhen(entry.at))}</td>
+          <td><strong>${escapeHtml(entry.actor)}</strong></td>
+          <td>${escapeHtml(AUDIT_MODULE_LABELS[entry.module] || entry.module)}<br><span class="sub">${escapeHtml(AUDIT_ACTION_LABELS[entry.action] || entry.action)}</span></td>
+          <td>${escapeHtml(entry.summary)}</td>
+          <td class="history-detail">${details.length ? escapeHtml(details.join(" · ") + more) : "—"}</td>
+        </tr>`;
+          })
+          .join("")
+      : `<tr><td colspan="5" class="muted">Belum ada riwayat perubahan. Perubahan oleh Administrator atau Kantor Perwakilan akan muncul di sini.</td></tr>`;
+  }
+
+  function downloadHistoryPdf() {
+    if (!canView("history")) {
+      flash("History hanya tersedia untuk Administrator.", true);
+      return;
+    }
+    if (!window.jspdf) {
+      flash("Pustaka PDF belum termuat. Muat ulang halaman, lalu coba lagi.", true);
+      return;
+    }
+    const list = filteredHistory();
+    if (!list.length) {
+      flash("Tidak ada riwayat untuk diunduh.", true);
+      return;
+    }
+    const btn = document.getElementById("btn-history-pdf");
+    if (btn) btn.disabled = true;
+    try {
+      const JsPDF = window.jspdf.jsPDF;
+      const pdf = new JsPDF({ orientation: "portrait", unit: "mm", format: "a4" });
+      const m = 12;
+      const pageW = pdf.internal.pageSize.getWidth();
+      const pageH = pdf.internal.pageSize.getHeight();
+      const navy = [0, 48, 87];
+      const gold = [199, 163, 90];
+      const muted = [90, 107, 122];
+      const line = [197, 207, 219];
+      const dated = new Date().toLocaleString("id-ID", {
+        day: "numeric",
+        month: "long",
+        year: "numeric",
+        hour: "2-digit",
+        minute: "2-digit",
+      });
+
+      const paintHeader = (title, kicker) => {
+        pdf.setFillColor(...navy);
+        pdf.rect(0, 0, pageW, 24, "F");
+        pdf.setFillColor(...gold);
+        pdf.rect(0, 24, pageW, 1.1, "F");
+        pdf.setTextColor(...gold);
+        pdf.setFont("helvetica", "bold");
+        pdf.setFontSize(8);
+        pdf.text("BI PRAMESTI", m, 8);
+        pdf.setTextColor(255, 255, 255);
+        pdf.setFont("helvetica", "normal");
+        pdf.setFontSize(8);
+        pdf.text("Departemen Regional, Bank Indonesia", m + 26, 8);
+        pdf.setFont("helvetica", "bold");
+        pdf.setFontSize(13);
+        pdf.text(title, m, 16.5);
+        pdf.setFont("helvetica", "normal");
+        pdf.setFontSize(8);
+        pdf.setTextColor(158, 196, 234);
+        pdf.text(kicker, m, 21.5);
+        pdf.text(dated, pageW - m, 8, { align: "right" });
+      };
+
+      paintHeader("History Perubahan Data", `${fmtNum(list.length)} catatan · khusus Administrator`);
+      let y = 32;
+      const contentW = pageW - m * 2;
+
+      list.forEach((entry, index) => {
+        const blockH = 18 + Math.min(4, (entry.details || []).length) * 4.2;
+        if (y + blockH > pageH - 14) {
+          pdf.addPage();
+          paintHeader("History Perubahan Data", "Lanjutan");
+          y = 32;
+        }
+        pdf.setDrawColor(...line);
+        pdf.setLineWidth(0.2);
+        pdf.rect(m, y, contentW, blockH);
+        pdf.setTextColor(...navy);
+        pdf.setFont("helvetica", "bold");
+        pdf.setFontSize(9);
+        pdf.text(pdfFit(pdf, `${index + 1}. ${entry.summary}`, contentW - 4), m + 2, y + 5);
+        pdf.setFont("helvetica", "normal");
+        pdf.setFontSize(7.5);
+        pdf.setTextColor(...muted);
+        pdf.text(pdfFit(pdf, formatHistoryWhen(entry.at), contentW - 4), m + 2, y + 9.5);
+        pdf.text(
+          pdfFit(
+            pdf,
+            `Pelaku: ${entry.actor} · Modul: ${AUDIT_MODULE_LABELS[entry.module] || entry.module} · Aksi: ${AUDIT_ACTION_LABELS[entry.action] || entry.action}`,
+            contentW - 4
+          ),
+          m + 2,
+          y + 13.5
+        );
+        pdf.setTextColor(40, 52, 64);
+        let dy = 17;
+        (entry.details || []).slice(0, 4).forEach((detail) => {
+          pdf.text(pdfFit(pdf, `• ${detail}`, contentW - 6), m + 3, y + dy);
+          dy += 4.2;
+        });
+        if ((entry.details || []).length > 4) {
+          pdf.setTextColor(...muted);
+          pdf.text(`• +${entry.details.length - 4} detail lainnya`, m + 3, y + dy);
+        }
+        y += blockH + 3;
+      });
+
+      const total = pdf.getNumberOfPages();
+      for (let i = 1; i <= total; i += 1) {
+        pdf.setPage(i);
+        pdf.setDrawColor(...line);
+        pdf.line(m, pageH - 8, pageW - m, pageH - 8);
+        pdf.setFont("helvetica", "normal");
+        pdf.setFontSize(7);
+        pdf.setTextColor(...muted);
+        pdf.text(`Halaman ${i} dari ${total}`, pageW - m, pageH - 4.6, { align: "right" });
+      }
+      pdf.save("bi-pramesti-history-perubahan.pdf");
+      flash("PDF history diunduh.");
+    } catch (_) {
+      flash("Gagal membuat PDF history.", true);
+    } finally {
+      if (btn) btn.disabled = false;
+    }
+  }
+
   function setView(view) {
-    if (!["beranda", "ringkasan", "capaian", "database"].includes(view)) return;
+    if (!["beranda", "ringkasan", "capaian", "database", "history"].includes(view)) return;
     if (!canView(view)) {
       flash("Akun ini tidak memiliki akses ke menu tersebut.", true);
       return;
@@ -3596,6 +4058,7 @@
       ringkasan: "Ringkasan Eksekutif",
       capaian: "Capaian ICK",
       database: "Database UMKM / PUS",
+      history: "History",
     };
     document.querySelectorAll("[data-view-panel]").forEach((el) => {
       el.hidden = el.getAttribute("data-view-panel") !== state.view;
@@ -3621,6 +4084,7 @@
     renderCapaian();
     renderCharts(list);
     renderTable(list);
+    renderHistory();
     renderModal();
   }
 
@@ -4887,6 +5351,24 @@
   document.getElementById("btn-capaian-pdf").addEventListener("click", () => {
     downloadCapaianPdf();
   });
+  document.getElementById("btn-history-pdf")?.addEventListener("click", () => {
+    downloadHistoryPdf();
+  });
+  const historyView = document.getElementById("view-history");
+  if (historyView) {
+    historyView.addEventListener("input", (e) => {
+      if (e.target.id === "history-q") {
+        state.historyQ = e.target.value;
+        renderHistory();
+      }
+    });
+    historyView.addEventListener("change", (e) => {
+      if (e.target.id === "history-module") {
+        state.historyModule = e.target.value;
+        renderHistory();
+      }
+    });
+  }
   document.getElementById("btn-capaian-add").addEventListener("click", () => {
     if (!can("canEdit")) {
       flash("Akun ini hanya dapat melihat data.", true);
@@ -5262,7 +5744,11 @@
       const { data, added, updated } = mergeCapaianOffices(state.capaianDraft.offices);
       if (state.capaianDraft.source) data.source = state.capaianDraft.source;
       if (state.capaianDraft.sheet) data.sheet = state.capaianDraft.sheet;
-      persistCapaian(data).then((ok) => {
+      persistCapaian(data, {
+        action: "import",
+        count: added + updated || (state.capaianDraft?.offices || []).length,
+        target: kpwScopeLabel(),
+      }).then((ok) => {
         if (!ok) return;
         flash(
           isKpwScoped()
@@ -5281,7 +5767,11 @@
       }
       if (!state.capaianDraft?.offices?.length) return;
       if (!confirm("Ganti seluruh capaian ICK dengan isi Excel ini?")) return;
-      persistCapaian(state.capaianDraft).then((ok) => {
+      persistCapaian(state.capaianDraft, {
+        action: "replace",
+        target: "Seluruh capaian ICK",
+        details: [`${fmtNum(state.capaianDraft.offices.length)} kantor dari Excel`],
+      }).then((ok) => {
         if (!ok) return;
         flash(`${state.capaianDraft.offices.length} kantor dari Excel mengganti capaian ICK.`);
         closeModal();
@@ -5338,7 +5828,10 @@
       if (!can("canUploadData")) return;
       if (!requireKpwSelf("db-import-self")) return;
       if (!state.importDraft?.rows.length) return;
-      applyImportedRows(state.importDraft.rows, false);
+      applyImportedRows(state.importDraft.rows, false, {
+        added: (state.importDraft.fresh || []).length,
+        updated: (state.importDraft.matched || []).length,
+      });
       return;
     }
     if (e.target.closest("#btn-import-append")) {
@@ -5661,7 +6154,7 @@
     const go = e.target.closest("[data-view]");
     if (!go) return;
     const view = go.getAttribute("data-view");
-    if (!["beranda", "ringkasan", "capaian", "database"].includes(view)) return;
+    if (!["beranda", "ringkasan", "capaian", "database", "history"].includes(view)) return;
     e.preventDefault();
     setView(view);
   });
@@ -5944,7 +6437,7 @@
     tickerRefreshTimer = setInterval(refreshNewsTicker, 30 * 60 * 1000);
   }
 
-  Promise.all([loadRecords().catch(() => []), loadCapaian().catch(() => null)])
+  Promise.all([loadRecords().catch(() => []), loadCapaian().catch(() => null), loadHistory().catch(() => null)])
     .then(([list]) => {
       records = list;
       if (currentSession()) showApp();

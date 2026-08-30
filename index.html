@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=20260829b">
+  <link rel="stylesheet" href="assets/css/style.css?v=20260830c">
 </head>
 <body>
   <div id="login-gate" class="login-gate">
@@ -92,6 +92,7 @@
         <button type="button" data-view="ringkasan">Ringkasan Eksekutif</button>
         <button type="button" data-view="capaian">Capaian ICK</button>
         <button type="button" data-view="database">Database UMKM/PUS</button>
+        <button type="button" data-view="history">History</button>
       </div>
     </nav>
 
@@ -309,6 +310,46 @@
           </div>
         </section>
       </section>
+
+      <section data-view-panel="history" id="view-history" hidden>
+        <section class="table-wrap history-wrap">
+          <div class="table-toolbar">
+            <div>
+              <h2>History perubahan data</h2>
+              <div class="meta" id="history-meta">Catatan perubahan Database UMKM/PUS dan Capaian ICK.</div>
+            </div>
+            <div class="row-actions">
+              <button class="btn btn-dark btn-sm" type="button" id="btn-history-pdf">Unduh PDF</button>
+            </div>
+          </div>
+          <div class="history-tools">
+            <label>Modul
+              <select id="history-module">
+                <option value="">Semua modul</option>
+                <option value="database">Database UMKM/PUS</option>
+                <option value="capaian">Capaian ICK</option>
+              </select>
+            </label>
+            <label>Cari
+              <input id="history-q" type="search" placeholder="Pelaku, ringkasan, atau data">
+            </label>
+          </div>
+          <div style="overflow:auto">
+            <table class="data-table history-table">
+              <thead>
+                <tr>
+                  <th>Waktu</th>
+                  <th>Pelaku</th>
+                  <th>Modul</th>
+                  <th>Perubahan</th>
+                  <th>Detail</th>
+                </tr>
+              </thead>
+              <tbody id="history-body"></tbody>
+            </table>
+          </div>
+        </section>
+      </section>
     </main>
 
     <footer class="site-foot">
@@ -329,6 +370,6 @@
   <script src="assets/js/data.js?v=20260829b"></script>
   <script src="assets/js/ick-capaian.js?v=20260829b"></script>
   <script src="assets/js/ick-capaian-live.js?v=20260829b"></script>
-  <script src="assets/js/app.js?v=20260830b"></script>
+  <script src="assets/js/app.js?v=20260830c"></script>
 </body>
 </html>
