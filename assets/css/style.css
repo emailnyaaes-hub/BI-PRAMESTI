@@ -2010,6 +2010,36 @@ a.ticker-item:focus-visible {
   font-size: 12px;
   color: #4a6078;
 }
+.history-change-row {
+  display: grid;
+  grid-template-columns: minmax(90px, 1fr) minmax(70px, 1fr) auto minmax(70px, 1fr);
+  gap: 4px 6px;
+  align-items: baseline;
+  font-size: 12px;
+  line-height: 1.35;
+  padding: 2px 0;
+}
+.history-change-field {
+  font-weight: 600;
+  color: var(--navy);
+}
+.history-change-before {
+  color: #8b3030;
+  text-decoration: line-through;
+}
+.history-change-arrow {
+  color: #64748b;
+  font-size: 11px;
+}
+.history-change-after {
+  color: #1d6b3f;
+  font-weight: 600;
+}
+.history-change-more {
+  font-size: 11px;
+  color: #64748b;
+  margin-top: 2px;
+}
 .capaian-tools label {
   display: grid;
   gap: 6px;
