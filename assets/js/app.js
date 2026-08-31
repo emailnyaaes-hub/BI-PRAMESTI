@@ -51,7 +51,7 @@
   const WATCH_KEY = "padel-watchlist-v1";
   const SARAN_KEY = "padel-saran-overrides-v1";
   const SARAN_TEXT_VERSION = "20260831j";
-  const APP_BUILD = "20260831k";
+  const APP_BUILD = "20260831l";
   const GENERIC_KOMODITAS = new Set([
     "N/A",
     "Industri Pengolahan",
@@ -63,6 +63,9 @@
   ]);
   const SARAN_TEXT_VERSION_KEY = "padel-saran-text-version-v1";
   const HISTORY_KEY = "padel-audit-history-v1";
+  const HISTORY_SHARED_URL = "assets/data/audit-history.json";
+  const HISTORY_CLOUD_DOC = "shared-v1";
+  const HISTORY_CLOUD_COLLECTION = "padelAudit";
   const HISTORY_MAX = 800;
   const AUDIT_DB_FIELDS = ["nama", "jenis", "komoditas", "fasilitas", "tahun", "kpwdn", "keterangan"];
   const AUDIT_FIELD_LABELS = {
@@ -204,6 +207,11 @@
   let watchIds = loadWatch();
   let saranOverrides = loadSaranOverrides();
   let auditLog = [];
+  let historyCloudReady = false;
+  let historyCloudMode = "local";
+  let historyPushTimer = null;
+  let historyPollTimer = null;
+  let historySyncBusy = false;
 
   function loadWatch() {
     try {
@@ -555,6 +563,7 @@
     initKpwScope();
     await loadHistory();
     startNewsTicker();
+    startHistoryPolling();
     const label = document.getElementById("user-label");
     if (label) {
       label.textContent = session ? session.name || session.user : "";
@@ -741,6 +750,263 @@
   }
 
   async function loadHistory() {
+    await loadHistoryLocal();
+    await initHistoryCloud();
+    await syncHistoryRemote(true);
+  }
+
+  function historyCloudConfig() {
+    return window.PADEL_HISTORY_CLOUD || {};
+  }
+
+  function historyCloudEnabled() {
+    const cfg = historyCloudConfig();
+    if (!cfg.enabled) return false;
+    if (cfg.provider === "github") {
+      return !!(cfg.github?.token && cfg.github?.owner && cfg.github?.repo && cfg.github?.path);
+    }
+    if (cfg.provider === "jsonbin") return !!(cfg.jsonbin?.binId && cfg.jsonbin?.accessKey);
+    if (cfg.provider === "firestore") return !!(cfg.firestore?.apiKey && cfg.firestore?.projectId);
+    return false;
+  }
+
+  function mergeAuditLogs(...lists) {
+    const byId = new Map();
+    lists.flat().forEach((entry) => {
+      if (!entry?.id) return;
+      const prev = byId.get(entry.id);
+      if (!prev || Number(entry.at || 0) >= Number(prev.at || 0)) byId.set(entry.id, entry);
+    });
+    return [...byId.values()].sort((a, b) => Number(b.at || 0) - Number(a.at || 0)).slice(0, HISTORY_MAX);
+  }
+
+  async function fetchSharedHistoryFile() {
+    try {
+      const res = await fetch(`${HISTORY_SHARED_URL}?v=${encodeURIComponent(APP_BUILD)}`, { cache: "no-store" });
+      if (!res.ok) return [];
+      const data = await res.json();
+      if (Array.isArray(data?.entries)) return data.entries;
+      if (Array.isArray(data)) return data;
+      return [];
+    } catch (_) {
+      return [];
+    }
+  }
+
+  async function initHistoryCloud() {
+    historyCloudReady = false;
+    historyCloudMode = "local";
+    if (!historyCloudEnabled()) return false;
+    const cfg = historyCloudConfig();
+    if (cfg.provider === "github") {
+      historyCloudReady = true;
+      historyCloudMode = "github";
+      return true;
+    }
+    if (cfg.provider === "jsonbin") {
+      historyCloudReady = true;
+      historyCloudMode = "jsonbin";
+      return true;
+    }
+    if (cfg.provider === "firestore") {
+      if (!window.firebase?.apps?.length) {
+        if (!cfg.firestore?.apiKey) return false;
+        firebase.initializeApp(cfg.firestore);
+      }
+      try {
+        if (!firebase.auth().currentUser) await firebase.auth().signInAnonymously();
+        historyCloudReady = true;
+        historyCloudMode = "firestore";
+        return true;
+      } catch (err) {
+        console.warn("initHistoryCloud", err);
+        return false;
+      }
+    }
+    return false;
+  }
+
+  function githubHistoryHeaders(cfg) {
+    return {
+      Authorization: `Bearer ${cfg.github.token}`,
+      Accept: "application/vnd.github+json",
+      "X-GitHub-Api-Version": "2022-11-28",
+    };
+  }
+
+  function decodeGithubContent(content) {
+    try {
+      return JSON.parse(atob(String(content || "").replace(/\n/g, "")));
+    } catch (_) {
+      return null;
+    }
+  }
+
+  async function pullGithubHistory() {
+    const cfg = historyCloudConfig();
+    const g = cfg.github;
+    const url = `https://api.github.com/repos/${g.owner}/${g.repo}/contents/${encodeURIComponent(g.path)}?ref=${encodeURIComponent(g.branch || "main")}`;
+    const res = await fetch(url, { headers: githubHistoryHeaders(cfg) });
+    if (res.status === 404) return { entries: [], sha: null };
+    if (!res.ok) throw new Error(`GitHub read ${res.status}`);
+    const data = await res.json();
+    const parsed = decodeGithubContent(data.content);
+    return {
+      entries: Array.isArray(parsed?.entries) ? parsed.entries : [],
+      sha: data.sha || null,
+    };
+  }
+
+  async function pushGithubHistory(entries) {
+    const cfg = historyCloudConfig();
+    const g = cfg.github;
+    const current = await pullGithubHistory();
+    const merged = mergeAuditLogs(current.entries, entries);
+    const payload = {
+      entries: merged,
+      updatedAt: new Date().toISOString(),
+    };
+    const body = {
+      message: "Sync BI PRAMESTI audit history",
+      content: btoa(unescape(encodeURIComponent(JSON.stringify(payload, null, 2)))),
+      branch: g.branch || "main",
+    };
+    if (current.sha) body.sha = current.sha;
+    const url = `https://api.github.com/repos/${g.owner}/${g.repo}/contents/${encodeURIComponent(g.path)}`;
+    const res = await fetch(url, {
+      method: "PUT",
+      headers: { ...githubHistoryHeaders(cfg), "Content-Type": "application/json" },
+      body: JSON.stringify(body),
+    });
+    if (!res.ok) throw new Error(`GitHub write ${res.status}`);
+    return true;
+  }
+
+  async function pullCloudHistory() {
+    if (!historyCloudReady) return [];
+    const cfg = historyCloudConfig();
+    try {
+      if (historyCloudMode === "github") {
+        const data = await pullGithubHistory();
+        return data.entries;
+      }
+      if (historyCloudMode === "jsonbin") {
+        const res = await fetch(`https://api.jsonbin.io/v3/b/${cfg.jsonbin.binId}/latest`, {
+          headers: { "X-Access-Key": cfg.jsonbin.accessKey },
+        });
+        if (!res.ok) return [];
+        const data = await res.json();
+        const record = data?.record;
+        if (Array.isArray(record?.entries)) return record.entries;
+        if (Array.isArray(record)) return record;
+        return [];
+      }
+      if (historyCloudMode === "firestore") {
+        const snap = await firebase.firestore().collection(HISTORY_CLOUD_COLLECTION).doc(HISTORY_CLOUD_DOC).get();
+        if (!snap.exists) return [];
+        const entries = snap.data()?.entries;
+        return Array.isArray(entries) ? entries : [];
+      }
+    } catch (err) {
+      console.warn("pullCloudHistory", err);
+    }
+    return [];
+  }
+
+  async function pushCloudHistory(entries) {
+    if (!historyCloudReady) return false;
+    const cfg = historyCloudConfig();
+    try {
+      if (historyCloudMode === "github") {
+        return await pushGithubHistory(entries);
+      }
+      if (historyCloudMode === "jsonbin") {
+        const remote = await pullCloudHistory();
+        const merged = mergeAuditLogs(remote, entries);
+        const res = await fetch(`https://api.jsonbin.io/v3/b/${cfg.jsonbin.binId}`, {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+            "X-Access-Key": cfg.jsonbin.accessKey,
+          },
+          body: JSON.stringify({ entries: merged, updatedAt: new Date().toISOString() }),
+        });
+        return res.ok;
+      }
+      if (historyCloudMode === "firestore") {
+        const ref = firebase.firestore().collection(HISTORY_CLOUD_COLLECTION).doc(HISTORY_CLOUD_DOC);
+        await firebase.firestore().runTransaction(async (tx) => {
+          const snap = await tx.get(ref);
+          const remote = snap.exists && Array.isArray(snap.data()?.entries) ? snap.data().entries : [];
+          const merged = mergeAuditLogs(remote, entries);
+          tx.set(ref, {
+            entries: merged,
+            updatedAt: firebase.firestore.FieldValue.serverTimestamp(),
+          });
+        });
+        return true;
+      }
+    } catch (err) {
+      console.warn("pushCloudHistory", err);
+    }
+    return false;
+  }
+
+  function scheduleHistoryPush() {
+    if (!historyCloudReady) return;
+    clearTimeout(historyPushTimer);
+    historyPushTimer = setTimeout(() => {
+      pushCloudHistory(auditLog).catch(() => {});
+    }, 1200);
+  }
+
+  async function syncHistoryRemote(silent) {
+    if (historySyncBusy) return;
+    historySyncBusy = true;
+    try {
+      const [fileEntries, cloudEntries] = await Promise.all([fetchSharedHistoryFile(), pullCloudHistory()]);
+      const merged = mergeAuditLogs(auditLog, fileEntries, cloudEntries);
+      const changed =
+        merged.length !== auditLog.length ||
+        merged.some((entry, i) => entry.id !== auditLog[i]?.id || entry.at !== auditLog[i]?.at);
+      if (changed) {
+        auditLog = merged;
+        await saveHistoryLocal();
+        if (state.view === "history" && canView("history")) renderHistory();
+        if (!silent) flash("History disinkronkan dari server.");
+      } else if (!silent) {
+        flash("History sudah mutakhir.");
+      }
+    } catch (err) {
+      if (!silent) flash("Gagal sinkron history. Periksa koneksi atau konfigurasi cloud.", true);
+      console.warn("syncHistoryRemote", err);
+    } finally {
+      historySyncBusy = false;
+    }
+  }
+
+  function startHistoryPolling() {
+    if (historyPollTimer) clearInterval(historyPollTimer);
+    if (!historyCloudEnabled() && !(currentSession() && canView("history"))) return;
+    historyPollTimer = setInterval(() => {
+      syncHistoryRemote(true).catch(() => {});
+    }, 45000);
+  }
+
+  function historySyncStatusText() {
+    if (historyCloudReady) {
+      if (historyCloudMode === "github") {
+        return "History tersinkron via GitHub — perubahan Administrator dan KPw tampil di semua laptop/PC.";
+      }
+      if (historyCloudMode === "firestore") {
+        return "History tersinkron cloud (Firestore) — perubahan Administrator dan KPw tampil di semua perangkat.";
+      }
+      return "History tersinkron cloud — perubahan Administrator dan KPw tampil di semua perangkat.";
+    }
+    return "Sinkron cloud belum aktif. Isi token GitHub di assets/js/history-cloud.js agar history terhubung antar perangkat.";
+  }
+
+  async function loadHistoryLocal() {
     const readLocal = () => {
       try {
         const raw = localStorage.getItem(HISTORY_KEY);
@@ -769,7 +1035,7 @@
     }
   }
 
-  async function saveHistory() {
+  async function saveHistoryLocal() {
     auditLog = auditLog.slice(0, HISTORY_MAX);
     try {
       localStorage.setItem(HISTORY_KEY, JSON.stringify(auditLog));
@@ -783,6 +1049,11 @@
     }
   }
 
+  async function saveHistory() {
+    await saveHistoryLocal();
+    scheduleHistoryPush();
+  }
+
   async function deleteAuditEntry(id) {
     if (!canView("history")) return;
     const target = auditLog.find((entry) => entry.id === id);
@@ -790,6 +1061,7 @@
     if (!confirm(`Hapus catatan history:\n${target.summary || "Perubahan data"}?`)) return;
     auditLog = auditLog.filter((entry) => entry.id !== id);
     await saveHistory();
+    await pushCloudHistory(auditLog);
     if (state.view === "history") renderHistory();
     flash("Catatan history dihapus.");
   }
@@ -812,6 +1084,7 @@
     } catch (_) {
       /* ignore */
     }
+    await pushCloudHistory([]);
     if (state.view === "history") renderHistory();
     flash("Semua history dihapus.");
   }
@@ -4637,8 +4910,8 @@
     if (meta) {
       meta.textContent =
         list.length === 0
-          ? "Belum ada perubahan data yang tercatat. History disimpan per browser/perangkat — pastikan KPw dan Admin memakai browser yang sama, atau buka ulang History setelah KPw selesai mengubah data."
-          : `Menampilkan ${fmtNum(list.length)} dari ${fmtNum(auditLog.length)} catatan perubahan. History disimpan per browser/perangkat yang dipakai.`;
+          ? `Belum ada perubahan data yang tercatat. ${historySyncStatusText()}`
+          : `Menampilkan ${fmtNum(list.length)} dari ${fmtNum(auditLog.length)} catatan. ${historySyncStatusText()}`;
     }
     body.innerHTML = list.length
       ? list
@@ -6147,6 +6420,9 @@
   });
   document.getElementById("btn-history-clear")?.addEventListener("click", () => {
     clearAuditHistory();
+  });
+  document.getElementById("btn-history-sync")?.addEventListener("click", () => {
+    syncHistoryRemote(false);
   });
   const historyView = document.getElementById("view-history");
   if (historyView) {

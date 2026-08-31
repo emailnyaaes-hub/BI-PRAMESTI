@@ -319,9 +319,10 @@
           <div class="table-toolbar">
             <div>
               <h2>History perubahan data</h2>
-              <div class="meta" id="history-meta">Catatan perubahan Database UMKM/PUS dan Capaian ICK. History disimpan per browser/perangkat.</div>
+              <div class="meta" id="history-meta">Catatan perubahan Database UMKM/PUS dan Capaian ICK. History disinkronkan antar perangkat bila cloud aktif.</div>
             </div>
             <div class="row-actions">
+              <button class="btn btn-ghost btn-sm" type="button" id="btn-history-sync">Sinkronkan</button>
               <button class="btn btn-ghost btn-sm" type="button" id="btn-history-clear">Hapus semua</button>
               <button class="btn btn-dark btn-sm" type="button" id="btn-history-pdf">Unduh PDF</button>
             </div>
@@ -375,6 +376,10 @@
   <script src="assets/js/data.js?v=20260829b"></script>
   <script src="assets/js/ick-capaian.js?v=20260829b"></script>
   <script src="assets/js/ick-capaian-live.js?v=20260829b"></script>
-  <script src="assets/js/app.js?v=20260831k"></script>
+  <script src="assets/js/history-cloud.js?v=20260831l"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+  <script src="assets/js/app.js?v=20260831l"></script>
 </body>
 </html>
