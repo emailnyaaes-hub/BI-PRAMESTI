@@ -5853,7 +5853,7 @@
       pdf.setFont("helvetica", "normal");
       pdf.setFontSize(9);
       pdf.text(
-        `Platform Regional MSME-Shariah Indonesia · ${new Date().toLocaleDateString("id-ID")}`,
+        `Platform UMKM & Usaha Syariah Berdaya Saing · ${new Date().toLocaleDateString("id-ID")}`,
         margin,
         18
       );

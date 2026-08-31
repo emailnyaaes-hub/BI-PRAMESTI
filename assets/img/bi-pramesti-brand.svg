@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="brand-title brand-desc">
+  <title id="brand-title">BI PRAMESTI</title>
+  <desc id="brand-desc">Logo BI PRAMESTI dengan tulisan Platform UMKM &amp; Usaha Syariah Berdaya Saing</desc>
+  <defs>
+    <linearGradient id="prism-gold" x1="14" y1="8" x2="66" y2="72" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f6e7c2"/>
+      <stop offset="0.46" stop-color="#d4b56a"/>
+      <stop offset="1" stop-color="#8a6322"/>
+    </linearGradient>
+    <radialGradient id="prism-navy" cx="38" cy="30" r="48" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0d3f82"/>
+      <stop offset="1" stop-color="#001e4c"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="520" fill="#ffffff"/>
+  <g transform="translate(120 60) scale(4.8)">
+    <circle cx="40" cy="40" r="38.4" fill="url(#prism-navy)"/>
+    <circle cx="40" cy="40" r="38.4" fill="none" stroke="url(#prism-gold)" stroke-width="2.6"/>
+    <circle cx="40" cy="40" r="33" fill="none" stroke="url(#prism-gold)" stroke-width="0.7" opacity="0.42"/>
+    <g fill="url(#prism-gold)">
+      <circle cx="40" cy="10.8" r="1.7"/>
+      <circle cx="67.6" cy="29.6" r="1.7"/>
+      <circle cx="57.2" cy="62.4" r="1.7"/>
+      <circle cx="22.8" cy="62.4" r="1.7"/>
+      <circle cx="12.4" cy="29.6" r="1.7"/>
+    </g>
+    <path fill="url(#prism-gold)" fill-rule="evenodd" d="M25.2 21.4h14.2c11.8 0 19.2 6.2 19.2 14.8 0 8.4-7.2 14.6-18.8 14.6H33.6V58.4c0 1.6-1.3 2.9-2.9 2.9s-2.9-1.3-2.9-2.9V24.3c0-1.6 1.3-2.9 2.9-2.9h.5zm8.4 8.8v12.8h6.6c7.4 0 11.8-3.4 11.8-8.4s-4.4-8.4-11.8-8.4H33.6z"/>
+    <g fill="#001e4c">
+      <rect x="25.8" y="30" width="5.8" height="1.1" rx="0.4"/>
+      <rect x="25.8" y="35.2" width="5.8" height="1.1" rx="0.4"/>
+      <rect x="25.8" y="40.4" width="5.8" height="1.1" rx="0.4"/>
+      <rect x="25.8" y="45.6" width="5.8" height="1.1" rx="0.4"/>
+    </g>
+    <g fill="url(#prism-gold)">
+      <rect x="37.2" y="33.2" width="3.2" height="7.4" rx="0.55"/>
+      <rect x="42" y="29.6" width="3.2" height="11" rx="0.55"/>
+      <rect x="46.8" y="26.2" width="3.2" height="14.4" rx="0.55"/>
+    </g>
+  </g>
+  <text x="600" y="175" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="72" font-weight="700" fill="#001e4c" letter-spacing="2">BI PRAMESTI</text>
+  <text x="600" y="245" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="600" fill="#0d3f82">Platform UMKM &amp; Usaha Syariah Berdaya Saing</text>
+  <line x1="220" y1="290" x2="980" y2="290" stroke="#d4b56a" stroke-width="2"/>
+  <text x="600" y="345" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#334155">Kepanjangan: Platform UMKM &amp; Usaha Syariah Berdaya Saing</text>
+  <text x="600" y="395" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#64748b">MSME = Micro, Small, and Medium Enterprises</text>
+  <text x="600" y="430" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#64748b">(Usaha Mikro, Kecil, dan Menengah)</text>
+  <text x="600" y="475" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#94a3b8">Departemen Regional, Bank Indonesia</text>
+</svg>

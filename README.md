@@ -1,6 +1,6 @@
 # BI PRAMESTI
 
-**BI PRAMESTI** (*Platform Regional MSME-Shariah Indonesia*) is a standalone dashboard for monitoring MSME and Pelaku Usaha Syariah (PUS) profiles under Bank Indonesia regional offices.
+**BI PRAMESTI** (*Platform UMKM & Usaha Syariah Berdaya Saing*) is a standalone dashboard for monitoring MSME and Pelaku Usaha Syariah (PUS) profiles under Bank Indonesia regional offices.
 
 ## How to run
 
