@@ -1082,6 +1082,21 @@ a.ticker-item:focus-visible {
   line-height: 1.55;
   margin: 0 0 8px;
 }
+.modal-section {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+.modal-section .kicker {
+  margin-bottom: 8px;
+}
+.req-mark {
+  color: var(--danger);
+  font-weight: 700;
+}
+.sumut-support-docs .import-note {
+  margin-top: 4px;
+}
 .import-stats { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
 .import-stats span {
   background: #eef3f8;
