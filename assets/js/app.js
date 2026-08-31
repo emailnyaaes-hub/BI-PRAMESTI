@@ -362,51 +362,6 @@
     return currentRole() === "kpw";
   }
 
-  function isKpwSumut() {
-    const session = currentSession();
-    if (session?.user === "kpw_sumut") return true;
-    const key = String(state.kpwSelfKey || session?.kpwdn || fixedKpwDn() || "")
-      .trim()
-      .toLowerCase();
-    return /sumatera\s*utara/.test(key.replace(/\./g, " "));
-  }
-
-  function requiresSumutSupportDocs() {
-    if (!isKpwSumut()) return false;
-    const t = state.modal?.type;
-    return t === "create" || t === "capaian-create";
-  }
-
-  function sumutSupportFieldsHtml(row = {}) {
-    if (!requiresSumutSupportDocs()) return "";
-    return `
-          <div class="modal-section sumut-support-docs">
-            <div class="kicker">Dokumen pendukung</div>
-            <label class="full">Dokumen Pendukung <span class="req-mark" aria-hidden="true">*</span>
-              <input name="dokumenPendukung" required value="${escapeHtml(row.dokumenPendukung || "")}" placeholder="Nama atau rujukan berkas (mis. Surat Pengantar, Rekap All)">
-            </label>
-            <label class="full">Keterangan <span class="req-mark" aria-hidden="true">*</span>
-              <textarea name="keterangan" rows="3" required placeholder="Uraian singkat isi dan tujuan dokumen pendukung">${escapeHtml(row.keterangan || "")}</textarea>
-            </label>
-            <p class="import-note">Wajib diisi untuk Kantor Perwakilan Sumatera Utara.</p>
-          </div>`;
-  }
-
-  function validateSumutSupportDocs(formData) {
-    if (!requiresSumutSupportDocs()) return true;
-    const dokumen = String(formData.dokumenPendukung || "").trim();
-    const keterangan = String(formData.keterangan || "").trim();
-    if (!dokumen) {
-      flash("Dokumen Pendukung wajib diisi.", true);
-      return false;
-    }
-    if (!keterangan) {
-      flash("Keterangan wajib diisi.", true);
-      return false;
-    }
-    return true;
-  }
-
   function fixedKpwDn() {
     const session = currentSession();
     if (session?.kpwdn) return String(session.kpwdn).trim();
@@ -637,7 +592,6 @@
       lokasi: row.lokasi || "",
       status: row.status || "Aktif",
       keterangan: row.keterangan || "",
-      dokumenPendukung: row.dokumenPendukung || "",
     };
   }
 
@@ -655,7 +609,6 @@
       if (row.lokasi) item.lokasi = row.lokasi;
       if (row.status && row.status !== "Aktif") item.status = row.status;
       if (row.keterangan) item.keterangan = row.keterangan;
-      if (row.dokumenPendukung) item.dokumenPendukung = row.dokumenPendukung;
       return item;
     });
   }
@@ -5494,7 +5447,6 @@
               <tbody>${nums}</tbody>
             </table>
           </div>
-          ${sumutSupportFieldsHtml(row)}
           <div class="modal-actions">
             ${isEdit && !scoped ? `<button type="button" class="btn btn-danger" id="btn-capaian-delete">Hapus</button>` : ""}
             <button type="button" class="btn btn-ghost" data-close="1">Batal</button>
@@ -5747,7 +5699,6 @@
             lokasi: "",
             status: "Aktif",
             keterangan: "",
-            dokumenPendukung: "",
           };
     if (!row) {
       root.innerHTML = "";
@@ -5793,15 +5744,10 @@
                   : `<input name="kpwdn" list="list-kpwdn" required value="${escapeHtml(row.kpwdn)}">`
               }
             </label>
-            ${
-              requiresSumutSupportDocs()
-                ? ""
-                : `<label class="full">Keterangan
+            <label class="full">Keterangan
               <textarea name="keterangan" rows="3">${escapeHtml(row.keterangan || "")}</textarea>
-            </label>`
-            }
+            </label>
           </div>
-          ${sumutSupportFieldsHtml(row)}
           ${datalist("list-komoditas", unique("komoditas"))}
           ${datalist("list-fasilitas", unique("fasilitas"))}
           ${datalist("list-kpwdn", unique("kpwdn"))}
@@ -7129,7 +7075,6 @@
         }
       }
       if (isKpwScoped() && state.modal?.type === "capaian-create" && !requireKpwSelf()) return;
-      if (!validateSumutSupportDocs(form)) return;
       const existingSelf = isKpwScoped() ? kpwSelfOffice() : null;
       const office = {
         no:
@@ -7149,8 +7094,6 @@
         totalRealisasi: 0,
         totalInd: 0,
       };
-      if (form.dokumenPendukung) office.dokumenPendukung = String(form.dokumenPendukung).trim();
-      if (form.keterangan) office.keterangan = String(form.keterangan).trim();
       if (isKpwScoped() && existingSelf) {
         const list = [...(data.offices || [])];
         const idx = list.findIndex((row) => Number(row.no) === Number(existingSelf.no));
@@ -7224,7 +7167,6 @@
       return;
     }
     const data = Object.fromEntries(new FormData(e.target).entries());
-    if (!validateSumutSupportDocs(data)) return;
     data.tahun = Number(data.tahun);
     if (isKpwScoped()) {
       const picked = String(data.kpwdn || "").trim();
@@ -7251,16 +7193,7 @@
           : row
       );
     } else {
-      next = records.concat([
-        {
-          id: `u${Date.now()}`,
-          ...data,
-          dokumenPendukung: String(data.dokumenPendukung || "").trim(),
-          keterangan: String(data.keterangan || "").trim(),
-          lokasi: "",
-          status: "Aktif",
-        },
-      ]);
+      next = records.concat([{ id: `u${Date.now()}`, ...data, lokasi: "", status: "Aktif" }]);
     }
     persistRecords(next).then((ok) => {
       if (!ok) return;
