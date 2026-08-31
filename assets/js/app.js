@@ -50,7 +50,8 @@
   const SEED_VERSION_KEY = "padel-seed-version-v1";
   const WATCH_KEY = "padel-watchlist-v1";
   const SARAN_KEY = "padel-saran-overrides-v1";
-  const SARAN_TEXT_VERSION = "20260831g";
+  const SARAN_TEXT_VERSION = "20260831h";
+  const APP_BUILD = "20260831h";
   const SARAN_TEXT_VERSION_KEY = "padel-saran-text-version-v1";
   const HISTORY_KEY = "padel-audit-history-v1";
   const HISTORY_MAX = 800;
@@ -2431,9 +2432,35 @@
     mapBox.innerHTML = indonesiaMapHtml(regionCounts, maxN, "data-home-wilayah");
     const caption = document.getElementById("home-map-caption");
     if (caption) {
-      caption.textContent = "Klik pulau untuk melihat KPwDN tertinggi dan terendah di wilayah itu.";
+      caption.textContent = "Klik wilayah pada peta untuk melihat KPwDN dan prioritas tindak lanjut per wilayah.";
     }
     renderHomeWilayahPop();
+  }
+
+  function homePrioritiesHtml(actions) {
+    if (!actions.length) {
+      return `<li><span>Belum terdapat prioritas tindak lanjut pada cakupan ini.</span></li>`;
+    }
+    return actions
+      .map(
+        (item, i) => `<li class="tone-${item.tone || "sedang"}">
+          <span class="home-action-no">${String(i + 1).padStart(2, "0")}</span>
+          <div class="home-action-body">
+            <strong>${escapeHtml(item.title)}</strong>
+            <span>${escapeHtml(item.text)}</span>
+          </div>
+        </li>`
+      )
+      .join("");
+  }
+
+  function resolveActionBundle(list) {
+    const fokus = REGIONS.find((region) => region.id === state.wilayah);
+    if (fokus) {
+      const wilayahBundle = buildWilayahActions(list, fokus);
+      return { priority: wilayahBundle.priority, horizons: buildActions(list).horizons };
+    }
+    return buildActions(list);
   }
 
   function renderHomeWilayahPop() {
@@ -2455,6 +2482,7 @@
     const kpwRank = kpwSplitRank(list);
     const ends = rankEnds(kpwRank, 3);
     const offices = kpwRank.length;
+    const actions = buildWilayahActions(list, region).priority;
     pop.hidden = false;
     pop.innerHTML = `
       <div class="home-pop-card" role="dialog" aria-label="KPwDN wilayah ${escapeHtml(region.name)}">
@@ -2469,13 +2497,15 @@
           ${kpwListBlock("KPwDN tertinggi", ends.top, "strong")}
           ${kpwListBlock("KPwDN terendah", ends.bottom, "weak")}
         </div>
-        <button type="button" class="home-pop-tiga" id="btn-home-tiga-tindakan">
-          <span class="kicker">Prioritas tindak lanjut</span>
-          <strong>Tiga arahan kebijakan — Wilayah ${escapeHtml(region.name)}</strong>
-          <span>Klik untuk melihat rincian</span>
-        </button>
+        <section class="home-pop-priorities" aria-label="Prioritas tindak lanjut wilayah ${escapeHtml(region.name)}">
+          <div class="kicker">Prioritas tindak lanjut</div>
+          <p class="meta">Disusun dari profil UMKM/PUS wilayah ${escapeHtml(region.name)} · pembaruan ${APP_BUILD}</p>
+          <ol class="home-actions-list home-actions-inline">
+            ${homePrioritiesHtml(actions)}
+          </ol>
+        </section>
       </div>`;
-    renderHomeActionsPop(list, region);
+    renderHomeActionsPop([], null);
     renderHomeKpwListPop();
   }
 
@@ -2929,7 +2959,7 @@
     const kpwEnds = rankEnds(kpwRank, 3);
     const topKom = countByKomoditas(list).find(([name]) => name !== "N/A");
     const topIck = countByFasilitas(list).find(([name]) => name && name !== "N/A");
-    const actions = (priority || buildActions(list).priority).slice(0, 3);
+    const actions = (priority || resolveActionBundle(list).priority).slice(0, 3);
     return {
       cakupan: execCakupan(),
       dated: formatDataDate(loadUpdatedAt()),
@@ -3505,11 +3535,13 @@
     const clearBtn = document.getElementById("btn-clear-wilayah");
     if (clearBtn) clearBtn.hidden = !state.wilayah;
 
-    const { priority, horizons } = applySaranOverrides(buildActions(list));
+    const { priority, horizons } = applySaranOverrides(resolveActionBundle(list));
     const saranMeta = document.getElementById("saran-meta");
     if (saranMeta) {
       saranMeta.textContent = list.length
-        ? "Tiga langkah paling material bagi kinerja regional, berdasarkan sebaran, konsentrasi, dan mutu data. Klik kotak untuk mengubah teks."
+        ? fokus
+          ? `Tiga arahan kebijakan untuk wilayah ${fokus.name}, berdasarkan profil UMKM/PUS, ICK, dan KPwDN pengampu di wilayah ini. Klik kotak untuk mengubah teks.`
+          : "Tiga arahan kebijakan regional paling material, berdasarkan sebaran UMKM/PUS, konsentrasi KPwDN, dan mutu data. Klik kotak untuk mengubah teks."
         : "Tidak ada saran pada cakupan ini.";
     }
     const saranList = document.getElementById("saran-list");
@@ -5255,7 +5287,7 @@
     if (state.modal.type === "saran-edit") {
       const kind = state.modal.kind === "horizons" ? "horizons" : "priority";
       const idx = Number(state.modal.idx) || 0;
-      const bundle = applySaranOverrides(buildActions(filtered()));
+      const bundle = applySaranOverrides(resolveActionBundle(filtered()));
       const item = (bundle[kind] || [])[idx];
       if (!item) {
         root.innerHTML = "";
@@ -6947,13 +6979,6 @@
     if (unitBtn) {
       state.homeUnitId = unitBtn.getAttribute("data-home-unit") || "";
       renderHomeUnitPop();
-      return;
-    }
-    if (e.target.closest("#btn-home-tiga-tindakan")) {
-      state.homeActions = true;
-      state.homeKpw = "";
-      state.homeUnitId = "";
-      renderHomeWilayahPop();
       return;
     }
     if (e.target.closest("#btn-home-actions-close") || e.target.id === "home-actions-pop") {
