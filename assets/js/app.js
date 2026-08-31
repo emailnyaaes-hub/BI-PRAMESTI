@@ -50,8 +50,17 @@
   const SEED_VERSION_KEY = "padel-seed-version-v1";
   const WATCH_KEY = "padel-watchlist-v1";
   const SARAN_KEY = "padel-saran-overrides-v1";
-  const SARAN_TEXT_VERSION = "20260831i";
-  const APP_BUILD = "20260831i";
+  const SARAN_TEXT_VERSION = "20260831j";
+  const APP_BUILD = "20260831j";
+  const GENERIC_KOMODITAS = new Set([
+    "N/A",
+    "Industri Pengolahan",
+    "Perdagangan Besar dan Eceran; Reparasi dan Perawatan Mobil dan Sepeda Motor",
+    "Penyediaan Akomodasi dan Penyediaan Makan Minum",
+    "Jasa Lainnya",
+    "Pertanian, Kehutanan, dan Perikanan",
+    "Lainnya",
+  ]);
   const SARAN_TEXT_VERSION_KEY = "padel-saran-text-version-v1";
   const HISTORY_KEY = "padel-audit-history-v1";
   const HISTORY_MAX = 800;
@@ -2543,13 +2552,14 @@
       return;
     }
     const actions = buildWilayahActions(list, region).priority;
+    const signature = distinctiveKomoditasRank(list)[0];
     pop.hidden = false;
     pop.innerHTML = `
       <div class="home-pop-card home-actions-card" role="dialog" aria-label="Prioritas tindak lanjut wilayah ${escapeHtml(region.name)}">
         <div class="home-pop-head">
           <div>
             <div class="kicker">Prioritas tindak lanjut</div>
-            <p class="meta">Wilayah ${escapeHtml(region.name)} · disusun dari profil UMKM/PUS wilayah ini</p>
+            <p class="meta">Wilayah ${escapeHtml(region.name)}${signature ? ` · klaster khas: ${escapeHtml(signature[0])}` : ""} · v${APP_BUILD}</p>
           </div>
           <button class="btn btn-ghost btn-sm" type="button" id="btn-home-actions-close">Tutup</button>
         </div>
@@ -3109,6 +3119,42 @@
     `;
   }
 
+  function isGenericKomoditas(name) {
+    const label = komoditasLabel(name);
+    if (GENERIC_KOMODITAS.has(label)) return true;
+    if (label.length > 52) return true;
+    return false;
+  }
+
+  function distinctiveKomoditasRank(list) {
+    return countByKomoditas(list).filter(([name]) => !isGenericKomoditas(name));
+  }
+
+  function komoditasLiftRank(list, baselineList) {
+    const total = Math.max(1, list.length);
+    const baseTotal = Math.max(1, baselineList.length);
+    const regMap = Object.fromEntries(distinctiveKomoditasRank(list));
+    const baseMap = Object.fromEntries(distinctiveKomoditasRank(baselineList));
+    const names = new Set([...Object.keys(regMap), ...Object.keys(baseMap)]);
+    return [...names]
+      .map((name) => ({
+        name,
+        n: regMap[name] || 0,
+        regShare: (regMap[name] || 0) / total,
+        baseShare: (baseMap[name] || 0) / baseTotal,
+        lift: (regMap[name] || 0) / total - (baseMap[name] || 0) / baseTotal,
+      }))
+      .filter((row) => row.n >= 3)
+      .sort((a, b) => b.lift - a.lift || b.n - a.n || a.name.localeCompare(b.name, "id"));
+  }
+
+  function ickPortfolioRank(list, limit = 3) {
+    return countByFasilitas(list)
+      .filter(([name]) => name && name !== "N/A")
+      .slice(0, limit)
+      .map(([name, n]) => ({ name, n, share: list.length ? n / list.length : 0 }));
+  }
+
   function pickActions(items, limit) {
     const out = [];
     const seen = new Set();
@@ -3124,6 +3170,7 @@
     const regionName = region.name;
     const total = list.length;
     const nationalTotal = records.length;
+    const baseline = records;
 
     if (!total) {
       return {
@@ -3141,14 +3188,17 @@
     const pus = list.filter((row) => row.jenis === "PUS").length;
     const umkm = total - pus;
     const pusShare = pus / total;
-    const komRank = countByKomoditas(list).filter(([name]) => name !== "N/A");
-    const ickRank = countByFasilitas(list).filter(([name]) => name && name !== "N/A");
+    const natPusShare = baseline.length ? baseline.filter((row) => row.jenis === "PUS").length / baseline.length : 0;
+    const komRank = distinctiveKomoditasRank(list);
+    const komLift = komoditasLiftRank(list, baseline);
+    const signatureKom = komLift[0] || (komRank[0] ? { name: komRank[0][0], n: komRank[0][1], lift: 0, regShare: komRank[0][1] / total } : null);
+    const volumeKom = komRank[0] ? { name: komRank[0][0], n: komRank[0][1] } : null;
+    const runnerKom = komRank[1] ? { name: komRank[1][0], n: komRank[1][1] } : null;
+    const thirdKom = komRank[2] ? { name: komRank[2][0], n: komRank[2][1] } : null;
+    const ickPortfolio = ickPortfolioRank(list, 4);
+    const topIck = ickPortfolio[0];
+    const focusIck = ickPortfolio[1] && ickPortfolio[1].share >= 0.12 ? ickPortfolio[1] : ickPortfolio[0];
     const kpwRank = kpwSplitRank(list);
-    const topKom = komRank[0];
-    const secondKom = komRank[1];
-    const thirdKom = komRank[2];
-    const topIck = ickRank[0];
-    const secondIck = ickRank[1];
     const topKpw = kpwRank[0];
     const thinKpw = kpwRank.filter((row) => row.n <= Math.max(2, Math.round((topKpw?.n || 1) * 0.25)));
     const noKom = list.filter((row) => komoditasLabel(row.komoditas) === "N/A").length;
@@ -3158,128 +3208,131 @@
       return year >= 1900 && year <= now - 3;
     });
     const nationalShare = nationalTotal ? total / nationalTotal : 0;
-    const nationalKomRank = countByKomoditas(records).filter(([name]) => name !== "N/A");
-    const nationalTopKom = nationalKomRank[0];
-    const komLift =
-      topKom && nationalTopKom && nationalTopKom[1]
-        ? topKom[1] / total - nationalTopKom[1] / nationalTotal
-        : 0;
 
     const candidates = [];
+    const leadKom = signatureKom && (signatureKom.lift >= 0.003 || signatureKom.n >= 8) ? signatureKom : volumeKom;
 
-    if (topKom && topKom[1] / total >= 0.12) {
-      const komRows = list.filter((row) => komoditasLabel(row.komoditas) === topKom[0]);
+    if (leadKom) {
+      const komRows = list.filter((row) => komoditasLabel(row.komoditas) === leadKom.name);
       const leadOffice = countByAsalKpw(komRows)[0];
-      const komKomposisi = secondKom
-        ? `Diikuti ${secondKom[0]} (${shareLabel(secondKom[1], total)})${thirdKom && thirdKom[1] >= 2 ? ` dan ${thirdKom[0]} (${shareLabel(thirdKom[1], total)})` : ""}.`
+      const profil =
+        volumeKom && leadKom.name !== volumeKom.name
+          ? `Klaster khas ${leadKom.name} (${fmtNum(leadKom.n)} unit, ${shareLabel(leadKom.n, total)}) menonjol dibanding rata-rata nasional; komoditas terbanyak ${volumeKom.name} (${fmtNum(volumeKom.n)} unit).`
+          : `${leadKom.name} menjadi komoditas terbanyak (${fmtNum(leadKom.n)} unit, ${shareLabel(leadKom.n, total)}).`;
+      const susulan = runnerKom
+        ? ` Diikuti ${runnerKom.name} (${fmtNum(runnerKom.n)} unit)${thirdKom ? ` dan ${thirdKom.name} (${fmtNum(thirdKom.n)} unit)` : ""}.`
         : "";
-      const spesialisasi =
-        komLift >= 0.08
-          ? ` Klaster ini lebih dominan di ${regionName} dibanding rata-rata nasional.`
-          : "";
       candidates.push({
-        score: 520 + Math.round((topKom[1] / total) * 120),
-        tone: topKom[1] / total >= 0.3 ? "tinggi" : "sedang",
-        title: `Perkuat klaster ${topKom[0]} di wilayah ${regionName}`,
-        text: `Wilayah ${regionName} memiliki ${fmtNum(topKom[1])} unit ${topKom[0]} (${shareLabel(topKom[1], total)} dari ${fmtNum(total)} UMKM/PUS). ${komKomposisi}${spesialisasi} Bank Indonesia mendorong pendalaman rantai nilai—akses input, pemasaran, dan pembiayaan syariah—melalui program ICK di ${leadOffice ? shortOffice(leadOffice[0]) : "KPwDN pengampu terpadat"}.`,
+        score: 560 + Math.round((leadKom.n / total) * 120) + Math.round((signatureKom?.lift || 0) * 400),
+        tone: leadKom.n / total >= 0.18 ? "tinggi" : "sedang",
+        title: `Perkuat klaster ${leadKom.name} sebagai unggulan ${regionName}`,
+        text: `Profil UMKM/PUS wilayah ${regionName}: ${profil}${susulan} Bank Indonesia mendorong pendalaman rantai nilai—akses input, pemasaran, dan pembiayaan syariah—melalui program ICK di ${leadOffice ? shortOffice(leadOffice[0]) : "KPwDN pengampu terpadat"}.`,
       });
     }
 
-    if (topIck) {
-      const ickRows = list.filter((row) => ickLabel(row.fasilitas).toLowerCase() === topIck[0].toLowerCase());
+    if (ickPortfolio.length >= 2) {
+      const mix = ickPortfolio
+        .slice(0, 3)
+        .map((row) => `${row.name} ${fmtNum(row.n)} unit (${shareLabel(row.n, total)})`)
+        .join(", ");
+      const ickRows = list.filter((row) => ickLabel(row.fasilitas).toLowerCase() === focusIck.name.toLowerCase());
       const ickOffice = countByAsalKpw(ickRows)[0];
-      const ickMix = secondIck ? ` Program ${secondIck[0]} menempati posisi berikutnya (${shareLabel(secondIck[1], total)}).` : "";
       candidates.push({
-        score: 480 + Math.round((topIck[1] / total) * 100),
-        tone: topIck[1] / total >= 0.25 ? "tinggi" : "sedang",
-        title: `Optimalisasi program ICK ${topIck[0]} di ${regionName}`,
-        text: `${topIck[0]} telah menjangkau ${fmtNum(topIck[1])} unit (${shareLabel(topIck[1], total)}) di wilayah ${regionName}.${ickMix} KPwDN pengampu${ickOffice ? ` (${shortOffice(ickOffice[0])})` : ""} menyeragamkan tindak lanjut—linkage pasar, pemantauan status binaan, dan evaluasi capaian—pada portofolio ini guna memperkuat daya saing UMKM/PUS.`,
+        score: 520 + Math.round(focusIck.share * 100),
+        tone: focusIck.share >= 0.2 ? "tinggi" : "sedang",
+        title: `Selaraskan portofolio ICK ${regionName} (${focusIck.name})`,
+        text: `Cakupan ICK di ${regionName}: ${mix}. Prioritas tindak lanjut difokuskan pada perluasan dan evaluasi program ${focusIck.name} melalui ${ickOffice ? shortOffice(ickOffice[0]) : "KPwDN pengampu terpadat"}—termasuk linkage pasar, pemantauan status binaan, dan koordinasi antar-program ICK.`,
+      });
+    } else if (topIck) {
+      candidates.push({
+        score: 500,
+        tone: "sedang",
+        title: `Optimalisasi program ICK ${topIck.name} di ${regionName}`,
+        text: `${topIck.name} menjangkau ${fmtNum(topIck.n)} unit (${shareLabel(topIck.n, total)}) di wilayah ${regionName}. KPwDN pengampu menyeragamkan tindak lanjut pada portofolio ini guna memperkuat daya saing UMKM/PUS.`,
       });
     }
 
-    if (pusShare >= 0.15) {
+    if (pusShare >= 0.18 || (pusShare >= 0.12 && pusShare - natPusShare >= 0.03)) {
       const pusRows = list.filter((row) => row.jenis === "PUS");
-      const pusKom = countByKomoditas(pusRows).find(([name]) => name !== "N/A");
+      const pusKom = distinctiveKomoditasRank(pusRows)[0];
       candidates.push({
-        score: 440 + Math.round(pusShare * 100),
-        tone: pusShare >= 0.3 ? "tinggi" : "sedang",
+        score: 470 + Math.round(pusShare * 100),
+        tone: pusShare >= 0.22 ? "tinggi" : "sedang",
         title: `Perkuat inklusi keuangan syariah PUS di ${regionName}`,
-        text: `Wilayah ${regionName} mencatat ${fmtNum(pus)} PUS (${shareLabel(pus, total)}) dari ${fmtNum(total)} unit binaan${pusKom ? `, terutama pada komoditas ${pusKom[0]}` : ""}. KPwDN pengampu memetakan unit yang telah terhubung pembiayaan syariah, dalam proses sertifikasi halal, dan belum tersentuh—guna mengarahkan instrumen ICK ke peningkatan daya saing pelaku usaha syariah.`,
+        text: `${regionName} mencatat ${fmtNum(pus)} PUS (${shareLabel(pus, total)}), ${pusShare > natPusShare ? "di atas" : "selaras dengan"} rata-rata nasional (${shareLabel(Math.round(natPusShare * baseline.length), baseline.length)})${pusKom ? `, terutama pada ${pusKom[0]}` : ""}. KPwDN pengampu memetakan unit yang telah terhubung pembiayaan syariah, dalam proses sertifikasi halal, dan belum tersentuh.`,
       });
     } else if (!pus && umkm >= 3) {
       candidates.push({
-        score: 400,
+        score: 430,
         tone: "sedang",
         title: `Perluas pendataan PUS di wilayah ${regionName}`,
-        text: `Seluruh ${fmtNum(umkm)} unit tercatat berstatus UMKM; belum ada PUS di wilayah ${regionName}. KPwDN pengampu melakukan identifikasi pelaku usaha syariah potensial—termasuk pondok pesantren dan koperasi syariah—agar profil inklusi keuangan syariah wilayah ini tercermin pada BI PRAMESTI.`,
+        text: `Seluruh ${fmtNum(umkm)} unit di ${regionName} berstatus UMKM; belum ada PUS tercatat. KPwDN pengampu melakukan identifikasi pelaku usaha syariah potensial—termasuk pondok pesantren dan koperasi syariah—agar profil inklusi keuangan syariah ${regionName} tercermin pada BI PRAMESTI.`,
+      });
+    } else if (pusShare <= 0.1 && pus >= 1) {
+      candidates.push({
+        score: 410,
+        tone: "sedang",
+        title: `Tingkatkan peran PUS pada profil ${regionName}`,
+        text: `PUS baru ${fmtNum(pus)} unit (${shareLabel(pus, total)}) di ${regionName}, di bawah rata-rata nasional. KPwDN pengampu menargetkan penemuan dan fasilitasi PUS potensial agar keuangan syariah semakin terintegrasi pada klaster unggulan wilayah.`,
       });
     }
 
-    if (kpwRank.length > 1 && topKpw && topKpw.n / total >= 0.22) {
+    if (kpwRank.length > 1 && topKpw && topKpw.n / total >= 0.18) {
       const bottom = kpwRank[kpwRank.length - 1];
       candidates.push({
-        score: 420 + Math.round((topKpw.n / total) * 80),
+        score: 450 + Math.round((topKpw.n / total) * 80),
         tone: "tinggi",
         title: `Ratakan pelaporan KPwDN pengampu di ${regionName}`,
-        text: `${shortOffice(topKpw.name)} melaporkan ${fmtNum(topKpw.n)} unit (${shareLabel(topKpw.n, total)}), sementara ${shortOffice(bottom.name)} ${fmtNum(bottom.n)} unit. Guna memperkuat akurasi perumusan kebijakan regional ${regionName}, KPwDN dengan unggahan terendah ditargetkan penambahan data unit binaan pada periode pelaporan berikutnya.`,
+        text: `Sebaran internal ${regionName}: ${shortOffice(topKpw.name)} ${fmtNum(topKpw.n)} unit (${shareLabel(topKpw.n, total)}) vs ${shortOffice(bottom.name)} ${fmtNum(bottom.n)} unit. KPwDN dengan unggahan terendah ditargetkan penambahan data unit binaan agar perumusan kebijakan regional ${regionName} tidak condong ke satu kantor.`,
       });
     } else if (thinKpw.length && kpwRank.length >= 2) {
       candidates.push({
-        score: 390,
+        score: 420,
         tone: "sedang",
-        title: `Tingkatkan cakupan KPwDN pengampu di ${regionName}`,
-        text: `${fmtNum(kpwRank.length)} KPwDN pengampu tercatat di wilayah ${regionName}; ${thinKpw.map((row) => shortOffice(row.name)).join(", ")} masih berunggahan tipis (≤${fmtNum(thinKpw[0].n)} unit). Bank Indonesia mendorong penambahan 10–15 unit binaan unggulan per kantor pada siklus pelaporan berikutnya agar sebaran mendekati potensi wilayah.`,
+        title: `Tingkatkan cakupan KPwDN tipis di ${regionName}`,
+        text: `${fmtNum(kpwRank.length)} KPwDN pengampu di ${regionName}; ${thinKpw.map((row) => shortOffice(row.name)).join(", ")} masih berunggahan tipis (≤${fmtNum(thinKpw[0].n)} unit). Bank Indonesia mendorong penambahan 10–15 unit binaan unggulan per kantor pada siklus pelaporan berikutnya.`,
       });
     }
 
     if (noTahun || stale.length) {
       const oldest = stale.length ? Math.min(...stale.map((row) => Number(row.tahun))) : now;
       candidates.push({
-        score: 360 + Math.round(((noTahun + stale.length) / total) * 80),
+        score: 390 + Math.round(((noTahun + stale.length) / total) * 80),
         tone: (noTahun + stale.length) / total >= 0.25 ? "tinggi" : "sedang",
         title: `Perbarui data fasilitasi ICK di ${regionName}`,
-        text: `${noTahun ? `${fmtNum(noTahun)} unit belum memiliki tahun fasilitasi (${shareLabel(noTahun, total)})` : ""}${noTahun && stale.length ? "; " : ""}${stale.length ? `${fmtNum(stale.length)} unit terakhir tercatat ${oldest}–${now - 3}` : ""} di wilayah ${regionName}. KPwDN pengampu melengkapi tahun fasilitasi dan memperbarui sampel unit binaan agar capaian ICK mencerminkan aktivitas fasilitasi terkini.`,
+        text: `${noTahun ? `${fmtNum(noTahun)} unit belum memiliki tahun fasilitasi (${shareLabel(noTahun, total)})` : ""}${noTahun && stale.length ? "; " : ""}${stale.length ? `${fmtNum(stale.length)} unit terakhir tercatat ${oldest}–${now - 3}` : ""} di ${regionName}. KPwDN pengampu melengkapi tahun fasilitasi agar capaian ICK mencerminkan aktivitas fasilitasi terkini.`,
       });
     }
 
     if (noKom && noKom / total >= 0.08) {
       candidates.push({
-        score: 340 + Math.round((noKom / total) * 80),
+        score: 370 + Math.round((noKom / total) * 80),
         tone: noKom / total >= 0.2 ? "tinggi" : "sedang",
         title: `Lengkapi klasifikasi komoditas di ${regionName}`,
-        text: `${fmtNum(noKom)} unit (${shareLabel(noKom, total)}) di wilayah ${regionName} belum berkomoditas. KPwDN pengampu melengkapi kolom komoditas pada kertas kerja Rekap All agar profil klaster ${regionName} dapat dijadikan dasar perumusan kebijakan dan alokasi ICK.`,
-      });
-    }
-
-    if (nationalShare >= 0.08 && topKom && !candidates.some((item) => item.title.includes(topKom[0]))) {
-      candidates.push({
-        score: 320 + Math.round(nationalShare * 100),
-        tone: "sedang",
-        title: `Manfaatkan posisi ${regionName} dalam peta nasional UMKM/PUS`,
-        text: `Wilayah ${regionName} menyumbang ${shareLabel(total, nationalTotal)} data nasional (${fmtNum(total)} unit). ${topKom[0]} menjadi komoditas unggulan regional. Ringkasan Eksekutif BI PRAMESTI dijadikan bahan rapat pimpinan KPwDN pengampu ${regionName} untuk memperkuat sinergi kebijakan antar-KPwDN.`,
+        text: `${fmtNum(noKom)} unit (${shareLabel(noKom, total)}) di ${regionName} belum berkomoditas. KPwDN pengampu melengkapi kolom komoditas pada Rekap All agar profil klaster ${leadKom ? leadKom.name : regionName} dapat dijadikan dasar perumusan kebijakan.`,
       });
     }
 
     candidates.sort((a, b) => b.score - a.score);
 
-    const komHint = topKom ? `klaster ${topKom[0]}` : "komoditas unggulan";
-    const ickHint = topIck ? `program ICK ${topIck[0]}` : "fasilitasi ICK";
+    const komHint = leadKom ? leadKom.name : volumeKom ? volumeKom.name : "komoditas unggulan";
+    const ickHint = focusIck ? focusIck.name : topIck ? topIck.name : "fasilitasi ICK";
     const kpwHint = topKpw ? shortOffice(topKpw.name) : "KPwDN pengampu";
     const fallbacks = [
       {
         tone: "sedang",
-        title: `Optimalisasi profil UMKM/PUS wilayah ${regionName}`,
-        text: `${fmtNum(total)} unit (${fmtNum(umkm)} UMKM · ${fmtNum(pus)} PUS) tersebar di ${fmtNum(kpwRank.length)} KPwDN pengampu${nationalShare ? `, ${shareLabel(total, nationalTotal)} dari data nasional` : ""}. Prioritas tindak lanjut difokuskan pada ${komHint}, ${ickHint}, dan peningkatan mutu pelaporan triwulanan.`,
+        title: `Optimalisasi profil UMKM/PUS ${regionName}`,
+        text: `${fmtNum(total)} unit (${fmtNum(umkm)} UMKM · ${fmtNum(pus)} PUS) tersebar di ${fmtNum(kpwRank.length)} KPwDN pengampu${nationalShare ? `, ${shareLabel(total, nationalTotal)} data nasional` : ""}. Prioritas difokuskan pada klaster ${komHint}, program ICK ${ickHint}, dan mutu pelaporan triwulanan.`,
       },
       {
         tone: "sedang",
         title: `Koordinasi KPwDN pengampu ${regionName}`,
-        text: `${kpwHint} menjadi kantor dengan unggahan terbanyak di ${regionName}. KPwDN pengampu lain melakukan replikasi tata kelola data dan lembar rujukan klaster agar seluruh wilayah ${regionName} tercermin secara merata pada BI PRAMESTI.`,
+        text: `${kpwHint} menjadi kantor dengan unggahan terbanyak di ${regionName}. KPwDN pengampu lain melakukan replikasi tata kelola data dan lembar rujukan klaster ${komHint} agar seluruh ${regionName} tercermin merata.`,
       },
       {
         tone: "sedang",
-        title: `Integrasikan BI PRAMESTI dalam rapat regional ${regionName}`,
-        text: `Data ${fmtNum(total)} unit binaan di ${regionName} dijadikan baseline rapat pimpinan: sebaran komoditas, portofolio ICK, dan prioritas tindak lanjut disusun dalam satu layar BI PRAMESTI setiap triwulan.`,
+        title: `Integrasikan BI PRAMESTI dalam rapat ${regionName}`,
+        text: `Data ${fmtNum(total)} unit binaan di ${regionName} dijadikan baseline rapat pimpinan: sebaran ${komHint}, portofolio ICK, dan prioritas tindak lanjut disusun dalam satu layar BI PRAMESTI setiap triwulan.`,
       },
     ];
 
