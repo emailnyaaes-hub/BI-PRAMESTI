@@ -2462,9 +2462,9 @@
           ${kpwListBlock("KPwDN terendah", ends.bottom, "weak")}
         </div>
         <button type="button" class="home-pop-tiga" id="btn-home-tiga-tindakan">
-          <span class="kicker">Tiga tindakan</span>
-          <strong>Saran untuk wilayah ${escapeHtml(region.name)}</strong>
-          <span>Klik untuk membuka analisis</span>
+          <span class="kicker">Prioritas tindak lanjut</span>
+          <strong>Tiga arahan kebijakan — Wilayah ${escapeHtml(region.name)}</strong>
+          <span>Klik untuk melihat rincian</span>
         </button>
       </div>`;
     renderHomeActionsPop(list, region);
@@ -2513,11 +2513,11 @@
     state.wilayah = prevWilayah;
     pop.hidden = false;
     pop.innerHTML = `
-      <div class="home-pop-card home-actions-card" role="dialog" aria-label="Tiga tindakan wilayah ${escapeHtml(region.name)}">
+      <div class="home-pop-card home-actions-card" role="dialog" aria-label="Prioritas tindak lanjut wilayah ${escapeHtml(region.name)}">
         <div class="home-pop-head">
           <div>
-            <div class="kicker">Tiga tindakan</div>
-            <p class="meta">Wilayah ${escapeHtml(region.name)}</p>
+            <div class="kicker">Prioritas tindak lanjut</div>
+            <p class="meta">Wilayah ${escapeHtml(region.name)} · disusun dari data BI PRAMESTI</p>
           </div>
           <button class="btn btn-ghost btn-sm" type="button" id="btn-home-actions-close">Tutup</button>
         </div>
@@ -2532,7 +2532,7 @@
                     </li>`
                   )
                   .join("")
-              : `<li><span>Tidak ada saran pada cakupan ini.</span></li>`
+              : `<li><span>Belum terdapat prioritas tindak lanjut pada cakupan ini.</span></li>`
           }
         </ol>
       </div>`;
@@ -2971,7 +2971,7 @@
         ${listBlock("KPwDN terendah", snap.kpwLow, "weak")}
       </div>
       <div class="lembar-actions">
-        <h3>Tiga tindakan</h3>
+        <h3>Prioritas tindak lanjut</h3>
         <ol>
           ${snap.actions
             .map((item) => `<li><strong>${escapeHtml(item.title)}</strong> ${escapeHtml(item.text)}</li>`)
@@ -2995,7 +2995,7 @@
       line("Wilayah terendah", snap.regionLow),
       line("KPwDN tertinggi", snap.kpwTop),
       line("KPwDN terendah", snap.kpwLow),
-      actions ? `Tiga tindakan:\n${actions}` : "",
+      actions ? `Prioritas tindak lanjut:\n${actions}` : "",
       "Catatan: tahun fasilitasi pada kertas kerja, bukan tanggal unggahan. Bukan penilaian resmi Bank Indonesia.",
     ]
       .filter(Boolean)
@@ -3129,8 +3129,8 @@
         priority: [
           {
             tone: "sedang",
-            title: "Isi cakupan pantauan",
-            text: "Tidak ada UMKM/PUS pada filter atau fokus peta ini. Lepas fokus wilayah, ubah filter, atau unggah kertas kerja agar tiga saran strategis dapat disusun.",
+            title: "Lengkapi cakupan data UMKM/PUS",
+            text: "Belum terdapat UMKM/PUS pada filter atau fokus wilayah ini. Lepas fokus peta, sesuaikan filter, atau unggah kertas kerja Rekap All agar prioritas tindak lanjut kebijakan regional dapat disusun.",
           },
         ],
         horizons: emptyHorizons,
@@ -3171,8 +3171,8 @@
       candidates.push({
         score: 420 + Math.round(gapShare * 100),
         tone: "tinggi",
-        title: `Baca ketimpangan ${jarang.name} vs ${padat.name} sebagai sinyal alokasi`,
-        text: `${padat.name} menahan ${fmtNum(padat.n)} unit (${shareLabel(padat.n, total)}), ${jarang.name} hanya ${fmtNum(jarang.n)} (rasio ±${Math.max(1, Math.round(rasio))}:1). Dalam ekonomi regional, celah setajam ini bisa revealed agglomeration (biaya, pasar, logistik), atau underreporting yang membuat fungsi alokasi ICK mengikuti peta pelaporan, bukan peta kapasitas. Uji sederhana: KPwDN di ${jarang.name} mengunggah 10–20 unit unggulan pada siklus berikutnya. Jika stok melonjak, masalahnya measurement; jika tetap tipis, masalahnya endowment — dan instrumennya pun berbeda.`,
+        title: `Perkuat sinergi pengembangan UMKM di ${jarang.name}`,
+        text: `Sebaran UMKM/PUS menunjukkan ${padat.name} ${fmtNum(padat.n)} unit (${shareLabel(padat.n, total)}) dan ${jarang.name} ${fmtNum(jarang.n)} unit (perbandingan ±${Math.max(1, Math.round(rasio))}:1). Bank Indonesia mendorong penyeimbangan melalui penguatan fasilitasi ICK di KPwDN pengampu ${jarang.name}, termasuk penambahan unggahan 10–20 unit binaan unggulan pada siklus pelaporan berikutnya guna memperkuat dasar perumusan kebijakan regional.`,
       });
     }
     if (topKom && komShare >= 0.08) {
@@ -3181,8 +3181,8 @@
       candidates.push({
         score: 400 + Math.round(komShare * 100),
         tone: "tinggi",
-        title: `Perlakukan ${topKom[0]} sebagai keunggulan komparatif, bukan daftar nama`,
-        text: `${topKom[0]} sudah ${fmtNum(topKom[1])} unit (${shareLabel(topKom[1], total)}) di ${cakupan} — revealed comparative advantage, bukan target yang masih dicari. Marginal return tertinggi ada di deepening: input, offtaker, dan modal kerja di rantai yang sama, bukan program baru. ${office ? shortOffice(office[0]) : "KPwDN terpadat"} menuliskan paket yang sudah jalan dalam satu lembar rujukan, lalu dua KPwDN lain meniru. Itu economies of scale di rantai pasok, lebih murah daripada diversifikasi prematur.`,
+        title: `Optimalkan klaster ${topKom[0]} sebagai unggulan regional`,
+        text: `${topKom[0]} tercatat ${fmtNum(topKom[1])} unit (${shareLabel(topKom[1], total)}) di ${cakupan}. Prioritas tindak lanjut difokuskan pada pendalaman rantai nilai—akses input, pemasaran, dan pembiayaan syariah—melalui sinergi kebijakan yang ada. ${office ? shortOffice(office[0]) : "KPwDN terpadat"} menyusun lembar rujukan; KPwDN pengampu lain melakukan replikasi terkoordinasi.`,
       });
     }
     if (topKpw && kpwRank.length > 1 && kpwShare >= 0.18) {
@@ -3190,16 +3190,16 @@
       candidates.push({
         score: 380 + Math.round(kpwShare * 100),
         tone: "tinggi",
-        title: "Koreksi bias seleksi pada input KPwDN",
-        text: `${shortOffice(topKpw[0])} memasok ${fmtNum(topKpw[1])} unit (${shareLabel(topKpw[1], total)}). Konsentrasi pelaporan sebesar itu adalah selection bias: fungsi kebijakan mengikuti kantor yang rajin input, bukan kantor dengan potential output terbesar. Sample yang skewed menyesatkan ranking klaster dan kuota ICK. Tiga pengampu tertipis${thin.length ? ` (${thin.map((row) => shortOffice(row[0])).join(", ")})` : ""} menambah unit binaan pada unggahan berikutnya agar sebaran mendekati kapasitas regional, bukan kebiasaan pelaporan.`,
+        title: "Perluas cakupan pelaporan KPwDN pengampu",
+        text: `${shortOffice(topKpw[0])} melaporkan ${fmtNum(topKpw[1])} unit (${shareLabel(topKpw[1], total)}). Guna memperkuat akurasi perumusan kebijakan, KPwDN dengan unggahan terendah${thin.length ? ` (${thin.map((row) => shortOffice(row[0])).join(", ")})` : ""} ditargetkan penambahan data unit binaan pada periode pelaporan berikutnya agar sebaran mendekati potensi wilayah.`,
       });
     }
     if (pus) {
       candidates.push({
         score: 360 + Math.round((pus / total) * 100),
         tone: "sedang",
-        title: "Ubah PUS dari label menjadi saluran pembiayaan",
-        text: `${fmtNum(pus)} PUS (${shareLabel(pus, total)}) di ${cakupan} adalah stok yang bisa dihubungkan ke keuangan syariah, bukan sekadar komposisi identitas. Tanpa peta mana yang sudah dapat pembiayaan/halal, angka PUS tidak punya implikasi kebijakan. KPwDN memilah: (1) sudah linkage bank/BPRS/LKMS, (2) sertifikasi berjalan, (3) belum tersentuh. Celah (3) diisi pada ICK yang sudah ada — inclusion lewat instrumen lama, bukan skema baru.`,
+        title: "Perkuat keterkaitan PUS dengan keuangan syariah",
+        text: `${fmtNum(pus)} PUS (${shareLabel(pus, total)}) di ${cakupan}. KPwDN pengampu memetakan: (1) yang telah terhubung pembiayaan syariah, (2) dalam proses sertifikasi halal, (3) belum tersentuh—guna mengarahkan instrumen ICK yang ada ke inklusi keuangan syariah dan peningkatan daya saing.`,
       });
     }
     if (noTahun || stale.length) {
@@ -3207,24 +3207,24 @@
       candidates.push({
         score: 300 + Math.round((naTahunShare + staleShare) * 80),
         tone: naTahunShare + staleShare >= 0.25 ? "tinggi" : "sedang",
-        title: "Pisahkan aliran fasilitasi dari stok yang mengendap",
-        text: `${noTahun ? `${fmtNum(noTahun)} unit tanpa tahun fasilitasi (${shareLabel(noTahun, total)})` : ""}${noTahun && stale.length ? "; " : ""}${stale.length ? `${fmtNum(stale.length)} unit terakhir tercatat ${oldest}–${now - 3}` : ""}. Tanpa jejak waktu, rapat capaian mencampur flow (binaan baru) dengan stock (akumulasi lama), sehingga pertumbuhan terlihat lebih tinggi daripada ekspansi riil. PIC data mengisi tahun sesuai ICK; KPwDN terpadat memutakhirkan sampel 20–30 unit menua pada kunjungan rutin agar kuota tidak terserap ke usaha non-aktif.`,
+        title: "Perbarui data fasilitasi ICK secara berkala",
+        text: `${noTahun ? `${fmtNum(noTahun)} unit belum memiliki tahun fasilitasi (${shareLabel(noTahun, total)})` : ""}${noTahun && stale.length ? "; " : ""}${stale.length ? `${fmtNum(stale.length)} unit terakhir tercatat ${oldest}–${now - 3}` : ""}. KPwDN pengampu melengkapi tahun fasilitasi dan memperbarui sampel unit binaan melalui kunjungan rutin agar capaian ICK mencerminkan aktivitas fasilitasi terkini.`,
       });
     }
     if (noKom && naKomShare >= 0.08) {
       candidates.push({
         score: 280 + Math.round(naKomShare * 80),
         tone: naKomShare >= 0.25 ? "tinggi" : "sedang",
-        title: "Perbaiki klasifikasi agar RCA wilayah terbaca",
-        text: `${fmtNum(noKom)} unit (${shareLabel(noKom, total)}) di ${cakupan} belum berkomoditas. Itu measurement error: keunggulan komparatif tidak bisa dihitung, sehingga alokasi ICK jatuh ke unit yang kebetulan lengkap datanya. KPwDN pengampu mengisi kolom komoditas pada kertas kerja yang sama — biaya rendah, agar ranking klaster mencerminkan struktur ekonomi, bukan kelengkapan Excel.`,
+        title: "Lengkapi klasifikasi komoditas pada database",
+        text: `${fmtNum(noKom)} unit (${shareLabel(noKom, total)}) di ${cakupan} belum berkomoditas. KPwDN pengampu melengkapi kolom komoditas pada kertas kerja Rekap All agar profil klaster regional dapat dijadikan dasar perumusan kebijakan dan alokasi ICK.`,
       });
     }
     if (topIck) {
       candidates.push({
         score: 240 + Math.round((topIck[1] / total) * 50),
         tone: "sedang",
-        title: `Ambil skala ekonomi pada ICK ${topIck[0]}`,
-        text: `${topIck[0]} sudah menjangkau ${fmtNum(topIck[1])} unit (${shareLabel(topIck[1], total)}) — instrumen dengan fixed cost tertebar. Satu protokol tindak lanjut (linkage pasar atau cek status) punya declining average cost; menambah jenis program menaikkan biaya koordinasi tanpa menaikkan skala. KPwDN pengampu menyamakan satu langkah pada portofolio yang sudah besar ini.`,
+        title: `Tingkatkan skala program ICK ${topIck[0]}`,
+        text: `${topIck[0]} telah menjangkau ${fmtNum(topIck[1])} unit (${shareLabel(topIck[1], total)}). KPwDN pengampu menyeragamkan langkah tindak lanjut—termasuk linkage pasar dan pemantauan status binaan—pada portofolio yang sudah besar guna memperkuat daya saing UMKM.`,
       });
     }
     candidates.sort((a, b) => b.score - a.score);
@@ -3232,18 +3232,18 @@
     const fallbacks = [
       {
         tone: "sedang",
-        title: "Pakai BI PRAMESTI di rapat wilayah",
-        text: `Pakai Ringkasan Eksekutif ${cakupan} (${fmtNum(total)} unit) sebagai bahan baku rapat: sebaran lima wilayah, pie komoditas, dan tiga tindakan ini dalam satu layar.`,
+        title: "Manfaatkan Ringkasan Eksekutif dalam rapat regional",
+        text: `Gunakan Ringkasan Eksekutif ${cakupan} (${fmtNum(total)} unit) sebagai bahan rapat pimpinan: sebaran lima wilayah, komposisi komoditas, dan prioritas tindak lanjut dalam satu layar BI PRAMESTI.`,
       },
       {
         tone: "sedang",
-        title: "Tetapkan PIC data per KPwDN",
-        text: "Satu orang per kantor bertanggung jawab atas kertas kerja Rekap All dan unggahan BI PRAMESTI setiap triwulan, supaya mutu kolom komoditas dan tahun tidak pecah lagi.",
+        title: "Tetapkan penanggung jawab data per KPwDN",
+        text: "Setiap KPwDN pengampu menunjuk satu penanggung jawab kertas kerja Rekap All dan unggahan BI PRAMESTI setiap triwulan, guna menjaga mutu kolom komoditas dan tahun fasilitasi.",
       },
       {
         tone: "sedang",
-        title: "Samakan format kertas kerja",
-        text: "Kunci kolom No, Nama UMKM, Komoditas, ICK, Tahun Fasilitasi, dan Asal KPw agar unggahan berikutnya mengikuti pengelompokan yang sama.",
+        title: "Standarkan format kertas kerja Rekap All",
+        text: "Seragamkan kolom No, Nama UMKM/PUS, Komoditas, ICK, Tahun Fasilitasi, dan Asal KPw agar pelaporan berikutnya konsisten dan mendukung perumusan kebijakan regional.",
       },
     ];
 
