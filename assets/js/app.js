@@ -850,8 +850,8 @@
     programs.forEach((prog) => {
       const pid = prog.id;
       const group = prog.name;
-      const aAcc = Number(before.acc?.[pid] ?? before.accBase?.[pid] ?? 0);
-      const bAcc = Number(office.acc?.[pid] ?? office.accBase?.[pid] ?? 0);
+      const aAcc = ickEmptyZero(before.acc?.[pid] ?? before.accBase?.[pid]);
+      const bAcc = ickEmptyZero(office.acc?.[pid] ?? office.accBase?.[pid]);
       if (aAcc !== bAcc) {
         changes.push({
           ickId: pid,
@@ -862,8 +862,8 @@
           after: fmtAcc(bAcc),
         });
       }
-      const aReal = Number(before.realisasi?.[pid] ?? 0);
-      const bReal = Number(office.realisasi?.[pid] ?? 0);
+      const aReal = ickEmptyZero(before.realisasi?.[pid]);
+      const bReal = ickEmptyZero(office.realisasi?.[pid]);
       if (aReal !== bReal) {
         changes.push({
           ickId: pid,
@@ -874,8 +874,8 @@
           after: fmtAcc(bReal),
         });
       }
-      const aInd = Number(before.ind?.[pid] ?? 0);
-      const bInd = Number(office.ind?.[pid] ?? 0);
+      const aInd = ickEmptyZero(before.ind?.[pid]);
+      const bInd = ickEmptyZero(office.ind?.[pid]);
       if (aInd !== bInd) {
         changes.push({
           group,
@@ -886,24 +886,25 @@
         });
       }
     });
-    const hasProgramChanges = changes.some((row) => row.group !== "Ringkasan KPwDN");
-    if (!hasProgramChanges) {
-      if (Number(before.totalAcc) !== Number(office.totalAcc)) {
+    if (!changes.length) {
+      const beforeTotals = capaianComputedTotals(before, programs);
+      const afterTotals = capaianComputedTotals(office, programs);
+      if (beforeTotals.totalAcc !== afterTotals.totalAcc) {
         changes.push({
           group: "Ringkasan KPwDN",
           aspect: "Total Target 2026",
           field: "Total Target 2026 (semua ICK)",
-          before: fmtAcc(before.totalAcc),
-          after: fmtAcc(office.totalAcc),
+          before: fmtAcc(beforeTotals.totalAcc),
+          after: fmtAcc(afterTotals.totalAcc),
         });
       }
-      if (Number(before.totalRealisasi) !== Number(office.totalRealisasi)) {
+      if (beforeTotals.totalRealisasi !== afterTotals.totalRealisasi) {
         changes.push({
           group: "Ringkasan KPwDN",
           aspect: "Total Realisasi",
           field: "Total Realisasi (semua ICK)",
-          before: fmtAcc(before.totalRealisasi),
-          after: fmtAcc(office.totalRealisasi),
+          before: fmtAcc(beforeTotals.totalRealisasi),
+          after: fmtAcc(afterTotals.totalRealisasi),
         });
       }
     }
@@ -1307,11 +1308,13 @@
         }),
       ];
     }
-    const prevOffices = prev.offices || [];
-    const nextOffices = next.offices || [];
+    const prevNorm = recomputeCapaianTotals(JSON.parse(JSON.stringify(prev)));
+    const nextNorm = recomputeCapaianTotals(JSON.parse(JSON.stringify(next)));
+    const prevOffices = prevNorm.offices || [];
+    const nextOffices = nextNorm.offices || [];
     const prevByKey = new Map(prevOffices.map((office) => [capaianOfficeKey(office), office]));
     const nextByKey = new Map(nextOffices.map((office) => [capaianOfficeKey(office), office]));
-    const programs = next.programs || prev.programs || [];
+    const programs = nextNorm.programs || prevNorm.programs || [];
     const entries = [];
     nextOffices.forEach((office) => {
       const key = capaianOfficeKey(office);
@@ -3467,6 +3470,51 @@
     return data;
   }
 
+  function recomputeCapaianOffice(office, programs) {
+    const payload = {
+      programs:
+        programs && programs.length
+          ? programs
+          : ICK_COLMAP.map(({ id, code, name, hasRevised }) => ({ id, code, name, hasRevised })),
+      offices: [JSON.parse(JSON.stringify(office || {}))],
+    };
+    recomputeCapaianTotals(payload);
+    return payload.offices[0];
+  }
+
+  function captureCapaianEditBaseline(office) {
+    if (!office) {
+      state.capaianEditBaseline = null;
+      return;
+    }
+    const programs = ickCapaian().programs || [];
+    state.capaianEditBaseline = recomputeCapaianOffice(office, programs);
+  }
+
+  function buildCapaianPrevSnapshot(source) {
+    let prev = recomputeCapaianTotals(JSON.parse(JSON.stringify(source || ickCapaian())));
+    const baseline = state.capaianEditBaseline;
+    if (!baseline) return prev;
+    const key = capaianOfficeKey(baseline);
+    const offices = [...(prev.offices || [])];
+    const idx = offices.findIndex((office) => capaianOfficeKey(office) === key);
+    const normalized = recomputeCapaianOffice(baseline, prev.programs || []);
+    if (idx >= 0) offices[idx] = normalized;
+    else offices.push(normalized);
+    prev.offices = offices;
+    return recomputeCapaianTotals(prev);
+  }
+
+  function capaianComputedTotals(office, programs) {
+    let totalAcc = 0;
+    let totalRealisasi = 0;
+    (programs || []).forEach((prog) => {
+      totalAcc += ickEmptyZero(office?.acc?.[prog.id] ?? office?.accBase?.[prog.id]);
+      totalRealisasi += ickEmptyZero(office?.realisasi?.[prog.id]);
+    });
+    return { totalAcc, totalRealisasi };
+  }
+
   async function loadCapaian() {
     try {
       const raw = localStorage.getItem(ICK_CAPAIAN_KEY);
@@ -3489,7 +3537,9 @@
   }
 
   async function persistCapaian(data, audit = {}, prevSnapshot = null) {
-    const prevSnapshotResolved = prevSnapshot || JSON.parse(JSON.stringify(ickCapaian()));
+    const prevSnapshotResolved = recomputeCapaianTotals(
+      JSON.parse(JSON.stringify(prevSnapshot || ickCapaian()))
+    );
     let next = recomputeCapaianTotals(JSON.parse(JSON.stringify(data)));
     if (isKpwScoped()) {
       const selfKey = kpwScopeMatchKey(state.kpwSelfKey);
@@ -4880,6 +4930,8 @@
       }
       const office =
         state.modal.type === "capaian-edit" ? capaianOfficeByNo(state.modal.no) : null;
+      if (state.modal.type === "capaian-edit") captureCapaianEditBaseline(office);
+      else state.capaianEditBaseline = null;
       root.innerHTML = capaianOfficeFormHtml(office);
       return;
     }
@@ -6238,11 +6290,12 @@
       const no = state.modal?.no;
       if (!no) return;
       if (!confirm("Hapus kantor ini dari capaian ICK?")) return;
-      const prevSnapshot = JSON.parse(JSON.stringify(ickCapaian()));
+      const prevSnapshot = buildCapaianPrevSnapshot(ickCapaian());
       const data = JSON.parse(JSON.stringify(ickCapaian()));
       data.offices = (data.offices || []).filter((office) => Number(office.no) !== Number(no));
       persistCapaian(data, {}, prevSnapshot).then((ok) => {
         if (!ok) return;
+        state.capaianEditBaseline = null;
         state.capaianOffice = 0;
         flash("Kantor dihapus dari capaian ICK.");
         closeModal();
@@ -6398,7 +6451,7 @@
         if (picked) saveKpwSelfKey(picked);
         if (!requireKpwSelf("kpw-self-pick")) return;
       }
-      const prevSnapshot = JSON.parse(JSON.stringify(ickCapaian()));
+      const prevSnapshot = buildCapaianPrevSnapshot(ickCapaian());
       const data = JSON.parse(JSON.stringify(ickCapaian()));
       const programs = data.programs || [];
       const acc = {};
@@ -6459,6 +6512,7 @@
         data.offices = list;
         persistCapaian(data, {}, prevSnapshot).then((ok) => {
           if (!ok) return;
+          state.capaianEditBaseline = null;
           flash(`Data ICK ${state.kpwSelfKey} disimpan.`);
           state.modal = { type: "capaian-office", no: existingSelf.no };
           renderCapaian();
@@ -6477,6 +6531,7 @@
       data.offices = list.sort((a, b) => Number(a.no) - Number(b.no));
       persistCapaian(data, {}, prevSnapshot).then((ok) => {
         if (!ok) return;
+        state.capaianEditBaseline = null;
         flash(state.modal?.type === "capaian-edit" ? "Capaian kantor disimpan." : "Kantor ditambahkan ke capaian ICK.");
         state.modal = { type: "capaian-office", no: office.no };
         renderCapaian();
