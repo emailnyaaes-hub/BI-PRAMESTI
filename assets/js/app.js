@@ -50,8 +50,8 @@
   const SEED_VERSION_KEY = "padel-seed-version-v1";
   const WATCH_KEY = "padel-watchlist-v1";
   const SARAN_KEY = "padel-saran-overrides-v1";
-  const SARAN_TEXT_VERSION = "20260831h";
-  const APP_BUILD = "20260831h";
+  const SARAN_TEXT_VERSION = "20260831i";
+  const APP_BUILD = "20260831i";
   const SARAN_TEXT_VERSION_KEY = "padel-saran-text-version-v1";
   const HISTORY_KEY = "padel-audit-history-v1";
   const HISTORY_MAX = 800;
@@ -2432,7 +2432,7 @@
     mapBox.innerHTML = indonesiaMapHtml(regionCounts, maxN, "data-home-wilayah");
     const caption = document.getElementById("home-map-caption");
     if (caption) {
-      caption.textContent = "Klik wilayah pada peta untuk melihat KPwDN dan prioritas tindak lanjut per wilayah.";
+      caption.textContent = "Klik pulau untuk melihat KPwDN tertinggi dan terendah di wilayah itu.";
     }
     renderHomeWilayahPop();
   }
@@ -2482,7 +2482,6 @@
     const kpwRank = kpwSplitRank(list);
     const ends = rankEnds(kpwRank, 3);
     const offices = kpwRank.length;
-    const actions = buildWilayahActions(list, region).priority;
     pop.hidden = false;
     pop.innerHTML = `
       <div class="home-pop-card" role="dialog" aria-label="KPwDN wilayah ${escapeHtml(region.name)}">
@@ -2497,15 +2496,13 @@
           ${kpwListBlock("KPwDN tertinggi", ends.top, "strong")}
           ${kpwListBlock("KPwDN terendah", ends.bottom, "weak")}
         </div>
-        <section class="home-pop-priorities" aria-label="Prioritas tindak lanjut wilayah ${escapeHtml(region.name)}">
-          <div class="kicker">Prioritas tindak lanjut</div>
-          <p class="meta">Disusun dari profil UMKM/PUS wilayah ${escapeHtml(region.name)} · pembaruan ${APP_BUILD}</p>
-          <ol class="home-actions-list home-actions-inline">
-            ${homePrioritiesHtml(actions)}
-          </ol>
-        </section>
+        <button type="button" class="home-pop-tiga" id="btn-home-tiga-tindakan">
+          <span class="kicker">Prioritas tindak lanjut</span>
+          <strong>Tiga arahan kebijakan — Wilayah ${escapeHtml(region.name)}</strong>
+          <span>Klik untuk melihat rincian</span>
+        </button>
       </div>`;
-    renderHomeActionsPop([], null);
+    renderHomeActionsPop(list, region);
     renderHomeKpwListPop();
   }
 
@@ -2552,23 +2549,12 @@
         <div class="home-pop-head">
           <div>
             <div class="kicker">Prioritas tindak lanjut</div>
-            <p class="meta">Wilayah ${escapeHtml(region.name)} · disusun dari data BI PRAMESTI</p>
+            <p class="meta">Wilayah ${escapeHtml(region.name)} · disusun dari profil UMKM/PUS wilayah ini</p>
           </div>
           <button class="btn btn-ghost btn-sm" type="button" id="btn-home-actions-close">Tutup</button>
         </div>
-        <ol class="home-actions-list">
-          ${
-            actions.length
-              ? actions
-                  .map(
-                    (item) => `<li>
-                      <strong>${escapeHtml(item.title)}</strong>
-                      <span>${escapeHtml(item.text)}</span>
-                    </li>`
-                  )
-                  .join("")
-              : `<li><span>Belum terdapat prioritas tindak lanjut pada cakupan ini.</span></li>`
-          }
+        <ol class="home-actions-list home-actions-inline">
+          ${homePrioritiesHtml(actions)}
         </ol>
       </div>`;
   }
@@ -6979,6 +6965,13 @@
     if (unitBtn) {
       state.homeUnitId = unitBtn.getAttribute("data-home-unit") || "";
       renderHomeUnitPop();
+      return;
+    }
+    if (e.target.closest("#btn-home-tiga-tindakan")) {
+      state.homeActions = true;
+      state.homeKpw = "";
+      state.homeUnitId = "";
+      renderHomeWilayahPop();
       return;
     }
     if (e.target.closest("#btn-home-actions-close") || e.target.id === "home-actions-pop") {

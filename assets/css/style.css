@@ -1590,6 +1590,31 @@ a.ticker-item:focus-visible {
   background: #fff;
   border-color: #fff;
 }
+.home-actions-card .home-actions-inline li {
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  gap: 10px;
+  align-items: start;
+}
+.home-actions-card .home-action-no {
+  color: var(--gold-2);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.55;
+}
+.home-actions-card .home-action-body {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+}
+.home-actions-card .home-action-body strong { color: #fff; font-size: 14px; }
+.home-actions-card .home-action-body span {
+  color: #d7e6f5;
+  font-size: 13px;
+  line-height: 1.55;
+  text-align: justify;
+  text-justify: inter-word;
+}
 .home-actions-list {
   margin: 0;
   padding: 0;
