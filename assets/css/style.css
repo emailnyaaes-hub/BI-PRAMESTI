@@ -500,7 +500,12 @@ a.ticker-item:focus-visible {
   background: #9ec4ea;
   flex: 0 0 auto;
 }
-.ticker-item b { color: #fff; font-weight: 700; }
+.ticker-item.is-new b::after {
+  content: " · Baru";
+  color: var(--gold-2);
+  font-weight: 700;
+  font-size: 11px;
+}
 @keyframes padel-ticker {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }

@@ -51,7 +51,7 @@
   const WATCH_KEY = "padel-watchlist-v1";
   const SARAN_KEY = "padel-saran-overrides-v1";
   const SARAN_TEXT_VERSION = "20260831j";
-  const APP_BUILD = "20260831j";
+  const APP_BUILD = "20260831k";
   const GENERIC_KOMODITAS = new Set([
     "N/A",
     "Industri Pengolahan",
@@ -7117,27 +7117,62 @@
 
   const TICKER_SEED = [
     {
+      id: "seed-qris-mdr",
       title: "BI perluas MDR QRIS 0% untuk seluruh merchant mulai Oktober 2026",
       url: "https://money.kompas.com/read/2026/08/17/095952526/bi-gratiskan-biaya-transaksi-qris-untuk-seluruh-pedagang-hingga-rp-500000-per",
+      publishedAt: "2026-08-17T00:00:00.000Z",
     },
     {
+      id: "seed-qris-manfaat",
       title: "MDR QRIS nol persen: manfaat bagi UMKM dan konsumen",
       url: "https://money.kompas.com/read/2026/08/17/135017126/apa-itu-mdr-qris-nol-persen-ini-manfaatnya-bagi-umkm-dan-konsumen",
+      publishedAt: "2026-08-16T00:00:00.000Z",
     },
     {
+      id: "seed-qris-tumbuh",
       title: "Transaksi QRIS tumbuh 82,42% seiring digitalisasi UMKM",
       url: "https://www.liputan6.com/bisnis/read/8273255/transaksi-qris-tumbuh-8242-2-faktor-ini-jadi-penopang",
-    },
-    {
-      title: "Mulai 1 Oktober, transaksi QRIS hingga Rp500 ribu untuk usaha mikro bebas MDR",
-      url: "https://www.kompas.tv/ekonomi/686033/mulai-1-oktober-transaksi-qris-hingga-rp500-ribu-untuk-umkm-mikro-bebas-mdr",
-    },
-    {
-      title: "BI perkuat akseptasi pembayaran digital untuk pelaku usaha",
-      url: "https://www.bi.go.id/id/publikasi/ruang-media/news-release/Default.aspx",
+      publishedAt: "2026-08-15T00:00:00.000Z",
     },
   ];
+  const NEWS_FEED_URL = "assets/data/umkm-news.json";
+  const NEWS_SEEN_KEY = "padel-news-seen-v1";
+  const NEWS_REFRESH_MS = 15 * 60 * 1000;
+  const NEWS_RELEVANCE =
+    /\b(umkm|usaha\s+mikro|usaha\s+kecil|menengah|qr[i]?s|kur|pelaku\s+usaha\s+syariah|\bpus\b|ekonomi\s+syariah|halal|pesantren|koperasi\s+syariah|bank\s+indonesia|\bbi\b|binaan|inkubasi|klaster|digitalisasi\s+umkm)\b/i;
+  const NEWS_NOISE = /\b(bola|sepak|politik|pilpres|gaji\s+artis|k-pop|drakor|horoskop|goss?ip|seleb)\b/i;
   let tickerRefreshTimer = null;
+  let tickerKnownIds = new Set();
+
+  function loadSeenNewsIds() {
+    try {
+      const parsed = JSON.parse(localStorage.getItem(NEWS_SEEN_KEY) || "[]");
+      return new Set(Array.isArray(parsed) ? parsed.map(String) : []);
+    } catch (_) {
+      return new Set();
+    }
+  }
+
+  function saveSeenNewsIds(ids) {
+    localStorage.setItem(NEWS_SEEN_KEY, JSON.stringify([...ids].slice(0, 120)));
+  }
+
+  function newsItemId(item) {
+    if (item.id) return String(item.id);
+    const base = `${String(item.title || "")
+      .toLowerCase()
+      .replace(/\s+/g, " ")
+      .trim()}|${String(item.url || "").toLowerCase()}`;
+    let hash = 0;
+    for (let i = 0; i < base.length; i += 1) hash = (hash * 31 + base.charCodeAt(i)) >>> 0;
+    return `n${hash.toString(16)}`;
+  }
+
+  function isRelevantNews(title) {
+    const t = String(title || "").replace(/\s+/g, " ").trim();
+    if (t.length < 12 || NEWS_NOISE.test(t)) return false;
+    return NEWS_RELEVANCE.test(t);
+  }
 
   function normalizeNewsUrl(url) {
     const raw = String(url || "").trim();
@@ -7152,19 +7187,55 @@
     }
   }
 
-  function paintTicker(items) {
-    const list = (items || [])
-      .map((it) => ({
-        title: String(it.title || "").replace(/\s+/g, " ").trim(),
-        url: normalizeNewsUrl(it.url),
-      }))
-      .filter((it) => it.title && it.url)
-      .slice(0, 24);
-    const use = list.length ? list : TICKER_SEED;
+  function normalizeNewsItem(raw) {
+    const title = String(raw?.title || "")
+      .replace(/\s+/g, " ")
+      .trim();
+    const url = normalizeNewsUrl(raw?.url);
+    if (!title || !url || !isRelevantNews(title)) return null;
+    const item = {
+      id: newsItemId({ id: raw?.id, title, url }),
+      title,
+      url,
+      publishedAt: raw?.publishedAt || raw?.pubDate || "",
+    };
+    return item;
+  }
+
+  function mergeNewsItems(...batches) {
+    const seen = new Set();
+    const out = [];
+    batches.flat().forEach((raw) => {
+      const item = normalizeNewsItem(raw);
+      if (!item || seen.has(item.id)) return;
+      seen.add(item.id);
+      out.push(item);
+    });
+    out.sort((a, b) => String(b.publishedAt || "").localeCompare(String(a.publishedAt || "")));
+    return out.slice(0, 24);
+  }
+
+  function updateTickerLabel(updatedAt, newCount) {
+    const el = document.getElementById("ticker-label");
+    if (!el) return;
+    let stamp = "";
+    if (updatedAt) {
+      const dt = new Date(updatedAt);
+      if (!Number.isNaN(dt.getTime())) {
+        stamp = ` · ${dt.toLocaleString("id-ID", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" })}`;
+      }
+    }
+    const fresh = newCount > 0 ? ` · ${newCount} baru` : "";
+    el.textContent = `Berita UMKM${fresh}${stamp}`;
+  }
+
+  function paintTicker(items, newIds) {
+    const fresh = newIds || new Set();
+    const use = (items || []).length ? items : TICKER_SEED;
     const html = use
       .map(
         (it) =>
-          `<a class="ticker-item" href="${escapeHtml(it.url)}" target="_blank" rel="noopener noreferrer"><b>${escapeHtml(
+          `<a class="ticker-item${fresh.has(it.id) ? " is-new" : ""}" href="${escapeHtml(it.url)}" target="_blank" rel="noopener noreferrer"><b>${escapeHtml(
             it.title
           )}</b></a>`
       )
@@ -7188,30 +7259,21 @@
           (linkEl?.textContent || "").trim() ||
           linkEl?.getAttribute("href") ||
           (item.querySelector("guid")?.textContent || "").trim();
-        return { title, url: link };
+        const publishedAt = (item.querySelector("pubDate")?.textContent || "").trim();
+        return normalizeNewsItem({ title, url: link, publishedAt });
       })
-      .filter((it) => it.title && /^https?:\/\//i.test(it.url || ""));
+      .filter(Boolean);
   }
 
-  async function fetchUmkmNewsFeed() {
-    const q = encodeURIComponent(
-      '(UMKM OR "usaha mikro" OR "usaha kecil" OR QRIS OR "ekonomi syariah" OR PUS OR pesantren) Indonesia'
-    );
-    const rssUrl = `https://news.google.com/rss/search?q=${q}&hl=id&gl=ID&ceid=ID:id`;
-    const proxies = [
-      (u) => `https://api.allorigins.win/raw?url=${encodeURIComponent(u)}`,
-      (u) => `https://corsproxy.io/?${encodeURIComponent(u)}`,
-    ];
+  async function fetchTextViaProxy(url, proxies) {
     for (const make of proxies) {
       try {
         const ctrl = new AbortController();
         const t = setTimeout(() => ctrl.abort(), 12000);
-        const res = await fetch(make(rssUrl), { signal: ctrl.signal });
+        const res = await fetch(make(url), { signal: ctrl.signal });
         clearTimeout(t);
         if (!res.ok) continue;
-        const text = await res.text();
-        const items = parseRssNews(text);
-        if (items.length) return items;
+        return await res.text();
       } catch (_) {
         /* try next proxy */
       }
@@ -7219,27 +7281,72 @@
     return null;
   }
 
+  async function fetchBundledNewsFeed() {
+    try {
+      const res = await fetch(`${NEWS_FEED_URL}?v=${encodeURIComponent(APP_BUILD)}`, { cache: "no-store" });
+      if (!res.ok) return null;
+      const data = await res.json();
+      if (!data || !Array.isArray(data.items)) return null;
+      return {
+        updatedAt: data.updatedAt || "",
+        items: mergeNewsItems(data.items),
+      };
+    } catch (_) {
+      return null;
+    }
+  }
+
+  async function fetchLiveUmkmNewsFeed() {
+    const queries = [
+      "UMKM Indonesia",
+      '"pelaku usaha syariah" OR PUS OR pesantren Indonesia UMKM',
+      "QRIS UMKM Indonesia",
+      "site:bi.go.id UMKM OR syariah",
+    ];
+    const proxies = [
+      (u) => `https://api.allorigins.win/raw?url=${encodeURIComponent(u)}`,
+      (u) => `https://corsproxy.io/?${encodeURIComponent(u)}`,
+    ];
+    const batches = await Promise.all(
+      queries.map(async (query) => {
+        const rssUrl = `https://news.google.com/rss/search?q=${encodeURIComponent(query)}&hl=id&gl=ID&ceid=ID:id`;
+        const text = await fetchTextViaProxy(rssUrl, proxies);
+        return text ? parseRssNews(text) : [];
+      })
+    );
+    const items = mergeNewsItems(...batches);
+    return items.length ? { updatedAt: new Date().toISOString(), items } : null;
+  }
+
   async function refreshNewsTicker() {
-    paintTicker(TICKER_SEED);
-    const live = await fetchUmkmNewsFeed();
-    if (!live || !live.length) return;
-    const seen = new Set();
-    const merged = [...live, ...TICKER_SEED].filter((it) => {
-      const key = String(it.title || "")
-        .toLowerCase()
-        .replace(/\s+/g, " ")
-        .trim();
-      if (!key || seen.has(key)) return false;
-      seen.add(key);
-      return true;
-    });
-    paintTicker(merged);
+    const seenBefore = loadSeenNewsIds();
+    const bundled = await fetchBundledNewsFeed();
+    const live = await fetchLiveUmkmNewsFeed();
+    const merged = mergeNewsItems(live?.items || [], bundled?.items || [], TICKER_SEED);
+    if (!merged.length) {
+      paintTicker(TICKER_SEED, new Set());
+      updateTickerLabel("", 0);
+      return;
+    }
+
+    const newIds = new Set(merged.filter((it) => !seenBefore.has(it.id)).map((it) => it.id));
+    paintTicker(merged, newIds);
+    updateTickerLabel(live?.updatedAt || bundled?.updatedAt || "", newIds.size);
+
+    const nextSeen = new Set(seenBefore);
+    merged.forEach((it) => nextSeen.add(it.id));
+    saveSeenNewsIds(nextSeen);
+    tickerKnownIds = nextSeen;
   }
 
   function startNewsTicker() {
+    tickerKnownIds = loadSeenNewsIds();
     refreshNewsTicker();
     if (tickerRefreshTimer) clearInterval(tickerRefreshTimer);
-    tickerRefreshTimer = setInterval(refreshNewsTicker, 30 * 60 * 1000);
+    tickerRefreshTimer = setInterval(refreshNewsTicker, NEWS_REFRESH_MS);
+    document.addEventListener("visibilitychange", () => {
+      if (document.visibilityState === "visible") refreshNewsTicker();
+    });
   }
 
   window.addEventListener("storage", (e) => {
