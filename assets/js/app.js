@@ -801,8 +801,147 @@
     return (changes || []).map((row) => {
       const before = row.before ?? "-";
       const after = row.after ?? "-";
-      return `${row.field}: "${before}" -> "${after}"`;
+      return `${auditChangeDisplay(row)}: "${before}" -> "${after}"`;
     });
+  }
+
+  function auditChangeDisplay(row) {
+    if (row?.field) return row.field;
+    const group = String(row?.group || "").trim();
+    const aspect = String(row?.aspect || "").trim();
+    if (group && aspect) return `${group} · ${aspect}`;
+    return group || aspect || "Perubahan";
+  }
+
+  function summarizeAuditChanges(changes, module) {
+    if (!changes?.length) return "";
+    if (module === "capaian") {
+      const icks = [...new Set(changes.filter((row) => row.group && row.group !== "Ringkasan KPwDN").map((row) => row.group))];
+      if (icks.length) {
+        const list = icks.slice(0, 3).join(", ");
+        return `Program ICK: ${list}${icks.length > 3 ? ` (+${icks.length - 3} lainnya)` : ""}`;
+      }
+      return "Perubahan ringkasan capaian KPwDN";
+    }
+    if (module === "database") {
+      const aspects = [...new Set(changes.map((row) => row.aspect || row.field))];
+      return `Bidang data: ${aspects.slice(0, 4).join(", ")}${aspects.length > 4 ? ` (+${aspects.length - 4} lainnya)` : ""}`;
+    }
+    return "";
+  }
+
+  function buildDatabaseUpdateSummary(row, changes) {
+    const aspects = [...new Set(changes.map((c) => c.aspect || c.field))];
+    const list = aspects.slice(0, 3).join(", ");
+    const extra = aspects.length > 3 ? ` (+${aspects.length - 3} bidang)` : "";
+    return `Mengubah ${list}${extra} · ${row.nama}`;
+  }
+
+  function buildCapaianUpdateSummary(officeLabel, changes) {
+    const icks = [...new Set(changes.filter((row) => row.group && row.group !== "Ringkasan KPwDN").map((row) => row.group))];
+    if (!icks.length) return `Memperbarui Capaian ICK · ${officeLabel}`;
+    const list = icks.slice(0, 3).join(", ");
+    const extra = icks.length > 3 ? ` (+${icks.length - 3} ICK lainnya)` : "";
+    return `Memperbarui Capaian ICK · ${officeLabel} — ${list}${extra}`;
+  }
+
+  function buildCapaianOfficeChanges(before, office, programs) {
+    const changes = [];
+    programs.forEach((prog) => {
+      const pid = prog.id;
+      const group = prog.name;
+      const aAcc = Number(before.acc?.[pid] ?? before.accBase?.[pid] ?? 0);
+      const bAcc = Number(office.acc?.[pid] ?? office.accBase?.[pid] ?? 0);
+      if (aAcc !== bAcc) {
+        changes.push({
+          group,
+          aspect: "Target 2026",
+          field: `${group} · Target 2026`,
+          before: fmtAcc(aAcc),
+          after: fmtAcc(bAcc),
+        });
+      }
+      const aReal = Number(before.realisasi?.[pid] ?? 0);
+      const bReal = Number(office.realisasi?.[pid] ?? 0);
+      if (aReal !== bReal) {
+        changes.push({
+          group,
+          aspect: "Realisasi",
+          field: `${group} · Realisasi`,
+          before: fmtAcc(aReal),
+          after: fmtAcc(bReal),
+        });
+      }
+      const aInd = Number(before.ind?.[pid] ?? 0);
+      const bInd = Number(office.ind?.[pid] ?? 0);
+      if (aInd !== bInd) {
+        changes.push({
+          group,
+          aspect: "Indikator",
+          field: `${group} · Indikator`,
+          before: fmtAcc(aInd),
+          after: fmtAcc(bInd),
+        });
+      }
+    });
+    const hasProgramChanges = changes.some((row) => row.group !== "Ringkasan KPwDN");
+    if (!hasProgramChanges) {
+      if (Number(before.totalAcc) !== Number(office.totalAcc)) {
+        changes.push({
+          group: "Ringkasan KPwDN",
+          aspect: "Total Target 2026",
+          field: "Total Target 2026 (semua ICK)",
+          before: fmtAcc(before.totalAcc),
+          after: fmtAcc(office.totalAcc),
+        });
+      }
+      if (Number(before.totalRealisasi) !== Number(office.totalRealisasi)) {
+        changes.push({
+          group: "Ringkasan KPwDN",
+          aspect: "Total Realisasi",
+          field: "Total Realisasi (semua ICK)",
+          before: fmtAcc(before.totalRealisasi),
+          after: fmtAcc(office.totalRealisasi),
+        });
+      }
+    }
+    return changes;
+  }
+
+  function buildCapaianCreateChanges(office, programs) {
+    const changes = [];
+    programs.forEach((prog) => {
+      const target = Number(office.acc?.[prog.id] ?? office.accBase?.[prog.id] ?? 0);
+      const real = Number(office.realisasi?.[prog.id] ?? 0);
+      if (target > 0) {
+        changes.push({
+          group: prog.name,
+          aspect: "Target 2026",
+          field: `${prog.name} · Target 2026`,
+          before: "-",
+          after: fmtAcc(target),
+        });
+      }
+      if (real > 0) {
+        changes.push({
+          group: prog.name,
+          aspect: "Realisasi",
+          field: `${prog.name} · Realisasi`,
+          before: "-",
+          after: fmtAcc(real),
+        });
+      }
+    });
+    if (!changes.length) {
+      changes.push({
+        group: "Ringkasan KPwDN",
+        aspect: "Total Target 2026",
+        field: "Total Target 2026",
+        before: "-",
+        after: fmtAcc(office.totalAcc),
+      });
+    }
+    return changes;
   }
 
   function makeAuditEntry(partial) {
@@ -819,6 +958,7 @@
       action: partial.action || "update",
       summary: partial.summary || "",
       target: partial.target || "",
+      context: partial.context ?? summarizeAuditChanges(changes, partial.module || "database"),
       changes,
       details: Array.isArray(details) ? details.filter(Boolean) : [],
     };
@@ -830,7 +970,14 @@
       const before = String(prev?.[key] ?? "").trim() || "-";
       const after = String(next?.[key] ?? "").trim() || "-";
       if (before !== after) {
-        changes.push({ field: AUDIT_FIELD_LABELS[key] || key, before, after });
+        const aspect = AUDIT_FIELD_LABELS[key] || key;
+        changes.push({
+          group: next?.nama || prev?.nama || "Data UMKM/PUS",
+          aspect,
+          field: aspect,
+          before,
+          after,
+        });
       }
     });
     return changes;
@@ -847,10 +994,29 @@
     }
     const plain = raw.match(/^(.+?):\s*(.+?)\s->\s(.+)$/);
     if (plain) {
-      return { field: plain[1].trim(), before: plain[2].trim() || "-", after: plain[3].trim() || "-" };
+      const name = plain[1].trim();
+      const before = plain[2].trim() || "-";
+      const after = plain[3].trim() || "-";
+      if (name === "Target 2026" || name === "Realisasi" || name === "Indikator") {
+        return {
+          group: "Ringkasan KPwDN",
+          aspect: name,
+          field: name === "Target 2026" ? "Total Target 2026 (semua ICK)" : `Total ${name} (semua ICK)`,
+          before,
+          after,
+        };
+      }
+      return { group: name, aspect: "Target 2026", field: `${name} · Target 2026`, before, after };
     }
     const single = raw.match(/^(.+?):\s*(.+)$/);
-    if (single) return { field: single[1].trim(), before: "-", after: single[2].trim() || "-" };
+    if (single) {
+      const name = single[1].trim();
+      const after = single[2].trim() || "-";
+      if (AUDIT_FIELD_LABELS && Object.values(AUDIT_FIELD_LABELS).includes(name)) {
+        return { group: "Data UMKM/PUS", aspect: name, field: name, before: "-", after };
+      }
+      return { group: name, aspect: "Info", field: name, before: "-", after };
+    }
     return { field: "Info", before: "-", after: raw };
   }
 
@@ -863,19 +1029,25 @@
     const changes = normalizeAuditChanges(entry);
     if (!changes.length) return "—";
     const rows = changes
-      .slice(0, 4)
-      .map(
-        (row) => `<div class="history-change-row">
-          <span class="history-change-field">${escapeHtml(row.field)}</span>
-          <span class="history-change-before">${escapeHtml(row.before ?? "-")}</span>
-          <span class="history-change-arrow">→</span>
-          <span class="history-change-after">${escapeHtml(row.after ?? "-")}</span>
-        </div>`
-      )
+      .slice(0, 6)
+      .map((row) => {
+        const group = row.group || "";
+        const aspect = row.aspect || auditChangeDisplay(row);
+        const desc = group
+          ? `<strong class="history-change-group">${escapeHtml(group)}</strong><span class="history-change-aspect">${escapeHtml(aspect)}</span>`
+          : `<span class="history-change-aspect-only">${escapeHtml(aspect)}</span>`;
+        return `<tr>
+          <td class="history-change-desc">${desc}</td>
+          <td class="history-change-before">${escapeHtml(row.before ?? "-")}</td>
+          <td class="history-change-after">${escapeHtml(row.after ?? "-")}</td>
+        </tr>`;
+      })
       .join("");
     const more =
-      changes.length > 4 ? `<div class="history-change-more">+${changes.length - 4} perubahan lainnya</div>` : "";
-    return rows + more;
+      changes.length > 6
+        ? `<tr><td colspan="3" class="history-change-more">+${changes.length - 6} perubahan lainnya</td></tr>`
+        : "";
+    return `<table class="history-changes-mini"><thead><tr><th>Keterangan</th><th>Sebelum</th><th>Sesudah</th></tr></thead><tbody>${rows}${more}</tbody></table>`;
   }
 
   function entryPdfChanges(entry) {
@@ -887,33 +1059,38 @@
     return [];
   }
 
-  function pdfChangesBlockHeight(changes, maxRows = 8) {
+  function pdfChangesBlockHeight(changes, maxRows = 10) {
     if (!changes.length) return 5;
     const shown = Math.min(changes.length, maxRows);
-    return 4.2 + shown * 4 + (changes.length > maxRows ? 4 : 0) + 1.5;
+    return 4.4 + shown * 4.2 + (changes.length > maxRows ? 4.2 : 0) + 1.5;
   }
 
   function pdfDrawChangesTable(pdf, changes, x, y, width, muted) {
-    const maxRows = 8;
-    const colField = width * 0.36;
-    const colBefore = width * 0.3;
-    const colAfter = width * 0.3;
-    const rowH = 4;
+    const maxRows = 10;
+    const colDesc = width * 0.46;
+    const colBefore = width * 0.26;
+    const colAfter = width * 0.26;
+    const rowH = 4.2;
     pdf.setFontSize(7);
     pdf.setFont("helvetica", "bold");
     pdf.setTextColor(...muted);
-    pdf.text("Bidang", x + 1, y);
-    pdf.text("Sebelum", x + colField + 1, y);
-    pdf.text("Sesudah", x + colField + colBefore + 1, y);
+    pdf.text("Keterangan", x + 1, y);
+    pdf.text("Sebelum", x + colDesc + 1, y);
+    pdf.text("Sesudah", x + colDesc + colBefore + 1, y);
     y += rowH;
     pdf.setFont("helvetica", "normal");
-    changes.slice(0, maxRows).forEach((row) => {
+    changes.slice(0, maxRows).forEach((row, index) => {
+      if (index % 2 === 1) {
+        pdf.setFillColor(248, 250, 252);
+        pdf.rect(x, y - 3.1, width, rowH, "F");
+      }
+      const label = auditChangeDisplay(row);
       pdf.setTextColor(40, 52, 64);
-      pdf.text(pdfFit(pdf, row.field, colField - 2), x + 1, y);
+      pdf.text(pdfFit(pdf, label, colDesc - 2), x + 1, y);
       pdf.setTextColor(140, 45, 45);
-      pdf.text(pdfFit(pdf, String(row.before ?? "-"), colBefore - 2), x + colField + 1, y);
+      pdf.text(pdfFit(pdf, String(row.before ?? "-"), colBefore - 2), x + colDesc + 1, y);
       pdf.setTextColor(25, 95, 55);
-      pdf.text(pdfFit(pdf, String(row.after ?? "-"), colAfter - 2), x + colField + colBefore + 1, y);
+      pdf.text(pdfFit(pdf, String(row.after ?? "-"), colAfter - 2), x + colDesc + colBefore + 1, y);
       y += rowH;
     });
     if (changes.length > maxRows) {
@@ -959,13 +1136,15 @@
         makeAuditEntry({
           module: "database",
           action: "create",
-          summary: `Menambah data UMKM/PUS: ${row.nama}`,
+          summary: `Menambah UMKM/PUS · ${row.nama}`,
           target: row.nama,
           changes: [
-            { field: "Nama UMKM/PUS", before: "-", after: row.nama || "-" },
-            { field: "KPwDN pengampu", before: "-", after: asalKpwLabel(row.kpwdn) },
-            { field: "ICK/Fasilitas", before: "-", after: row.fasilitas || "-" },
-            { field: "Komoditas", before: "-", after: row.komoditas || "-" },
+            { group: row.nama, aspect: "Nama UMKM/PUS", field: "Nama UMKM/PUS", before: "-", after: row.nama || "-" },
+            { group: row.nama, aspect: "KPwDN pengampu", field: "KPwDN pengampu", before: "-", after: asalKpwLabel(row.kpwdn) },
+            { group: row.nama, aspect: "Jenis", field: "Jenis", before: "-", after: row.jenis || "-" },
+            { group: row.nama, aspect: "ICK/Fasilitas", field: "ICK/Fasilitas", before: "-", after: row.fasilitas || "-" },
+            { group: row.nama, aspect: "Komoditas", field: "Komoditas", before: "-", after: row.komoditas || "-" },
+            { group: row.nama, aspect: "Tahun", field: "Tahun", before: "-", after: row.tahun || "-" },
           ],
         })
       );
@@ -976,11 +1155,12 @@
         makeAuditEntry({
           module: "database",
           action: "delete",
-          summary: `Menghapus data UMKM/PUS: ${row.nama}`,
+          summary: `Menghapus UMKM/PUS · ${row.nama}`,
           target: row.nama,
           changes: [
-            { field: "Nama UMKM/PUS", before: row.nama || "-", after: "(dihapus)" },
-            { field: "KPwDN pengampu", before: asalKpwLabel(row.kpwdn), after: "(dihapus)" },
+            { group: row.nama, aspect: "Nama UMKM/PUS", field: "Nama UMKM/PUS", before: row.nama || "-", after: "(dihapus)" },
+            { group: row.nama, aspect: "KPwDN pengampu", field: "KPwDN pengampu", before: asalKpwLabel(row.kpwdn), after: "(dihapus)" },
+            { group: row.nama, aspect: "ICK/Fasilitas", field: "ICK/Fasilitas", before: row.fasilitas || "-", after: "(dihapus)" },
           ],
         })
       );
@@ -994,7 +1174,7 @@
         makeAuditEntry({
           module: "database",
           action: "update",
-          summary: `Memperbarui data UMKM/PUS: ${row.nama}`,
+          summary: buildDatabaseUpdateSummary(row, changes),
           target: row.nama,
           changes,
         })
@@ -1042,25 +1222,37 @@
         makeAuditEntry({
           module: "capaian",
           action: "create",
-          summary: `Menambah Capaian ICK: ${accOfficeLabel(office)}`,
+          summary: `Menambah Capaian ICK · ${accOfficeLabel(office)}`,
           target: accOfficeLabel(office),
-          changes: [{ field: "Target 2026", before: "-", after: fmtAcc(office.totalAcc) }],
+          changes: buildCapaianCreateChanges(office, programs),
         })
       );
     });
     prevOffices.forEach((office) => {
       const key = capaianOfficeKey(office);
       if (nextByKey.has(key)) return;
+      const deleteChanges = buildCapaianCreateChanges(office, programs);
       entries.push(
         makeAuditEntry({
           module: "capaian",
           action: "delete",
-          summary: `Menghapus Capaian ICK: ${accOfficeLabel(office)}`,
+          summary: `Menghapus Capaian ICK · ${accOfficeLabel(office)}`,
           target: accOfficeLabel(office),
-          changes: [
-            { field: "KPwDN", before: accOfficeLabel(office), after: "(dihapus)" },
-            { field: "Target 2026", before: fmtAcc(office.totalAcc), after: "(dihapus)" },
-          ],
+          changes: deleteChanges.length
+            ? deleteChanges.map((row) => ({
+                ...row,
+                before: row.after,
+                after: "(dihapus)",
+              }))
+            : [
+                {
+                  group: accOfficeLabel(office),
+                  aspect: "Capaian ICK",
+                  field: "Capaian ICK",
+                  before: accOfficeLabel(office),
+                  after: "(dihapus)",
+                },
+              ],
         })
       );
     });
@@ -1068,35 +1260,15 @@
       const key = capaianOfficeKey(office);
       const before = prevByKey.get(key);
       if (!before || JSON.stringify(before) === JSON.stringify(office)) return;
-      const changes = [];
-      if (Number(before.totalAcc) !== Number(office.totalAcc)) {
-        changes.push({
-          field: "Target 2026",
-          before: fmtAcc(before.totalAcc),
-          after: fmtAcc(office.totalAcc),
-        });
-      }
-      if (Number(before.totalRealisasi) !== Number(office.totalRealisasi)) {
-        changes.push({
-          field: "Realisasi",
-          before: fmtAcc(before.totalRealisasi),
-          after: fmtAcc(office.totalRealisasi),
-        });
-      }
-      programs.forEach((prog) => {
-        const pid = prog.id;
-        const a = Number(before.acc?.[pid] ?? before.accBase?.[pid] ?? 0);
-        const b = Number(office.acc?.[pid] ?? office.accBase?.[pid] ?? 0);
-        if (a !== b) changes.push({ field: prog.name, before: fmtAcc(a), after: fmtAcc(b) });
-      });
+      const changes = buildCapaianOfficeChanges(before, office, programs);
       if (!changes.length) return;
       entries.push(
         makeAuditEntry({
           module: "capaian",
           action: "update",
-          summary: `Memperbarui Capaian ICK: ${accOfficeLabel(office)}`,
+          summary: buildCapaianUpdateSummary(accOfficeLabel(office), changes),
           target: accOfficeLabel(office),
-          changes: changes.slice(0, 14),
+          changes: changes.slice(0, 20),
         })
       );
     });
@@ -4046,7 +4218,7 @@
           <td class="history-when">${escapeHtml(formatHistoryWhen(entry.at))}</td>
           <td><strong>${escapeHtml(entry.actor)}</strong></td>
           <td>${escapeHtml(AUDIT_MODULE_LABELS[entry.module] || entry.module)}<br><span class="sub">${escapeHtml(AUDIT_ACTION_LABELS[entry.action] || entry.action)}</span></td>
-          <td>${escapeHtml(entry.summary)}</td>
+          <td><div class="history-summary-main">${escapeHtml(entry.summary)}</div>${entry.context ? `<div class="history-summary-sub">${escapeHtml(entry.context)}</div>` : ""}</td>
           <td class="history-detail">${auditChangesHtml(entry)}</td>
         </tr>`;
           })
@@ -4119,7 +4291,8 @@
 
       list.forEach((entry, index) => {
         const changes = entryPdfChanges(entry);
-        const metaH = 15.5;
+        const contextLine = entry.context ? pdfSafeText(entry.context) : "";
+        const metaH = contextLine ? 19.5 : 15.5;
         const changesH = pdfChangesBlockHeight(changes);
         const blockH = metaH + changesH;
         if (y + blockH > pageH - 14) {
@@ -4147,6 +4320,11 @@
           m + 2,
           y + 13.2
         );
+        if (contextLine) {
+          pdf.setFontSize(7);
+          pdf.setTextColor(0, 72, 120);
+          pdf.text(pdfFit(pdf, contextLine, contentW - 4), m + 2, y + 17.2);
+        }
         pdf.setDrawColor(...line);
         pdf.line(m + 2, y + metaH - 1.2, m + contentW - 2, y + metaH - 1.2);
         if (changes.length) {
