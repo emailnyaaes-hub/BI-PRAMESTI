@@ -2078,6 +2078,16 @@ a.ticker-item:focus-visible {
   color: #64748b;
   font-style: italic;
 }
+.history-table .history-actions {
+  min-width: 72px;
+  white-space: nowrap;
+  vertical-align: top;
+}
+.history-table .history-delete {
+  min-height: 30px;
+  padding: 4px 10px;
+  font-size: 11px;
+}
 .capaian-tools label {
   display: grid;
   gap: 6px;

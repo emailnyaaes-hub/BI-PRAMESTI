@@ -765,6 +765,39 @@
     }
   }
 
+  async function deleteAuditEntry(id) {
+    if (!canView("history")) return;
+    const target = auditLog.find((entry) => entry.id === id);
+    if (!target) return;
+    if (!confirm(`Hapus catatan history:\n${target.summary || "Perubahan data"}?`)) return;
+    auditLog = auditLog.filter((entry) => entry.id !== id);
+    await saveHistory();
+    if (state.view === "history") renderHistory();
+    flash("Catatan history dihapus.");
+  }
+
+  async function clearAuditHistory() {
+    if (!canView("history")) return;
+    if (!auditLog.length) {
+      flash("History sudah kosong.", true);
+      return;
+    }
+    if (!confirm(`Hapus semua ${fmtNum(auditLog.length)} catatan history? Tindakan ini tidak dapat dibatalkan.`)) return;
+    auditLog = [];
+    try {
+      localStorage.removeItem(HISTORY_KEY);
+    } catch (_) {
+      /* ignore */
+    }
+    try {
+      await idbSet(HISTORY_KEY, []);
+    } catch (_) {
+      /* ignore */
+    }
+    if (state.view === "history") renderHistory();
+    flash("Semua history dihapus.");
+  }
+
   function syncHistoryFromStorage() {
     try {
       const raw = localStorage.getItem(HISTORY_KEY);
@@ -4368,10 +4401,39 @@
           <td>${escapeHtml(AUDIT_MODULE_LABELS[entry.module] || entry.module)}<br><span class="sub">${escapeHtml(AUDIT_ACTION_LABELS[entry.action] || entry.action)}</span></td>
           <td><div class="history-summary-main">${escapeHtml(entry.summary)}</div>${entry.context ? `<div class="history-summary-sub">${escapeHtml(entry.context)}</div>` : ""}</td>
           <td class="history-detail">${auditChangesHtml(entry)}</td>
+          <td class="history-actions"><button type="button" class="btn btn-ghost btn-sm history-delete" data-history-id="${escapeHtml(entry.id)}">Hapus</button></td>
         </tr>`;
           })
           .join("")
-      : `<tr><td colspan="5" class="muted">Belum ada riwayat perubahan. Perubahan oleh Administrator atau Kantor Perwakilan akan muncul di sini.</td></tr>`;
+      : `<tr><td colspan="6" class="muted">Belum ada riwayat perubahan. Perubahan oleh Administrator atau Kantor Perwakilan akan muncul di sini.</td></tr>`;
+  }
+
+  function resolveJsPdf() {
+    if (window.jspdf?.jsPDF) return window.jspdf.jsPDF;
+    if (typeof window.jsPDF === "function") return window.jsPDF;
+    return null;
+  }
+
+  function savePdfFile(pdf, filename) {
+    try {
+      pdf.save(filename);
+      return true;
+    } catch (_) {
+      try {
+        const blob = pdf.output("blob");
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = filename;
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+        URL.revokeObjectURL(url);
+        return true;
+      } catch (_) {
+        return false;
+      }
+    }
   }
 
   function downloadHistoryPdf() {
@@ -4379,7 +4441,8 @@
       flash("History hanya tersedia untuk Administrator.", true);
       return;
     }
-    if (!window.jspdf) {
+    const JsPDF = resolveJsPdf();
+    if (!JsPDF) {
       flash("Pustaka PDF belum termuat. Muat ulang halaman, lalu coba lagi.", true);
       return;
     }
@@ -4391,7 +4454,6 @@
     const btn = document.getElementById("btn-history-pdf");
     if (btn) btn.disabled = true;
     try {
-      const JsPDF = window.jspdf.jsPDF;
       const pdf = new JsPDF({ orientation: "portrait", unit: "mm", format: "a4" });
       const m = 12;
       const pageW = pdf.internal.pageSize.getWidth();
@@ -4452,7 +4514,7 @@
         pdf.setDrawColor(...line);
         pdf.setLineWidth(0.25);
         pdf.setFillColor(255, 255, 255);
-        pdf.roundedRect(m, blockTop, contentW, blockH, 1.5, 1.5, "FD");
+        pdf.rect(m, blockTop, contentW, blockH, "FD");
         pdf.setFillColor(...gold);
         pdf.rect(m, blockTop, 1.4, blockH, "F");
         pdf.setFont("helvetica", "bold");
@@ -4483,9 +4545,13 @@
         pdf.setTextColor(...muted);
         pdf.text(`Halaman ${i} dari ${total}`, pageW - m, pageH - 4.6, { align: "right" });
       }
-      pdf.save("bi-pramesti-history-perubahan.pdf");
+      if (!savePdfFile(pdf, "bi-pramesti-history-perubahan.pdf")) {
+        flash("Gagal mengunduh PDF history.", true);
+        return;
+      }
       flash("PDF history diunduh.");
-    } catch (_) {
+    } catch (err) {
+      console.error("downloadHistoryPdf", err);
       flash("Gagal membuat PDF history.", true);
     } finally {
       if (btn) btn.disabled = false;
@@ -5831,8 +5897,17 @@
   document.getElementById("btn-history-pdf")?.addEventListener("click", () => {
     downloadHistoryPdf();
   });
+  document.getElementById("btn-history-clear")?.addEventListener("click", () => {
+    clearAuditHistory();
+  });
   const historyView = document.getElementById("view-history");
   if (historyView) {
+    historyView.addEventListener("click", (e) => {
+      const btn = e.target.closest(".history-delete");
+      if (!btn) return;
+      const id = btn.getAttribute("data-history-id");
+      if (id) deleteAuditEntry(id);
+    });
     historyView.addEventListener("input", (e) => {
       if (e.target.id === "history-q") {
         state.historyQ = e.target.value;
