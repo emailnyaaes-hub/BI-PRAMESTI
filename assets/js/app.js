@@ -50,6 +50,8 @@
   const SEED_VERSION_KEY = "padel-seed-version-v1";
   const WATCH_KEY = "padel-watchlist-v1";
   const SARAN_KEY = "padel-saran-overrides-v1";
+  const SARAN_TEXT_VERSION = "20260831f";
+  const SARAN_TEXT_VERSION_KEY = "padel-saran-text-version-v1";
   const HISTORY_KEY = "padel-audit-history-v1";
   const HISTORY_MAX = 800;
   const AUDIT_DB_FIELDS = ["nama", "jenis", "komoditas", "fasilitas", "tahun", "kpwdn", "keterangan"];
@@ -208,6 +210,12 @@
 
   function loadSaranOverrides() {
     try {
+      const storedVersion = localStorage.getItem(SARAN_TEXT_VERSION_KEY);
+      if (storedVersion !== SARAN_TEXT_VERSION) {
+        localStorage.removeItem(SARAN_KEY);
+        localStorage.setItem(SARAN_TEXT_VERSION_KEY, SARAN_TEXT_VERSION);
+        return {};
+      }
       const parsed = JSON.parse(localStorage.getItem(SARAN_KEY) || "{}");
       return parsed && typeof parsed === "object" ? parsed : {};
     } catch (_) {
@@ -3106,22 +3114,22 @@
         horizon: "pendek",
         label: "Jangka pendek",
         window: "0–6 bulan",
-        title: "Buka data dulu",
-        text: "Unggah kertas kerja Rekap All atau lepas filter/fokus peta agar BI PRAMESTI punya basis unit.",
+        title: "Lengkapi cakupan data UMKM/PUS",
+        text: "KPwDN pengampu mengunggah kertas kerja Rekap All atau melepas filter/fokus peta agar BI PRAMESTI memiliki basis data untuk perumusan kebijakan regional.",
       },
       {
         horizon: "menengah",
         label: "Jangka menengah",
         window: "6–24 bulan",
-        title: "Ritme unggah triwulanan",
-        text: "Setiap KPwDN mengunggah Rekap All setiap triwulan dengan kolom No, komoditas, ICK, tahun fasilitasi, dan Asal KPw terisi.",
+        title: "Tetapkan ritme pelaporan triwulanan",
+        text: "Setiap KPwDN pengampu melaporkan Rekap All setiap triwulan dengan kolom No, komoditas, ICK, tahun fasilitasi, dan Asal KPw terisi guna menjaga mutu data perumusan kebijakan.",
       },
       {
         horizon: "panjang",
         label: "Jangka panjang",
         window: "2–5 tahun",
-        title: "BI PRAMESTI sebagai alat rapat",
-        text: "Jadikan Ringkasan Eksekutif bahan baku rapat wilayah secara berkala, bukan hanya arsip kertas kerja.",
+        title: "Integrasikan BI PRAMESTI dalam rapat regional",
+        text: "Ringkasan Eksekutif BI PRAMESTI dijadikan bahan rapat pimpinan KPwDN secara berkala untuk memperkuat sinergi kebijakan dan tindak lanjut ICK.",
       },
     ];
     if (!total) {
@@ -3253,28 +3261,32 @@
         horizon: "pendek",
         label: "Jangka pendek",
         window: "0–6 bulan",
-        title: naBits.length ? "Rapikan lubang data" : stale.length ? "Segarkan stok yang menua" : "Kunci bahan rapat",
-        text: naBits.length
-          ? `Isi ${naBits.join(" dan ")} lewat edaran ke KPwDN pengampu, lalu unggah ulang Rekap All. Tanpa klasifikasi itu, diagnosis klaster dan stok-aliran fasilitasi bias pada rapat berikutnya.`
+        title: naBits.length
+          ? "Lengkapi klasifikasi data"
           : stale.length
-            ? `${fmtNum(stale.length)} unit menua. KPwDN terpadat (${topKpw ? shortOffice(topKpw[0]) : "pengampu"}) memutakhirkan sampel 20–30 unit pada kunjungan rutin semester ini agar kuota ICK tidak terserap ke usaha non-aktif.`
-            : `Pakai ${fmtNum(total)} unit di ${cakupan} sebagai baseline rapat bulan ini: kunci satu klaster unggulan dan satu PIC data per KPwDN.`,
+            ? "Perbarui data fasilitasi ICK"
+            : "Susun bahan rapat regional",
+        text: naBits.length
+          ? `KPwDN pengampu melengkapi ${naBits.join(" dan ")} melalui edaran resmi, lalu mengunggah ulang Rekap All agar profil klaster dan capaian ICK dapat dijadikan dasar perumusan kebijakan.`
+          : stale.length
+            ? `${fmtNum(stale.length)} unit belum diperbarui. KPwDN pengampu (${topKpw ? shortOffice(topKpw[0]) : "terpadat"}) memperbarui sampel 20–30 unit binaan melalui kunjungan rutin semester ini agar capaian ICK mencerminkan aktivitas fasilitasi terkini.`
+            : `${fmtNum(total)} unit di ${cakupan} dijadikan baseline rapat: tentukan satu klaster unggulan dan satu penanggung jawab data per KPwDN pengampu.`,
       },
       {
         horizon: "menengah",
         label: "Jangka menengah",
         window: "6–24 bulan",
-        title: topKom ? `Replikasi klaster ${topKom[0]}` : "Ratakan sebaran wilayah",
+        title: topKom ? `Replikasi klaster ${topKom[0]}` : "Perluas sebaran pelaporan wilayah",
         text: topKom
-          ? `Setelah lembar rujukan ${topKom[0]} tersedia, terapkan paket yang sama di dua KPwDN lain untuk menangkap economies of scale di rantai pasok itu. ${jarang && padat && jarang.n < padat.n ? `KPwDN di ${jarang.name} menambah unggahan unggulan pada dua siklus kertas kerja.` : "KPwDN dengan unggahan tipis menambah unit binaan pada dua siklus kertas kerja."}`
-          : `Ratakan sebaran lima wilayah: ${padat.name} (${fmtNum(padat.n)}) menjadi rujukan tata kelola data, ${jarang.name} (${fmtNum(jarang.n)}) menjadi sasaran perluasan input agar alokasi tidak mengikuti geografi pelaporan semata.`,
+          ? `Setelah lembar rujukan ${topKom[0]} tersusun, KPwDN pengampu melakukan replikasi terkoordinasi di dua KPwDN lain guna memperkuat rantai nilai dan sinergi kebijakan. ${jarang && padat && jarang.n < padat.n ? `KPwDN di ${jarang.name} menambah unggahan unit binaan unggulan pada dua siklus pelaporan.` : "KPwDN dengan unggahan terendah menambah unit binaan pada dua siklus pelaporan."}`
+          : `Bank Indonesia mendorong penyeimbangan sebaran lima wilayah: ${padat.name} (${fmtNum(padat.n)} unit) menjadi rujukan tata kelola data, ${jarang.name} (${fmtNum(jarang.n)} unit) menjadi sasaran perluasan agar alokasi ICK selaras dengan potensi wilayah.`,
       },
       {
         horizon: "panjang",
         label: "Jangka panjang",
         window: "2–5 tahun",
-        title: "BI PRAMESTI sebagai alat kinerja wilayah",
-        text: `Lima wilayah tanpa kantong kosong, satu komoditas unggulan per wilayah sebagai revealed specialization. ${fmtNum(total)} unit saat ini menjadi baseline; capaian ICK dan mutu data (komoditas serta tahun terisi) dilaporkan lewat BI PRAMESTI setiap tahun ke rapat Direktorat Regional.`,
+        title: "BI PRAMESTI sebagai instrumen pemantauan kinerja",
+        text: `Setiap wilayah memiliki komoditas unggulan dan cakupan ICK yang terdokumentasi. ${fmtNum(total)} unit menjadi baseline; capaian program dan mutu data (komoditas serta tahun fasilitasi) dilaporkan melalui BI PRAMESTI setiap tahun ke rapat pimpinan Direktorat Regional.`,
       },
     ];
 
