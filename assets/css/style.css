@@ -1566,7 +1566,13 @@ a.ticker-item:focus-visible {
   gap: 6px;
 }
 .home-actions-list strong { color: #fff; font-size: 14px; }
-.home-actions-list span { color: #d7e6f5; font-size: 13px; line-height: 1.55; }
+.home-actions-list span {
+  color: #d7e6f5;
+  font-size: 13px;
+  line-height: 1.55;
+  text-align: justify;
+  text-justify: inter-word;
+}
 .wilayah-focus {
   display: flex;
   align-items: center;
@@ -1819,6 +1825,8 @@ a.ticker-item:focus-visible {
   padding: 8px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.12);
   color: #d7e6f5;
+  text-align: justify;
+  text-justify: inter-word;
 }
 .lembar-actions li:first-child { border-top: 0; padding-top: 0; }
 .lembar-actions strong { color: #fff; margin-right: 6px; }
