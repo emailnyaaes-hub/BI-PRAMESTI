@@ -854,6 +854,7 @@
       const bAcc = Number(office.acc?.[pid] ?? office.accBase?.[pid] ?? 0);
       if (aAcc !== bAcc) {
         changes.push({
+          ickId: pid,
           group,
           aspect: "Target 2026",
           field: `${group} · Target 2026`,
@@ -865,6 +866,7 @@
       const bReal = Number(office.realisasi?.[pid] ?? 0);
       if (aReal !== bReal) {
         changes.push({
+          ickId: pid,
           group,
           aspect: "Realisasi",
           field: `${group} · Realisasi`,
@@ -1059,46 +1061,142 @@
     return [];
   }
 
-  function pdfChangesBlockHeight(changes, maxRows = 10) {
-    if (!changes.length) return 5;
-    const shown = Math.min(changes.length, maxRows);
-    return 4.4 + shown * 4.2 + (changes.length > maxRows ? 4.2 : 0) + 1.5;
+  function groupAuditChanges(changes) {
+    const groups = [];
+    const index = new Map();
+    (changes || []).forEach((row) => {
+      const key = row.group || row.aspect || "Perubahan";
+      if (!index.has(key)) {
+        index.set(key, groups.length);
+        groups.push({ label: key, rows: [] });
+      }
+      groups[index.get(key)].rows.push(row);
+    });
+    return groups;
   }
 
-  function pdfDrawChangesTable(pdf, changes, x, y, width, muted) {
-    const maxRows = 10;
-    const colDesc = width * 0.46;
-    const colBefore = width * 0.26;
-    const colAfter = width * 0.26;
-    const rowH = 4.2;
-    pdf.setFontSize(7);
+  function pdfHistoryMetaHeight(entry) {
+    let h = 24;
+    if (entry.target) h += 4.2;
+    if (entry.context) h += 4.2;
+    return h;
+  }
+
+  function pdfHistoryChangesHeight(changes, maxRows = 14) {
+    if (!changes.length) return 6;
+    const groups = groupAuditChanges(changes);
+    let rows = 0;
+    let headers = 0;
+    groups.forEach((group) => {
+      headers += 1;
+      rows += group.rows.length;
+      if (rows >= maxRows) return;
+    });
+    const shownRows = Math.min(rows, maxRows);
+    const shownHeaders = Math.min(headers, groups.length);
+    return 5.2 + shownHeaders * 4.6 + shownRows * 4.4 + (rows > maxRows ? 4.4 : 0) + 2;
+  }
+
+  function pdfDrawHistoryMeta(pdf, entry, x, y, width, colors) {
+    const { navy, muted, line } = colors;
+    pdf.setFillColor(248, 250, 252);
+    pdf.rect(x, y, width, pdfHistoryMetaHeight(entry), "F");
+    pdf.setDrawColor(...line);
+    pdf.setLineWidth(0.15);
+    pdf.line(x, y, x + width, y);
+    pdf.setTextColor(...navy);
     pdf.setFont("helvetica", "bold");
-    pdf.setTextColor(...muted);
-    pdf.text("Keterangan", x + 1, y);
-    pdf.text("Sebelum", x + colDesc + 1, y);
-    pdf.text("Sesudah", x + colDesc + colBefore + 1, y);
-    y += rowH;
+    pdf.setFontSize(9.5);
+    pdf.text(pdfFit(pdf, entry.summary || "Perubahan data", width - 4), x + 2, y + 5.2);
     pdf.setFont("helvetica", "normal");
-    changes.slice(0, maxRows).forEach((row, index) => {
-      if (index % 2 === 1) {
-        pdf.setFillColor(248, 250, 252);
-        pdf.rect(x, y - 3.1, width, rowH, "F");
-      }
-      const label = auditChangeDisplay(row);
-      pdf.setTextColor(40, 52, 64);
-      pdf.text(pdfFit(pdf, label, colDesc - 2), x + 1, y);
-      pdf.setTextColor(140, 45, 45);
-      pdf.text(pdfFit(pdf, String(row.before ?? "-"), colBefore - 2), x + colDesc + 1, y);
-      pdf.setTextColor(25, 95, 55);
-      pdf.text(pdfFit(pdf, String(row.after ?? "-"), colAfter - 2), x + colDesc + colBefore + 1, y);
-      y += rowH;
+    pdf.setFontSize(7.2);
+    pdf.setTextColor(...muted);
+    let dy = 10.2;
+    pdf.text(pdfFit(pdf, `Waktu: ${formatHistoryWhen(entry.at)}`, width - 4), x + 2, y + dy);
+    dy += 4.2;
+    pdf.text(
+      pdfFit(
+        pdf,
+        `Pelaku: ${entry.actor}  |  Modul: ${AUDIT_MODULE_LABELS[entry.module] || entry.module}  |  Aksi: ${AUDIT_ACTION_LABELS[entry.action] || entry.action}`,
+        width - 4
+      ),
+      x + 2,
+      y + dy
+    );
+    dy += 4.2;
+    if (entry.target) {
+      pdf.text(pdfFit(pdf, `Objek: ${entry.target}`, width - 4), x + 2, y + dy);
+      dy += 4.2;
+    }
+    if (entry.context) {
+      pdf.setTextColor(0, 72, 120);
+      pdf.text(pdfFit(pdf, entry.context, width - 4), x + 2, y + dy);
+    }
+    return y + pdfHistoryMetaHeight(entry);
+  }
+
+  function pdfDrawHistoryChangesTable(pdf, changes, entry, x, y, width, colors) {
+    const { muted, line, navy } = colors;
+    const maxRows = 14;
+    const colGroup = width * 0.34;
+    const colAspect = width * 0.22;
+    const colBefore = width * 0.2;
+    const colAfter = width * 0.2;
+    const rowH = 4.4;
+    const groupH = 4.6;
+    const isCapaian = entry.module === "capaian";
+    pdf.setFillColor(236, 242, 248);
+    pdf.rect(x, y, width, 5.2, "F");
+    pdf.setDrawColor(...line);
+    pdf.setLineWidth(0.15);
+    pdf.line(x, y + 5.2, x + width, y + 5.2);
+    pdf.setFont("helvetica", "bold");
+    pdf.setFontSize(7);
+    pdf.setTextColor(...muted);
+    pdf.text(isCapaian ? "Program ICK" : "Data / UMKM", x + 1.5, y + 3.6);
+    pdf.text("Jenis", x + colGroup + 1.5, y + 3.6);
+    pdf.text("Sebelum", x + colGroup + colAspect + 1.5, y + 3.6);
+    pdf.text("Sesudah", x + colGroup + colAspect + colBefore + 1.5, y + 3.6);
+    y += 5.2;
+    let shown = 0;
+    const groups = groupAuditChanges(changes);
+    groups.forEach((group) => {
+      if (shown >= maxRows) return;
+      pdf.setFillColor(245, 248, 252);
+      pdf.rect(x, y, width, groupH, "F");
+      pdf.setFont("helvetica", "bold");
+      pdf.setFontSize(7.2);
+      pdf.setTextColor(...navy);
+      pdf.text(pdfFit(pdf, group.label, width - 3), x + 1.5, y + 3.2);
+      y += groupH;
+      pdf.setFont("helvetica", "normal");
+      group.rows.forEach((row) => {
+        if (shown >= maxRows) return;
+        if (shown % 2 === 1) {
+          pdf.setFillColor(252, 253, 254);
+          pdf.rect(x, y, width, rowH, "F");
+        }
+        const aspect = row.aspect || auditChangeDisplay(row);
+        pdf.setFontSize(7);
+        pdf.setTextColor(80, 96, 112);
+        pdf.text(pdfFit(pdf, aspect, colAspect - 2), x + colGroup + 1.5, y + 3.1);
+        pdf.setTextColor(140, 45, 45);
+        pdf.text(pdfFit(pdf, String(row.before ?? "-"), colBefore - 2), x + colGroup + colAspect + 1.5, y + 3.1);
+        pdf.setTextColor(25, 95, 55);
+        pdf.text(pdfFit(pdf, String(row.after ?? "-"), colAfter - 2), x + colGroup + colAspect + colBefore + 1.5, y + 3.1);
+        y += rowH;
+        shown += 1;
+      });
     });
     if (changes.length > maxRows) {
+      pdf.setFontSize(7);
       pdf.setTextColor(...muted);
-      pdf.text(`+${changes.length - maxRows} perubahan lainnya`, x + 1, y);
+      pdf.text(`+${changes.length - maxRows} baris perubahan lainnya`, x + 1.5, y + 3.2);
       y += rowH;
     }
-    return y + 1;
+    pdf.setDrawColor(...line);
+    pdf.line(x, y, x + width, y);
+    return y + 1.5;
   }
 
   function buildDatabaseAuditEntries(prev, next, audit = {}) {
@@ -3390,8 +3488,8 @@
     ickCapaianLive = cloneCapaianSeed();
   }
 
-  async function persistCapaian(data, audit = {}) {
-    const prevSnapshot = JSON.parse(JSON.stringify(ickCapaian()));
+  async function persistCapaian(data, audit = {}, prevSnapshot = null) {
+    const prevSnapshotResolved = prevSnapshot || JSON.parse(JSON.stringify(ickCapaian()));
     let next = recomputeCapaianTotals(JSON.parse(JSON.stringify(data)));
     if (isKpwScoped()) {
       const selfKey = kpwScopeMatchKey(state.kpwSelfKey);
@@ -3445,7 +3543,7 @@
       return false;
     }
     ickCapaianLive = next;
-    const entries = buildCapaianAuditEntries(prevSnapshot, next, audit);
+    const entries = buildCapaianAuditEntries(prevSnapshotResolved, next, audit);
     if (entries.length) await appendAuditLog(entries);
     return true;
   }
@@ -4291,50 +4389,38 @@
 
       list.forEach((entry, index) => {
         const changes = entryPdfChanges(entry);
-        const contextLine = entry.context ? pdfSafeText(entry.context) : "";
-        const metaH = contextLine ? 19.5 : 15.5;
-        const changesH = pdfChangesBlockHeight(changes);
-        const blockH = metaH + changesH;
+        const metaH = pdfHistoryMetaHeight(entry);
+        const changesH = pdfHistoryChangesHeight(changes);
+        const blockH = metaH + changesH + 2;
+        const colors = { navy, gold, muted, line };
         if (y + blockH > pageH - 14) {
           pdf.addPage();
           paintHeader("History Perubahan Data", "Lanjutan");
           y = 32;
         }
+        const blockTop = y;
         pdf.setDrawColor(...line);
-        pdf.setLineWidth(0.2);
-        pdf.rect(m, y, contentW, blockH);
-        pdf.setTextColor(...navy);
+        pdf.setLineWidth(0.25);
+        pdf.setFillColor(255, 255, 255);
+        pdf.roundedRect(m, blockTop, contentW, blockH, 1.5, 1.5, "FD");
+        pdf.setFillColor(...gold);
+        pdf.rect(m, blockTop, 1.4, blockH, "F");
         pdf.setFont("helvetica", "bold");
-        pdf.setFontSize(9);
-        pdf.text(pdfFit(pdf, `${index + 1}. ${entry.summary}`, contentW - 4), m + 2, y + 5);
-        pdf.setFont("helvetica", "normal");
-        pdf.setFontSize(7.5);
+        pdf.setFontSize(8);
         pdf.setTextColor(...muted);
-        pdf.text(pdfFit(pdf, formatHistoryWhen(entry.at), contentW - 4), m + 2, y + 9.2);
-        pdf.text(
-          pdfFit(
-            pdf,
-            `Pelaku: ${entry.actor} | Modul: ${AUDIT_MODULE_LABELS[entry.module] || entry.module} | Aksi: ${AUDIT_ACTION_LABELS[entry.action] || entry.action}`,
-            contentW - 4
-          ),
-          m + 2,
-          y + 13.2
-        );
-        if (contextLine) {
-          pdf.setFontSize(7);
-          pdf.setTextColor(0, 72, 120);
-          pdf.text(pdfFit(pdf, contextLine, contentW - 4), m + 2, y + 17.2);
-        }
-        pdf.setDrawColor(...line);
-        pdf.line(m + 2, y + metaH - 1.2, m + contentW - 2, y + metaH - 1.2);
+        pdf.text(String(index + 1), m + 3.5, blockTop + 4.8);
+        const innerX = m + 7;
+        const innerW = contentW - 9;
+        let innerY = blockTop + 1.5;
+        innerY = pdfDrawHistoryMeta(pdf, entry, innerX, innerY, innerW, colors);
         if (changes.length) {
-          pdfDrawChangesTable(pdf, changes, m + 2, y + metaH, contentW - 4, muted);
+          pdfDrawHistoryChangesTable(pdf, changes, entry, innerX, innerY, innerW, colors);
         } else {
           pdf.setFontSize(7);
           pdf.setTextColor(...muted);
-          pdf.text("Tidak ada detail perubahan.", m + 3, y + metaH + 3);
+          pdf.text("Tidak ada detail perubahan.", innerX + 2, innerY + 4);
         }
-        y += blockH + 3;
+        y += blockH + 4;
       });
 
       const total = pdf.getNumberOfPages();
@@ -6152,9 +6238,10 @@
       const no = state.modal?.no;
       if (!no) return;
       if (!confirm("Hapus kantor ini dari capaian ICK?")) return;
-      const data = ickCapaian();
+      const prevSnapshot = JSON.parse(JSON.stringify(ickCapaian()));
+      const data = JSON.parse(JSON.stringify(ickCapaian()));
       data.offices = (data.offices || []).filter((office) => Number(office.no) !== Number(no));
-      persistCapaian(data).then((ok) => {
+      persistCapaian(data, {}, prevSnapshot).then((ok) => {
         if (!ok) return;
         state.capaianOffice = 0;
         flash("Kantor dihapus dari capaian ICK.");
@@ -6311,7 +6398,8 @@
         if (picked) saveKpwSelfKey(picked);
         if (!requireKpwSelf("kpw-self-pick")) return;
       }
-      const data = ickCapaian();
+      const prevSnapshot = JSON.parse(JSON.stringify(ickCapaian()));
+      const data = JSON.parse(JSON.stringify(ickCapaian()));
       const programs = data.programs || [];
       const acc = {};
       const ind = {};
@@ -6369,7 +6457,7 @@
           };
         }
         data.offices = list;
-        persistCapaian(data).then((ok) => {
+        persistCapaian(data, {}, prevSnapshot).then((ok) => {
           if (!ok) return;
           flash(`Data ICK ${state.kpwSelfKey} disimpan.`);
           state.modal = { type: "capaian-office", no: existingSelf.no };
@@ -6387,7 +6475,7 @@
         list.push(office);
       }
       data.offices = list.sort((a, b) => Number(a.no) - Number(b.no));
-      persistCapaian(data).then((ok) => {
+      persistCapaian(data, {}, prevSnapshot).then((ok) => {
         if (!ok) return;
         flash(state.modal?.type === "capaian-edit" ? "Capaian kantor disimpan." : "Kantor ditambahkan ke capaian ICK.");
         state.modal = { type: "capaian-office", no: office.no };
