@@ -51,7 +51,7 @@
   const WATCH_KEY = "padel-watchlist-v1";
   const SARAN_KEY = "padel-saran-overrides-v1";
   const SARAN_TEXT_VERSION = "20260831j";
-  const APP_BUILD = "20260901a";
+  const APP_BUILD = "20260901b";
   const GENERIC_KOMODITAS = new Set([
     "N/A",
     "Industri Pengolahan",
@@ -2967,26 +2967,12 @@
     return `Perbedaan sebaran masih terkelola. Tetap pantau ${jarang.name} agar tidak tertinggal, dan gunakan momentum ${padat.name} untuk berbagi praktik pendampingan ke wilayah yang lebih tipis.`;
   }
 
-  function buildBriefing(list) {
-    if (!list.length) {
-      return [
-        {
-          title: "",
-          items: [
-            "Tidak ada data pada cakupan saat ini. Ubah filter, lepas fokus peta, atau tambah data agar briefing dapat disusun.",
-          ],
-        },
-      ];
-    }
-    const offices = new Set(list.map((row) => row.kpwdn)).size;
-    const topKom = countByKomoditas(list).find(([name]) => name !== "N/A");
-    const topFas = countByFasilitas(list).find(([name]) => name && name !== "N/A");
-    const pus = list.filter((row) => row.jenis === "PUS").length;
-    const years = yearList(list);
-    const regionCounts = REGIONS.map((region) => ({
-      name: region.name,
-      n: list.filter((row) => matchesRegion(region, row.kpwdn)).length,
-    })).sort((a, b) => b.n - a.n || a.name.localeCompare(b.name, "id"));
+  function briefingAndil(n, total) {
+    if (!total) return "0%";
+    return fmtPct(Math.round((n / total) * 1000) / 10);
+  }
+
+  function briefingCakupanLabel() {
     const fokus = REGIONS.find((region) => region.id === state.wilayah);
     const filterBits = [
       state.jenis.length && `jenis ${state.jenis.join(", ")}`,
@@ -2995,88 +2981,288 @@
       state.tahun.length && `tahun ${state.tahun.join(", ")}`,
       state.kpwdn.length && state.kpwdn.map(shortOffice).join(", "),
     ].filter(Boolean);
-    const cakupan = fokus
-      ? `wilayah ${fokus.name}`
-      : filterBits.length
-        ? filterBits.join(", ")
-        : "nasional";
+    if (fokus) return `wilayah ${fokus.name}`;
+    if (filterBits.length) return filterBits.join("; ");
+    return "nasional";
+  }
+
+  function macroRegionKpwLines(list) {
+    return REGIONS.map((region) => {
+      const rows = list.filter((row) => matchesRegion(region, row.kpwdn));
+      if (!rows.length) return `${region.name}: belum ada unit tercatat.`;
+      const ranked = countByAsalKpw(rows).map(([name, n]) => ({
+        name: shortOffice(name) || name,
+        n,
+      }));
+      const top = ranked[0];
+      const bottom = ranked[ranked.length - 1];
+      if (ranked.length === 1 || top.name === bottom.name) {
+        return `${region.name}: tertumpu pada ${top.name} (${fmtNum(top.n)} unit).`;
+      }
+      return `${region.name}: tertinggi ${top.name} (${fmtNum(top.n)} unit); terendah ${bottom.name} (${fmtNum(bottom.n)} unit).`;
+    });
+  }
+
+  function buildBriefing(list) {
+    if (!list.length) {
+      return {
+        lead: [
+          "Tidak ada data pada cakupan saat ini. Ubah filter, lepas fokus peta, atau tambah data agar briefing dapat disusun.",
+        ],
+        sections: [],
+      };
+    }
+
+    const total = list.length;
+    const pus = list.filter((row) => row.jenis === "PUS").length;
+    const umkm = total - pus;
+    const offices = new Set(list.map((row) => row.kpwdn)).size;
+    const years = yearList(list);
+    const yearSpan =
+      years[0] && years[years.length - 1]
+        ? years[0] === years[years.length - 1]
+          ? String(years[0])
+          : `${years[0]}–${years[years.length - 1]}`
+        : "belum terisi";
+    const cakupan = briefingCakupanLabel();
+    const fokus = REGIONS.find((region) => region.id === state.wilayah);
+    const dated = formatDataDate(loadUpdatedAt());
+    const yearData = yearCompare(list);
+    const regionCounts = REGIONS.map((region) => ({
+      name: region.name,
+      n: list.filter((row) => matchesRegion(region, row.kpwdn)).length,
+    })).sort((a, b) => b.n - a.n || a.name.localeCompare(b.name, "id"));
     const padat = regionCounts[0];
     const jarang = [...regionCounts].sort((a, b) => a.n - b.n || a.name.localeCompare(b.name, "id"))[0];
+    const regionsWithData = regionCounts.filter((row) => row.n > 0).length;
+    const topKom = countByKomoditas(list).filter(([name]) => name !== "N/A");
+    const topIck = countByFasilitas(list).filter(([name]) => name && name !== "N/A");
+    const topKpw = countByAsalKpw(list);
+    const noTahun = list.filter((row) => tahunLabel(row.tahun) === "N/A").length;
+    const noKom = list.filter((row) => komoditasLabel(row.komoditas) === "N/A").length;
+
+    const scopePhrase = cakupan === "nasional" ? "nasional" : `cakupan ${cakupan}`;
+    const lead = [
+      `Pada tingkat ${scopePhrase}, BI PRAMESTI mencatat ${fmtNum(total)} unit UMKM/PUS binaan dari ${fmtNum(offices)} KPwDN pengampu per ${dated}. Pelaku Usaha Syariah (PUS) menyumbang ${fmtNum(pus)} unit (${briefingAndil(pus, total)}), sementara UMKM konvensional ${fmtNum(umkm)} unit (${briefingAndil(umkm, total)}). Rentang tahun fasilitasi ${yearSpan}.`,
+    ];
+
+    if (yearData.prev && yearData.latest) {
+      const arah =
+        yearData.delta > 0 ? "meningkat" : yearData.delta < 0 ? "menurun" : "stabil";
+      const deltaAbs = fmtNum(Math.abs(yearData.delta));
+      lead.push(
+        `Antara tahun fasilitasi ${yearData.prev} dan ${yearData.latest}, unit tercatat ${arah} ${deltaAbs} unit, dari ${fmtNum(yearData.prevN)} menjadi ${fmtNum(yearData.latestN)} unit.${yearData.noTahun ? ` ${fmtNum(yearData.noTahun)} unit tanpa tahun fasilitasi tidak masuk perbandingan ini.` : ""}`
+      );
+    }
+
+    const driverBits = [];
+    if (padat?.n) {
+      driverBits.push(
+        `wilayah ${padat.name} dengan andil ${briefingAndil(padat.n, total)} (${fmtNum(padat.n)} unit)`
+      );
+    }
+    if (topKom[0]) {
+      driverBits.push(
+        `komoditas ${topKom[0][0]} dengan andil ${briefingAndil(topKom[0][1], total)}`
+      );
+    }
+    if (topIck[0]) {
+      driverBits.push(
+        `ICK ${topIck[0][0]} dengan andil ${briefingAndil(topIck[0][1], total)}`
+      );
+    }
+    if (driverBits.length) {
+      lead.push(
+        `Profil sebaran terutama didorong oleh ${joinId(driverBits)}.${topKpw[0] ? ` Kontribusi terbesar berasal dari ${shortOffice(topKpw[0][0])} (${fmtNum(topKpw[0][1])} unit).` : ""}`
+      );
+    }
 
     const sections = [];
-    if (cakupan !== "nasional") {
-      sections.push({
-        title: `Cakupan ${cakupan}`,
-        items: [
-          `Unit terpantau: ${fmtNum(list.length)} UMKM/PUS`,
-          `Kantor pengampu: ${fmtNum(offices)} KPwDN`,
-          `Rentang fasilitasi: ${years[0] || "—"}–${years[years.length - 1] || "—"}`,
-          `Fasilitas paling sering: ${topFas ? topFas[0] : "belum terisi"}`,
-          `Pelaku Usaha Syariah: ${fmtNum(pus)} unit`,
-        ],
-      });
-    }
 
-    if (!topKom) {
-      sections.push({
-        title: "Komoditas",
-        items: ["Kolom komoditas masih kosong, sehingga komoditas paling padat belum dapat dibaca."],
-      });
-    } else {
-      const komRows = list.filter((row) => row.komoditas === topKom[0]);
-      sections.push({
-        title: "Komoditas",
-        items: [
-          `Terpadat: ${topKom[0]} (${fmtNum(topKom[1])} unit)`,
-          `Sebaran utama: ${regionPhrase(komRows)}`,
-          `Pengampu utama: ${officePhrase(komRows, 2)}`,
-          `Tindak lanjut: jadikan kantor pengampu itu rujukan klaster bila rapat wilayah membahas rantai pasok ${topKom[0]}.`,
-        ],
-      });
-    }
-
-    const officeRank = countBy(list, "kpwdn");
-    if (fokus && officeRank.length) {
+    const spatialSubsections = [];
+    if (fokus) {
+      const officeRank = countBy(list, "kpwdn");
       const tebal = officeRank[0];
-      const tipis = [...officeRank].sort((a, b) => a[1] - b[1] || String(a[0]).localeCompare(String(b[0]), "id"))[0];
-      const items =
-        tebal[0] === tipis[0]
-          ? [
-              `Tertumpu pada KPwDN ${shortOffice(tebal[0])} (${fmtNum(tebal[1])} unit)`,
-              "Tindak lanjut: perluas input data dari KPwDN lain di wilayah yang sama agar pantauan tidak bergantung pada satu kantor.",
-            ]
-          : [
-              `Tertinggi: KPwDN ${shortOffice(tebal[0])} (${fmtNum(tebal[1])} unit)`,
-              `Terendah: KPwDN ${shortOffice(tipis[0])} (${fmtNum(tipis[1])} unit)`,
-              `Tindak lanjut: ${sebaranAdvice({ name: shortOffice(tebal[0]), n: tebal[1] }, { name: shortOffice(tipis[0]), n: tipis[1] })}`,
-            ];
-      sections.push({ title: `Sebaran ${fokus.name}`, items });
+      const tipis = [...officeRank].sort(
+        (a, b) => a[1] - b[1] || String(a[0]).localeCompare(String(b[0]), "id")
+      )[0];
+      spatialSubsections.push({
+        title: `1. Sebaran di ${fokus.name}`,
+        paragraph: `Wilayah ${fokus.name} memuat ${fmtNum(total)} unit (${briefingAndil(total, records.length || total)} dari seluruh data BI PRAMESTI bila tidak difilter).`,
+        items:
+          tebal && tipis && tebal[0] !== tipis[0]
+            ? [
+                `KPwDN tertinggi: ${shortOffice(tebal[0])} (${fmtNum(tebal[1])} unit).`,
+                `KPwDN terendah: ${shortOffice(tipis[0])} (${fmtNum(tipis[1])} unit).`,
+                `Tindak lanjut: ${sebaranAdvice(
+                  { name: shortOffice(tebal[0]), n: tebal[1] },
+                  { name: shortOffice(tipis[0]), n: tipis[1] }
+                )}`,
+              ]
+            : tebal
+              ? [
+                  `Sebaran tertumpu pada KPwDN ${shortOffice(tebal[0])} (${fmtNum(tebal[1])} unit).`,
+                  "Perluas input dari KPwDN lain di wilayah yang sama agar pantauan tidak bergantung pada satu kantor.",
+                ]
+              : ["Belum ada KPwDN pengampu yang tercatat pada cakupan ini."],
+      });
     } else {
-      sections.push({
-        title: "Sebaran wilayah",
+      spatialSubsections.push({
+        title: "1. Sebaran per wilayah makro",
+        paragraph: `Secara ${scopePhrase} tercatat ${fmtNum(total)} unit UMKM/PUS. ${fmtNum(regionsWithData)} dari ${fmtNum(REGIONS.length)} wilayah makro memiliki unit binaan; ${padat.name} menjadi wilayah terpadat (${fmtNum(padat.n)} unit, ${briefingAndil(padat.n, total)}), sedangkan ${jarang.n ? `${jarang.name} paling tipis (${fmtNum(jarang.n)} unit, ${briefingAndil(jarang.n, total)}).` : `${jarang.name} belum memiliki unit tercatat.`}`,
         items: [
-          `Tertinggi: ${padat.name} (${fmtNum(padat.n)} unit)`,
-          `Terendah: ${jarang.name} (${fmtNum(jarang.n)} unit)`,
+          `Wilayah tertinggi: ${padat.name} (${fmtNum(padat.n)} unit).`,
+          jarang.n
+            ? `Wilayah terendah: ${jarang.name} (${fmtNum(jarang.n)} unit).`
+            : `Wilayah terendah: ${jarang.name} (belum ada unit).`,
           `Tindak lanjut: ${sebaranAdvice(padat, jarang)}`,
         ],
       });
+      spatialSubsections.push({
+        title: "2. Perkembangan per wilayah makro",
+        paragraph: "Perkembangan tertinggi dan terendah per wilayah makro (berdasarkan KPwDN pengampu):",
+        items: macroRegionKpwLines(list),
+      });
     }
 
-    return sections;
+    if (topKpw.length && !fokus) {
+      spatialSubsections.push({
+        title: fokus ? "2. KPwDN pengampu" : "3. Konsentrasi KPwDN pengampu",
+        paragraph: `Tercatat ${fmtNum(topKpw.length)} asal KPwDN pengampu pada cakupan ini.`,
+        items: [
+          `Tertinggi: ${topKpw[0][0]} (${fmtNum(topKpw[0][1])} unit, ${briefingAndil(topKpw[0][1], total)}).`,
+          topKpw.length > 1
+            ? `Terendah: ${topKpw[topKpw.length - 1][0]} (${fmtNum(topKpw[topKpw.length - 1][1])} unit).`
+            : "Hanya satu asal KPwDN yang tercatat.",
+          topKpw.length > 1
+            ? `Sepuluh KPwDN teratas menyumbang ${briefingAndil(
+                topKpw.slice(0, 10).reduce((sum, [, n]) => sum + n, 0),
+                total
+              )} dari seluruh unit.`
+            : "",
+        ].filter(Boolean),
+      });
+    }
+
+    if (yearData.series.length >= 2) {
+      spatialSubsections.push({
+        title: `${fokus ? spatialSubsections.length + 1 : spatialSubsections.length + 1}. Perkembangan tahun fasilitasi`,
+        paragraph:
+          yearData.delta === 0
+            ? `Antara ${yearData.prev} dan ${yearData.latest}, jumlah unit stabil di ${fmtNum(yearData.latestN)} unit.`
+            : `Antara ${yearData.prev} dan ${yearData.latest}, unit ${yearData.delta > 0 ? "bertambah" : "berkurang"} ${fmtNum(Math.abs(yearData.delta))} unit.`,
+        items: yearData.series.slice(-4).map(
+          (row) => `${row.year}: ${fmtNum(row.n)} unit (${briefingAndil(row.n, total)} dari cakupan saat ini).`
+        ),
+      });
+    }
+
+    sections.push({
+      title: fokus
+        ? `I. PERKEMBANGAN SEBARAN WILAYAH ${fokus.name.toUpperCase()}`
+        : "I. PERKEMBANGAN SEBARAN NASIONAL DAN SPASIAL",
+      subsections: spatialSubsections,
+    });
+
+    const komoditasItems = topKom.slice(0, 5).map(
+      ([name, n]) =>
+        `${name}: ${fmtNum(n)} unit dengan andil ${briefingAndil(n, total)}.${n >= 3 ? ` Sebaran utama ${regionPhrase(list.filter((row) => komoditasLabel(row.komoditas) === name))}.` : ""}`
+    );
+    const ickItems = topIck.slice(0, 5).map(([name, n]) => {
+      let line = `${name}: ${fmtNum(n)} unit (${briefingAndil(n, total)}).`;
+      const delta = yearData.ickUp.find((row) => row.name === name);
+      if (delta && delta.delta > 0) line += ` Naik ${fmtNum(delta.delta)} unit dibanding tahun fasilitasi sebelumnya.`;
+      const down = yearData.ickDown.find((row) => row.name === name);
+      if (down && down.delta < 0) line += ` Turun ${fmtNum(Math.abs(down.delta))} unit dibanding tahun fasilitasi sebelumnya.`;
+      return line;
+    });
+
+    const componentSubsections = [
+      {
+        title: "1. Komposisi jenis pelaku",
+        paragraph: `UMKM konvensional ${fmtNum(umkm)} unit (${briefingAndil(umkm, total)}); PUS ${fmtNum(pus)} unit (${briefingAndil(pus, total)}).`,
+        items: [
+          pus >= umkm
+            ? "PUS mendominasi komposisi pada cakupan ini — perkuat dokumentasi fasilitasi syariah dan rantai pasok halal."
+            : "UMKM konvensional masih dominan — manfaatkan portofolio ICK untuk mendorong naik kelas dan akses pembiayaan.",
+        ],
+      },
+    ];
+
+    if (topKom.length) {
+      const komFollowers = topKom.slice(1, 3).map(([name, n]) => `${name} (${fmtNum(n)} unit)`);
+      componentSubsections.push({
+        title: "2. Komoditas unggulan",
+        paragraph: topKom[0]
+          ? `Komoditas paling padat ${topKom[0][0]} (${fmtNum(topKom[0][1])} unit, andil ${briefingAndil(topKom[0][1], total)})${komFollowers.length ? `, diikuti ${joinId(komFollowers)}.` : "."}`
+          : "",
+        items: komoditasItems.length
+          ? komoditasItems
+          : ["Kolom komoditas masih kosong sehingga profil klaster belum dapat dibaca."],
+      });
+    } else {
+      componentSubsections.push({
+        title: "2. Komoditas unggulan",
+        items: [
+          `${fmtNum(noKom)} unit belum memiliki komoditas terisi — lengkapi kolom komoditas agar profil klaster dapat dibandingkan antarwilayah.`,
+        ],
+      });
+    }
+
+    componentSubsections.push({
+      title: "3. Portofolio ICK dan mutu data",
+      paragraph: topIck[0]
+        ? `ICK dominan ${topIck[0][0]} (${fmtNum(topIck[0][1])} unit, andil ${briefingAndil(topIck[0][1], total)}).`
+        : "Portofolio ICK belum terisi pada sebagian besar unit.",
+      items: [
+        ...(ickItems.length ? ickItems : ["Kolom ICK/fasilitas masih kosong pada sebagian unit."]),
+        noTahun
+          ? `${fmtNum(noTahun)} unit tanpa tahun fasilitasi — lengkapi agar perbandingan antarperiode dapat dibaca.`
+          : "Seluruh unit pada cakupan ini memiliki tahun fasilitasi terisi.",
+        noKom
+          ? `${fmtNum(noKom)} unit tanpa komoditas — prioritaskan pelengkapan sebelum rapat pimpinan regional.`
+          : "Seluruh unit pada cakupan ini memiliki komoditas terisi.",
+      ],
+    });
+
+    sections.push({
+      title: "II. PERKEMBANGAN MENURUT KOMPONEN",
+      subsections: componentSubsections,
+    });
+
+    return { lead, sections };
   }
 
   function briefingHtml(list) {
-    return buildBriefing(list)
-      .map((section) => {
-        const head = section.title
-          ? `<h4 class="briefing-head">${escapeHtml(section.title)}</h4>`
-          : "";
-        const items = section.items
-          .map((item) => `<li>${escapeHtml(item)}</li>`)
-          .join("");
-        return `<div class="briefing-block">${head}<ul class="briefing-points">${items}</ul></div>`;
-      })
-      .join("");
+    const data = buildBriefing(list);
+    const parts = [];
+    if (data.lead?.length) {
+      parts.push(
+        `<div class="briefing-lead">${data.lead.map((para) => `<p>${escapeHtml(para)}</p>`).join("")}</div>`
+      );
+    }
+    (data.sections || []).forEach((section) => {
+      let html = `<div class="briefing-block">`;
+      if (section.title) {
+        html += `<h4 class="briefing-head briefing-section-title">${escapeHtml(section.title)}</h4>`;
+      }
+      (section.paragraphs || []).forEach((para) => {
+        html += `<p class="briefing-para">${escapeHtml(para)}</p>`;
+      });
+      (section.subsections || []).forEach((sub) => {
+        if (sub.title) html += `<h5 class="briefing-subhead">${escapeHtml(sub.title)}</h5>`;
+        if (sub.paragraph) html += `<p class="briefing-para">${escapeHtml(sub.paragraph)}</p>`;
+        if (sub.items?.length) {
+          html += `<ul class="briefing-points">${sub.items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>`;
+        }
+      });
+      if (section.items?.length && !section.subsections?.length) {
+        html += `<ul class="briefing-points">${section.items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>`;
+      }
+      html += `</div>`;
+      parts.push(html);
+    });
+    return parts.join("");
   }
 
   function shareLabel(n, total) {
@@ -6607,14 +6793,30 @@
 
   document.getElementById("pantau").addEventListener("click", (e) => {
     if (e.target.closest("#btn-copy-brief")) {
+      const leadEl = document.querySelector("#briefing-text .briefing-lead");
+      const leadText = leadEl
+        ? [...leadEl.querySelectorAll("p")].map((p) => p.textContent.trim()).filter(Boolean).join("\n\n")
+        : "";
       const brief = [...document.querySelectorAll("#briefing-text .briefing-block")]
         .map((block) => {
-          const title = block.querySelector(".briefing-head")?.textContent.trim() || "";
-          const items = [...block.querySelectorAll("li")].map((li) => `• ${li.textContent.trim()}`);
-          return [title, ...items].filter(Boolean).join("\n");
+          const title = block.querySelector(".briefing-section-title, .briefing-head")?.textContent.trim() || "";
+          const paras = [...block.querySelectorAll(":scope > .briefing-para")].map((p) => p.textContent.trim());
+          const subs = [...block.querySelectorAll(".briefing-subhead")].map((sub) => {
+            const lines = [sub.textContent.trim()];
+            let node = sub.nextElementSibling;
+            while (node && !node.classList.contains("briefing-subhead") && !node.classList.contains("briefing-section-title")) {
+              if (node.classList.contains("briefing-para")) lines.push(node.textContent.trim());
+              if (node.classList.contains("briefing-points")) {
+                lines.push(...[...node.querySelectorAll("li")].map((li) => `• ${li.textContent.trim()}`));
+              }
+              node = node.nextElementSibling;
+            }
+            return lines.filter(Boolean).join("\n");
+          });
+          return [title, ...paras, ...subs].filter(Boolean).join("\n");
         })
-        .filter(Boolean)
-        .join("\n\n");
+        .filter(Boolean);
+      const briefText = [leadText, ...brief].filter(Boolean).join("\n\n");
       const steps = [...document.querySelectorAll("#saran-list .saran-card")].map((card, i) => {
         const title = card.querySelector("strong")?.textContent || "";
         const text = card.querySelector(".saran-text")?.textContent || "";
@@ -6627,7 +6829,7 @@
         return `${label} — ${title}: ${text}`;
       });
       const payload = [
-        brief,
+        briefText,
         steps.length ? `Saran tindakan:\n${steps.join("\n")}` : "",
         horizons.length ? `Jangka waktu:\n${horizons.join("\n")}` : "",
       ]

@@ -1148,6 +1148,13 @@ a.ticker-item:focus-visible {
   padding-top: 12px;
   border-top: 1px solid rgba(0, 30, 76, 0.08);
 }
+.briefing-lead {
+  display: grid;
+  gap: 10px;
+}
+.briefing-lead p {
+  text-align: justify;
+}
 .briefing-head {
   margin: 0 0 6px;
   font-size: 11px;
@@ -1155,6 +1162,21 @@ a.ticker-item:focus-visible {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--navy-2);
+}
+.briefing-section-title {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+}
+  margin: 10px 0 4px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: 0;
+  text-transform: none;
+}
+.briefing-para {
+  margin: 0 0 8px;
+  text-align: justify;
 }
 .briefing-points {
   margin: 0;
