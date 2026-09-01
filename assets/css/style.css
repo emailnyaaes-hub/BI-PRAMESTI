@@ -1139,6 +1139,14 @@ a.ticker-item:focus-visible {
   color: var(--ink);
   border-bottom: 1px solid #c5d2e0;
 }
+.briefing-headbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+.briefing-headbar .kicker { margin-bottom: 0; }
 .briefing-box .kicker { margin-bottom: 8px; color: var(--navy-2); }
 .briefing-body {
   display: grid;

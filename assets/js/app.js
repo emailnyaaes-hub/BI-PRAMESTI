@@ -51,7 +51,7 @@
   const WATCH_KEY = "padel-watchlist-v1";
   const SARAN_KEY = "padel-saran-overrides-v1";
   const SARAN_TEXT_VERSION = "20260831j";
-  const APP_BUILD = "20260901d";
+  const APP_BUILD = "20260901e";
   const GENERIC_KOMODITAS = new Set([
     "N/A",
     "Industri Pengolahan",
@@ -5139,6 +5139,170 @@
     }
   }
 
+  function pdfBriefText(value) {
+    return String(value ?? "")
+      .replace(/[\u2013\u2014]/g, "-")
+      .replace(/\u2022/g, "-")
+      .replace(/[\u201c\u201d\u2018\u2019]/g, "'")
+      .replace(/\u00a0/g, " ")
+      .replace(/[\u2000-\u200b]/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+
+  function downloadBriefingPdf() {
+    const JsPDF = resolveJsPdf();
+    if (!JsPDF) {
+      flash("Pustaka PDF belum termuat. Muat ulang halaman, lalu coba lagi.", true);
+      return;
+    }
+    const list = filtered();
+    const data = buildBriefing(list);
+    const btn = document.getElementById("btn-briefing-pdf");
+    if (btn) btn.disabled = true;
+    try {
+      const pdf = new JsPDF({ orientation: "portrait", unit: "mm", format: "a4" });
+      const m = 14;
+      const pageW = pdf.internal.pageSize.getWidth();
+      const pageH = pdf.internal.pageSize.getHeight();
+      const contentW = pageW - m * 2;
+      const navy = [0, 48, 87];
+      const gold = [199, 163, 90];
+      const muted = [90, 107, 122];
+      const line = [197, 207, 219];
+      const ink = [27, 27, 27];
+      const footerY = pageH - 8;
+      const cakupan = execCakupan();
+      const dated = pdfBriefText(
+        `Data tertanggal ${formatDataDate(loadUpdatedAt())} · diekspor ${new Date().toLocaleString("id-ID", {
+          day: "numeric",
+          month: "long",
+          year: "numeric",
+          hour: "2-digit",
+          minute: "2-digit",
+        })}`
+      );
+
+      const paintHeader = (continued) => {
+        pdf.setFillColor(...navy);
+        pdf.rect(0, 0, pageW, 24, "F");
+        pdf.setFillColor(...gold);
+        pdf.rect(0, 24, pageW, 1.1, "F");
+        pdf.setTextColor(...gold);
+        pdf.setFont("helvetica", "bold");
+        pdf.setFontSize(8);
+        pdf.text("BI PRAMESTI", m, 8);
+        pdf.setTextColor(255, 255, 255);
+        pdf.setFont("helvetica", "normal");
+        pdf.setFontSize(8);
+        pdf.text("Departemen Regional, Bank Indonesia", m + 26, 8);
+        pdf.setFont("helvetica", "bold");
+        pdf.setFontSize(13);
+        pdf.text("Ringkasan Eksekutif", m, 16.5);
+        pdf.setFont("helvetica", "normal");
+        pdf.setFontSize(8);
+        pdf.setTextColor(158, 196, 234);
+        pdf.text(
+          pdfBriefText(`Briefing UMKM/PUS · cakupan ${cakupan}${continued ? " · lanjutan" : ""}`),
+          m,
+          21.5
+        );
+        pdf.text(dated, pageW - m, 8, { align: "right" });
+      };
+
+      const writeLines = (text, x, y, maxW, fontSize, fontStyle, color, lineGap) => {
+        pdf.setFont("helvetica", fontStyle || "normal");
+        pdf.setFontSize(fontSize);
+        pdf.setTextColor(...(color || ink));
+        const lines = pdf.splitTextToSize(pdfBriefText(text), maxW);
+        lines.forEach((row) => {
+          if (y > footerY - 4) {
+            pdf.addPage();
+            paintHeader(true);
+            y = 32;
+          }
+          pdf.text(row, x, y);
+          y += lineGap || fontSize * 0.42 + 1.8;
+        });
+        return y;
+      };
+
+      paintHeader(false);
+      let y = 32;
+
+      (data.lead || []).forEach((para) => {
+        y = writeLines(para, m, y, contentW, 10, "normal", ink, 5.2);
+        y += 2.5;
+      });
+
+      (data.sections || []).forEach((section) => {
+        y += 3;
+        if (y > footerY - 14) {
+          pdf.addPage();
+          paintHeader(true);
+          y = 32;
+        }
+        pdf.setDrawColor(...line);
+        pdf.setLineWidth(0.2);
+        pdf.line(m, y, pageW - m, y);
+        y += 5;
+        y = writeLines(section.title || "", m, y, contentW, 10, "bold", navy, 4.8);
+        y += 1.5;
+        (section.subsections || []).forEach((sub) => {
+          y = writeLines(sub.title || "", m, y, contentW, 9.5, "bold", ink, 4.6);
+          y += 0.8;
+          if (sub.paragraph) {
+            y = writeLines(sub.paragraph, m, y, contentW, 9, "normal", ink, 4.4);
+            y += 1.2;
+          }
+          (sub.items || []).forEach((item) => {
+            y = writeLines(`- ${item}`, m + 2, y, contentW - 2, 9, "normal", muted, 4.4);
+          });
+          y += 1.5;
+        });
+      });
+
+      y += 2;
+      if (y > footerY - 10) {
+        pdf.addPage();
+        paintHeader(true);
+        y = 32;
+      }
+      y = writeLines(
+        "Disusun dari data BI PRAMESTI yang sedang tampil. Tahun pada briefing ini adalah tahun fasilitasi, bukan tanggal unggahan. Bukan penilaian resmi Bank Indonesia.",
+        m,
+        y,
+        contentW,
+        8,
+        "italic",
+        muted,
+        4
+      );
+
+      const total = pdf.getNumberOfPages();
+      for (let i = 1; i <= total; i += 1) {
+        pdf.setPage(i);
+        pdf.setDrawColor(...line);
+        pdf.line(m, footerY, pageW - m, footerY);
+        pdf.setFont("helvetica", "normal");
+        pdf.setFontSize(7);
+        pdf.setTextColor(...muted);
+        pdf.text(`Halaman ${i} dari ${total}`, pageW - m, pageH - 4.6, { align: "right" });
+      }
+
+      if (!savePdfFile(pdf, "bi-pramesti-ringkasan-eksekutif.pdf")) {
+        flash("Gagal mengunduh PDF briefing.", true);
+        return;
+      }
+      flash("PDF briefing diunduh.");
+    } catch (err) {
+      console.error("downloadBriefingPdf", err);
+      flash("Gagal membuat PDF briefing.", true);
+    } finally {
+      if (btn) btn.disabled = false;
+    }
+  }
+
   function downloadHistoryPdf() {
     if (!canView("history")) {
       flash("History hanya tersedia untuk Administrator.", true);
@@ -6593,6 +6757,9 @@
     state.capaianDraft = null;
     state.modal = { type: "capaian-import" };
     renderModal();
+  });
+  document.getElementById("btn-briefing-pdf")?.addEventListener("click", () => {
+    downloadBriefingPdf();
   });
   document.getElementById("btn-capaian-pdf").addEventListener("click", () => {
     downloadCapaianPdf();
