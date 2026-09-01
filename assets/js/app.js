@@ -51,7 +51,7 @@
   const WATCH_KEY = "padel-watchlist-v1";
   const SARAN_KEY = "padel-saran-overrides-v1";
   const SARAN_TEXT_VERSION = "20260831j";
-  const APP_BUILD = "20260831l";
+  const APP_BUILD = "20260901a";
   const GENERIC_KOMODITAS = new Set([
     "N/A",
     "Industri Pengolahan",
