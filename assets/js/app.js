@@ -993,19 +993,6 @@
     }, 45000);
   }
 
-  function historySyncStatusText() {
-    if (historyCloudReady) {
-      if (historyCloudMode === "github") {
-        return "History tersinkron via GitHub — perubahan Administrator dan KPw tampil di semua laptop/PC.";
-      }
-      if (historyCloudMode === "firestore") {
-        return "History tersinkron cloud (Firestore) — perubahan Administrator dan KPw tampil di semua perangkat.";
-      }
-      return "History tersinkron cloud — perubahan Administrator dan KPw tampil di semua perangkat.";
-    }
-    return "Sinkron cloud belum aktif. Isi token GitHub di assets/js/history-cloud.js agar history terhubung antar perangkat.";
-  }
-
   async function loadHistoryLocal() {
     const readLocal = () => {
       try {
@@ -4910,8 +4897,8 @@
     if (meta) {
       meta.textContent =
         list.length === 0
-          ? `Belum ada perubahan data yang tercatat. ${historySyncStatusText()}`
-          : `Menampilkan ${fmtNum(list.length)} dari ${fmtNum(auditLog.length)} catatan. ${historySyncStatusText()}`;
+          ? "Belum ada perubahan data yang tercatat."
+          : `Menampilkan ${fmtNum(list.length)} dari ${fmtNum(auditLog.length)} catatan.`;
     }
     body.innerHTML = list.length
       ? list
@@ -6420,9 +6407,6 @@
   });
   document.getElementById("btn-history-clear")?.addEventListener("click", () => {
     clearAuditHistory();
-  });
-  document.getElementById("btn-history-sync")?.addEventListener("click", () => {
-    syncHistoryRemote(false);
   });
   const historyView = document.getElementById("view-history");
   if (historyView) {
