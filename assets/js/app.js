@@ -51,7 +51,7 @@
   const WATCH_KEY = "padel-watchlist-v1";
   const SARAN_KEY = "padel-saran-overrides-v1";
   const SARAN_TEXT_VERSION = "20260831j";
-  const APP_BUILD = "20260901c";
+  const APP_BUILD = "20260901d";
   const GENERIC_KOMODITAS = new Set([
     "N/A",
     "Industri Pengolahan",
@@ -2664,6 +2664,10 @@
     return Object.entries(map).sort((a, b) => b[1] - a[1] || String(a[0]).localeCompare(String(b[0]), "id"));
   }
 
+  function countByKpwdnOffice(list) {
+    return countBy(list, "kpwdn").filter(([name]) => name);
+  }
+
   function fillStats(el, list) {
     if (!el) return;
     const komoditas = new Set(list.map((r) => r.komoditas)).size;
@@ -2990,7 +2994,7 @@
     return REGIONS.map((region) => {
       const rows = list.filter((row) => matchesRegion(region, row.kpwdn));
       if (!rows.length) return `${region.name}: belum ada unit tercatat.`;
-      const ranked = countByAsalKpw(rows).map(([name, n]) => ({
+      const ranked = countByKpwdnOffice(rows).map(([name, n]) => ({
         name: shortOffice(name) || name,
         n,
       }));
@@ -3037,7 +3041,7 @@
     const regionsWithData = regionCounts.filter((row) => row.n > 0).length;
     const topKom = countByKomoditas(list).filter(([name]) => name !== "N/A");
     const topIck = countByFasilitas(list).filter(([name]) => name && name !== "N/A");
-    const topKpw = countByAsalKpw(list);
+    const topKpw = countByKpwdnOffice(list);
     const noTahun = list.filter((row) => tahunLabel(row.tahun) === "N/A").length;
     const noKom = list.filter((row) => komoditasLabel(row.komoditas) === "N/A").length;
 
@@ -3128,12 +3132,12 @@
     if (topKpw.length && !fokus) {
       spatialSubsections.push({
         title: fokus ? "2. KPwDN pengampu" : "3. Konsentrasi KPwDN pengampu",
-        paragraph: `Tercatat ${fmtNum(topKpw.length)} asal KPwDN pengampu pada cakupan ini.`,
+        paragraph: `Tercatat ${fmtNum(offices)} KPwDN pengampu pada cakupan ini.`,
         items: [
-          `Tertinggi: ${topKpw[0][0]} (${fmtNum(topKpw[0][1])} unit, ${briefingAndil(topKpw[0][1], total)}).`,
+          `Tertinggi: ${shortOffice(topKpw[0][0])} (${fmtNum(topKpw[0][1])} unit, ${briefingAndil(topKpw[0][1], total)}).`,
           topKpw.length > 1
-            ? `Terendah: ${topKpw[topKpw.length - 1][0]} (${fmtNum(topKpw[topKpw.length - 1][1])} unit).`
-            : "Hanya satu asal KPwDN yang tercatat.",
+            ? `Terendah: ${shortOffice(topKpw[topKpw.length - 1][0])} (${fmtNum(topKpw[topKpw.length - 1][1])} unit).`
+            : "Hanya satu KPwDN pengampu yang tercatat.",
           topKpw.length > 1
             ? `Sepuluh KPwDN teratas menyumbang ${briefingAndil(
                 topKpw.slice(0, 10).reduce((sum, [, n]) => sum + n, 0),
@@ -3398,7 +3402,10 @@
       name: region.name,
       n: list.filter((row) => matchesRegion(region, row.kpwdn)).length,
     })).sort((a, b) => b.n - a.n || a.name.localeCompare(b.name, "id"));
-    const kpwRank = countByAsalKpw(list).map(([name, n]) => ({ name, n }));
+    const kpwRank = countByKpwdnOffice(list).map(([name, n]) => ({
+      name: shortOffice(name) || name,
+      n,
+    }));
     const regionEnds = rankEnds(regionCounts, 3);
     const kpwEnds = rankEnds(kpwRank, 3);
     const topKom = countByKomoditas(list).find(([name]) => name !== "N/A");
@@ -3411,7 +3418,7 @@
       pus,
       umkm: total - pus,
       pusPct: total ? Math.round((pus / total) * 100) : 0,
-      offices: new Set(list.map((row) => asalKpwLabel(row.kpwdn))).size,
+      offices: new Set(list.map((row) => row.kpwdn).filter(Boolean)).size,
       yearFrom: years[0] || "—",
       yearTo: years[years.length - 1] || "—",
       regionTop: regionEnds.top,
