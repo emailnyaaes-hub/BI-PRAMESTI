@@ -51,7 +51,7 @@
   const WATCH_KEY = "padel-watchlist-v1";
   const SARAN_KEY = "padel-saran-overrides-v1";
   const SARAN_TEXT_VERSION = "20260831j";
-  const APP_BUILD = "20260901e";
+  const APP_BUILD = "20260901f";
   const GENERIC_KOMODITAS = new Set([
     "N/A",
     "Industri Pengolahan",
@@ -5143,6 +5143,7 @@
     return String(value ?? "")
       .replace(/[\u2013\u2014]/g, "-")
       .replace(/\u2022/g, "-")
+      .replace(/\u00b7/g, "|")
       .replace(/[\u201c\u201d\u2018\u2019]/g, "'")
       .replace(/\u00a0/g, " ")
       .replace(/[\u2000-\u200b]/g, " ")
@@ -5167,127 +5168,261 @@
       const pageH = pdf.internal.pageSize.getHeight();
       const contentW = pageW - m * 2;
       const navy = [0, 48, 87];
+      const navy2 = [0, 58, 115];
       const gold = [199, 163, 90];
       const muted = [90, 107, 122];
       const line = [197, 207, 219];
+      const paper = [236, 242, 248];
       const ink = [27, 27, 27];
-      const footerY = pageH - 8;
+      const contentBottom = pageH - 14;
       const cakupan = execCakupan();
-      const dated = pdfBriefText(
-        `Data tertanggal ${formatDataDate(loadUpdatedAt())} · diekspor ${new Date().toLocaleString("id-ID", {
+      const dataDate = pdfBriefText(formatDataDate(loadUpdatedAt()));
+      const exportDate = pdfBriefText(
+        new Date().toLocaleString("id-ID", {
           day: "numeric",
           month: "long",
           year: "numeric",
           hour: "2-digit",
           minute: "2-digit",
-        })}`
+        })
       );
+      const total = list.length;
+      const pus = list.filter((row) => row.jenis === "PUS").length;
+      const umkm = total - pus;
+      const offices = new Set(list.map((row) => row.kpwdn).filter(Boolean)).size;
 
-      const paintHeader = (continued) => {
+      let continued = false;
+
+      const paintHeader = () => {
         pdf.setFillColor(...navy);
-        pdf.rect(0, 0, pageW, 24, "F");
+        pdf.rect(0, 0, pageW, 26, "F");
         pdf.setFillColor(...gold);
-        pdf.rect(0, 24, pageW, 1.1, "F");
+        pdf.rect(0, 26, pageW, 1.2, "F");
         pdf.setTextColor(...gold);
         pdf.setFont("helvetica", "bold");
         pdf.setFontSize(8);
-        pdf.text("BI PRAMESTI", m, 8);
+        pdf.text("BI PRAMESTI", m, 8.5);
         pdf.setTextColor(255, 255, 255);
         pdf.setFont("helvetica", "normal");
         pdf.setFontSize(8);
-        pdf.text("Departemen Regional, Bank Indonesia", m + 26, 8);
+        pdf.text("Departemen Regional, Bank Indonesia", m + 26, 8.5);
         pdf.setFont("helvetica", "bold");
-        pdf.setFontSize(13);
-        pdf.text("Ringkasan Eksekutif", m, 16.5);
+        pdf.setFontSize(14);
+        pdf.text("Ringkasan Eksekutif", m, 17);
         pdf.setFont("helvetica", "normal");
-        pdf.setFontSize(8);
+        pdf.setFontSize(7.8);
         pdf.setTextColor(158, 196, 234);
         pdf.text(
-          pdfBriefText(`Briefing UMKM/PUS · cakupan ${cakupan}${continued ? " · lanjutan" : ""}`),
+          pdfBriefText(`Briefing UMKM/PUS | cakupan ${cakupan}${continued ? " | lanjutan" : ""}`),
           m,
-          21.5
+          22.5
         );
-        pdf.text(dated, pageW - m, 8, { align: "right" });
+        pdf.setFontSize(7);
+        pdf.text(`Data: ${dataDate}`, pageW - m, 8.5, { align: "right" });
+        pdf.text(`Ekspor: ${exportDate}`, pageW - m, 13, { align: "right" });
       };
 
-      const writeLines = (text, x, y, maxW, fontSize, fontStyle, color, lineGap) => {
+      const paintFooter = (pageNo, pageTotal) => {
+        pdf.setDrawColor(...line);
+        pdf.setLineWidth(0.2);
+        pdf.line(m, pageH - 10, pageW - m, pageH - 10);
+        pdf.setFont("helvetica", "normal");
+        pdf.setFontSize(7);
+        pdf.setTextColor(...muted);
+        pdf.text("BI PRAMESTI | Bukan penilaian resmi Bank Indonesia", m, pageH - 5.8);
+        pdf.text(`Halaman ${pageNo} dari ${pageTotal}`, pageW - m, pageH - 5.8, { align: "right" });
+      };
+
+      const newPage = () => {
+        pdf.addPage();
+        continued = true;
+        paintHeader();
+        return 34;
+      };
+
+      const ensureSpace = (y, needed) => {
+        if (y + needed <= contentBottom) return y;
+        return newPage();
+      };
+
+      const textHeight = (text, maxW, fontSize) => {
+        pdf.setFontSize(fontSize);
+        return pdf.splitTextToSize(pdfBriefText(text), maxW).length * (fontSize * 0.42 + 1.6);
+      };
+
+      const writeParagraphBlock = (text, x, y, maxW, fontSize, fontStyle, color) => {
         pdf.setFont("helvetica", fontStyle || "normal");
         pdf.setFontSize(fontSize);
         pdf.setTextColor(...(color || ink));
         const lines = pdf.splitTextToSize(pdfBriefText(text), maxW);
+        const lineH = fontSize * 0.42 + 1.6;
         lines.forEach((row) => {
-          if (y > footerY - 4) {
-            pdf.addPage();
-            paintHeader(true);
-            y = 32;
-          }
           pdf.text(row, x, y);
-          y += lineGap || fontSize * 0.42 + 1.8;
+          y += lineH;
         });
         return y;
       };
 
-      paintHeader(false);
-      let y = 32;
+      const writeParagraph = (text, x, y, maxW, fontSize, fontStyle, color) => {
+        pdf.setFont("helvetica", fontStyle || "normal");
+        pdf.setFontSize(fontSize);
+        pdf.setTextColor(...(color || ink));
+        const lines = pdf.splitTextToSize(pdfBriefText(text), maxW);
+        const lineH = fontSize * 0.42 + 1.6;
+        lines.forEach((row) => {
+          y = ensureSpace(y, lineH);
+          pdf.text(row, x, y);
+          y += lineH;
+        });
+        return y;
+      };
 
-      (data.lead || []).forEach((para) => {
-        y = writeLines(para, m, y, contentW, 10, "normal", ink, 5.2);
-        y += 2.5;
-      });
+      const writeBullets = (items, x, y, maxW, fontSize) => {
+        const bulletX = x + 1.2;
+        const textX = x + 5.5;
+        const textW = maxW - 5.5;
+        const lineH = fontSize * 0.42 + 1.5;
+        (items || []).forEach((item) => {
+          pdf.setFont("helvetica", "normal");
+          pdf.setFontSize(fontSize);
+          pdf.setTextColor(...muted);
+          const lines = pdf.splitTextToSize(pdfBriefText(item), textW);
+          y = ensureSpace(y, lines.length * lineH + 1.2);
+          lines.forEach((row, idx) => {
+            if (idx === 0) pdf.text("-", bulletX, y);
+            pdf.text(row, textX, y);
+            y += lineH;
+          });
+          y += 0.8;
+        });
+        return y;
+      };
+
+      const drawKpiStrip = (y) => {
+        const gap = 3;
+        const tileW = (contentW - gap * 3) / 4;
+        const tileH = 14;
+        y = ensureSpace(y, tileH + 4);
+        const tiles = [
+          { label: "UMKM/PUS", value: fmtNum(total) },
+          { label: "UMKM", value: fmtNum(umkm) },
+          { label: "PUS", value: fmtNum(pus) },
+          { label: "KPwDN", value: fmtNum(offices) },
+        ];
+        tiles.forEach((tile, i) => {
+          const x = m + i * (tileW + gap);
+          pdf.setFillColor(...paper);
+          pdf.setDrawColor(...line);
+          pdf.setLineWidth(0.2);
+          pdf.roundedRect(x, y, tileW, tileH, 1.5, 1.5, "FD");
+          pdf.setFillColor(...gold);
+          pdf.rect(x, y, tileW, 1.1, "F");
+          pdf.setFont("helvetica", "bold");
+          pdf.setFontSize(11);
+          pdf.setTextColor(...navy);
+          pdf.text(tile.value, x + 2.5, y + 7.5);
+          pdf.setFont("helvetica", "normal");
+          pdf.setFontSize(7);
+          pdf.setTextColor(...muted);
+          pdf.text(tile.label, x + 2.5, y + 11.5);
+        });
+        return y + tileH + 6;
+      };
+
+      const drawLeadBox = (y, paragraphs) => {
+        if (!paragraphs?.length) return y;
+        let innerH = 6;
+        paragraphs.forEach((para) => {
+          innerH += textHeight(para, contentW - 8, 9.5) + 2.2;
+        });
+        y = ensureSpace(y, innerH + 2);
+        const boxTop = y;
+        pdf.setFillColor(...paper);
+        pdf.setDrawColor(...line);
+        pdf.setLineWidth(0.25);
+        pdf.roundedRect(m, boxTop, contentW, innerH, 2, 2, "FD");
+        pdf.setFillColor(...navy2);
+        pdf.rect(m, boxTop, contentW, 6.5, "F");
+        pdf.setFont("helvetica", "bold");
+        pdf.setFontSize(8);
+        pdf.setTextColor(255, 255, 255);
+        pdf.text("RINGKASAN EKSEKUTIF", m + 3, boxTop + 4.2);
+        let innerY = boxTop + 10;
+        paragraphs.forEach((para) => {
+          innerY = writeParagraphBlock(para, m + 4, innerY, contentW - 8, 9.5, "normal", ink);
+          innerY += 2;
+        });
+        return boxTop + innerH + 5;
+      };
+
+      const drawSectionTitle = (y, title) => {
+        const barH = 8;
+        y = ensureSpace(y, barH + 4);
+        pdf.setFillColor(...navy);
+        pdf.roundedRect(m, y, contentW, barH, 1.2, 1.2, "F");
+        pdf.setFillColor(...gold);
+        pdf.rect(m, y, 2, barH, "F");
+        pdf.setFont("helvetica", "bold");
+        pdf.setFontSize(9);
+        pdf.setTextColor(255, 255, 255);
+        pdf.text(pdfBriefText(title), m + 5, y + 5.4);
+        return y + barH + 4;
+      };
+
+      const drawSubsection = (y, sub) => {
+        const titleH = 5;
+        const paraH = sub.paragraph ? textHeight(sub.paragraph, contentW - 4, 9) + 2 : 0;
+        const bulletsH = (sub.items || []).reduce(
+          (sum, item) => sum + textHeight(item, contentW - 10, 8.8) + 2.5,
+          0
+        );
+        y = ensureSpace(y, titleH + paraH + bulletsH + 2);
+        pdf.setFont("helvetica", "bold");
+        pdf.setFontSize(9.5);
+        pdf.setTextColor(...navy2);
+        pdf.text(pdfBriefText(sub.title || ""), m + 1, y);
+        y += 5;
+        if (sub.paragraph) {
+          y = writeParagraph(sub.paragraph, m + 1, y, contentW - 2, 9, "normal", ink);
+          y += 1.5;
+        }
+        if (sub.items?.length) {
+          y = writeBullets(sub.items, m + 1, y, contentW - 2, 8.8);
+        }
+        return y + 2.5;
+      };
+
+      continued = false;
+      paintHeader();
+      let y = 34;
+      y = drawKpiStrip(y);
+      y = drawLeadBox(y, data.lead || []);
 
       (data.sections || []).forEach((section) => {
-        y += 3;
-        if (y > footerY - 14) {
-          pdf.addPage();
-          paintHeader(true);
-          y = 32;
-        }
-        pdf.setDrawColor(...line);
-        pdf.setLineWidth(0.2);
-        pdf.line(m, y, pageW - m, y);
-        y += 5;
-        y = writeLines(section.title || "", m, y, contentW, 10, "bold", navy, 4.8);
-        y += 1.5;
+        y += 2;
+        y = drawSectionTitle(y, section.title || "");
         (section.subsections || []).forEach((sub) => {
-          y = writeLines(sub.title || "", m, y, contentW, 9.5, "bold", ink, 4.6);
-          y += 0.8;
-          if (sub.paragraph) {
-            y = writeLines(sub.paragraph, m, y, contentW, 9, "normal", ink, 4.4);
-            y += 1.2;
-          }
-          (sub.items || []).forEach((item) => {
-            y = writeLines(`- ${item}`, m + 2, y, contentW - 2, 9, "normal", muted, 4.4);
-          });
-          y += 1.5;
+          y = drawSubsection(y, sub);
         });
+        if (section.items?.length && !section.subsections?.length) {
+          y = writeBullets(section.items, m + 1, y, contentW - 2, 8.8);
+        }
       });
 
-      y += 2;
-      if (y > footerY - 10) {
-        pdf.addPage();
-        paintHeader(true);
-        y = 32;
-      }
-      y = writeLines(
-        "Disusun dari data BI PRAMESTI yang sedang tampil. Tahun pada briefing ini adalah tahun fasilitasi, bukan tanggal unggahan. Bukan penilaian resmi Bank Indonesia.",
-        m,
-        y,
-        contentW,
-        8,
-        "italic",
-        muted,
-        4
-      );
+      const note =
+        "Disusun otomatis dari data BI PRAMESTI yang sedang tampil. Tahun pada briefing adalah tahun fasilitasi, bukan tanggal unggahan. Dokumen ini bukan penilaian resmi Bank Indonesia.";
+      const noteH = textHeight(note, contentW - 8, 7.5) + 8;
+      y = ensureSpace(y, noteH + 2);
+      pdf.setFillColor(252, 253, 254);
+      pdf.setDrawColor(...line);
+      pdf.setLineWidth(0.2);
+      pdf.roundedRect(m, y, contentW, noteH, 1.5, 1.5, "FD");
+      writeParagraphBlock(note, m + 4, y + 5, contentW - 8, 7.5, "italic", muted);
 
-      const total = pdf.getNumberOfPages();
-      for (let i = 1; i <= total; i += 1) {
+      const pageTotal = pdf.getNumberOfPages();
+      for (let i = 1; i <= pageTotal; i += 1) {
         pdf.setPage(i);
-        pdf.setDrawColor(...line);
-        pdf.line(m, footerY, pageW - m, footerY);
-        pdf.setFont("helvetica", "normal");
-        pdf.setFontSize(7);
-        pdf.setTextColor(...muted);
-        pdf.text(`Halaman ${i} dari ${total}`, pageW - m, pageH - 4.6, { align: "right" });
+        paintFooter(i, pageTotal);
       }
 
       if (!savePdfFile(pdf, "bi-pramesti-ringkasan-eksekutif.pdf")) {
