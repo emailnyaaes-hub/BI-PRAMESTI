@@ -1151,9 +1151,58 @@ a.ticker-item:focus-visible {
 .briefing-lead {
   display: grid;
   gap: 10px;
+  padding-bottom: 4px;
 }
 .briefing-lead p {
   text-align: justify;
+}
+.briefing-fold {
+  border-top: 1px solid rgba(0, 30, 76, 0.08);
+}
+.briefing-fold-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 0 10px;
+  cursor: pointer;
+  list-style: none;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--navy-2);
+  user-select: none;
+}
+.briefing-fold-trigger::-webkit-details-marker {
+  display: none;
+}
+.briefing-fold-trigger::after {
+  content: "+";
+  flex: 0 0 auto;
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 30, 76, 0.18);
+  display: grid;
+  place-items: center;
+  font-size: 15px;
+  line-height: 1;
+  color: var(--navy-2);
+  background: rgba(255, 255, 255, 0.65);
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+.briefing-fold[open] .briefing-fold-trigger::after {
+  content: "−";
+}
+.briefing-fold-trigger:hover {
+  color: var(--navy);
+}
+.briefing-fold-trigger:hover::after {
+  background: #fff;
+}
+.briefing-fold-body {
+  padding: 0 0 14px;
 }
 .briefing-head {
   margin: 0 0 6px;
@@ -1167,6 +1216,7 @@ a.ticker-item:focus-visible {
   font-size: 12px;
   letter-spacing: 0.1em;
 }
+.briefing-subhead {
   margin: 10px 0 4px;
   font-size: 14px;
   font-weight: 700;

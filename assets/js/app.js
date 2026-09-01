@@ -51,7 +51,7 @@
   const WATCH_KEY = "padel-watchlist-v1";
   const SARAN_KEY = "padel-saran-overrides-v1";
   const SARAN_TEXT_VERSION = "20260831j";
-  const APP_BUILD = "20260901b";
+  const APP_BUILD = "20260901c";
   const GENERIC_KOMODITAS = new Set([
     "N/A",
     "Industri Pengolahan",
@@ -3241,26 +3241,28 @@
         `<div class="briefing-lead">${data.lead.map((para) => `<p>${escapeHtml(para)}</p>`).join("")}</div>`
       );
     }
-    (data.sections || []).forEach((section) => {
-      let html = `<div class="briefing-block">`;
-      if (section.title) {
-        html += `<h4 class="briefing-head briefing-section-title">${escapeHtml(section.title)}</h4>`;
-      }
+    (data.sections || []).forEach((section, idx) => {
+      let body = "";
       (section.paragraphs || []).forEach((para) => {
-        html += `<p class="briefing-para">${escapeHtml(para)}</p>`;
+        body += `<p class="briefing-para">${escapeHtml(para)}</p>`;
       });
       (section.subsections || []).forEach((sub) => {
-        if (sub.title) html += `<h5 class="briefing-subhead">${escapeHtml(sub.title)}</h5>`;
-        if (sub.paragraph) html += `<p class="briefing-para">${escapeHtml(sub.paragraph)}</p>`;
+        if (sub.title) body += `<h5 class="briefing-subhead">${escapeHtml(sub.title)}</h5>`;
+        if (sub.paragraph) body += `<p class="briefing-para">${escapeHtml(sub.paragraph)}</p>`;
         if (sub.items?.length) {
-          html += `<ul class="briefing-points">${sub.items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>`;
+          body += `<ul class="briefing-points">${sub.items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>`;
         }
       });
       if (section.items?.length && !section.subsections?.length) {
-        html += `<ul class="briefing-points">${section.items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>`;
+        body += `<ul class="briefing-points">${section.items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>`;
       }
-      html += `</div>`;
-      parts.push(html);
+      const title = section.title ? escapeHtml(section.title) : `Bagian ${idx + 1}`;
+      parts.push(
+        `<details class="briefing-fold">
+          <summary class="briefing-fold-trigger"><span>${title}</span></summary>
+          <div class="briefing-block briefing-fold-body">${body}</div>
+        </details>`
+      );
     });
     return parts.join("");
   }
@@ -6797,14 +6799,16 @@
       const leadText = leadEl
         ? [...leadEl.querySelectorAll("p")].map((p) => p.textContent.trim()).filter(Boolean).join("\n\n")
         : "";
-      const brief = [...document.querySelectorAll("#briefing-text .briefing-block")]
-        .map((block) => {
-          const title = block.querySelector(".briefing-section-title, .briefing-head")?.textContent.trim() || "";
+      const brief = [...document.querySelectorAll("#briefing-text .briefing-fold")]
+        .map((fold) => {
+          const title = fold.querySelector(".briefing-fold-trigger span")?.textContent.trim() || "";
+          const block = fold.querySelector(".briefing-block");
+          if (!block) return title;
           const paras = [...block.querySelectorAll(":scope > .briefing-para")].map((p) => p.textContent.trim());
           const subs = [...block.querySelectorAll(".briefing-subhead")].map((sub) => {
             const lines = [sub.textContent.trim()];
             let node = sub.nextElementSibling;
-            while (node && !node.classList.contains("briefing-subhead") && !node.classList.contains("briefing-section-title")) {
+            while (node && !node.classList.contains("briefing-subhead")) {
               if (node.classList.contains("briefing-para")) lines.push(node.textContent.trim());
               if (node.classList.contains("briefing-points")) {
                 lines.push(...[...node.querySelectorAll("li")].map((li) => `• ${li.textContent.trim()}`));
